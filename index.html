@@ -3,7 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Pallavi Ahire-Shelke · Skin Guides Hub</title>
+  <title>Free Skin &amp; Hair Guides by Dr. Pallavi Ahire-Shelke · Gold Medalist Dermatologist, Pune</title>
+  <meta name="description" content="Free expert-led skin and hair guides by Dr. Pallavi Ahire-Shelke — Gold Medalist Dermatologist at Baner, Pune. Covers oily skin, hard water hair damage, chemical peels, teen skincare, and more." />
+  <meta name="theme-color" content="#2C1A1A" />
+  <link rel="canonical" href="https://drpallavi.skinethics.in/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drpallavi.skinethics.in/" />
+  <meta property="og:title" content="Free Skin &amp; Hair Guides · Dr. Pallavi Ahire-Shelke, Pune" />
+  <meta property="og:description" content="Gold Medalist Dermatologist Dr. Pallavi Ahire-Shelke shares free expert guides on oily skin, hard water, chemical peels &amp; more. Baner, Pune." />
+  <meta property="og:image" content="https://drpallavi.skinethics.in/og-cover.jpg" />
+
+  <!-- JSON-LD Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Pallavi Ahire-Shelke",
+    "honorificPrefix": "Dr.",
+    "description": "Gold Medalist Dermatologist · MBBS, MD, DNB, DDV",
+    "sameAs": ["https://www.instagram.com/drpallaviahireshelke/"],
+    "worksFor": {
+      "@type": "MedicalBusiness",
+      "name": "Dr. Pallavi Ahire-Shelke · Dermatology Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baner",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "telephone": "+919028291234",
+      "medicalSpecialty": "Dermatology"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -38,13 +74,13 @@
       background-image:
         radial-gradient(ellipse at 85% 15%, rgba(212,135,156,0.35) 0%, transparent 55%),
         radial-gradient(ellipse at 15% 85%, rgba(250,246,241,0.12) 0%, transparent 55%);
-      padding: 44px 20px 40px;
+      padding: 44px 20px 36px;
       text-align: center;
     }
     .site-header .pill {
       display: inline-block;
       border: 1.5px solid var(--pink);
-      background: var(--white);
+      background: transparent;
       color: var(--pink);
       font-family: 'Lora', serif;
       font-size: 10px;
@@ -84,6 +120,41 @@
     }
     .dots { margin: 18px 0 0; color: var(--pink); letter-spacing: 8px; font-size: 10px; }
 
+    /* ── STATS STRIP ─────────────────────────── */
+    .stats-strip {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: center;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 4px;
+    }
+    .stats-strip::-webkit-scrollbar { display: none; }
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px 18px;
+      flex-shrink: 0;
+      border-right: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: var(--dark);
+      line-height: 1.1;
+    }
+    .stat-value em { font-style: normal; color: var(--pink); }
+    .stat-label {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-align: center;
+      margin-top: 3px;
+    }
+
     /* ── SECTION LABEL ───────────────────────── */
     .section-label {
       display: flex;
@@ -105,8 +176,45 @@
 
     /* ── WRAPPER ─────────────────────────────── */
     .wrapper { max-width: 480px; margin: 0 auto; padding: 0 16px; }
-
     section { padding: 32px 0; }
+
+    /* ── CATEGORY TABS ───────────────────────── */
+    .tab-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 16px 2px;
+      margin-bottom: 22px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tab-scroll::-webkit-scrollbar { display: none; }
+    .tab-row {
+      display: flex;
+      gap: 8px;
+      width: max-content;
+    }
+    .tab-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 7px 15px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: var(--white);
+      color: var(--muted);
+      font-family: 'Lora', serif;
+      font-size: 12px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.18s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--dark);
+      border-color: var(--dark);
+      color: var(--white);
+    }
+    .tab-btn.active { font-weight: 500; }
 
     /* ── GUIDE CARDS ─────────────────────────── */
     .guide-card {
@@ -115,12 +223,16 @@
       border-radius: 16px;
       overflow: hidden;
       margin-bottom: 18px;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, transform 0.15s;
       text-decoration: none;
       display: block;
       color: inherit;
     }
-    .guide-card:hover { border-color: var(--pink); }
+    .guide-card:hover {
+      border-color: var(--pink);
+      transform: translateY(-1px);
+    }
+    .guide-card[data-hidden="true"] { display: none; }
     .guide-card-header {
       padding: 20px 20px 0;
       display: flex;
@@ -157,29 +269,19 @@
       margin-bottom: 6px;
     }
     .guide-comment-pill.navy-pill {
-      background: #EAF4F2;
-      color: #2D7D6F;
-      border-color: #A8D5CC;
+      background: #EAF4F2; color: #2D7D6F; border-color: #A8D5CC;
     }
     .guide-comment-pill.sage-pill {
-      background: #EAF0F7;
-      color: #3D6B9C;
-      border-color: #B8CDE4;
+      background: #EAF0F7; color: #3D6B9C; border-color: #B8CDE4;
     }
     .guide-comment-pill.teen-pill {
-      background: #F0F7EA;
-      color: #5A8A3C;
-      border-color: #B8D9A0;
+      background: #F0F7EA; color: #5A8A3C; border-color: #B8D9A0;
     }
     .guide-comment-pill.blue-pill {
-      background: #E5F0F7;
-      color: #3A7CA5;
-      border-color: #A8C8E0;
+      background: #E5F0F7; color: #3A7CA5; border-color: #A8C8E0;
     }
     .guide-comment-pill.amber-pill {
-      background: #FBF1E8;
-      color: #B87040;
-      border-color: #E0B898;
+      background: #FBF1E8; color: #B87040; border-color: #E0B898;
     }
     .guide-card-header h2 {
       font-family: 'Playfair Display', serif;
@@ -187,13 +289,21 @@
       line-height: 1.3;
       color: var(--dark);
     }
-    .guide-card-body {
-      padding: 12px 20px 16px;
+    .guide-card-body { padding: 12px 20px 16px; }
+    .guide-card-body p { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+    .guide-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 0;
     }
-    .guide-card-body p {
-      font-size: 13px;
+    .guide-tag {
+      font-size: 10px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--bg);
+      border: 1px solid var(--border);
       color: var(--muted);
-      margin-bottom: 14px;
     }
     .guide-card-footer {
       display: flex;
@@ -203,11 +313,7 @@
       border-top: 1px solid var(--border);
       background: var(--bg);
     }
-    .guide-card-footer span {
-      font-size: 11px;
-      color: var(--muted);
-      font-style: italic;
-    }
+    .guide-card-footer span { font-size: 11px; color: var(--muted); font-style: italic; }
     .arrow-btn {
       display: flex;
       align-items: center;
@@ -250,11 +356,7 @@
       margin-bottom: 10px;
     }
     .consult-banner h2 em { color: var(--pink); font-style: italic; }
-    .consult-banner p {
-      color: var(--blush);
-      font-size: 13px;
-      margin-bottom: 20px;
-    }
+    .consult-banner p { color: var(--blush); font-size: 13px; margin-bottom: 20px; }
     .consult-btns { display: flex; flex-direction: column; gap: 10px; }
     .btn-primary {
       display: block;
@@ -361,11 +463,7 @@
       font-size: 16px;
       color: var(--white);
     }
-    .quick-contact .qc-header p {
-      font-size: 11px;
-      color: var(--blush);
-      font-style: italic;
-    }
+    .quick-contact .qc-header p { font-size: 11px; color: var(--blush); font-style: italic; }
     .qc-grid { display: grid; grid-template-columns: 1fr 1fr; }
     .qc-item {
       padding: 14px 16px;
@@ -379,11 +477,7 @@
     .qc-item:nth-last-child(-n+2) { border-bottom: none; }
     .qc-item:hover { background: var(--highlight); }
     .qc-item .qi-icon { font-size: 18px; margin-bottom: 4px; }
-    .qc-item .qi-label {
-      font-family: 'Playfair Display', serif;
-      font-size: 12px;
-      color: var(--dark);
-    }
+    .qc-item .qi-label { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
     .qc-item .qi-detail { font-size: 11px; color: var(--muted); }
     .qc-item .qi-action { font-size: 11px; color: var(--pink); font-style: italic; margin-top: 2px; }
 
@@ -392,7 +486,7 @@
       text-align: center;
       font-size: 11px;
       color: var(--muted);
-      padding: 20px 16px;
+      padding: 20px 16px 32px;
       max-width: 440px;
       margin: 0 auto;
     }
@@ -421,11 +515,7 @@
       color: var(--pink);
       margin-bottom: 8px;
     }
-    .footer-col p {
-      font-size: 12px;
-      color: var(--blush);
-      line-height: 1.6;
-    }
+    .footer-col p { font-size: 12px; color: var(--blush); line-height: 1.6; }
     .footer-col p em { font-style: italic; color: var(--muted); }
     .footer-divider {
       max-width: 480px;
@@ -438,13 +528,47 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      padding: 12px 0 16px;
+      padding: 12px 0 80px;
       flex-wrap: wrap;
       gap: 4px;
     }
-    .footer-bottom span {
-      font-size: 10px;
-      color: var(--muted);
+    .footer-bottom span { font-size: 10px; color: var(--muted); }
+
+    /* ── FLOATING BOOK CTA ───────────────────── */
+    .float-cta {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      display: flex;
+      gap: 8px;
+      padding: 0 12px;
+      width: 100%;
+      max-width: 480px;
+    }
+    .float-cta a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 13px 10px;
+      border-radius: 14px;
+      font-family: 'Lora', serif;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      box-shadow: 0 4px 20px rgba(44,26,26,0.25);
+    }
+    .float-cta .cta-call {
+      background: var(--dark);
+      color: var(--white);
+    }
+    .float-cta .cta-wa {
+      background: #25D366;
+      color: var(--white);
     }
 
     @media (max-width: 400px) {
@@ -452,6 +576,7 @@
       .qc-item { border-right: none !important; }
       .qc-item:last-child { border-bottom: none; }
       .footer-grid { grid-template-columns: 1fr; }
+      .stat-item { padding: 14px 12px; }
     }
   </style>
 </head>
@@ -459,33 +584,76 @@
 
   <!-- HEADER -->
   <header class="site-header">
-    <div class="pill">SKIN GUIDES · DR. PALLAVI</div>
+    <div class="pill">FREE SKIN &amp; HAIR GUIDES</div>
     <h1>Your Skin.<br><em>Your Guide.</em></h1>
-    <p class="subline">Free expert-led skin education — one guide for every concern. Curated by a Gold Medalist Dermatologist.</p>
-    <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Skin Ethics Clinic, Baner, Pune</p>
+    <p class="subline">Free expert skin education — one guide for every concern. Curated by a Gold Medalist Dermatologist.</p>
+    <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Baner, Pune</p>
     <p class="philosophy">Inner &amp; Outer Beauty · Wholesome Beauty</p>
     <div class="dots">· · ·</div>
   </header>
 
+  <!-- STATS -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <div class="stat-value"><em>4.6</em>★</div>
+      <div class="stat-label">Google Rating</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">695<em>+</em></div>
+      <div class="stat-label">Reviews</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">45<em>K+</em></div>
+      <div class="stat-label">Patients Seen</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">🥇</div>
+      <div class="stat-label">Gold Medalist</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">MD<em>,</em>DNB</div>
+      <div class="stat-label">Qualified</div>
+    </div>
+  </div>
+
   <!-- GUIDES -->
   <section>
     <div class="wrapper">
-      <div class="section-label">YOUR GUIDES</div>
+      <div class="section-label">BROWSE BY CATEGORY</div>
+    </div>
 
-      <!-- Guide 1: M -->
-      <a class="guide-card" href="guide-m.html">
+    <!-- Category Tabs -->
+    <div class="tab-scroll">
+      <div class="tab-row" role="tablist">
+        <button class="tab-btn active" data-filter="all" role="tab">✦ All Guides</button>
+        <button class="tab-btn" data-filter="hair" role="tab">💇 Hair</button>
+        <button class="tab-btn" data-filter="skin" role="tab">🧴 Skin</button>
+        <button class="tab-btn" data-filter="procedures" role="tab">✨ Procedures</button>
+        <button class="tab-btn" data-filter="nutrition" role="tab">🥗 Nutrition</button>
+      </div>
+    </div>
+
+    <div class="wrapper" id="guide-list">
+
+      <!-- Guide 1: M — Skin -->
+      <a class="guide-card" href="guide-m.html" data-category="skin">
         <div class="guide-card-header">
           <div class="guide-icon icon-pink">🧴</div>
           <div class="guide-meta">
-            <div class="guide-comment-pill">Comment "M" to Receive</div>
+            <div class="guide-comment-pill">💬 Comment "M" to Receive</div>
             <h2>Your Oily Skin Is Thirsty</h2>
           </div>
         </div>
         <div class="guide-card-body">
-          <p>The biggest mistake oily skin makes — and what Dr. Pallavi's clinic sees every day. A complete guide to moisturising the right way.</p>
+          <p>The biggest mistake oily skin makes — and what Dr. Pallavi sees every day at clinic. A complete guide to moisturising the right way.</p>
+          <div class="guide-tags">
+            <span class="guide-tag">Oily Skin</span>
+            <span class="guide-tag">Hydration</span>
+            <span class="guide-tag">Barrier Care</span>
+          </div>
         </div>
         <div class="guide-card-footer">
-          <span>Oily Skin · Hydration · Barrier Care</span>
+          <span>Skin Guide</span>
           <div class="arrow-btn">
             Read Guide
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -493,20 +661,25 @@
         </div>
       </a>
 
-      <!-- Guide 2: SUMMER -->
-      <a class="guide-card" href="guide-summer.html">
+      <!-- Guide 2: SUMMER — Nutrition -->
+      <a class="guide-card" href="guide-summer.html" data-category="nutrition">
         <div class="guide-card-header">
           <div class="guide-icon icon-navy">🌿</div>
           <div class="guide-meta">
-            <div class="guide-comment-pill navy-pill">Comment "SUMMER" to Receive</div>
+            <div class="guide-comment-pill navy-pill">💬 Comment "SUMMER" to Receive</div>
             <h2>Eat Your Way to a Summer Glow</h2>
           </div>
         </div>
         <div class="guide-card-body">
           <p>5 foods to start from tomorrow — for hydrated, healthy, glowing skin through India's hottest months.</p>
+          <div class="guide-tags">
+            <span class="guide-tag">Summer Skin</span>
+            <span class="guide-tag">Nutrition</span>
+            <span class="guide-tag">Inner Glow</span>
+          </div>
         </div>
         <div class="guide-card-footer">
-          <span>Summer Skin · Nutrition · Inner Glow</span>
+          <span>Nutrition Guide</span>
           <div class="arrow-btn" style="color:#2D7D6F;">
             Read Guide
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -514,8 +687,8 @@
         </div>
       </a>
 
-      <!-- Guide 3: SKINCARE -->
-      <a class="guide-card" href="guide-skincare.html">
+      <!-- Guide 3: SKINCARE — Skin -->
+      <a class="guide-card" href="guide-skincare.html" data-category="skin">
         <div class="guide-card-header">
           <div class="guide-icon icon-sage">🔬</div>
           <div class="guide-meta">
@@ -524,10 +697,15 @@
           </div>
         </div>
         <div class="guide-card-body">
-          <p>Which ingredient works for which concern — pigmentation, wrinkles, dark circles, acne marks. Explained simply, made easy.</p>
+          <p>Which ingredient works for which concern — pigmentation, wrinkles, dark circles, acne marks. Explained simply, made actionable.</p>
+          <div class="guide-tags">
+            <span class="guide-tag">Ingredients</span>
+            <span class="guide-tag">All Concerns</span>
+            <span class="guide-tag">Beginner-Friendly</span>
+          </div>
         </div>
         <div class="guide-card-footer">
-          <span>Ingredients · All Concerns · Beginner-Friendly</span>
+          <span>Skin Guide</span>
           <div class="arrow-btn" style="color:#3D6B9C;">
             Read Guide
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -535,10 +713,10 @@
         </div>
       </a>
 
-      <!-- Guide 4: TEEN -->
-      <a class="guide-card" href="guide-teen.html">
+      <!-- Guide 4: TEEN — Skin -->
+      <a class="guide-card" href="guide-teen.html" data-category="skin">
         <div class="guide-card-header">
-          <div class="guide-icon icon-teen">✨</div>
+          <div class="guide-icon icon-teen">🌱</div>
           <div class="guide-meta">
             <div class="guide-comment-pill teen-pill">Teen Skincare Starter Kit</div>
             <h2>Clear, Glowing, Healthy Skin — The Science-Backed Way</h2>
@@ -546,9 +724,14 @@
         </div>
         <div class="guide-card-body">
           <p>Budget-friendly, dermatologist-approved routine for teens. 4 essential ingredients, an AM/PM routine, and everything under ₹500.</p>
+          <div class="guide-tags">
+            <span class="guide-tag">Teen Skin</span>
+            <span class="guide-tag">Budget ₹500</span>
+            <span class="guide-tag">AM/PM Routine</span>
+          </div>
         </div>
         <div class="guide-card-footer">
-          <span>Teen Skin · Budget ₹500 · AM/PM Routine</span>
+          <span>Skin Guide</span>
           <div class="arrow-btn" style="color:#5A8A3C;">
             Read Guide
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -556,20 +739,25 @@
         </div>
       </a>
 
-      <!-- Guide 5: WATER -->
-      <a class="guide-card" href="guide-water.html">
+      <!-- Guide 5: WATER — Hair -->
+      <a class="guide-card" href="guide-water.html" data-category="hair">
         <div class="guide-card-header">
           <div class="guide-icon icon-blue">💧</div>
           <div class="guide-meta">
-            <div class="guide-comment-pill blue-pill">Comment "WATER" to Receive</div>
+            <div class="guide-comment-pill blue-pill">💬 Comment "WATER" to Receive</div>
             <h2>Your Water Is Damaging Your Hair</h2>
           </div>
         </div>
         <div class="guide-card-body">
           <p>Hard water from Pune, Mumbai &amp; other cities silently causes rough, dull, frizzy hair. A complete city-wise hair protection guide.</p>
+          <div class="guide-tags">
+            <span class="guide-tag">Hard Water</span>
+            <span class="guide-tag">Hair Care</span>
+            <span class="guide-tag">Chelation</span>
+          </div>
         </div>
         <div class="guide-card-footer">
-          <span>Hard Water · Hair Care · Chelation</span>
+          <span>Hair Guide</span>
           <div class="arrow-btn" style="color:#3A7CA5;">
             Read Guide
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -577,20 +765,25 @@
         </div>
       </a>
 
-      <!-- Guide 6: PEEL -->
-      <a class="guide-card" href="guide-peel.html">
+      <!-- Guide 6: PEEL — Procedures -->
+      <a class="guide-card" href="guide-peel.html" data-category="procedures">
         <div class="guide-card-header">
           <div class="guide-icon icon-amber">✨</div>
           <div class="guide-meta">
-            <div class="guide-comment-pill amber-pill">Comment "PEEL" to Receive</div>
+            <div class="guide-comment-pill amber-pill">💬 Comment "PEEL" to Receive</div>
             <h2>Chemical Peel — Does It Hurt?</h2>
           </div>
         </div>
         <div class="guide-card-body">
           <p>An honest, complete guide to chemical peels — types, pain levels, day-by-day recovery, and what to expect from a full course.</p>
+          <div class="guide-tags">
+            <span class="guide-tag">Chemical Peel</span>
+            <span class="guide-tag">Acne Marks</span>
+            <span class="guide-tag">Pigmentation</span>
+          </div>
         </div>
         <div class="guide-card-footer">
-          <span>Chemical Peel · Acne Marks · Pigmentation</span>
+          <span>Procedures Guide</span>
           <div class="arrow-btn" style="color:#B87040;">
             Read Guide
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -598,7 +791,7 @@
         </div>
       </a>
 
-    </div>
+    </div><!-- /guide-list -->
   </section>
 
   <!-- CONSULTATION -->
@@ -606,7 +799,7 @@
     <div class="wrapper">
       <div class="section-label">BOOK A CONSULTATION</div>
       <div class="consult-banner">
-        <div class="pill">SKIN ETHICS CLINIC · BANER, PUNE</div>
+        <div class="pill">DR. PALLAVI · BANER, PUNE</div>
         <h2>Ready for <em>personalised</em> care?</h2>
         <p>Every skin is different. Book a one-on-one consultation with Dr. Pallavi for a routine built entirely around yours.</p>
         <div class="consult-btns">
@@ -661,7 +854,7 @@
           <div class="qc-item">
             <div class="qi-icon">📍</div>
             <div class="qi-label">Clinic</div>
-            <div class="qi-detail">Skin Ethics Clinic<br>Baner, Pune</div>
+            <div class="qi-detail">Baner, Pune</div>
           </div>
           <a class="qc-item" href="tel:+919028291234">
             <div class="qi-icon">📞</div>
@@ -696,19 +889,47 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Skin Ethics Clinic<br>Baner, Pune<br>+91 90282 91234</p>
+        <p>Baner, Pune<br>+91 90282 91234</p>
       </div>
       <div class="footer-col">
-        <h4>Follow Us</h4>
+        <h4>Follow</h4>
         <p>@drpallaviahireshelke<br>Instagram<br><em>Wholesome Beauty · Inner &amp; Outer</em></p>
       </div>
     </div>
     <hr class="footer-divider" />
     <div class="footer-bottom">
       <span>Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV</span>
-      <span>Skin Ethics Clinic, Pune</span>
+      <span>Baner, Pune</span>
     </div>
   </footer>
+
+  <!-- FLOATING BOOK CTA -->
+  <div class="float-cta">
+    <a class="cta-call" href="tel:+919028291234">📞 Book Consultation</a>
+    <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+  </div>
+
+  <script>
+    // Category filter tabs
+    const tabs = document.querySelectorAll('.tab-btn');
+    const cards = document.querySelectorAll('.guide-card[data-category]');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const filter = tab.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.removeAttribute('data-hidden');
+          } else {
+            card.setAttribute('data-hidden', 'true');
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>

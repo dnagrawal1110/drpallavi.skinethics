@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teen Skincare Starter Kit · Dr. Pallavi Ahire-Shelke</title>
+  <title>Teen Skincare Starter Kit — Budget ₹500 Routine · Dr. Pallavi Ahire-Shelke, Pune</title>
+  <meta name="description" content="Free teen skincare guide by Dr. Pallavi Ahire-Shelke: dermatologist-approved AM/PM routine under ₹500. Cleanser, sunscreen, moisturiser, and the 4 essential ingredients every teen needs. Gold Medalist, Baner, Pune." />
+  <meta name="theme-color" content="#1A2E1A" />
+  <link rel="canonical" href="https://drpallavi.skinethics.in/guide-teen.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://drpallavi.skinethics.in/guide-teen.html" />
+  <meta property="og:title" content="Teen Skincare Starter Kit — Budget ₹500 · Free Guide by Dr. Pallavi" />
+  <meta property="og:description" content="Budget-friendly, dermatologist-approved routine for teens. 4 essential ingredients, AM/PM routine, and everything under ₹500." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -600,6 +607,63 @@
     .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(74,140,92,0.3); }
     .footer-bottom { max-width: 480px; margin: 0 auto; display: flex; justify-content: space-between; padding: 12px 0 16px; flex-wrap: wrap; gap: 4px; }
     .footer-bottom span { font-size: 10px; color: var(--muted); }
+
+    /* ── RECEIVED BANNER ─────────────────────── */
+    .received-banner {
+      background: var(--dark);
+      border-bottom: 2px solid var(--pink, #D4879C);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .received-banner .rb-icon { font-size: 20px; flex-shrink: 0; }
+    .received-banner .rb-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.4; }
+    .received-banner .rb-text strong { color: #fff; }
+    .received-banner .rb-text a { color: inherit; opacity: 0.9; }
+
+    /* ── SHARE BUTTON ────────────────────────── */
+    .share-row { display: flex; justify-content: center; padding: 12px 16px 0; }
+    .share-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 9px 22px; border-radius: 999px;
+      background: transparent; border: 1.5px solid var(--border);
+      color: var(--muted); font-family: 'Lora', serif; font-size: 12px;
+      cursor: pointer; transition: all 0.2s; letter-spacing: 0.03em;
+    }
+    .share-btn:hover { border-color: currentColor; opacity: 0.8; }
+
+    /* ── RELATED GUIDES ──────────────────────── */
+    .related-section { padding: 28px 0 0; }
+    .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+    .related-card {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 16px 14px; text-decoration: none;
+      color: inherit; display: block; transition: border-color 0.2s;
+    }
+    .related-card:hover { border-color: var(--pink, #D4879C); }
+    .related-card .rc-icon { font-size: 22px; margin-bottom: 8px; display: block; }
+    .related-card h4 { font-family: 'Playfair Display', serif; font-size: 13px; line-height: 1.3; color: var(--dark); margin-bottom: 4px; }
+    .related-card p { font-size: 11px; color: var(--muted); }
+    .related-card .rc-link { font-size: 11px; color: var(--pink, #D4879C); font-style: italic; margin-top: 6px; display: block; }
+
+    /* ── FLOATING BOOK CTA ───────────────────── */
+    .float-cta {
+      position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+      z-index: 100; display: flex; gap: 8px; padding: 0 12px;
+      width: 100%; max-width: 480px;
+    }
+    .float-cta a {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      gap: 7px; padding: 13px 10px; border-radius: 14px;
+      font-family: 'Lora', serif; font-size: 13px; font-weight: 500;
+      text-decoration: none; letter-spacing: 0.02em;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .float-cta .cta-call { background: var(--dark); color: #fff; }
+    .float-cta .cta-wa { background: #25D366; color: #fff; }
+
+    .footer-bottom { padding-bottom: 80px !important; }
   </style>
 </head>
 <body>
@@ -612,12 +676,19 @@
     <div class="pill">TEEN SKINCARE STARTER KIT ✨</div>
     <h1>Clear, Glowing, Healthy Skin —<br><em>The Science-Backed Way</em></h1>
     <p class="subline">Dermatologist-approved. Budget-friendly. Built for teen skin.</p>
-    <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Skin Ethics Clinic, Baner, Pune</p>
+    <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Baner, Pune</p>
     <p class="philosophy">Inner &amp; Outer Beauty · Wholesome Beauty</p>
     <div class="dots">· · ·</div>
   </header>
 
   <!-- WELCOME -->
+  <!-- SHARE -->
+  <div class="share-row">
+    <button class="share-btn" id="share-btn" style="color:#4A8C5C;border-color:#4A8C5C40;">
+      ↗ Share this guide
+    </button>
+  </div>
+
   <section>
     <div class="wrapper">
       <div class="welcome-card">
@@ -1099,7 +1170,7 @@
           <div class="contact-cell">
             <div class="cc-icon">📍</div>
             <div class="cc-label">Clinic</div>
-            <div class="cc-detail">Skin Ethics Clinic, Baner, Pune</div>
+            <div class="cc-detail">Baner, Pune</div>
           </div>
           <a class="contact-cell" href="tel:+919028291234">
             <div class="cc-icon">📞</div>
@@ -1124,6 +1195,27 @@
     </div>
   </section>
 
+  <!-- RELATED GUIDES -->
+  <section class="related-section">
+    <div class="wrapper">
+      <div class="section-label" style="color:#4A8C5C;">MORE GUIDES</div>
+      <div class="related-grid">
+        <a class="related-card" href="guide-m.html">
+          <span class="rc-icon">🧴</span>
+          <h4>Oily Skin Guide</h4>
+          <p>Perfect next step after basics</p>
+          <span class="rc-link" style="color:#4A8C5C;">Read guide →</span>
+        </a>
+        <a class="related-card" href="guide-skincare.html">
+          <span class="rc-icon">🔬</span>
+          <h4>Skincare Ingredients</h4>
+          <p>Understand what you're using</p>
+          <span class="rc-link" style="color:#4A8C5C;">Read guide →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <div class="disclaimer">
     This guide is for educational purposes only and does not replace professional medical advice. Individual skin responses may vary. Consult a qualified dermatologist if you have active skin conditions or concerns.
   </div>
@@ -1132,7 +1224,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Skin Ethics Clinic<br>Baner, Pune<br>+91 90282 91234</p>
+        <p>Baner, Pune<br>+91 90282 91234</p>
       </div>
       <div class="footer-col">
         <h4>Follow Us</h4>
@@ -1142,9 +1234,34 @@
     <hr class="footer-divider" />
     <div class="footer-bottom">
       <span>Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV</span>
-      <span>Skin Ethics Clinic, Baner, Pune</span>
+      <span>Baner, Pune</span>
     </div>
   </footer>
+
+  <!-- FLOATING BOOK CTA -->
+  <div class="float-cta">
+    <a class="cta-call" href="tel:+919028291234" style="background:#1A2E1A;">📞 Book Consultation</a>
+    <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+  </div>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('share-btn');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        if (navigator.share) {
+          navigator.share({ title: 'Teen Skincare Starter Kit — Free Guide by Dr. Pallavi', url: window.location.href });
+        } else {
+          navigator.clipboard.writeText(window.location.href).then(function() {
+            btn.textContent = '✓ Link copied!';
+            setTimeout(function() { btn.textContent = '↗ Share this guide'; }, 2200);
+          }).catch(function() {
+            btn.textContent = 'Copy: ' + window.location.href;
+          });
+        }
+      });
+    })();
+  </script>
 
 </body>
 </html>
