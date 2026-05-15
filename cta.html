@@ -11,22 +11,21 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #f5f6fa;
+      --bg: #f0f2f7;
       --surface: #ffffff;
       --border: #e2e4ea;
       --text: #1a1d2e;
       --muted: #6b7280;
       --header-bg: #1a1d2e;
-      --row-hover: #f0f4ff;
 
-      --automated: #16a34a;
-      --automated-bg: #dcfce7;
-      --created: #2563eb;
-      --created-bg: #dbeafe;
-      --needed: #dc2626;
-      --needed-bg: #fee2e2;
-      --not-needed: #6b7280;
-      --not-needed-bg: #f3f4f6;
+      --automated-color: #16a34a;
+      --automated-bg:    #dcfce7;
+      --needed-color:    #dc2626;
+      --needed-bg:       #fee2e2;
+      --not-needed-color:#6b7280;
+      --not-needed-bg:   #f3f4f6;
+      --tbd-color:       #92600a;
+      --tbd-bg:          #fef3c7;
     }
 
     body {
@@ -37,489 +36,392 @@
       min-height: 100vh;
     }
 
-    /* ── HEADER ── */
+    /* ── PAGE HEADER ── */
     .page-header {
       background: var(--header-bg);
       color: #fff;
-      padding: 20px 28px 16px;
+      padding: 18px 28px 14px;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
       gap: 12px;
+      flex-wrap: wrap;
     }
-    .page-header h1 {
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: -0.3px;
-    }
-    .page-header p {
-      font-size: 12px;
-      color: #9ca3af;
-      margin-top: 2px;
-    }
-    .last-updated {
-      font-size: 11px;
-      color: #9ca3af;
-      background: rgba(255,255,255,.07);
-      padding: 4px 10px;
-      border-radius: 20px;
-      white-space: nowrap;
+    .page-header h1 { font-size: 17px; font-weight: 700; }
+    .page-header p  { font-size: 11px; color: #9ca3af; margin-top: 2px; }
+    .header-tag {
+      font-size: 11px; color: #9ca3af;
+      background: rgba(255,255,255,.08);
+      padding: 4px 12px; border-radius: 20px; white-space: nowrap;
     }
 
-    /* ── STATS STRIP ── */
+    /* ── STATS ── */
     .stats-row {
-      display: flex;
-      gap: 1px;
+      display: flex; gap: 1px;
       background: var(--border);
       border-bottom: 1px solid var(--border);
     }
     .stat-cell {
-      flex: 1;
-      background: var(--surface);
-      padding: 12px 20px;
-      text-align: center;
+      flex: 1; background: var(--surface);
+      padding: 12px 16px; text-align: center;
     }
-    .stat-cell .num {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 1;
-    }
-    .stat-cell .lbl {
-      font-size: 11px;
-      color: var(--muted);
-      margin-top: 3px;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-    }
-    .stat-cell.s-automated .num { color: var(--automated); }
-    .stat-cell.s-created .num { color: var(--created); }
-    .stat-cell.s-needed .num { color: var(--needed); }
-    .stat-cell.s-total .num { color: var(--text); }
+    .stat-cell .n { font-size: 22px; font-weight: 700; line-height: 1; }
+    .stat-cell .l { font-size: 10px; color: var(--muted); margin-top: 3px; text-transform: uppercase; letter-spacing: .5px; }
+    .s-auto  .n { color: var(--automated-color); }
+    .s-need  .n { color: var(--needed-color); }
+    .s-tbd   .n { color: var(--tbd-color); }
+    .s-none  .n { color: var(--not-needed-color); }
 
     /* ── CONTROLS ── */
     .controls {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 14px 20px;
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      padding: 12px 20px;
       background: var(--surface);
       border-bottom: 1px solid var(--border);
-      flex-wrap: wrap;
-    }
-    .filter-group {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
     }
     .filter-btn {
-      padding: 5px 14px;
-      border-radius: 20px;
+      padding: 5px 13px; border-radius: 20px;
       border: 1.5px solid var(--border);
       background: transparent;
-      font-family: inherit;
-      font-size: 12px;
-      font-weight: 500;
-      cursor: pointer;
-      color: var(--muted);
+      font-family: inherit; font-size: 12px; font-weight: 500;
+      cursor: pointer; color: var(--muted);
       transition: all .15s;
     }
     .filter-btn:hover { border-color: #aaa; color: var(--text); }
-    .filter-btn.active {
-      background: var(--header-bg);
-      color: #fff;
-      border-color: var(--header-bg);
-    }
-    .filter-btn.f-automated.active { background: var(--automated); border-color: var(--automated); }
-    .filter-btn.f-created.active { background: var(--created); border-color: var(--created); }
-    .filter-btn.f-needed.active { background: var(--needed); border-color: var(--needed); }
+    .filter-btn.active { background: var(--header-bg); color: #fff; border-color: var(--header-bg); }
+    .filter-btn.fa.active  { background: var(--automated-color); border-color: var(--automated-color); }
+    .filter-btn.fn.active  { background: var(--needed-color);    border-color: var(--needed-color); }
+    .filter-btn.ftbd.active{ background: var(--tbd-color);       border-color: var(--tbd-color); }
 
-    .search-box {
-      margin-left: auto;
-      padding: 6px 14px 6px 32px;
-      border: 1.5px solid var(--border);
-      border-radius: 6px;
-      font-family: inherit;
-      font-size: 12px;
-      color: var(--text);
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E") no-repeat 10px center;
-      outline: none;
-      width: 200px;
+    .search-wrap { margin-left: auto; position: relative; }
+    .search-wrap svg { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); pointer-events: none; }
+    #search {
+      padding: 6px 12px 6px 30px;
+      border: 1.5px solid var(--border); border-radius: 6px;
+      font-family: inherit; font-size: 12px; color: var(--text);
+      outline: none; width: 220px; background: var(--bg);
     }
-    .search-box:focus { border-color: #666; }
+    #search:focus { border-color: #888; background: #fff; }
 
     /* ── TABLE ── */
-    .table-wrap {
-      overflow-x: auto;
-      padding: 16px 20px 40px;
-    }
+    .table-wrap { padding: 16px 20px 48px; overflow-x: auto; }
+
     table {
-      width: 100%;
-      border-collapse: collapse;
+      width: 100%; border-collapse: collapse;
       background: var(--surface);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0,0,0,.08);
-      min-width: 820px;
+      border-radius: 8px; overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      min-width: 900px;
     }
-    thead tr {
-      background: #f1f3f8;
-    }
-    thead th {
-      text-align: left;
-      padding: 10px 14px;
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      border-bottom: 1.5px solid var(--border);
+    thead tr { background: #f0f2f7; }
+    th {
+      text-align: left; padding: 9px 13px;
+      font-size: 10.5px; font-weight: 700; color: var(--muted);
+      text-transform: uppercase; letter-spacing: .5px;
+      border-bottom: 2px solid var(--border);
       white-space: nowrap;
-      user-select: none;
     }
     tbody tr {
       border-bottom: 1px solid var(--border);
       transition: background .1s;
     }
     tbody tr:last-child { border-bottom: none; }
-    tbody tr:hover { background: var(--row-hover); }
-    tbody tr[data-hidden="true"] { display: none; }
+    tbody tr:hover { background: #f7f8fc; }
+    tr[data-hidden="true"] { display: none; }
 
-    /* row accent by status */
-    tbody tr.row-automated { border-left: 3px solid var(--automated); }
-    tbody tr.row-created   { border-left: 3px solid var(--created); }
-    tbody tr.row-needed    { border-left: 3px solid var(--needed); }
-    tbody tr.row-not-needed { border-left: 3px solid transparent; }
+    /* status accent stripe */
+    tr.r-automated  { border-left: 3px solid var(--automated-color); }
+    tr.r-needed     { border-left: 3px solid var(--needed-color); }
+    tr.r-not-needed { border-left: 3px solid #d1d5db; }
+    tr.r-tbd        { border-left: 3px solid #fbbf24; }
 
-    td {
-      padding: 9px 14px;
-      vertical-align: middle;
-    }
+    td { padding: 9px 13px; vertical-align: middle; }
 
-    .col-sr {
-      width: 52px;
-      color: var(--muted);
-      font-size: 12px;
-      text-align: center;
-    }
-    .col-month {
-      width: 60px;
-    }
-    .col-type {
-      width: 80px;
-    }
-    .col-title {
-      min-width: 260px;
-      font-weight: 500;
-      line-height: 1.45;
-    }
-    .col-trigger {
-      width: 90px;
-      font-family: monospace;
-      font-size: 11px;
-    }
-    .col-cta {
-      width: 110px;
-    }
-    .col-date {
-      width: 80px;
-      color: var(--muted);
-      white-space: nowrap;
-    }
-    .col-link {
-      width: 140px;
-    }
+    .c-num  { width: 55px; text-align: center; font-weight: 700; font-size: 12px; color: var(--muted); }
+    .c-dress{ width: 60px; }
+    .c-title{ min-width: 260px; font-weight: 500; line-height: 1.4; }
+    .c-trig { width: 90px; }
+    .c-cta  { width: 110px; }
+    .c-date { width: 80px; color: var(--muted); font-size: 12px; }
+    .c-link { width: 130px; }
 
     /* badges */
     .badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 20px;
-      font-size: 11px;
-      font-weight: 600;
-      white-space: nowrap;
+      display: inline-block; padding: 2px 9px; border-radius: 20px;
+      font-size: 11px; font-weight: 600; white-space: nowrap;
     }
-    .badge-automated { background: var(--automated-bg); color: var(--automated); }
-    .badge-created   { background: var(--created-bg);   color: var(--created); }
-    .badge-needed    { background: var(--needed-bg);     color: var(--needed); }
-    .badge-not-needed{ background: var(--not-needed-bg); color: var(--not-needed); }
+    .b-auto { background: var(--automated-bg); color: var(--automated-color); }
+    .b-need { background: var(--needed-bg);    color: var(--needed-color); }
+    .b-none { background: var(--not-needed-bg);color: var(--not-needed-color); }
+    .b-tbd  { background: var(--tbd-bg);       color: var(--tbd-color); }
 
-    .type-pill {
-      display: inline-block;
-      padding: 2px 7px;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: 500;
+    .dress-pill {
+      display: inline-block; padding: 2px 7px; border-radius: 4px;
+      font-size: 10px; font-weight: 600; background: #ede9fe; color: #5b21b6;
     }
-    .type-headshot { background: #ede9fe; color: #6d28d9; }
-    .type-carousel { background: #fff3cd; color: #92600a; }
+    .dress-pill.d8 { background: #fff3cd; color: #92600a; }
 
-    .trigger-pill {
-      background: #f1f3f8;
-      padding: 2px 7px;
-      border-radius: 4px;
-      font-size: 11px;
-      color: #374151;
+    .trigger-code {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-family: 'SF Mono', monospace; font-size: 11px; font-weight: 700;
+      background: #1a1d2e; color: #e2e8f0; letter-spacing: .5px;
     }
 
-    .guide-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      color: var(--automated);
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 500;
-      padding: 3px 10px;
+    .guide-btn {
+      display: inline-flex; align-items: center; gap: 4px;
+      color: var(--automated-color); text-decoration: none;
+      font-size: 11px; font-weight: 600;
+      padding: 3px 10px; border-radius: 5px;
       background: var(--automated-bg);
-      border-radius: 5px;
       transition: opacity .15s;
     }
-    .guide-link:hover { opacity: .8; }
-    .guide-link svg { flex-shrink: 0; }
+    .guide-btn:hover { opacity: .75; }
 
-    /* month divider */
-    .month-row td {
-      background: #f8f9fc;
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 6px 14px;
-      border-top: 2px solid var(--border);
+    .empty-state {
+      text-align: center; padding: 50px 20px;
+      color: var(--muted); font-size: 13px;
+      display: none;
     }
 
-    .empty-msg {
-      text-align: center;
-      padding: 40px;
-      color: var(--muted);
-      font-size: 13px;
+    /* dress group divider */
+    tr.dress-divider td {
+      background: #f8f9fc; padding: 6px 13px;
+      font-size: 10px; font-weight: 700; color: #9ca3af;
+      text-transform: uppercase; letter-spacing: 1px;
+      border-top: 2px solid #e5e7eb;
     }
   </style>
 </head>
 <body>
 
+<!-- PAGE HEADER -->
 <div class="page-header">
   <div>
-    <h1>CTA Tracker — Dr. Pallavi Content Calendar</h1>
-    <p>Agency dashboard · drpallaviskinethics.vercel.app · Internal use only</p>
+    <h1>CTA Tracker — Dr. Pallavi Script Calendar</h1>
+    <p>Internal agency dashboard · drpallaviskinethics.vercel.app</p>
   </div>
-  <div class="last-updated">Updated: May 2026</div>
+  <div class="header-tag">Scripts 01 – 38 · May 2026</div>
 </div>
 
+<!-- STATS STRIP -->
 <div class="stats-row">
-  <div class="stat-cell s-total">
-    <div class="num" id="stat-total">—</div>
-    <div class="lbl">Total Videos</div>
+  <div class="stat-cell s-auto">
+    <div class="n" id="st-auto">—</div>
+    <div class="l">✅ Automated</div>
   </div>
-  <div class="stat-cell s-automated">
-    <div class="num" id="stat-automated">—</div>
-    <div class="lbl">Automated CTAs</div>
+  <div class="stat-cell s-need">
+    <div class="n" id="st-need">—</div>
+    <div class="l">🔴 Needed</div>
   </div>
-  <div class="stat-cell s-needed">
-    <div class="num" id="stat-needed">—</div>
-    <div class="lbl">CTAs Needed</div>
+  <div class="stat-cell s-tbd">
+    <div class="n" id="st-tbd">—</div>
+    <div class="l">🟡 TBD</div>
   </div>
-  <div class="stat-cell s-created">
-    <div class="num" id="stat-not-needed">—</div>
-    <div class="lbl">Not Needed</div>
+  <div class="stat-cell s-none">
+    <div class="n" id="st-none">—</div>
+    <div class="l">⚪ Not Needed</div>
+  </div>
+  <div class="stat-cell">
+    <div class="n" id="st-total">—</div>
+    <div class="l">Total Scripts</div>
   </div>
 </div>
 
+<!-- CONTROLS -->
 <div class="controls">
-  <div class="filter-group">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn f-automated" data-filter="automated">✅ Automated</button>
-    <button class="filter-btn f-created" data-filter="created">🔵 Created</button>
-    <button class="filter-btn f-needed" data-filter="needed">🔴 Needed</button>
-    <button class="filter-btn" data-filter="not-needed">⚪ Not Needed</button>
+  <button class="filter-btn active" data-f="all">All</button>
+  <button class="filter-btn fa"   data-f="automated">✅ Automated</button>
+  <button class="filter-btn fn"   data-f="needed">🔴 Needed</button>
+  <button class="filter-btn ftbd" data-f="tbd">🟡 TBD</button>
+  <button class="filter-btn"     data-f="not-needed">⚪ Not Needed</button>
+
+  <div class="search-wrap">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="search" type="text" placeholder="Search script title…">
   </div>
-  <input class="search-box" type="text" id="search" placeholder="Search video title…">
 </div>
 
+<!-- TABLE -->
 <div class="table-wrap">
-  <table id="cta-table">
+  <table>
     <thead>
       <tr>
-        <th class="col-sr">Sr</th>
-        <th class="col-month">Month</th>
-        <th class="col-type">Format</th>
-        <th class="col-title">Video Title</th>
-        <th class="col-trigger">Trigger</th>
-        <th class="col-cta">CTA Status</th>
-        <th class="col-date">Insta Date</th>
-        <th class="col-link">Guide Link</th>
+        <th class="c-num">#</th>
+        <th class="c-dress">Dress</th>
+        <th class="c-title">Script Title</th>
+        <th class="c-trig">DM Trigger</th>
+        <th class="c-cta">CTA Status</th>
+        <th class="c-date">Insta Date</th>
+        <th class="c-link">Guide Link</th>
       </tr>
     </thead>
-    <tbody id="table-body">
-    </tbody>
+    <tbody id="tbody"></tbody>
   </table>
-  <div class="empty-msg" id="empty-msg" style="display:none;">No results found.</div>
+  <div class="empty-state" id="empty">No matching scripts found.</div>
 </div>
 
 <script>
-const ROWS = [
-  // ── APRIL ──────────────────────────────────────────────────────────────
-  { sr:'—',  month:'April', type:'Headshot', title:'Script M — Your Oily Skin Is Thirsty (Moisturisation)',                  trigger:'M',       cta:'Automated', link:'guide-m.html',        date:'Apr' },
-  { sr:'3',  month:'April', type:'Headshot', title:'Script 03 — Real Hair Fall: What\'s Normal, What\'s Not',                trigger:'REAL',    cta:'Automated', link:'guide-real.html',     date:'Apr' },
-  { sr:'4',  month:'April', type:'Headshot', title:'Script 04 — Indian Hair Care: The Right Way',                           trigger:'INDIAN',  cta:'Automated', link:'guide-indian.html',   date:'Apr' },
-  { sr:'5',  month:'April', type:'Headshot', title:'Script 05 — Besan Ubtan: Why It\'s Hurting Your Skin',                  trigger:'UBTAN',   cta:'Automated', link:'guide-ubtan.html',    date:'Apr' },
-  { sr:'—',  month:'April', type:'Headshot', title:'Summer Skin Survival Guide',                                            trigger:'SUMMER',  cta:'Automated', link:'guide-summer.html',   date:'Apr' },
-  { sr:'—',  month:'April', type:'Headshot', title:'Teen Skin — What Actually Works',                                       trigger:'TEEN',    cta:'Automated', link:'guide-teen.html',     date:'Apr' },
-  { sr:'—',  month:'April', type:'Headshot', title:'Daily Skincare Routine Guide',                                          trigger:'SKINCARE',cta:'Automated', link:'guide-skincare.html', date:'Apr' },
+// ── DATA ──────────────────────────────────────────────────────────────────
+const SCRIPTS = [
+  // DRESS 1 ────────────────────────────────────────────────────────────────
+  { n:1,  dress:1, title:'Mumbai Ke Paani Ka Baalon Pe Asar',              trigger:'WATER',   cta:'automated', link:'guide-water.html',  date:'13 May' },
+  { n:2,  dress:1, title:'Chemical Peel, Does It Hurt? [PROCEDURE]',       trigger:'PEEL',    cta:'automated', link:'guide-peel.html',   date:'28 May' },
+  { n:3,  dress:1, title:'3 Myths Jo Hair Fall Band Nahi Hone De Rahe',    trigger:'REAL',    cta:'automated', link:'guide-real.html',   date:'' },
+  { n:4,  dress:1, title:'Indian Hair Is Best — But We Destroy It',        trigger:'INDIAN',  cta:'automated', link:'guide-indian.html', date:'' },
+  { n:5,  dress:1, title:'Besan Ubtan — Derma Ka Honest Opinion',          trigger:'UBTAN',   cta:'automated', link:'guide-ubtan.html',  date:'' },
 
-  // ── MAY ────────────────────────────────────────────────────────────────
-  { sr:'57', month:'May', type:'Headshot', title:'Script 07 — Coconut Oil on Face, Acne-Prone Skin Ka Kya?',               trigger:'—', cta:'Not Needed', link:'', date:'2 May' },
-  { sr:'58', month:'May', type:'Carousel', title:'Carousel 02: NUTRIENT DEFICIENCIES',                                     trigger:'—', cta:'Not Needed', link:'', date:'3 May' },
-  { sr:'59', month:'May', type:'Headshot', title:'Script 34 — Rating Dairy Products for Acne',                             trigger:'—', cta:'Not Needed', link:'', date:'4 May' },
-  { sr:'60', month:'May', type:'Headshot', title:'Script 06 — Rice Water for Hair, Miracle or Myth?',                     trigger:'—', cta:'Not Needed', link:'', date:'5 May' },
-  { sr:'61', month:'May', type:'Carousel', title:'Carousel 01: TOP 5 PEPTIDES FOR HEALTH',                                trigger:'—', cta:'Not Needed', link:'', date:'6 May' },
-  { sr:'62', month:'May', type:'Headshot', title:'Script 35 — Rating Summer Drinks (Dress 8)',                             trigger:'—', cta:'Not Needed', link:'', date:'7 May' },
-  { sr:'63', month:'May', type:'Carousel', title:'Carousel 03: 7 NUTRIENTS FOR STRONG HAIR',                              trigger:'—', cta:'Not Needed', link:'', date:'8 May' },
-  { sr:'64', month:'May', type:'Headshot', title:'Script 01 — Mumbai Ke Paani Ka Baalon Pe Asar',                         trigger:'WATER', cta:'Automated', link:'guide-water.html', date:'9 May' },
-  { sr:'65', month:'May', type:'Headshot', title:'Script 36 — Rating Snacks for Hair & Skin Health (Dress 8)',            trigger:'—', cta:'Not Needed', link:'', date:'10 May' },
-  { sr:'—',  month:'May', type:'Carousel', title:'Carousel 011',                                                           trigger:'—', cta:'Not Needed', link:'', date:'11 May' },
-  { sr:'66', month:'May', type:'Headshot', title:'Script 08 — Stress Aur Baal, Cortisol Connection (Dress 2)',            trigger:'—', cta:'Not Needed', link:'', date:'12 May' },
-  { sr:'67', month:'May', type:'Headshot', title:'Script 37 — Rating Breakfast Items: The Skin-Gut Link (Dress 8)',       trigger:'—', cta:'Not Needed', link:'', date:'13 May' },
-  { sr:'68', month:'May', type:'Carousel', title:'Carousel 04',                                                            trigger:'—', cta:'Not Needed', link:'', date:'14 May' },
-  { sr:'69', month:'May', type:'Headshot', title:'Script 10 — Laser Hair Removal (Dress 3)',                              trigger:'—', cta:'Needed', link:'', date:'15 May' },
-  { sr:'70', month:'May', type:'Headshot', title:'Script 38 — Rating Hair Oils: The Truth About Champi (Dress 8)',        trigger:'—', cta:'Not Needed', link:'', date:'16 May' },
-  { sr:'71', month:'May', type:'Carousel', title:'Carousel 05',                                                            trigger:'—', cta:'Not Needed', link:'', date:'17 May' },
-  { sr:'72', month:'May', type:'Headshot', title:'Script 16 (Dress 4)',                                                    trigger:'—', cta:'Needed', link:'', date:'18 May' },
-  { sr:'73', month:'May', type:'Headshot', title:'Script 21 (Dress 5)',                                                    trigger:'—', cta:'Needed', link:'', date:'19 May' },
-  { sr:'74', month:'May', type:'Carousel', title:'Carousel 06',                                                            trigger:'—', cta:'Not Needed', link:'', date:'20 May' },
-  { sr:'75', month:'May', type:'Headshot', title:'Script 24 (Dress 6)',                                                    trigger:'—', cta:'Needed', link:'', date:'21 May' },
-  { sr:'76', month:'May', type:'Headshot', title:'Script 28 (Dress 7)',                                                    trigger:'—', cta:'Needed', link:'', date:'22 May' },
-  { sr:'77', month:'May', type:'Carousel', title:'Carousel 07',                                                            trigger:'—', cta:'Not Needed', link:'', date:'23 May' },
-  { sr:'78', month:'May', type:'Headshot', title:'Script 02 — Chemical Peel, Does It Hurt? [PROCEDURE] (Dress 1)',        trigger:'PEEL', cta:'Automated', link:'guide-peel.html', date:'24 May' },
-  { sr:'79', month:'May', type:'Headshot', title:'Script 09 — PRP for Hair, Kya Hota Hai Actually (Dress 2)',             trigger:'—', cta:'Needed', link:'', date:'25 May' },
-  { sr:'80', month:'May', type:'Carousel', title:'Carousel 08',                                                            trigger:'—', cta:'Not Needed', link:'', date:'26 May' },
-  { sr:'81', month:'May', type:'Headshot', title:'Script 11 — Hydration vs Moisturisation, Same Nahi Hain (Dress 3)',     trigger:'M', cta:'Automated', link:'guide-m.html', date:'27 May' },
-  { sr:'82', month:'May', type:'Headshot', title:'Script 17 (Dress 4)',                                                    trigger:'—', cta:'Needed', link:'', date:'28 May' },
-  { sr:'83', month:'May', type:'Carousel', title:'Carousel 09',                                                            trigger:'—', cta:'Not Needed', link:'', date:'29 May' },
-  { sr:'84', month:'May', type:'Headshot', title:'Script 20 (Dress 5)',                                                    trigger:'—', cta:'Needed', link:'', date:'30 May' },
-  { sr:'85', month:'May', type:'Headshot', title:'Script 14 — Maine altBeauty Kyun Banaya [altBEAUTY] (Dress 3)',         trigger:'—', cta:'Needed', link:'', date:'31 May' },
+  // DRESS 2 ────────────────────────────────────────────────────────────────
+  { n:6,  dress:2, title:'Rice Water for Hair, Miracle or Myth?',          trigger:'',        cta:'not-needed',link:'',                  date:'9 May' },
+  { n:7,  dress:2, title:'Coconut Oil on Face, Acne-Prone Skin Ka Kya?',   trigger:'',        cta:'not-needed',link:'',                  date:'2 May' },
+  { n:8,  dress:2, title:'Stress Aur Baal, Cortisol Connection',           trigger:'',        cta:'not-needed',link:'',                  date:'16 May' },
+  { n:9,  dress:2, title:'PRP for Hair, Kya Hota Hai Actually',            trigger:'PRP',     cta:'needed',    link:'',                  date:'29 May' },
+
+  // DRESS 3 ────────────────────────────────────────────────────────────────
+  { n:10, dress:3, title:'Laser Hair Removal',                              trigger:'LASER',   cta:'needed',    link:'',                  date:'19 May' },
+  { n:11, dress:3, title:'Hydration vs Moisturisation, Same Nahi Hain…',   trigger:'ROUTINE', cta:'automated', link:'guide-m.html',      date:'31 May' },
+  { n:12, dress:3, title:'Aloe Vera Garden Se — Safe Hai Ya Nahi?',        trigger:'',        cta:'tbd',       link:'',                  date:'' },
+  { n:13, dress:3, title:'Niacinamide Kya Karta Hai — Zero Jargon',        trigger:'',        cta:'not-needed',link:'',                  date:'' },
+  { n:14, dress:3, title:'Maine altBeauty Kyun Banaya [altBEAUTY]',        trigger:'',        cta:'needed',    link:'',                  date:'' },
+  { n:15, dress:3, title:'Bachchon Ki Skin Care',                          trigger:'',        cta:'tbd',       link:'',                  date:'' },
+
+  // DRESS 4 ────────────────────────────────────────────────────────────────
+  { n:16, dress:4, title:'Mumbai–Pune Mein Serum Kaam Kyun Nahi Karta (Hard Water)',trigger:'',cta:'needed',  link:'',                  date:'22 May' },
+  { n:17, dress:4, title:'Grey Baal — Hollow Glass Tube Ka Raaz',          trigger:'',        cta:'needed',    link:'',                  date:'' },
+  { n:18, dress:4, title:'Biotin Gummies Se Hair Fall Nahi Rukta',         trigger:'',        cta:'tbd',       link:'',                  date:'' },
+  { n:19, dress:4, title:'Cotton Pillowcase — Invisible Breakage',         trigger:'',        cta:'tbd',       link:'',                  date:'' },
+
+  // DRESS 5 ────────────────────────────────────────────────────────────────
+  { n:20, dress:5, title:'Dhoop Aapke Baalon Ko Bleach Kar Rahi Hai',      trigger:'',        cta:'needed',    link:'',                  date:'' },
+  { n:21, dress:5, title:'Scalp Ki Micro-Inflammation — Silent Hair Damage',trigger:'',       cta:'needed',    link:'',                  date:'23 May' },
+  { n:22, dress:5, title:'Weight Loss Ke Baad Hair Fall: Body Ka Power Saver Mode',trigger:'',cta:'tbd',      link:'',                  date:'' },
+  { n:23, dress:5, title:'Rice Water Se Baal Toot Rahe Hain',              trigger:'',        cta:'tbd',       link:'',                  date:'' },
+
+  // DRESS 6 ────────────────────────────────────────────────────────────────
+  { n:24, dress:6, title:'Swiss Cheese Jaisi Skin — Moisturiser Leak Ho Raha Hai',trigger:'', cta:'needed',   link:'',                  date:'25 May' },
+  { n:25, dress:6, title:'Aapka Glow Dead Cells Ke Neeche Daba Hai',       trigger:'',        cta:'tbd',       link:'',                  date:'' },
+  { n:26, dress:6, title:'Screen Se Indoor Pigmentation — Blue Light Ka Sach',trigger:'SCREEN',cta:'tbd',     link:'',                  date:'' },
+  { n:27, dress:6, title:'Oily Nahi, Dehydrated Skin Hai Aapki (Sponge Theory)',trigger:'SPONGE',cta:'tbd',   link:'',                  date:'' },
+
+  // DRESS 7 ────────────────────────────────────────────────────────────────
+  { n:28, dress:7, title:'Skin Mein Silent Fire — Inflammaging',           trigger:'FIRE',    cta:'needed',    link:'',                  date:'26 May' },
+  { n:29, dress:7, title:'Skin Ka pH Security Guard — Soap Ne Nikaal Diya',trigger:'GUARD',   cta:'tbd',       link:'',                  date:'' },
+  { n:30, dress:7, title:'Cheeni Aapke Collagen Ko Tod Rahi Hai (Glycation)',trigger:'SUGAR', cta:'tbd',       link:'',                  date:'' },
+  { n:31, dress:7, title:'Psoriasis Aur Eczema — Sirf Skin Ki Nahi, Gut Ki Bimari Hai',trigger:'',cta:'tbd',  link:'',                  date:'' },
+  { n:32, dress:7, title:'Chin Par Acne? Facewash Kaam Nahi Karega',       trigger:'',        cta:'tbd',       link:'',                  date:'' },
+  { n:33, dress:7, title:'Hemoglobin Kam? Glow Serum Koi Kaam Ka Nahi',    trigger:'',        cta:'tbd',       link:'',                  date:'' },
+
+  // DRESS 8 (Rating Series) ─────────────────────────────────────────────────
+  { n:34, dress:8, title:'Rating Dairy Products for Acne',                 trigger:'',        cta:'not-needed',link:'',                  date:'4 May' },
+  { n:35, dress:8, title:'Rating Summer Drinks',                           trigger:'',        cta:'not-needed',link:'',                  date:'7 May' },
+  { n:36, dress:8, title:'Rating Snacks for Hair & Skin Health',           trigger:'',        cta:'not-needed',link:'',                  date:'10 May' },
+  { n:37, dress:8, title:'Rating Breakfast Items — The Skin-Gut Link',     trigger:'',        cta:'not-needed',link:'',                  date:'' },
+  { n:38, dress:8, title:'Rating Hair Oils — The Truth About Champi',      trigger:'',        cta:'not-needed',link:'',                  date:'' },
 ];
 
-function ctaBadge(cta) {
-  const map = {
-    'Automated': 'badge-automated',
-    'Created':   'badge-created',
-    'Needed':    'badge-needed',
-    'Not Needed':'badge-not-needed',
-  };
-  return `<span class="badge ${map[cta] || 'badge-not-needed'}">${cta}</span>`;
+// ── RENDER ────────────────────────────────────────────────────────────────
+const BADGE = {
+  'automated':  ['b-auto','✅ Automated'],
+  'needed':     ['b-need','🔴 Needed'],
+  'not-needed': ['b-none','⚪ Not Needed'],
+  'tbd':        ['b-tbd', '🟡 TBD'],
+};
+
+function dressLabel(d) {
+  const cls = d === 8 ? 'dress-pill d8' : 'dress-pill';
+  return `<span class="${cls}">Dress ${d}</span>`;
 }
 
-function guideLink(link) {
-  if (!link) return '<span style="color:#ccc;font-size:12px;">—</span>';
-  return `<a class="guide-link" href="${link}" target="_blank">
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-    View Guide
-  </a>`;
+function triggerCell(t) {
+  return t ? `<span class="trigger-code">${t}</span>` : `<span style="color:#d1d5db;">—</span>`;
 }
 
-function typePill(type) {
-  const cls = type === 'Headshot' ? 'type-headshot' : 'type-carousel';
-  return `<span class="type-pill ${cls}">${type}</span>`;
+function linkCell(l) {
+  if (!l) return `<span style="color:#d1d5db;font-size:12px;">—</span>`;
+  return `<a class="guide-btn" href="${l}" target="_blank">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+      <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+    </svg>View Guide</a>`;
 }
 
-function render(rows) {
-  const tbody = document.getElementById('table-body');
-  let lastMonth = null;
+function buildRows() {
+  const tbody = document.getElementById('tbody');
+  let lastDress = null;
   let html = '';
 
-  rows.forEach(r => {
-    if (r.month !== lastMonth) {
-      html += `<tr class="month-row"><td colspan="8">📅 ${r.month}</td></tr>`;
-      lastMonth = r.month;
+  SCRIPTS.forEach(s => {
+    if (s.dress !== lastDress) {
+      const label = s.dress === 8 ? 'Dress 8 — Rating Series' : `Dress ${s.dress}`;
+      html += `<tr class="dress-divider"><td colspan="7">${label}</td></tr>`;
+      lastDress = s.dress;
     }
-    const ctaKey = r.cta.toLowerCase().replace(' ', '-');
-    const triggerHtml = r.trigger !== '—'
-      ? `<span class="trigger-pill">${r.trigger}</span>`
-      : '<span style="color:#ccc;">—</span>';
-
-    html += `<tr class="row-${ctaKey}" data-cta="${ctaKey}" data-title="${r.title.toLowerCase()}">
-      <td class="col-sr">${r.sr}</td>
-      <td class="col-month" style="color:var(--muted);font-size:12px;">${r.month}</td>
-      <td class="col-type">${typePill(r.type)}</td>
-      <td class="col-title">${r.title}</td>
-      <td class="col-trigger">${triggerHtml}</td>
-      <td class="col-cta">${ctaBadge(r.cta)}</td>
-      <td class="col-date">${r.date}</td>
-      <td class="col-link">${guideLink(r.link)}</td>
-    </tr>`;
+    const [badgeCls, badgeTxt] = BADGE[s.cta];
+    const num = String(s.n).padStart(2,'0');
+    html += `
+      <tr class="r-${s.cta}" data-cta="${s.cta}" data-title="${s.title.toLowerCase()} script ${num}">
+        <td class="c-num">${num}</td>
+        <td class="c-dress">${dressLabel(s.dress)}</td>
+        <td class="c-title">${s.title}</td>
+        <td class="c-trig">${triggerCell(s.trigger)}</td>
+        <td class="c-cta"><span class="badge ${badgeCls}">${badgeTxt}</span></td>
+        <td class="c-date">${s.date || '<span style="color:#d1d5db;">—</span>'}</td>
+        <td class="c-link">${linkCell(s.link)}</td>
+      </tr>`;
   });
-
   tbody.innerHTML = html;
-  updateStats();
 }
 
 function updateStats() {
-  const allRows = document.querySelectorAll('#table-body tr:not(.month-row):not([data-hidden="true"])');
-  const visible = Array.from(allRows);
-  const counts = { automated: 0, created: 0, needed: 0, 'not-needed': 0 };
-  visible.forEach(r => {
-    const cta = r.dataset.cta;
-    if (cta in counts) counts[cta]++;
-  });
-  const total = visible.length;
-  document.getElementById('stat-total').textContent = total;
-  document.getElementById('stat-automated').textContent = counts.automated;
-  document.getElementById('stat-needed').textContent = counts.needed;
-  document.getElementById('stat-not-needed').textContent = counts['not-needed'];
+  const visible = [...document.querySelectorAll('#tbody tr:not(.dress-divider):not([data-hidden="true"])')];
+  const c = {automated:0, needed:0, tbd:0, 'not-needed':0};
+  visible.forEach(r => { const k = r.dataset.cta; if(k in c) c[k]++; });
+  document.getElementById('st-auto').textContent  = c.automated;
+  document.getElementById('st-need').textContent  = c.needed;
+  document.getElementById('st-tbd').textContent   = c.tbd;
+  document.getElementById('st-none').textContent  = c['not-needed'];
+  document.getElementById('st-total').textContent = visible.length;
 }
 
-// Initial render
-render(ROWS);
-
-// Filter
-let activeFilter = 'all';
-let searchQuery = '';
-
 function applyFilters() {
-  const rows = document.querySelectorAll('#table-body tr:not(.month-row)');
-  rows.forEach(r => {
-    const cta = r.dataset.cta;
-    const title = r.dataset.title || '';
-    const matchFilter = activeFilter === 'all' || cta === activeFilter;
-    const matchSearch = !searchQuery || title.includes(searchQuery);
-    r.setAttribute('data-hidden', (!matchFilter || !matchSearch) ? 'true' : 'false');
+  const filter = document.querySelector('.filter-btn.active').dataset.f;
+  const q = document.getElementById('search').value.toLowerCase().trim();
+
+  document.querySelectorAll('#tbody tr:not(.dress-divider)').forEach(r => {
+    const matchF = filter === 'all' || r.dataset.cta === filter;
+    const matchQ = !q || (r.dataset.title||'').includes(q);
+    r.setAttribute('data-hidden', (!matchF || !matchQ) ? 'true' : 'false');
   });
 
-  // hide month dividers that have no visible rows after them
-  const monthRows = document.querySelectorAll('#table-body tr.month-row');
-  monthRows.forEach(mr => {
-    let next = mr.nextElementSibling;
-    let hasVisible = false;
-    while (next && !next.classList.contains('month-row')) {
-      if (next.getAttribute('data-hidden') !== 'true') { hasVisible = true; break; }
-      next = next.nextElementSibling;
+  // hide dress dividers with no visible rows
+  document.querySelectorAll('#tbody tr.dress-divider').forEach(div => {
+    let sib = div.nextElementSibling;
+    let vis = false;
+    while (sib && !sib.classList.contains('dress-divider')) {
+      if (sib.getAttribute('data-hidden') !== 'true') { vis = true; break; }
+      sib = sib.nextElementSibling;
     }
-    mr.style.display = hasVisible ? '' : 'none';
+    div.style.display = vis ? '' : 'none';
   });
 
-  const anyVisible = document.querySelectorAll('#table-body tr:not(.month-row)[data-hidden="false"]').length > 0
-    || document.querySelectorAll('#table-body tr:not(.month-row):not([data-hidden])').length > 0;
-  document.getElementById('empty-msg').style.display = anyVisible ? 'none' : 'block';
-
+  const anyVis = !!document.querySelector('#tbody tr:not(.dress-divider)[data-hidden="false"]')
+               || !!document.querySelector('#tbody tr:not(.dress-divider):not([data-hidden])');
+  document.getElementById('empty').style.display = anyVis ? 'none' : 'block';
   updateStats();
 }
 
+// Init
+buildRows();
+updateStats();
+
+// Events
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    activeFilter = btn.dataset.filter;
     applyFilters();
   });
 });
-
-document.getElementById('search').addEventListener('input', e => {
-  searchQuery = e.target.value.toLowerCase().trim();
-  applyFilters();
-});
+document.getElementById('search').addEventListener('input', applyFilters);
 </script>
 </body>
 </html>
