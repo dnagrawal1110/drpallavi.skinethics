@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>altBeauty — 2-Step Skincare Routine by Dr. Pallavi Ahire-Shelke, Pune</title>
+  <meta name="description" content="Dr. Pallavi Ahire-Shelke explains why she created altBeauty: a 2-product skincare philosophy that replaces complicated 7-10 step routines. Free personalised 2-step routine guide." />
+  <meta name="theme-color" content="#1A1610" />
+  <link rel="canonical" href="https://drpallavi.skinethics.in/guide-altbeauty.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://drpallavi.skinethics.in/guide-altbeauty.html" />
+  <meta property="og:title" content="altBeauty — Why Dr. Pallavi Replaced 10 Products With 2" />
+  <meta property="og:description" content="The dermatologist-founded brand built on one idea: your skin needs maintenance, not treatment. Morning product + night product. That's it." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dark:      #1A1610;
+      --bg:        #FAFAF5;
+      --white:     #FFFFFF;
+      --accent:    #B89020;
+      --lt-accent: #D8C068;
+      --sage-bg:   #F5F2E0;
+      --border:    #E0D8B0;
+      --muted:     #988040;
+      --highlight: #FBF8E8;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Lora', serif;
+      background: var(--bg);
+      color: var(--dark);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .back-nav {
+      background: var(--bg);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .back-nav a {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 12px; color: var(--muted); text-decoration: none; font-style: italic;
+    }
+    .back-nav a:hover { color: var(--accent); }
+
+    /* HEADER */
+    .site-header {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 15%, rgba(184,144,32,0.55) 0%, transparent 55%),
+        radial-gradient(ellipse at 15% 85%, rgba(216,192,104,0.18) 0%, transparent 55%);
+      padding: 40px 20px 36px;
+      text-align: center;
+    }
+    .pill {
+      display: inline-block;
+      border: 1.5px solid var(--lt-accent);
+      background: var(--white);
+      color: var(--accent);
+      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 999px; margin-bottom: 18px;
+    }
+    .site-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 7vw, 36px);
+      color: var(--white); line-height: 1.25; margin-bottom: 10px;
+    }
+    .site-header h1 em { font-style: italic; color: var(--lt-accent); }
+    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 330px; margin: 0 auto 16px; opacity: 0.9; }
+    .site-header .byline  { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+    .site-header .philosophy { font-style: italic; color: var(--muted); font-size: 11px; }
+    .dots { margin: 16px 0 0; color: var(--lt-accent); letter-spacing: 8px; font-size: 10px; }
+
+    .wrapper { max-width: 480px; margin: 0 auto; padding: 0 16px; }
+    section { padding: 28px 0; }
+
+    .section-label {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 18px;
+    }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    /* CARDS */
+    .card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 16px; padding: 22px 20px; margin-bottom: 16px;
+    }
+    .card-accent { border-left: 4px solid var(--accent); }
+    .card-warn   { background: var(--highlight); border-left: 4px solid var(--dark); }
+    .card-sage   { background: var(--sage-bg); border-left: 4px solid var(--accent); }
+    .card h2 { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--dark); margin-bottom: 12px; }
+    .card p  { font-size: 14px; margin-bottom: 10px; }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* QUOTE BANNER */
+    .quote-banner {
+      background: var(--sage-bg); border-left: 4px solid var(--accent);
+      border-radius: 12px; padding: 20px; margin-bottom: 16px; text-align: center;
+    }
+    .quote-banner blockquote {
+      font-family: 'Playfair Display', serif; font-style: italic;
+      font-size: 17px; color: var(--dark); line-height: 1.5; margin-bottom: 8px;
+    }
+    .quote-banner cite { font-size: 12px; color: var(--muted); }
+
+    /* DARK BANNER */
+    .dark-banner {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 10%, rgba(184,144,32,0.55) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 90%, rgba(216,192,104,0.12) 0%, transparent 55%);
+      border-radius: 18px; padding: 28px 22px; margin-bottom: 16px;
+    }
+    .dark-banner blockquote {
+      font-family: 'Playfair Display', serif; font-size: 19px;
+      color: var(--white); line-height: 1.45; margin-bottom: 12px;
+    }
+    .dark-banner p { font-size: 13px; color: var(--lt-accent); }
+
+    /* PULL QUOTE — large centred */
+    .pull-quote {
+      background: var(--dark);
+      background-image: radial-gradient(ellipse at 80% 20%, rgba(184,144,32,0.5) 0%, transparent 55%);
+      border-radius: 18px; padding: 32px 24px; margin-bottom: 16px; text-align: center;
+    }
+    .pull-quote blockquote {
+      font-family: 'Playfair Display', serif; font-style: italic;
+      font-size: clamp(18px, 5vw, 24px);
+      color: var(--white); line-height: 1.45; margin-bottom: 14px;
+    }
+    .pull-quote blockquote em { color: var(--lt-accent); font-style: normal; }
+    .pull-quote cite { font-size: 12px; color: var(--lt-accent); }
+
+    /* FAILURE CARDS GRID */
+    .fail-grid { display: flex; flex-direction: column; gap: 12px; margin-bottom: 4px; }
+    .fail-card {
+      background: var(--highlight); border-left: 4px solid var(--dark);
+      border-radius: 12px; padding: 14px 16px;
+      font-size: 13px; color: var(--dark); line-height: 1.55;
+    }
+
+    /* MORNING / NIGHT CARDS */
+    .time-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 4px; }
+    @media (max-width: 400px) { .time-grid { grid-template-columns: 1fr; } }
+    .time-card {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 14px; overflow: hidden;
+    }
+    .time-card-head {
+      padding: 12px 14px; font-family: 'Playfair Display', serif; font-size: 14px;
+    }
+    .morning-head { background: var(--highlight); border-bottom: 2px solid var(--accent); color: var(--accent); }
+    .night-head   { background: var(--sage-bg);   border-bottom: 2px solid var(--dark);   color: var(--dark);   }
+    .time-card-body { padding: 12px 14px; font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+    /* SKIN TYPE CARDS 2×2 */
+    .skin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+    @media (max-width: 400px) { .skin-grid { grid-template-columns: 1fr; } }
+    .skin-card {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 16px 14px;
+      cursor: default; transition: border-color 0.2s;
+    }
+    .skin-card:hover { border-color: var(--accent); }
+    .skin-card .sk-icon { font-size: 24px; margin-bottom: 8px; display: block; }
+    .skin-card h4 { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 5px; line-height: 1.3; }
+    .skin-card p  { font-size: 12px; color: var(--muted); line-height: 1.5; }
+    .skin-card-badge {
+      display: inline-block;
+      background: var(--highlight); border: 1.5px solid var(--lt-accent);
+      color: var(--accent);
+      font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 2px 8px; border-radius: 999px; margin-bottom: 8px;
+    }
+    .skin-cta-note {
+      background: var(--sage-bg); border-left: 4px solid var(--accent);
+      border-radius: 10px; padding: 14px 16px;
+      font-size: 13px; color: var(--dark); text-align: center;
+      line-height: 1.55;
+    }
+
+    /* BRAND CARD */
+    .brand-card {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 14px; overflow: hidden; margin-bottom: 16px;
+    }
+    .brand-card-header { background: var(--sage-bg); padding: 14px 18px; border-bottom: 1px solid var(--border); }
+    .brand-card-header .label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+    .brand-card-header h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); }
+    .brand-card-body { padding: 16px 18px; font-size: 13px; color: var(--muted); line-height: 1.65; }
+
+    /* PHILOSOPHY */
+    .philosophy-card {
+      background: var(--sage-bg); border-radius: 16px; padding: 28px 22px; text-align: center;
+    }
+    .philosophy-card .small-label {
+      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 12px;
+    }
+    .philosophy-card h2 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--dark); margin-bottom: 14px; }
+    .philosophy-card p  { font-size: 14px; color: var(--dark); margin-bottom: 14px; }
+    .philosophy-card em { font-style: italic; color: var(--accent); }
+
+    /* DM / BOOKING CTA CARD */
+    .dm-card {
+      background: var(--dark);
+      background-image: radial-gradient(ellipse at 85% 10%, rgba(184,144,32,0.5) 0%, transparent 55%);
+      border-radius: 16px; padding: 26px 22px; text-align: center; margin-bottom: 16px;
+    }
+    .dm-card h3 { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--white); margin-bottom: 10px; }
+    .dm-card p  { font-size: 13px; color: var(--lt-accent); margin-bottom: 8px; line-height: 1.65; }
+    .dm-card p:last-child { margin-bottom: 0; }
+    .dm-card a  { color: var(--lt-accent); }
+
+    /* CONTACT */
+    .contact-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; overflow: hidden; }
+    .contact-header {
+      background: var(--dark);
+      background-image: radial-gradient(ellipse at 85% 15%, rgba(184,144,32,0.55) 0%, transparent 55%);
+      padding: 22px 20px; text-align: center;
+    }
+    .contact-header h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); margin-bottom: 4px; }
+    .contact-header .creds  { font-size: 11px; color: var(--lt-accent); margin-bottom: 6px; }
+    .contact-header .tagline { font-size: 12px; color: var(--muted); font-style: italic; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 400px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-cell {
+      padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border);
+      text-decoration: none; color: inherit; transition: background 0.15s;
+    }
+    .contact-cell:nth-child(even)       { border-right: none; }
+    .contact-cell:nth-last-child(-n+2)  { border-bottom: none; }
+    .contact-cell:hover { background: var(--sage-bg); }
+    .cc-icon   { font-size: 18px; margin-bottom: 4px; }
+    .cc-label  { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
+    .cc-detail { font-size: 11px; color: var(--muted); }
+    .cc-action { font-size: 11px; color: var(--accent); font-style: italic; margin-top: 2px; }
+
+    .disclaimer { text-align: center; font-size: 11px; color: var(--muted); padding: 20px 16px; max-width: 440px; margin: 0 auto; }
+
+    footer {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 15%, rgba(184,144,32,0.35) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 85%, rgba(216,192,104,0.08) 0%, transparent 55%);
+      padding: 28px 20px 0;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 480px; margin: 0 auto; padding-bottom: 20px; }
+    @media (max-width: 400px) { .footer-grid { grid-template-columns: 1fr; } }
+    .footer-col h4 { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lt-accent); margin-bottom: 8px; }
+    .footer-col p  { font-size: 12px; color: var(--lt-accent); line-height: 1.6; opacity: 0.8; }
+    .footer-col p em { font-style: italic; opacity: 0.7; }
+    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(184,144,32,0.3); }
+    .footer-bottom { max-width: 480px; margin: 0 auto; display: flex; justify-content: space-between; padding: 12px 0 16px; flex-wrap: wrap; gap: 4px; }
+    .footer-bottom span { font-size: 10px; color: var(--muted); }
+
+    /* SHARE BUTTON */
+    .share-row { display: flex; justify-content: center; padding: 12px 16px 0; }
+    .share-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 9px 22px; border-radius: 999px;
+      background: transparent; border: 1.5px solid var(--border);
+      color: var(--accent); font-family: 'Lora', serif; font-size: 12px;
+      cursor: pointer; transition: all 0.2s; letter-spacing: 0.03em;
+    }
+    .share-btn:hover { border-color: var(--accent); opacity: 0.8; }
+
+    /* RELATED GUIDES */
+    .related-section { padding: 28px 0 0; }
+    .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+    .related-card {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 16px 14px; text-decoration: none;
+      color: inherit; display: block; transition: border-color 0.2s;
+    }
+    .related-card:hover { border-color: var(--accent); }
+    .related-card .rc-icon { font-size: 22px; margin-bottom: 8px; display: block; }
+    .related-card h4 { font-family: 'Playfair Display', serif; font-size: 13px; line-height: 1.3; color: var(--dark); margin-bottom: 4px; }
+    .related-card p { font-size: 11px; color: var(--muted); }
+    .related-card .rc-link { font-size: 11px; color: var(--accent); font-style: italic; margin-top: 6px; display: block; }
+
+    /* FLOATING BOOK CTA */
+    .float-cta {
+      position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+      z-index: 100; display: flex; gap: 8px; padding: 0 12px;
+      width: 100%; max-width: 480px;
+    }
+    .float-cta a {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      gap: 7px; padding: 13px 10px; border-radius: 14px;
+      font-family: 'Lora', serif; font-size: 13px; font-weight: 500;
+      text-decoration: none; letter-spacing: 0.02em;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .float-cta .cta-book { background: var(--dark); color: #fff; }
+    .float-cta .cta-wa   { background: #25D366; color: #fff; }
+
+    .footer-bottom { padding-bottom: 80px !important; }
+  </style>
+</head>
+<body>
+
+  <nav class="back-nav"><a href="index.html">← All Guides</a></nav>
+
+  <header class="site-header">
+    <div class="pill">altBEAUTY · FOUNDER'S GUIDE</div>
+    <h1>2 Products.<br><em>Complete Skin.</em></h1>
+    <p class="subline">Why a Gold Medalist Dermatologist built a brand around simplicity — and what it means for your skin.</p>
+    <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Baner, Pune</p>
+    <p class="philosophy">Inner &amp; Outer Beauty · Wholesome Beauty</p>
+    <div class="dots">· · ·</div>
+  </header>
+
+  <!-- SHARE -->
+  <div class="share-row">
+    <button class="share-btn" id="share-btn" style="color:#B89020;border-color:#B8902040;">
+      ↗ Share this guide
+    </button>
+  </div>
+
+  <!-- THE PROBLEM -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">THE PROBLEM I WAS SEEING EVERY DAY</div>
+
+      <div class="card card-accent">
+        <p style="font-style:italic;line-height:1.75;">Even as a dermatologist, I was prescribing 7–10 product routines to my patients. And then I watched what happened.</p>
+        <p style="font-style:italic;line-height:1.75;">They were confused. Spending too much. The routine was so complicated it simply wasn't being followed. No single formulation was complete on its own. And skin wasn't improving.</p>
+        <p style="font-style:italic;line-height:1.75;">I stopped. And asked myself a simple question: what if just 2 products could do everything?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY PULL QUOTE -->
+  <section>
+    <div class="wrapper">
+      <div class="pull-quote">
+        <blockquote>"Skin doesn't need treatment. It needs maintenance. <em>One product in the morning.</em> One product at night. That's a complete routine."</blockquote>
+        <cite>— Dr. Pallavi Ahire-Shelke, Founder, altBeauty</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY COMPLICATED ROUTINES FAIL -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">WHY COMPLICATED ROUTINES FAIL</div>
+      <div class="fail-grid">
+        <div class="fail-card">❌ Too many steps = lower compliance. You skip it when life gets busy.</div>
+        <div class="fail-card">❌ Multiple actives can conflict. More isn't always better — sometimes it's harmful.</div>
+        <div class="fail-card">❌ Spending more doesn't mean better results. It usually means more confusion.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT 2 PRODUCTS CAN DO -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">WHAT 2 PRODUCTS CAN DO</div>
+      <div class="time-grid">
+        <div class="time-card">
+          <div class="time-card-head morning-head">☀️ Morning Product</div>
+          <div class="time-card-body">
+            <strong style="color:var(--dark);">Protect + Hydrate.</strong> Shields against UV, pollution, and daily damage while keeping skin moisturised throughout the day.
+          </div>
+        </div>
+        <div class="time-card">
+          <div class="time-card-head night-head">🌙 Night Product</div>
+          <div class="time-card-body">
+            <strong style="color:var(--dark);">Repair + Restore.</strong> Works with your skin's natural overnight renewal process — targeting concerns while you sleep.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONALISED 2-STEP ROUTINE -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">GETTING YOUR PERSONALISED 2-STEP ROUTINE</div>
+
+      <div class="skin-grid">
+
+        <div class="skin-card">
+          <span class="skin-card-badge">Oily / Acne-Prone</span>
+          <span class="sk-icon">🫧</span>
+          <h4>Oily / Acne-Prone</h4>
+          <p>Lightweight, non-comedogenic formulas. Oil control without stripping.</p>
+        </div>
+
+        <div class="skin-card">
+          <span class="skin-card-badge">Dry / Sensitive</span>
+          <span class="sk-icon">🌿</span>
+          <h4>Dry / Sensitive</h4>
+          <p>Barrier-strengthening, deeply hydrating. Gentle actives only.</p>
+        </div>
+
+        <div class="skin-card">
+          <span class="skin-card-badge">Combination</span>
+          <span class="sk-icon">⚖️</span>
+          <h4>Combination</h4>
+          <p>Balancing approach — hydration where needed, control where needed.</p>
+        </div>
+
+        <div class="skin-card">
+          <span class="skin-card-badge">Normal / Mature</span>
+          <span class="sk-icon">✨</span>
+          <h4>Normal / Mature</h4>
+          <p>Maintenance + anti-ageing actives. Collagen support over time.</p>
+        </div>
+
+      </div>
+
+      <div class="skin-cta-note">
+        Comment your skin type on the reel and Dr. Pallavi will DM you the exact 2-step routine suited for you.
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT altBEAUTY -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">ABOUT altBEAUTY</div>
+      <div class="brand-card">
+        <div class="brand-card-header">
+          <div class="label">altBeauty · Dermatologist-Founded Skincare</div>
+          <h3>Built on clinical insight. Designed for Indian skin.</h3>
+        </div>
+        <div class="brand-card-body">
+          altBeauty is Dr. Pallavi's dermatologist-founded skincare line. Built on clinical insight, designed for Indian skin, and created with one goal: make effective skincare simple enough to actually follow.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING / DM CTA -->
+  <section>
+    <div class="wrapper">
+      <div class="dm-card">
+        <h3>Want your personalised 2-step routine?</h3>
+        <p>Comment your skin type on the reel or DM <a href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">@drpallaviahireshelke</a> on Instagram and Dr. Pallavi will personally recommend the exact 2-step routine suited for your skin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section>
+    <div class="wrapper">
+      <div class="philosophy-card">
+        <div class="small-label">THE PHILOSOPHY BEHIND altBEAUTY</div>
+        <h2>Inner &amp; Outer Beauty.</h2>
+        <p>Wholesome beauty means trusting science when it is on your side. The most effective routine is the one you actually follow — and that's why altBeauty was built around 2 products, not 10.</p>
+        <em>Because real glow starts from within.</em>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">BOOK A CONSULTATION</div>
+      <div class="contact-card">
+        <div class="contact-header">
+          <h2>Dr. Pallavi Ahire-Shelke</h2>
+          <p class="creds">MBBS, MD, DNB, DDV · Gold Medalist Dermatologist</p>
+          <p class="tagline">Personalised skincare consultation — Baner, Pune</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cell"><div class="cc-icon">📍</div><div class="cc-label">Clinic</div><div class="cc-detail">Baner, Pune</div></div>
+          <a class="contact-cell" href="tel:+919028291234"><div class="cc-icon">📞</div><div class="cc-label">Phone</div><div class="cc-detail">+91 90282 91234</div><div class="cc-action">Book a consultation</div></a>
+          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank"><div class="cc-icon">📸</div><div class="cc-label">Instagram</div><div class="cc-detail">@drpallaviahireshelke</div><div class="cc-action">Daily skin education</div></a>
+          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank"><div class="cc-icon">💬</div><div class="cc-label">WhatsApp</div><div class="cc-detail">Quick queries welcome</div><div class="cc-action">Message us</div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED GUIDES -->
+  <section class="related-section">
+    <div class="wrapper">
+      <div class="section-label" style="color:#B89020;">MORE GUIDES</div>
+      <div class="related-grid">
+        <a class="related-card" href="guide-m.html">
+          <span class="rc-icon">💧</span>
+          <h4>Hydration vs Moisturisation</h4>
+          <p>Comment ROUTINE to receive this guide</p>
+          <span class="rc-link">Read guide →</span>
+        </a>
+        <a class="related-card" href="guide-skincare.html">
+          <span class="rc-icon">🧴</span>
+          <h4>Daily Skincare Routine Guide</h4>
+          <p>Comment SKINCARE to receive this guide</p>
+          <span class="rc-link">Read guide →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    This guide is for educational purposes only. Products and routines mentioned are general recommendations. For personalised medical skincare advice, please consult Dr. Pallavi Ahire-Shelke directly.
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Contact</h4><p>Baner, Pune<br>+91 90282 91234</p></div>
+      <div class="footer-col"><h4>Follow Us</h4><p>@drpallaviahireshelke<br>Instagram<br><em>Wholesome Beauty · Inner &amp; Outer</em></p></div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <span>Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV</span>
+      <span>Baner, Pune</span>
+    </div>
+  </footer>
+
+  <!-- FLOATING BOOK CTA -->
+  <div class="float-cta">
+    <a class="cta-book" href="https://wa.me/919999999999" target="_blank">📲 Book Consultation</a>
+    <a class="cta-wa" href="https://wa.me/919999999999" target="_blank">💬 WhatsApp</a>
+  </div>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('share-btn');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        if (navigator.share) {
+          navigator.share({ title: 'altBeauty — Why Dr. Pallavi Replaced 10 Products With 2', url: window.location.href });
+        } else {
+          navigator.clipboard.writeText(window.location.href).then(function() {
+            btn.textContent = '✓ Link copied!';
+            setTimeout(function() { btn.textContent = '↗ Share this guide'; }, 2200);
+          }).catch(function() {
+            btn.textContent = 'Copy: ' + window.location.href;
+          });
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
