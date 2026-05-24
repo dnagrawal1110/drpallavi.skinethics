@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blue Light & Skin Damage — Indoor Pigmentation Guide · Dr. Pallavi Ahire-Shelke</title>
-  <meta name="description" content="Free guide by Dr. Pallavi Ahire-Shelke: how HEV blue light from screens causes indoor pigmentation, digital soot, and why mineral sunscreen is the only solution." />
+  <title>Blue Light Skin Damage Guide — Indoor Pigmentation · Dr. Pallavi Ahire-Shelke, Pune</title>
+  <meta name="description" content="Free guide by Dr. Pallavi: How your phone screen causes indoor pigmentation — blue light / HEV light science, and the only SPF type that actually blocks it. Gold Medalist Dermatologist, Baner, Pune." />
   <meta name="theme-color" content="#080A18" />
   <link rel="canonical" href="https://drpallavi.skinethics.in/guide-screen.html" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://drpallavi.skinethics.in/guide-screen.html" />
-  <meta property="og:title" content="Screen & Blue Light Skin Damage — Free Guide by Dr. Pallavi" />
-  <meta property="og:description" content="Your phone and laptop screen are silently causing pigmentation and accelerated ageing. Free guide by Gold Medalist Dermatologist, Baner, Pune." />
+  <meta property="og:title" content="Blue Light — Indoor Pigmentation Cause. Free Guide by Dr. Pallavi" />
+  <meta property="og:description" content="Phone ki blue light ghar ke andar bhi aapke skin ko tan kar rahi hai. Yahan hai complete science aur mineral SPF solution." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -19,15 +19,15 @@
 
     :root {
       --dark:      #080A18;
-      --bg:        #FAF8F6;
+      --bg:        #F4F5FC;
       --white:     #FFFFFF;
       --accent:    #2840A0;
       --lt-accent: #8090D8;
       --sage-bg:   #E8EAF8;
-      --warn-bg:   #F0F2FA;
+      --warn-bg:   #EEF0F8;
       --border:    #C4CAE8;
-      --muted:     #7A7080;
-      --highlight: #F8F4F0;
+      --muted:     #586098;
+      --highlight: #DCE0F4;
     }
 
     html { scroll-behavior: smooth; }
@@ -39,11 +39,7 @@
       line-height: 1.75;
     }
 
-    .back-nav {
-      background: var(--bg);
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--border);
-    }
+    .back-nav { background: var(--bg); padding: 12px 16px; border-bottom: 1px solid var(--border); }
     .back-nav a {
       display: inline-flex; align-items: center; gap: 6px;
       font-size: 12px; color: var(--muted); text-decoration: none; font-style: italic;
@@ -53,16 +49,13 @@
     .site-header {
       background: var(--dark);
       background-image:
-        radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.55) 0%, transparent 55%),
-        radial-gradient(ellipse at 15% 85%, rgba(200,160,100,0.18) 0%, transparent 55%);
-      padding: 40px 20px 36px;
-      text-align: center;
+        radial-gradient(ellipse at 85% 15%, rgba(40,64,160,0.60) 0%, transparent 55%),
+        radial-gradient(ellipse at 15% 85%, rgba(128,144,216,0.18) 0%, transparent 55%);
+      padding: 40px 20px 36px; text-align: center;
     }
     .pill {
-      display: inline-block;
-      border: 1.5px solid var(--lt-accent);
-      background: var(--white);
-      color: var(--accent);
+      display: inline-block; border: 1.5px solid var(--lt-accent);
+      background: var(--white); color: var(--accent);
       font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
       padding: 5px 14px; border-radius: 999px; margin-bottom: 18px;
     }
@@ -72,13 +65,13 @@
       color: var(--white); line-height: 1.25; margin-bottom: 10px;
     }
     .site-header h1 em { font-style: italic; color: var(--lt-accent); }
-    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 330px; margin: 0 auto 16px; opacity: 0.9; }
-    .site-header .byline  { color: rgba(255,255,255,0.45); font-size: 11px; margin-bottom: 8px; }
-    .site-header .philosophy { font-style: italic; color: rgba(255,255,255,0.35); font-size: 11px; }
+    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 340px; margin: 0 auto 16px; opacity: 0.9; }
+    .site-header .byline  { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+    .site-header .philosophy { font-style: italic; color: var(--muted); font-size: 11px; }
     .dots { margin: 16px 0 0; color: var(--lt-accent); letter-spacing: 8px; font-size: 10px; }
 
     .wrapper { max-width: 480px; margin: 0 auto; padding: 0 16px; }
-    section { padding: 28px 0; }
+    section  { padding: 28px 0; }
 
     .section-label {
       display: flex; align-items: center; gap: 10px;
@@ -88,105 +81,125 @@
     .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
     .card {
-      background: var(--white);
-      border: 1.5px solid var(--border);
+      background: var(--white); border: 1.5px solid var(--border);
       border-radius: 16px; padding: 22px 20px; margin-bottom: 16px;
     }
     .card-accent { border-left: 4px solid var(--accent); }
-    .card-warn   { background: var(--warn-bg); border-left: 4px solid var(--dark); }
     .card-sage   { background: var(--sage-bg); border-left: 4px solid var(--accent); }
     .card h2 { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--dark); margin-bottom: 12px; }
     .card p  { font-size: 14px; margin-bottom: 10px; }
     .card p:last-child { margin-bottom: 0; }
 
-    .stat-strip {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
-    }
+    .stat-strip { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 16px; }
     .stat-item {
       background: var(--white); border: 1.5px solid var(--border);
       border-radius: 14px; padding: 16px 10px; text-align: center;
     }
-    .stat-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px; color: var(--accent); line-height: 1.2; margin-bottom: 4px;
-    }
-    .stat-label { font-size: 11px; color: var(--muted); line-height: 1.3; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--accent); line-height: 1; margin-bottom: 6px; }
+    .stat-label { font-size: 11px; color: var(--muted); line-height: 1.4; }
 
-    .proc-step {
+    /* WAVELENGTH DIAGRAM */
+    .wavelength-bar {
+      background: var(--sage-bg); border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 18px; margin-bottom: 16px;
+    }
+    .wavelength-bar .wb-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .wl-row { display: flex; gap: 6px; margin-bottom: 8px; align-items: center; }
+    .wl-bar {
+      height: 20px; border-radius: 6px; display: flex; align-items: center;
+      padding: 0 10px; font-size: 10px; letter-spacing: 0.08em; color: #fff; font-family: 'Playfair Display', serif;
+    }
+    .wl-note { font-size: 11px; color: var(--muted); flex-shrink: 0; min-width: 90px; }
+
+    /* EFFECT CARDS */
+    .effect-grid { display: flex; flex-direction: column; gap: 10px; }
+    .effect-card {
       background: var(--white); border: 1.5px solid var(--border);
-      border-radius: 14px; padding: 16px 18px 14px; margin-bottom: 12px;
-      display: flex; gap: 14px; align-items: flex-start;
-    }
-    .proc-num {
-      width: 32px; height: 32px;
-      background: var(--dark); color: var(--white);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Playfair Display', serif; font-size: 14px;
-      flex-shrink: 0; margin-top: 2px;
-    }
-    .proc-body h3 { font-family: 'Playfair Display', serif; font-size: 15px; margin-bottom: 4px; }
-    .proc-body p  { font-size: 13px; color: var(--muted); margin: 0; }
-
-    .highlight-note {
-      background: var(--highlight); border: 1.5px solid var(--border);
-      border-left: 4px solid var(--lt-accent);
-      border-radius: 10px; padding: 12px 14px; margin-top: 12px;
-      font-size: 13px; color: var(--dark); font-style: italic;
-    }
-
-    .timeline-card {
-      background: var(--dark);
-      background-image: radial-gradient(ellipse at 85% 10%, rgba(180,100,60,0.5) 0%, transparent 55%);
-      border-radius: 14px; padding: 22px 20px;
-    }
-    .timeline-card h3 { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--white); margin-bottom: 16px; }
-    .timeline-row {
-      display: flex; gap: 10px; align-items: flex-start;
-      margin-bottom: 12px; font-size: 13px;
-    }
-    .timeline-row:last-child { margin-bottom: 0; }
-    .timeline-dot { color: var(--lt-accent); font-weight: 700; flex-shrink: 0; margin-top: 2px; }
-    .timeline-text { color: var(--lt-accent); line-height: 1.5; }
-    .timeline-text strong { color: var(--white); }
-
-    .condition-grid { display: flex; flex-direction: column; gap: 12px; }
-    .condition-card {
-      background: var(--white); border: 1.5px solid var(--border);
-      border-left: 4px solid var(--accent);
+      border-top: 3px solid var(--accent);
       border-radius: 12px; padding: 14px 16px;
     }
-    .condition-card h3 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 4px; }
-    .condition-card p  { font-size: 12px; color: var(--muted); margin: 0; }
+    .effect-card h4 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 4px; }
+    .effect-card p  { font-size: 12px; color: var(--muted); margin: 0; }
 
-    .quote-banner {
-      background: var(--sage-bg); border-left: 4px solid var(--accent);
-      border-radius: 12px; padding: 20px; margin-bottom: 16px; text-align: center;
+    .mistake-card {
+      background: var(--warn-bg); border-left: 4px solid var(--dark);
+      border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;
+      display: flex; gap: 10px;
     }
-    .quote-banner blockquote {
-      font-family: 'Playfair Display', serif; font-style: italic;
-      font-size: 17px; color: var(--dark); line-height: 1.5; margin-bottom: 8px;
+    .mistake-card .mx { color: var(--dark); font-weight: 700; flex-shrink: 0; font-size: 14px; margin-top: 2px; }
+    .mistake-card .mb h4 { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 3px; }
+    .mistake-card .mb p  { font-size: 12px; color: var(--muted); margin: 0; }
+
+    .dark-banner {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 10%, rgba(40,64,160,0.60) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 90%, rgba(128,144,216,0.12) 0%, transparent 55%);
+      border-radius: 18px; padding: 28px 22px; margin-bottom: 16px;
     }
-    .quote-banner cite { font-size: 12px; color: var(--muted); }
+    .dark-banner blockquote {
+      font-family: 'Playfair Display', serif; font-size: 19px;
+      color: var(--white); line-height: 1.45; margin-bottom: 12px;
+    }
+    .dark-banner p { font-size: 13px; color: var(--lt-accent); margin-bottom: 8px; }
+    .dark-banner p:last-child { margin-bottom: 0; }
+
+    .solution-step {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 18px 18px 14px; margin-bottom: 14px;
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .sol-num {
+      width: 34px; height: 34px; background: var(--dark); color: var(--white);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif; font-size: 14px; flex-shrink: 0; margin-top: 2px;
+    }
+    .sol-body h3 { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 6px; }
+    .sol-body p  { font-size: 13px; color: var(--muted); margin: 0 0 6px; }
+    .sol-badge {
+      display: inline-block; background: var(--highlight); border: 1.5px solid var(--lt-accent);
+      color: var(--accent); font-size: 10px; letter-spacing: 0.1em;
+      padding: 3px 10px; border-radius: 999px; margin-top: 8px;
+    }
+
+    /* COMPARISON TABLE */
+    .compare-table { border-radius: 14px; overflow: hidden; border: 1.5px solid var(--border); margin-bottom: 16px; }
+    .compare-head { display: grid; grid-template-columns: 1.3fr 1fr 1fr; }
+    .compare-head div {
+      padding: 10px 12px; font-family: 'Playfair Display', serif; font-size: 12px;
+      background: var(--dark); color: var(--white); text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .compare-head div:last-child { border-right: none; }
+    .compare-row { display: grid; grid-template-columns: 1.3fr 1fr 1fr; border-top: 1px solid var(--border); }
+    .compare-row div {
+      padding: 10px 12px; font-size: 12px; color: var(--dark);
+      background: var(--white); text-align: center;
+      border-right: 1px solid var(--border);
+    }
+    .compare-row div:last-child { border-right: none; }
+    .compare-row div.good { color: var(--accent); font-style: italic; }
+    .compare-row div.bad  { color: #C03030; }
+    .compare-row div:first-child { text-align: left; font-size: 11px; color: var(--muted); }
+    .compare-row:nth-child(even) div { background: var(--highlight); }
 
     .contact-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; overflow: hidden; }
     .contact-header {
       background: var(--dark);
-      background-image: radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.55) 0%, transparent 55%);
+      background-image: radial-gradient(ellipse at 85% 15%, rgba(40,64,160,0.60) 0%, transparent 55%);
       padding: 22px 20px; text-align: center;
     }
     .contact-header h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); margin-bottom: 4px; }
     .contact-header .creds  { font-size: 11px; color: var(--lt-accent); margin-bottom: 6px; }
-    .contact-header .tagline { font-size: 12px; color: rgba(255,255,255,0.5); font-style: italic; }
+    .contact-header .tagline { font-size: 12px; color: var(--muted); font-style: italic; }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; }
     @media (max-width: 400px) { .contact-grid { grid-template-columns: 1fr; } }
     .contact-cell {
       padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border);
       text-decoration: none; color: inherit; transition: background 0.15s;
-      display: block;
     }
-    .contact-cell:nth-child(even)       { border-right: none; }
-    .contact-cell:nth-last-child(-n+2)  { border-bottom: none; }
+    .contact-cell:nth-child(even)      { border-right: none; }
+    .contact-cell:nth-last-child(-n+2) { border-bottom: none; }
     .contact-cell:hover { background: var(--sage-bg); }
     .cc-icon   { font-size: 18px; margin-bottom: 4px; }
     .cc-label  { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
@@ -198,8 +211,8 @@
     footer {
       background: var(--dark);
       background-image:
-        radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.35) 0%, transparent 55%),
-        radial-gradient(ellipse at 10% 85%, rgba(200,160,100,0.08) 0%, transparent 55%);
+        radial-gradient(ellipse at 85% 15%, rgba(40,64,160,0.35) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 85%, rgba(128,144,216,0.08) 0%, transparent 55%);
       padding: 28px 20px 0;
     }
     .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 480px; margin: 0 auto; padding-bottom: 20px; }
@@ -207,17 +220,13 @@
     .footer-col h4 { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lt-accent); margin-bottom: 8px; }
     .footer-col p  { font-size: 12px; color: var(--lt-accent); line-height: 1.6; opacity: 0.8; }
     .footer-col p em { font-style: italic; opacity: 0.7; }
-    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(150,100,60,0.3); }
+    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(40,64,160,0.3); }
     .footer-bottom { max-width: 480px; margin: 0 auto; display: flex; justify-content: space-between; padding: 12px 0 16px; flex-wrap: wrap; gap: 4px; }
     .footer-bottom span { font-size: 10px; color: var(--muted); }
 
     .received-banner {
-      background: var(--dark);
-      border-bottom: 2px solid var(--accent);
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      background: var(--dark); border-bottom: 2px solid var(--accent);
+      padding: 12px 16px; display: flex; align-items: center; gap: 10px;
     }
     .received-banner .rb-icon { font-size: 20px; flex-shrink: 0; }
     .received-banner .rb-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.4; }
@@ -229,10 +238,10 @@
       display: inline-flex; align-items: center; gap: 7px;
       padding: 9px 22px; border-radius: 999px;
       background: transparent; border: 1.5px solid var(--border);
-      color: var(--accent); font-family: 'Lora', serif; font-size: 12px;
+      font-family: 'Lora', serif; font-size: 12px;
       cursor: pointer; transition: all 0.2s; letter-spacing: 0.03em;
     }
-    .share-btn:hover { border-color: var(--accent); opacity: 0.8; }
+    .share-btn:hover { opacity: 0.8; }
 
     .related-section { padding: 28px 0 0; }
     .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
@@ -244,7 +253,7 @@
     .related-card:hover { border-color: var(--accent); }
     .related-card .rc-icon { font-size: 22px; margin-bottom: 8px; display: block; }
     .related-card h4 { font-family: 'Playfair Display', serif; font-size: 13px; line-height: 1.3; color: var(--dark); margin-bottom: 4px; }
-    .related-card p { font-size: 11px; color: var(--muted); }
+    .related-card p  { font-size: 11px; color: var(--muted); }
     .related-card .rc-link { font-size: 11px; color: var(--accent); font-style: italic; margin-top: 6px; display: block; }
 
     .float-cta {
@@ -260,7 +269,7 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
     .float-cta .cta-book { background: var(--dark); color: #fff; }
-    .float-cta .cta-wa { background: #25D366; color: #fff; }
+    .float-cta .cta-wa   { background: #25D366; color: #fff; }
     .footer-bottom { padding-bottom: 80px !important; }
   </style>
 </head>
@@ -268,7 +277,6 @@
 
   <nav class="back-nav"><a href="index.html">← All Guides</a></nav>
 
-  <!-- RECEIVED BANNER -->
   <div class="received-banner">
     <div class="rb-icon">💬</div>
     <div class="rb-text">
@@ -281,15 +289,16 @@
   <header class="site-header">
     <div class="pill">DIGITAL SKIN GUIDE</div>
     <h1>Blue Light —<br><em>Indoor Pigmentation Cause</em></h1>
-    <p class="subline">How your phone is tanning you from the inside out — and what actually protects you.</p>
+    <p class="subline">How your phone is tanning you from the inside out — and the only SPF that actually blocks it.</p>
     <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Baner, Pune</p>
     <p class="philosophy">Inner &amp; Outer Beauty · Wholesome Beauty</p>
     <div class="dots">· · ·</div>
   </header>
 
-  <!-- SHARE -->
   <div class="share-row">
-    <button class="share-btn" id="share-btn">↗ Share this guide</button>
+    <button class="share-btn" id="share-btn" style="color:#2840A0;border-color:#2840A040;">
+      ↗ Share this guide
+    </button>
   </div>
 
   <!-- STAT STRIP -->
@@ -298,74 +307,238 @@
       <div class="stat-strip">
         <div class="stat-item">
           <div class="stat-num">HEV</div>
-          <div class="stat-label">high energy<br>visible light</div>
+          <div class="stat-label">High Energy Visible light from screens</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">Deeper</div>
-          <div class="stat-label">blue light reaches<br>further than UVA</div>
+          <div class="stat-label">penetrates below UV into the dermis</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">Mineral</div>
-          <div class="stat-label">the only SPF<br>that blocks it</div>
+          <div class="stat-num">Mineral SPF</div>
+          <div class="stat-label">only protection that actually works</div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- THE INDOOR TAN -->
   <section>
     <div class="wrapper">
-      <div class="section-label">THE INDOOR TANNING PROBLEM</div>
-      <div class="card card-warn">
-        <p>You're inside. No sun. Wearing SPF. But still getting dark spots and uneven skin tone?</p><p><strong>HEV light (blue light)</strong> from phones and laptops penetrates deeper into skin than UVA rays. It reaches the dermis where melanin-producing cells live, triggering pigmentation — without any sun exposure.</p>
-        <div class="highlight-note">This is called 'Indoor Pigmentation' — increasingly common in the screen-heavy modern lifestyle.</div>
-      </div>
-    </div>
-  </section>
+      <div class="section-label">THE INDOOR TAN — A REAL PHENOMENON</div>
 
-  <section>
-    <div class="wrapper">
-      <div class="section-label">DIGITAL SOOT — WHAT IT DOES</div>
       <div class="card card-accent">
-        <p>Blue light creates free radicals in the skin called <strong>'Digital Soot'</strong> — oxidative damage that:</p><p>• Triggers melanin cells → dark spots<br>• Breaks down collagen → accelerated ageing<br>• Causes inflammation → skin looks dull and puffy</p><p>With 6+ hours of daily screen time, this exposure adds up significantly over months and years.</p>
-        
+        <h2>Ghar ke andar bhi tan ho rahe ho — aur pata nahi chal raha 📱</h2>
+        <p>Aap andar hain. Dhoop nahi. SPF laga rakha hai. Phir bhi dark spots aa rahe hain, skin tone uneven ho rahi hai. Hairan hain? Yahan ke log sun protection ke baare mein kaafi aware hain — lekin ek cheez miss ho rahi hai: Blue Light, jise scientifically HEV (High Energy Visible) light kehte hain.</p>
+        <p>Phone ki screen, laptop, tablet, LED lighting — yeh sab HEV light emit karte hain. UV radiation (jisko hum "sun damage" se associate karte hain) mostly epidermis mein absorb ho jaata hai. Lekin HEV light — wavelength 400–500nm — epidermis ke through pass hoti hai aur dermis tak pohonchti hai. Wahan melanocytes rehte hain. Wahan collagen rehta hai. Wahan real, deep damage hota hai.</p>
+        <p>Yeh "digital pigmentation" ya "indoor tan" ab dermatology mein well-documented phenomenon hai. Aur iska solution regular chemical SPF se nahi aata — specifically mineral sunscreen chahiye. Is guide mein poori science hai.</p>
       </div>
     </div>
   </section>
 
+  <!-- WHAT IS HEV -->
   <section>
     <div class="wrapper">
-      <div class="section-label">THE SOLUTION</div>
-      
-      <div class="proc-step">
-        <div class="proc-num">1</div>
-        <div class="proc-body">
-          <h3>Mineral Sunscreen (Physical Shield)</h3>
-          <p>Mineral sunscreens with Zinc Oxide or Titanium Dioxide act like mirrors — bouncing blue light off the skin surface before it can penetrate. Chemical sunscreens do NOT block blue light.</p>
+      <div class="section-label">WHAT IS BLUE LIGHT / HEV LIGHT?</div>
+
+      <div class="wavelength-bar">
+        <div class="wb-label">📡 Light Spectrum — Skin Penetration Depth</div>
+        <div class="wl-row">
+          <div class="wl-bar" style="width:60px;background:#9040C0;">UVC</div>
+          <div class="wl-note" style="font-size:10px;">100–280nm · Blocked by ozone layer</div>
+        </div>
+        <div class="wl-row">
+          <div class="wl-bar" style="width:90px;background:#6050D0;">UVB</div>
+          <div class="wl-note" style="font-size:10px;">280–315nm · Burns epidermis</div>
+        </div>
+        <div class="wl-row">
+          <div class="wl-bar" style="width:120px;background:#4060E0;">UVA</div>
+          <div class="wl-note" style="font-size:10px;">315–400nm · Ages epidermis</div>
+        </div>
+        <div class="wl-row">
+          <div class="wl-bar" style="width:160px;background:#2840A0;">HEV / Blue Light</div>
+          <div class="wl-note" style="font-size:10px;color:var(--accent);font-weight:700;">400–500nm · Reaches DERMIS ⚠</div>
         </div>
       </div>
-      <div class="proc-step">
-        <div class="proc-num">2</div>
-        <div class="proc-body">
-          <h3>Antioxidant Serum</h3>
-          <p>Vitamin C (ascorbic acid) and Niacinamide neutralise the free radicals that blue light creates. Apply before your mineral SPF.</p>
-        </div>
+
+      <div class="card card-accent">
+        <h2>Why HEV is different from UV 🔬</h2>
+        <p>UV radiation skin ke liye harmful hai — yeh hum jaante hain. Lekin UV light largely epidermis mein absorb ho jaati hai. UVB sunburn deta hai epidermal layer par. UVA deeper jaata hai lekin phir bhi epidermis mein significant absorption hoti hai.</p>
+        <p>HEV light (400–500nm wavelength) is spectrum ke edge par hai — visible light ka "bluer" end. Iska wavelength UV se longer hai, lekin energy still very high hai. Aur importantly, yeh epidermis ke through slip ho jaata hai aur dermis mein enter karta hai — jahaan melanocytes, collagen, aur elastin fibers rehte hain. Yahan damage karna matlab deeper, longer-lasting results produce karna.</p>
+        <p>Phone screens, laptops, tablets, LED indoor lighting — yeh sab significant HEV emit karte hain. Din mein 6–8 ghante screen time common hai aaj kal. Yeh cumulative exposure dermis mein silently kaam karta rehta hai — months aur years mein results visible hote hain jab dark spots, uneven tone, aur premature lines appear hone lagte hain.</p>
       </div>
-      <div class="proc-step">
-        <div class="proc-num">3</div>
-        <div class="proc-body">
-          <h3>Screen filters</h3>
-          <p>Blue-light filter glasses and phone screen protectors reduce exposure at source — a complement to topical protection.</p>
+    </div>
+  </section>
+
+  <!-- DIGITAL SOOT -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">THE "DIGITAL SOOT" EFFECT</div>
+
+      <div class="dark-banner">
+        <blockquote>"Every hour of screen time creates free radicals in your dermis. These attack melanocytes, collagen, and elastin silently — this is called Digital Soot."</blockquote>
+        <p>HEV light reactive oxygen species (ROS) — free radicals — dermal cells mein generate karta hai. Yeh free radicals melanocytes ko trigger karte hain melanin overproduction ke liye, collagen fibers ko break karte hain, aur elastin ko degrade karte hain. Yeh "Digital Soot" hai — har screen session ke saath cumulative buildup.</p>
+        <p>Ek ghante ka screen time measurable free radical production karta hai in the dermis. Months aur years of 6–8 ghante daily exposure — unprotected — kaafi significant damage accumulate karta hai. Indoor hyperpigmentation, premature fine lines, aur chronic dull skin tone — yeh sab iska result hai.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE EFFECTS -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">THE THREE SKIN EFFECTS OF BLUE LIGHT</div>
+      <div class="effect-grid">
+        <div class="effect-card">
+          <h4>1. Melanin Overproduction — Dark Spots</h4>
+          <p>HEV-induced free radicals melanocytes ko stimulate karte hain. Result: uneven pigmentation, dark patches, aur dull skin tone — jo outdoor sun exposure ke bina bhi develop ho sakta hai. Yeh particularly prevalent hai already-prone-to-pigmentation Indian skin mein.</p>
+        </div>
+        <div class="effect-card">
+          <h4>2. Collagen Degradation — Premature Lines</h4>
+          <p>Free radicals matrix metalloproteinases (MMPs) activate karte hain jo collagen fibers break karte hain. Yeh premature fine lines, loss of firmness, aur skin laxity produce karta hai — ek age group se kaafi pehle.</p>
+        </div>
+        <div class="effect-card">
+          <h4>3. Chronic Inflammation — Dull, Puffy Skin</h4>
+          <p>HEV dermal inflammation trigger karta hai jo NF-κB pathway activate karta hai. Chronic low-grade inflammation = skin looks perpetually dull, tired, aur slightly puffy. No amount of rest karta agar source address na ho.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WHY REGULAR SPF FAILS -->
   <section>
     <div class="wrapper">
-      <div class="section-label">WHY REGULAR SPF ISN'T ENOUGH</div>
-      <div class="card card-sage">
-        <p>Chemical SPF (most regular sunscreens) works by absorbing UV radiation and converting it to heat. They were not designed to block HEV wavelengths. You need a mineral (physical) shield that reflects all visible and UV light.</p>
-        
+      <div class="section-label">WHY REGULAR SUNSCREEN DOESN'T PROTECT YOU</div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <div class="mb">
+          <h4>Chemical SPF only (avobenzone, oxybenzone etc.)</h4>
+          <p>Chemical sunscreens UV radiation absorb karte hain through molecular absorption. Lekin yeh visible light / HEV block nahi karte — wrong mechanism hai. Chemical filter = UV absorber, not a light reflector.</p>
+        </div>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <div class="mb">
+          <h4>No SPF at all indoors</h4>
+          <p>Windows UV kaafi block karti hain, lekin HEV glass ke through mostly pass ho jaata hai. Indoor mein bhi HEV exposure real aur cumulative hai — unprotected skin continuously damage accumulate karti hai.</p>
+        </div>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <div class="mb">
+          <h4>Screen brightness kam karke protection sochna</h4>
+          <p>Brightness HEV wavelength emit nahi karna band nahi karta. Low brightness = slightly less intensity, but same wavelengths. Screen filters bhi HEV completely block nahi karte — sirf significantly reduce karte hain. Skin protection SPF se hi aata hai.</p>
+        </div>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <div class="mb">
+          <h4>SPF sirf subah ek baar lagana</h4>
+          <p>Sunscreen 2–4 ghante mein breakdown ho jaata hai — especially after sweat ya touch. All-day screen exposure ke liye mid-day reapplication necessary hai for real protection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE MINERAL SHIELD -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">THE MINERAL SHIELD — WHY IT WORKS</div>
+
+      <div class="card card-accent">
+        <h2>Zinc Oxide aur Titanium Dioxide — The Mirror Mechanism</h2>
+        <p>Mineral sunscreens mein Zinc Oxide aur/ya Titanium Dioxide hota hai. Yeh physical/inorganic filters hain jo skin par ek microscopic mirror ki tarah kaam karte hain. Light — UV aur HEV dono — reflect ho jaati hai before skin mein enter karne ka chance milta hai. Absorption nahi, reflection hai yeh mechanism.</p>
+        <p>Chemical sunscreens molecular absorbers hain — woh specific UV wavelengths ko absorb karte hain aur energy heat mein convert karte hain. Yeh UV ke liye effective hai. Lekin HEV / visible light ke liye, chemical filters ka koi mechanism nahi hai — wrong tool for the job. Sirf physical/mineral filters HEV ko reflect karte hain.</p>
+        <p>"Zero white cast mineral sunscreen" aaj available hain thanks to micronized zinc oxide aur titanium dioxide. Pehle ki generation mein heavy white cast hota tha — modern formulations mein nahi hota. Zinc Oxide aur Titanium Dioxide ka combination broad-spectrum protection deta hai — UV + HEV dono ke against. Aur woh reef safe bhi hain.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL PROTECTION PROTOCOL -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">FULL DIGITAL SKIN PROTECTION PROTOCOL</div>
+
+      <div class="solution-step">
+        <div class="sol-num">1</div>
+        <div class="sol-body">
+          <h3>🛡️ Mineral SPF — Daily, Even Indoors</h3>
+          <p>Zinc Oxide ya Titanium Dioxide based mineral sunscreen daily morning mein lagao — even agar ghar se bahar nahi nikalna. SPF 30+ sufficient hai indoors, SPF 50+ agar outdoor bhi jaana ho. Mid-day reapplication karo agar 4+ hours ho gaye hain. Comment SCREEN on Instagram for Dr. Pallavi's top 3 zero-white-cast mineral SPF recommendations.</p>
+          <div class="sol-badge">Daily — AM + reapply every 3–4 hrs if needed</div>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="sol-num">2</div>
+        <div class="sol-body">
+          <h3>🍊 Vitamin C Serum — Morning Antioxidant Shield</h3>
+          <p>L-Ascorbic acid ya stabilized Vitamin C derivative (Ascorbyl Glucoside, Ethyl Ascorbic Acid) HEV-induced free radicals ko neutralise karta hai before they damage cells. Mineral SPF se pehle lagao — SPF ki effectiveness bhi boost karta hai. Morning routine mein yeh first step hona chahiye.</p>
+          <div class="sol-badge">Every morning before SPF</div>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="sol-num">3</div>
+        <div class="sol-body">
+          <h3>✨ Niacinamide — Pigmentation Control</h3>
+          <p>Niacinamide (Vitamin B3) melanin transfer ko keratinocytes mein reduce karta hai — dark spots prevent aur fade karta hai. Anti-inflammatory bhi hai — HEV-induced dermal inflammation ko calm karta hai. Concentration: 4–10% effective hai. Can be layered over Vitamin C or used separately.</p>
+          <div class="sol-badge">Morning and/or evening</div>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="sol-num">4</div>
+        <div class="sol-body">
+          <h3>🕶️ Blue Light Filter Glasses — Extended Sessions</h3>
+          <p>Extended (4+ hours continuous) screen sessions ke liye blue light filtering glasses HEV exposure significantly reduce karte hain eyes aur periorbital skin ke liye. Skin ke liye yeh supplementary protection hai — primary protection mineral SPF se hi aata hai.</p>
+          <div class="sol-badge">For extended screen sessions</div>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="sol-num">5</div>
+        <div class="sol-body">
+          <h3>🌙 Night Repair — Rebuild What Day Damaged</h3>
+          <p>Retinol (0.025–0.05% beginners ke liye) ya peptides collagen production stimulate karte hain jo din mein HEV se degrade hua. Raat mein skin repair mode mein hoti hai — yeh actives maximum effectiveness dikhate hain. Retinol ke saath moisturiser mandatory hai; photosensitivity ke wajah se raat mein hi use karo.</p>
+          <div class="sol-badge">Night routine — 3–4× per week (retinol)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">CHEMICAL SPF VS MINERAL SPF — THE KEY DIFFERENCES</div>
+      <div class="compare-table">
+        <div class="compare-head">
+          <div style="text-align:left;">Property</div>
+          <div>Chemical SPF</div>
+          <div>Mineral SPF</div>
+        </div>
+        <div class="compare-row">
+          <div>Blocks UV (UVA/UVB)</div>
+          <div class="good">Yes</div>
+          <div class="good">Yes</div>
+        </div>
+        <div class="compare-row">
+          <div>Blocks HEV / Blue Light</div>
+          <div class="bad">No</div>
+          <div class="good">Yes — reflects it</div>
+        </div>
+        <div class="compare-row">
+          <div>White cast concern</div>
+          <div class="good">None</div>
+          <div class="good">Minimal in modern formulas</div>
+        </div>
+        <div class="compare-row">
+          <div>Mechanism</div>
+          <div>Absorbs UV wavelengths</div>
+          <div class="good">Reflects all wavelengths</div>
+        </div>
+        <div class="compare-row">
+          <div>Reef &amp; environmental safety</div>
+          <div class="bad">Some concerns</div>
+          <div class="good">Reef safe</div>
+        </div>
       </div>
     </div>
   </section>
@@ -373,9 +546,10 @@
   <!-- BOOKING CTA -->
   <section>
     <div class="wrapper">
-      <div class="quote-banner">
-        <blockquote>"Pigmentation that won't budge? Let's find the cause."</blockquote>
-        <cite>DM <a href="https://www.instagram.com/drpallaviahireshelke/" target="_blank" style="color:var(--accent);">@drpallaviahireshelke</a> on Instagram.</cite>
+      <div class="card card-sage">
+        <h2>Indoor-SPF Guide — Dr. Pallavi ke top 3 recommendations</h2>
+        <p>Zero white cast mineral sunscreens jo Indian skin tone ke liye perfect hain aur HEV protection dete hain — specifically Dr. Pallavi ki personally tested list. Comment <strong>SCREEN</strong> on Instagram ya WhatsApp karo.</p>
+        <p style="font-size:13px;color:var(--muted);margin-top:6px;">Pigmentation consultation mein exact cause assessment karke targeted treatment plan milta hai — chemical peels, topical actives, ya combined approach.</p>
       </div>
     </div>
   </section>
@@ -388,19 +562,31 @@
         <div class="contact-header">
           <h2>Dr. Pallavi Ahire-Shelke</h2>
           <p class="creds">MBBS, MD, DNB, DDV · Gold Medalist Dermatologist</p>
-          <p class="tagline">Pigmentation consultation — Baner, Pune</p>
+          <p class="tagline">Pigmentation &amp; skin consultation — Baner, Pune</p>
         </div>
         <div class="contact-grid">
-          <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank"><div class="cc-icon">📍</div><div class="cc-label">Location</div><div class="cc-detail">Baner, Pune</div><div class="cc-action">Get Directions</div></a>
-          <a class="contact-cell" href="tel:+919028291234"><div class="cc-icon">📞</div><div class="cc-label">Phone</div><div class="cc-detail">+91 90282 91234</div><div class="cc-action">Book a consultation</div></a>
-          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank"><div class="cc-icon">📸</div><div class="cc-label">Instagram</div><div class="cc-detail">@drpallaviahireshelke</div><div class="cc-action">Daily skin &amp; hair tips</div></a>
-          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank"><div class="cc-icon">💬</div><div class="cc-label">WhatsApp</div><div class="cc-detail">Quick queries welcome</div><div class="cc-action">Message us</div></a>
+          <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">
+            <div class="cc-icon">📍</div><div class="cc-label">Clinic</div>
+            <div class="cc-detail">Baner, Pune</div><div class="cc-action">Get Directions</div>
+          </a>
+          <a class="contact-cell" href="tel:+919028291234">
+            <div class="cc-icon">📞</div><div class="cc-label">Phone</div>
+            <div class="cc-detail">+91 90282 91234</div><div class="cc-action">Book a consultation</div>
+          </a>
+          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">
+            <div class="cc-icon">📸</div><div class="cc-label">Instagram</div>
+            <div class="cc-detail">@drpallaviahireshelke</div><div class="cc-action">Daily skin education</div>
+          </a>
+          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">
+            <div class="cc-icon">💬</div><div class="cc-label">WhatsApp</div>
+            <div class="cc-detail">Quick queries welcome</div><div class="cc-action">Message us</div>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- RELATED GUIDES -->
+  <!-- RELATED -->
   <section class="related-section">
     <div class="wrapper">
       <div class="section-label" style="color:var(--accent);">MORE GUIDES</div>
@@ -408,14 +594,14 @@
         <a class="related-card" href="guide-peel.html">
           <span class="rc-icon">✨</span>
           <h4>Pigmentation Peel Guide</h4>
-          <p>Comment PEEL</p>
-          <span class="rc-link">Read guide →</span>
+          <p>Chemical peels for dark spots</p>
+          <span class="rc-link" style="color:var(--accent);">Comment PEEL →</span>
         </a>
-        <a class="related-card" href="guide-restart.html">
-          <span class="rc-icon">🌿</span>
-          <h4>Skin Renewal Guide</h4>
-          <p>Comment RESTART</p>
-          <span class="rc-link">Read guide →</span>
+        <a class="related-card" href="guide-barrier.html">
+          <span class="rc-icon">🛡️</span>
+          <h4>Barrier Repair Guide</h4>
+          <p>Swiss cheese skin — how to fix it</p>
+          <span class="rc-link" style="color:var(--accent);">Comment BARRIER →</span>
         </a>
       </div>
     </div>
@@ -439,7 +625,7 @@
 
   <div class="float-cta">
     <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
-    <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+    <a class="cta-wa"   href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
   </div>
 
   <script>
@@ -448,14 +634,12 @@
       if (!btn) return;
       btn.addEventListener('click', function() {
         if (navigator.share) {
-          navigator.share({ title: 'Blue Light & Skin — Free Guide by Dr. Pallavi', url: window.location.href });
+          navigator.share({ title: 'Blue Light — Indoor Pigmentation Cause · Dr. Pallavi', url: window.location.href });
         } else {
           navigator.clipboard.writeText(window.location.href).then(function() {
-            btn.textContent = '✓ Link Copied!';
+            btn.textContent = '✓ Link copied!';
             setTimeout(function() { btn.textContent = '↗ Share this guide'; }, 2200);
-          }).catch(function() {
-            btn.textContent = 'Copy: ' + window.location.href;
-          });
+          }).catch(function() { btn.textContent = 'Copy: ' + window.location.href; });
         }
       });
     })();

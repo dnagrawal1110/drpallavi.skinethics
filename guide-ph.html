@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skin pH Balance — Security Guard Guide · Dr. Pallavi Ahire-Shelke, Pune</title>
-  <meta name="description" content="Free guide by Dr. Pallavi Ahire-Shelke: how the skin's acid mantle works, why alkaline soaps destroy it, and which pH-balanced cleansers protect it." />
+  <title>Skin pH — The Security Guard Explained · Dr. Pallavi Ahire-Shelke · Dermatologist Pune</title>
+  <meta name="description" content="Free guide by Dr. Pallavi: Why your soap fires your skin's immunity and leaves it defenceless for 6 hours. The acid mantle, pH science, and pH-safe cleanser guide. Gold Medalist Dermatologist, Baner, Pune." />
   <meta name="theme-color" content="#0A1410" />
   <link rel="canonical" href="https://drpallavi.skinethics.in/guide-ph.html" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://drpallavi.skinethics.in/guide-ph.html" />
-  <meta property="og:title" content="Skin pH & Acid Mantle — Free Guide by Dr. Pallavi" />
-  <meta property="og:description" content="Your skin's natural acid mantle is its security guard. Wrong soap fires it. Free guide by Gold Medalist Dermatologist, Baner, Pune." />
+  <meta property="og:title" content="Skin pH — The Security Guard. Free Guide by Dr. Pallavi" />
+  <meta property="og:description" content="Every soap wash fires your skin's security guard for 6 hours. Here's the science and the solution." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -19,246 +19,162 @@
 
     :root {
       --dark:      #0A1410;
-      --bg:        #FAF8F6;
+      --bg:        #F0F6F2;
       --white:     #FFFFFF;
       --accent:    #208050;
       --lt-accent: #60C090;
       --sage-bg:   #E8F6EE;
-      --warn-bg:   #F0FAF4;
+      --warn-bg:   #FFF5F0;
       --border:    #C0E0CC;
-      --muted:     #7A7080;
-      --highlight: #F8F4F0;
+      --muted:     #4A7060;
+      --highlight: #D4EEE0;
     }
 
     html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Lora', serif;
-      background: var(--bg);
-      color: var(--dark);
-      font-size: 15px;
-      line-height: 1.75;
-    }
+    body { font-family: 'Lora', serif; background: var(--bg); color: var(--dark); font-size: 15px; line-height: 1.75; }
 
-    .back-nav {
-      background: var(--bg);
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--border);
-    }
-    .back-nav a {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 12px; color: var(--muted); text-decoration: none; font-style: italic;
-    }
+    .back-nav { background: var(--bg); padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    .back-nav a { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); text-decoration: none; font-style: italic; }
     .back-nav a:hover { color: var(--accent); }
 
     .site-header {
       background: var(--dark);
       background-image:
-        radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.55) 0%, transparent 55%),
-        radial-gradient(ellipse at 15% 85%, rgba(200,160,100,0.18) 0%, transparent 55%);
-      padding: 40px 20px 36px;
-      text-align: center;
+        radial-gradient(ellipse at 85% 15%, rgba(32,128,80,0.65) 0%, transparent 55%),
+        radial-gradient(ellipse at 15% 85%, rgba(96,192,144,0.18) 0%, transparent 55%);
+      padding: 40px 20px 36px; text-align: center;
     }
-    .pill {
-      display: inline-block;
-      border: 1.5px solid var(--lt-accent);
-      background: var(--white);
-      color: var(--accent);
-      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
-      padding: 5px 14px; border-radius: 999px; margin-bottom: 18px;
-    }
-    .site-header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(24px, 7vw, 36px);
-      color: var(--white); line-height: 1.25; margin-bottom: 10px;
-    }
+    .pill { display: inline-block; border: 1.5px solid var(--lt-accent); background: var(--white); color: var(--accent); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; padding: 5px 14px; border-radius: 999px; margin-bottom: 18px; }
+    .site-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 7vw, 36px); color: var(--white); line-height: 1.25; margin-bottom: 10px; }
     .site-header h1 em { font-style: italic; color: var(--lt-accent); }
-    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 330px; margin: 0 auto 16px; opacity: 0.9; }
-    .site-header .byline  { color: rgba(255,255,255,0.45); font-size: 11px; margin-bottom: 8px; }
-    .site-header .philosophy { font-style: italic; color: rgba(255,255,255,0.35); font-size: 11px; }
+    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 350px; margin: 0 auto 16px; opacity: 0.9; }
+    .site-header .byline { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+    .site-header .philosophy { font-style: italic; color: var(--muted); font-size: 11px; }
     .dots { margin: 16px 0 0; color: var(--lt-accent); letter-spacing: 8px; font-size: 10px; }
 
     .wrapper { max-width: 480px; margin: 0 auto; padding: 0 16px; }
     section { padding: 28px 0; }
 
-    .section-label {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
-      color: var(--accent); margin-bottom: 18px;
-    }
+    .section-label { display: flex; align-items: center; gap: 10px; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
     .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-    .card {
-      background: var(--white);
-      border: 1.5px solid var(--border);
-      border-radius: 16px; padding: 22px 20px; margin-bottom: 16px;
-    }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; padding: 22px 20px; margin-bottom: 16px; }
     .card-accent { border-left: 4px solid var(--accent); }
-    .card-warn   { background: var(--warn-bg); border-left: 4px solid var(--dark); }
-    .card-sage   { background: var(--sage-bg); border-left: 4px solid var(--accent); }
+    .card-sage { background: var(--sage-bg); border-left: 4px solid var(--accent); }
     .card h2 { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--dark); margin-bottom: 12px; }
-    .card p  { font-size: 14px; margin-bottom: 10px; }
+    .card h3 { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--dark); margin-bottom: 8px; }
+    .card p { font-size: 14px; margin-bottom: 10px; }
     .card p:last-child { margin-bottom: 0; }
 
-    .stat-strip {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
-    }
-    .stat-item {
-      background: var(--white); border: 1.5px solid var(--border);
-      border-radius: 14px; padding: 16px 10px; text-align: center;
-    }
-    .stat-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px; color: var(--accent); line-height: 1.2; margin-bottom: 4px;
-    }
-    .stat-label { font-size: 11px; color: var(--muted); line-height: 1.3; }
+    .stat-strip { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+    .stat-item { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 16px 10px; text-align: center; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--accent); line-height: 1; margin-bottom: 6px; }
+    .stat-label { font-size: 11px; color: var(--muted); line-height: 1.4; }
 
-    .proc-step {
-      background: var(--white); border: 1.5px solid var(--border);
-      border-radius: 14px; padding: 16px 18px 14px; margin-bottom: 12px;
-      display: flex; gap: 14px; align-items: flex-start;
-    }
-    .proc-num {
-      width: 32px; height: 32px;
-      background: var(--dark); color: var(--white);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Playfair Display', serif; font-size: 14px;
-      flex-shrink: 0; margin-top: 2px;
-    }
-    .proc-body h3 { font-family: 'Playfair Display', serif; font-size: 15px; margin-bottom: 4px; }
-    .proc-body p  { font-size: 13px; color: var(--muted); margin: 0; }
-
-    .highlight-note {
-      background: var(--highlight); border: 1.5px solid var(--border);
-      border-left: 4px solid var(--lt-accent);
-      border-radius: 10px; padding: 12px 14px; margin-top: 12px;
-      font-size: 13px; color: var(--dark); font-style: italic;
-    }
-
-    .timeline-card {
+    .dark-banner {
       background: var(--dark);
-      background-image: radial-gradient(ellipse at 85% 10%, rgba(180,100,60,0.5) 0%, transparent 55%);
-      border-radius: 14px; padding: 22px 20px;
+      background-image:
+        radial-gradient(ellipse at 85% 10%, rgba(32,128,80,0.65) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 90%, rgba(96,192,144,0.14) 0%, transparent 55%);
+      border-radius: 18px; padding: 28px 22px; margin-bottom: 16px;
     }
-    .timeline-card h3 { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--white); margin-bottom: 16px; }
-    .timeline-row {
-      display: flex; gap: 10px; align-items: flex-start;
-      margin-bottom: 12px; font-size: 13px;
-    }
-    .timeline-row:last-child { margin-bottom: 0; }
-    .timeline-dot { color: var(--lt-accent); font-weight: 700; flex-shrink: 0; margin-top: 2px; }
-    .timeline-text { color: var(--lt-accent); line-height: 1.5; }
-    .timeline-text strong { color: var(--white); }
+    .dark-banner blockquote { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--white); line-height: 1.5; margin-bottom: 12px; font-style: italic; }
+    .dark-banner p { font-size: 13px; color: var(--lt-accent); line-height: 1.65; }
 
-    .condition-grid { display: flex; flex-direction: column; gap: 12px; }
-    .condition-card {
-      background: var(--white); border: 1.5px solid var(--border);
-      border-left: 4px solid var(--accent);
-      border-radius: 12px; padding: 14px 16px;
-    }
-    .condition-card h3 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 4px; }
-    .condition-card p  { font-size: 12px; color: var(--muted); margin: 0; }
+    .hour-flow { display: flex; flex-direction: column; gap: 0; }
+    .hour-item { display: flex; gap: 0; align-items: stretch; }
+    .hour-line { display: flex; flex-direction: column; align-items: center; width: 40px; flex-shrink: 0; }
+    .hour-dot { width: 12px; height: 12px; background: var(--accent); border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+    .hour-connector { width: 2px; background: var(--border); flex: 1; margin: 4px 0; }
+    .hour-item:last-child .hour-connector { display: none; }
+    .hour-body { padding: 0 0 18px 8px; }
+    .hour-time { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--accent); letter-spacing: 0.08em; margin-bottom: 3px; }
+    .hour-body p { font-size: 13px; color: var(--dark); }
 
-    .quote-banner {
-      background: var(--sage-bg); border-left: 4px solid var(--accent);
-      border-radius: 12px; padding: 20px; margin-bottom: 16px; text-align: center;
-    }
-    .quote-banner blockquote {
-      font-family: 'Playfair Display', serif; font-style: italic;
-      font-size: 17px; color: var(--dark); line-height: 1.5; margin-bottom: 8px;
-    }
-    .quote-banner cite { font-size: 12px; color: var(--muted); }
+    .conditions-grid { display: flex; flex-direction: column; gap: 10px; }
+    .condition-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 12px; padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start; }
+    .condition-card .cond-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+    .condition-card h4 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 3px; }
+    .condition-card p { font-size: 12px; color: var(--muted); margin: 0; }
+
+    .avoid-list { display: flex; flex-direction: column; gap: 10px; }
+    .avoid-item { background: var(--warn-bg); border-left: 4px solid #C06020; border-radius: 10px; padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--dark); }
+    .avoid-item .ax { color: #C06020; font-weight: 700; flex-shrink: 0; }
+
+    .compare-table { border-radius: 14px; overflow: hidden; border: 1.5px solid var(--border); margin-bottom: 16px; }
+    .compare-head { display: grid; grid-template-columns: 1.3fr 1fr 1fr; }
+    .compare-head div { padding: 10px 12px; font-family: 'Playfair Display', serif; font-size: 12px; background: var(--dark); color: var(--white); text-align: center; border-right: 1px solid rgba(255,255,255,0.1); }
+    .compare-head div:last-child { border-right: none; }
+    .compare-row { display: grid; grid-template-columns: 1.3fr 1fr 1fr; border-top: 1px solid var(--border); }
+    .compare-row div { padding: 10px 12px; font-size: 12px; color: var(--dark); background: var(--white); text-align: center; border-right: 1px solid var(--border); }
+    .compare-row div:last-child { border-right: none; }
+    .compare-row div.good { color: var(--accent); font-style: italic; }
+    .compare-row div.bad { color: #C06020; }
+    .compare-row div.label-col { text-align: left; color: var(--muted); font-size: 11px; }
+    .compare-row:nth-child(even) div { background: var(--highlight); }
+
+    .solution-step { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 18px 18px 14px; margin-bottom: 14px; display: flex; gap: 14px; align-items: flex-start; }
+    .sol-num { width: 34px; height: 34px; background: var(--accent); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 14px; flex-shrink: 0; margin-top: 2px; }
+    .sol-body h3 { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 6px; }
+    .sol-body p { font-size: 13px; color: var(--muted); margin: 0; }
+    .sol-badge { display: inline-block; background: var(--sage-bg); border: 1.5px solid var(--border); color: var(--accent); font-size: 10px; letter-spacing: 0.1em; padding: 3px 10px; border-radius: 999px; margin-top: 10px; }
+
+    .ph-scale { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 16px; }
+    .ph-scale-bar { height: 12px; background: linear-gradient(to right, #D04040 0%, #D0A020 20%, #40A040 40%, #2080C0 70%, #7040C0 100%); margin: 0; }
+    .ph-markers { display: grid; grid-template-columns: repeat(5, 1fr); padding: 8px 12px 12px; gap: 4px; }
+    .ph-marker { text-align: center; }
+    .ph-marker .ph-val { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); }
+    .ph-marker .ph-note { font-size: 10px; color: var(--muted); line-height: 1.3; }
+    .ph-marker.highlight .ph-val { color: var(--accent); font-weight: 700; }
 
     .contact-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; overflow: hidden; }
-    .contact-header {
-      background: var(--dark);
-      background-image: radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.55) 0%, transparent 55%);
-      padding: 22px 20px; text-align: center;
-    }
+    .contact-header { background: var(--dark); background-image: radial-gradient(ellipse at 85% 15%, rgba(32,128,80,0.65) 0%, transparent 55%); padding: 22px 20px; text-align: center; }
     .contact-header h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); margin-bottom: 4px; }
-    .contact-header .creds  { font-size: 11px; color: var(--lt-accent); margin-bottom: 6px; }
-    .contact-header .tagline { font-size: 12px; color: rgba(255,255,255,0.5); font-style: italic; }
+    .contact-header .creds { font-size: 11px; color: var(--lt-accent); margin-bottom: 6px; }
+    .contact-header .tagline { font-size: 12px; color: var(--muted); font-style: italic; }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; }
     @media (max-width: 400px) { .contact-grid { grid-template-columns: 1fr; } }
-    .contact-cell {
-      padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border);
-      text-decoration: none; color: inherit; transition: background 0.15s;
-      display: block;
-    }
-    .contact-cell:nth-child(even)       { border-right: none; }
-    .contact-cell:nth-last-child(-n+2)  { border-bottom: none; }
+    .contact-cell { padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); text-decoration: none; color: inherit; transition: background 0.15s; }
+    .contact-cell:nth-child(even) { border-right: none; }
+    .contact-cell:nth-last-child(-n+2) { border-bottom: none; }
     .contact-cell:hover { background: var(--sage-bg); }
-    .cc-icon   { font-size: 18px; margin-bottom: 4px; }
-    .cc-label  { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
+    .cc-icon { font-size: 18px; margin-bottom: 4px; }
+    .cc-label { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
     .cc-detail { font-size: 11px; color: var(--muted); }
     .cc-action { font-size: 11px; color: var(--accent); font-style: italic; margin-top: 2px; }
 
     .disclaimer { text-align: center; font-size: 11px; color: var(--muted); padding: 20px 16px; max-width: 440px; margin: 0 auto; }
 
-    footer {
-      background: var(--dark);
-      background-image:
-        radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.35) 0%, transparent 55%),
-        radial-gradient(ellipse at 10% 85%, rgba(200,160,100,0.08) 0%, transparent 55%);
-      padding: 28px 20px 0;
-    }
+    footer { background: var(--dark); background-image: radial-gradient(ellipse at 85% 15%, rgba(32,128,80,0.35) 0%, transparent 55%), radial-gradient(ellipse at 10% 85%, rgba(96,192,144,0.08) 0%, transparent 55%); padding: 28px 20px 0; }
     .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 480px; margin: 0 auto; padding-bottom: 20px; }
     @media (max-width: 400px) { .footer-grid { grid-template-columns: 1fr; } }
     .footer-col h4 { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lt-accent); margin-bottom: 8px; }
-    .footer-col p  { font-size: 12px; color: var(--lt-accent); line-height: 1.6; opacity: 0.8; }
+    .footer-col p { font-size: 12px; color: var(--lt-accent); line-height: 1.6; opacity: 0.8; }
     .footer-col p em { font-style: italic; opacity: 0.7; }
-    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(150,100,60,0.3); }
+    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(32,128,80,0.3); }
     .footer-bottom { max-width: 480px; margin: 0 auto; display: flex; justify-content: space-between; padding: 12px 0 16px; flex-wrap: wrap; gap: 4px; }
     .footer-bottom span { font-size: 10px; color: var(--muted); }
 
-    .received-banner {
-      background: var(--dark);
-      border-bottom: 2px solid var(--accent);
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    .received-banner { background: var(--dark); border-bottom: 2px solid var(--accent); padding: 12px 16px; display: flex; align-items: center; gap: 10px; }
     .received-banner .rb-icon { font-size: 20px; flex-shrink: 0; }
     .received-banner .rb-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.4; }
     .received-banner .rb-text strong { color: #fff; }
     .received-banner .rb-text a { color: inherit; opacity: 0.9; }
 
     .share-row { display: flex; justify-content: center; padding: 12px 16px 0; }
-    .share-btn {
-      display: inline-flex; align-items: center; gap: 7px;
-      padding: 9px 22px; border-radius: 999px;
-      background: transparent; border: 1.5px solid var(--border);
-      color: var(--accent); font-family: 'Lora', serif; font-size: 12px;
-      cursor: pointer; transition: all 0.2s; letter-spacing: 0.03em;
-    }
-    .share-btn:hover { border-color: var(--accent); opacity: 0.8; }
+    .share-btn { display: inline-flex; align-items: center; gap: 7px; padding: 9px 22px; border-radius: 999px; background: transparent; border: 1.5px solid var(--accent); color: var(--accent); font-family: 'Lora', serif; font-size: 12px; cursor: pointer; transition: all 0.2s; letter-spacing: 0.03em; }
+    .share-btn:hover { opacity: 0.8; }
 
-    .related-section { padding: 28px 0 0; }
     .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
-    .related-card {
-      background: var(--white); border: 1.5px solid var(--border);
-      border-radius: 14px; padding: 16px 14px; text-decoration: none;
-      color: inherit; display: block; transition: border-color 0.2s;
-    }
+    .related-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 16px 14px; text-decoration: none; color: inherit; display: block; transition: border-color 0.2s; }
     .related-card:hover { border-color: var(--accent); }
     .related-card .rc-icon { font-size: 22px; margin-bottom: 8px; display: block; }
     .related-card h4 { font-family: 'Playfair Display', serif; font-size: 13px; line-height: 1.3; color: var(--dark); margin-bottom: 4px; }
     .related-card p { font-size: 11px; color: var(--muted); }
     .related-card .rc-link { font-size: 11px; color: var(--accent); font-style: italic; margin-top: 6px; display: block; }
 
-    .float-cta {
-      position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
-      z-index: 100; display: flex; gap: 8px; padding: 0 12px;
-      width: 100%; max-width: 480px;
-    }
-    .float-cta a {
-      flex: 1; display: flex; align-items: center; justify-content: center;
-      gap: 7px; padding: 13px 10px; border-radius: 14px;
-      font-family: 'Lora', serif; font-size: 13px; font-weight: 500;
-      text-decoration: none; letter-spacing: 0.02em;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
+    .float-cta { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); z-index: 100; display: flex; gap: 8px; padding: 0 12px; width: 100%; max-width: 480px; }
+    .float-cta a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 13px 10px; border-radius: 14px; font-family: 'Lora', serif; font-size: 13px; font-weight: 500; text-decoration: none; letter-spacing: 0.02em; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
     .float-cta .cta-book { background: var(--dark); color: #fff; }
     .float-cta .cta-wa { background: #25D366; color: #fff; }
     .footer-bottom { padding-bottom: 80px !important; }
@@ -274,20 +190,19 @@
     <div class="rb-text">
       You commented <strong>"GUARD"</strong> on
       <a href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">@drpallaviahireshelke</a>
-      — here's your free guide from Dr. Pallavi.
+      — here's your free pH-Safe Shopping &amp; Skin Guide from Dr. Pallavi.
     </div>
   </div>
 
   <header class="site-header">
     <div class="pill">SKIN PROTECTION GUIDE</div>
     <h1>Skin pH —<br><em>The Security Guard Explained</em></h1>
-    <p class="subline">Why your soap is leaving your skin unprotected for 6 hours — and what to use instead.</p>
+    <p class="subline">Why your soap fires your skin's immunity — and leaves it defenceless for 6 hours.</p>
     <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Baner, Pune</p>
     <p class="philosophy">Inner &amp; Outer Beauty · Wholesome Beauty</p>
     <div class="dots">· · ·</div>
   </header>
 
-  <!-- SHARE -->
   <div class="share-row">
     <button class="share-btn" id="share-btn">↗ Share this guide</button>
   </div>
@@ -298,81 +213,258 @@
       <div class="stat-strip">
         <div class="stat-item">
           <div class="stat-num">5.5</div>
-          <div class="stat-label">healthy skin's<br>ideal pH</div>
+          <div class="stat-label">healthy skin's acid mantle pH</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">9–10</div>
-          <div class="stat-label">most soaps'<br>alkaline pH</div>
+          <div class="stat-label">most soaps' alkaline pH</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">6 hrs</div>
-          <div class="stat-label">skin needs to<br>recover after soap</div>
+          <div class="stat-label">time to restore after soap</div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- THE SECURITY GUARD -->
   <section>
     <div class="wrapper">
-      <div class="section-label">THE ACID MANTLE</div>
+      <div class="section-label">THE SECURITY GUARD — FULLY EXPLAINED</div>
       <div class="card card-accent">
-        <p>Your skin's surface has a naturally slightly acidic layer called the <strong>Acid Mantle</strong> — its pH is around 5.5. This invisible layer is your skin's Security Guard.</p><p>Its job: keep bacteria, acne-causing microbes, and irritants from entering the skin. It can only function in a slightly acidic environment.</p>
-        
+        <h2>Your Skin Has an Immune Layer — and You're Firing It</h2>
+        <p>Skin ka pH balance — ye exactly hota kya hai? Simple language mein — ye aapki skin ka "Security Guard" hai. Log "Deep Clean" ke chakkar mein harsh soaps use karte hain jo skin ki immunity hi khatam kar dete hain. Unhe lagta hai skin saaf ho gayi — par actually unhone germs ke liye "Red Carpet" bichha diya.</p>
+        <p>The acid mantle is not just a metaphor — it is a real microbiological defence. Skin ke upar ek invisible, halki si "Acidic" layer hoti hai jise "Acid Mantle" kehte hain. Its pH is approximately 5.5. The slightly acidic surface creates an inhospitable environment for pathogenic bacteria, which thrive at neutral or alkaline pH. Beneficial skin microbiome bacteria actually prefer acidic conditions — and actively help defend against harmful microbes.</p>
+        <p>Ye guard sirf "Acidic" environment mein zinda reh sakta hai. Normal soaps ka pH hota hai 9 ya 10. Soap lagate hi, aap is security guard ko "Fire" kar dete ho — for up to 6 hours.</p>
       </div>
     </div>
   </section>
 
+  <!-- THE ACID MANTLE SCIENCE -->
   <section>
     <div class="wrapper">
-      <div class="section-label">WHAT SOAP DOES TO IT</div>
-      <div class="card card-warn">
-        <p>Most bar soaps have a pH of 9–10 — highly alkaline. When you wash with soap, you temporarily shift your skin's pH upward, essentially <strong>firing the security guard</strong>.</p><p>It takes your skin approximately <strong>6 hours</strong> to restore its acid mantle back to pH 5.5. During those 6 hours, the skin is completely unprotected.</p>
-        <div class="highlight-note">If you wash your face with soap morning and night, your skin may never have a fully functional acid mantle.</div>
+      <div class="section-label">THE ACID MANTLE — WHAT IT IS MADE OF</div>
+      <div class="card">
+        <h2>Three Ingredients Build Your Skin's Defence</h2>
+        <p>The acid mantle is not a single substance — it is formed by the combined secretions of three sources working together on the skin surface:</p>
+        <p><strong>1. Sebum</strong> — fatty acids (oleic, linoleic, palmitic) secreted by sebaceous glands lower the surface pH. This is why some oil on the skin is protective, not harmful.</p>
+        <p><strong>2. Sweat</strong> — eccrine gland secretions contain lactic acid and amino acids. These contribute to the acidic environment and also provide natural moisturising factors (NMF).</p>
+        <p><strong>3. Skin microbiome byproducts</strong> — the beneficial bacteria living on your skin (predominantly Staphylococcus epidermidis and Cutibacterium acnes species) produce short-chain fatty acids as metabolic byproducts. These actively maintain the acidic pH that keeps them dominant over harmful species.</p>
+        <p style="font-size:13px;color:var(--muted);">Together, these three produce pH 4.5–5.5 across the skin surface. This is your skin's first line of immune defence — and it is disrupted every time an alkaline product contacts it.</p>
       </div>
     </div>
   </section>
 
+  <!-- pH SCALE -->
   <section>
     <div class="wrapper">
-      <div class="section-label">WHAT HAPPENS WITHOUT PROTECTION</div>
-      <div class="condition-grid">
-        
-        <div class="condition-card">
-          <h3>Persistent acne</h3>
-          <p>Acne bacteria thrive in alkaline environments. Alkaline skin = ideal breeding ground.</p>
+      <div class="section-label">THE pH SCALE — WHERE YOUR SKIN SITS</div>
+      <div class="ph-scale">
+        <div class="ph-scale-bar"></div>
+        <div class="ph-markers">
+          <div class="ph-marker bad"><div class="ph-val" style="color:#D04040;">2</div><div class="ph-note">Battery acid</div></div>
+          <div class="ph-marker highlight"><div class="ph-val">5.5</div><div class="ph-note">Healthy skin (acid mantle)</div></div>
+          <div class="ph-marker"><div class="ph-val" style="color:var(--muted);">7.0</div><div class="ph-note">Neutral (plain water)</div></div>
+          <div class="ph-marker"><div class="ph-val" style="color:#C06020;">9–10</div><div class="ph-note">Most bar soaps</div></div>
+          <div class="ph-marker"><div class="ph-val" style="color:#7040C0;">14</div><div class="ph-note">Lye / bleach</div></div>
         </div>
-        <div class="condition-card">
-          <h3>Redness and inflammation</h3>
-          <p>External irritants penetrate the unprotected surface more easily.</p>
+      </div>
+      <div class="card" style="margin-top:0;">
+        <p style="font-size:13px;color:var(--muted);">Even plain water has a pH of 7.0 — already 1.5 points above skin's optimal pH. Every soap wash pushes the skin 3.5–4.5 pH units into alkaline territory, which is why recovery takes hours, not minutes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DARK BANNER -->
+  <section>
+    <div class="wrapper">
+      <div class="dark-banner">
+        <blockquote>"Every time you wash with regular soap, you're not just cleaning your face — you're dismantling your immune barrier. For 6 hours after each soap wash, your skin is as defenceless as an unlocked door."</blockquote>
+        <p>The acid mantle takes approximately 6 hours to fully regenerate after disruption by alkaline soap. In those 6 hours, pathogenic bacteria can colonise freely, inflammatory signals are more easily triggered, and allergens penetrate far more deeply than they would through an intact barrier. If you wash twice daily with soap, your acid mantle may never fully recover between washes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT HAPPENS IN THOSE 6 HOURS -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">WHAT HAPPENS IN THOSE 6 HOURS</div>
+      <div class="hour-flow">
+        <div class="hour-item">
+          <div class="hour-line"><div class="hour-dot"></div><div class="hour-connector"></div></div>
+          <div class="hour-body">
+            <div class="hour-time">Hour 0–1</div>
+            <p>Acid mantle disrupted. Surface pH rises sharply to 7–9. The security guard has been fired. Beneficial microbiome bacteria lose their competitive advantage — conditions now favour pathogenic species.</p>
+          </div>
         </div>
-        <div class="condition-card">
-          <h3>Increased skin sensitivity</h3>
-          <p>Skin reacts to more products, feels tight, and stings more easily.</p>
+        <div class="hour-item">
+          <div class="hour-line"><div class="hour-dot"></div><div class="hour-connector"></div></div>
+          <div class="hour-body">
+            <div class="hour-time">Hour 1–3</div>
+            <p>Pathogenic bacteria (including acne-associated C. acnes variants and Staphylococcus aureus) begin colonising the now-alkaline environment. Barrier lipids are partially disrupted — TEWL increases.</p>
+          </div>
         </div>
-        <div class="condition-card">
-          <h3>Eczema flares</h3>
-          <p>pH disruption is a known trigger for eczema and contact dermatitis.</p>
+        <div class="hour-item">
+          <div class="hour-line"><div class="hour-dot"></div><div class="hour-connector"></div></div>
+          <div class="hour-body">
+            <div class="hour-time">Hour 3–5</div>
+            <p>Inflammatory response begins in susceptible individuals — redness, itching, or reactive sensitivity. Allergen penetration is enhanced through the compromised barrier. Existing skin conditions (eczema, rosacea) are most likely to flare in this window.</p>
+          </div>
+        </div>
+        <div class="hour-item">
+          <div class="hour-line"><div class="hour-dot"></div><div class="hour-connector"></div></div>
+          <div class="hour-body">
+            <div class="hour-time">Hour 6</div>
+            <p>Skin finally rebuilds its acid mantle through sebum secretion and sweat — only for you to wash again. If you wash twice daily with soap, your barrier may be in permanent disruption.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- CONDITIONS CAUSED -->
   <section>
     <div class="wrapper">
-      <div class="section-label">THE SOLUTION — pH BALANCED CLEANSERS</div>
+      <div class="section-label">CONDITIONS CAUSED BY ACID MANTLE DISRUPTION</div>
+      <div class="conditions-grid">
+        <div class="condition-card">
+          <div class="cond-icon">🔴</div>
+          <div>
+            <h4>Persistent Acne</h4>
+            <p>Alkaline skin environment allows acne-associated bacterial variants to thrive, proliferate, and trigger follicular inflammation. Harsh cleansers simultaneously strip protective lipids, creating both microbial and barrier vulnerability.</p>
+          </div>
+        </div>
+        <div class="condition-card">
+          <div class="cond-icon">🟡</div>
+          <div>
+            <h4>Eczema Flares</h4>
+            <p>pH disruption triggers the inflammatory cascade central to atopic dermatitis. Studies show that eczema-affected skin consistently has a higher pH than healthy skin — and alkaline washes drive it higher, worsening flares directly.</p>
+          </div>
+        </div>
+        <div class="condition-card">
+          <div class="cond-icon">🟠</div>
+          <div>
+            <h4>Contact Dermatitis</h4>
+            <p>Allergens and irritants penetrate compromised barriers far more easily. Without an intact acid mantle, the epidermis cannot maintain the tight junctions that screen out environmental triggers.</p>
+          </div>
+        </div>
+        <div class="condition-card">
+          <div class="cond-icon">🌸</div>
+          <div>
+            <h4>Rosacea Sensitivity</h4>
+            <p>Nerve endings in rosacea-prone skin are hypersensitive. The inflamed microenvironment created by pH disruption amplifies neurogenic inflammation — causing the flushing, burning, and reactivity characteristic of rosacea.</p>
+          </div>
+        </div>
+        <div class="condition-card">
+          <div class="cond-icon">🦠</div>
+          <div>
+            <h4>Skin Microbiome Dysbiosis</h4>
+            <p>The beneficial bacteria that produce protective fatty acids are outcompeted by harmful species in an alkaline environment. This microbiome imbalance is increasingly linked to long-term skin ageing, barrier weakness, and chronic reactivity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT ELSE DISRUPTS pH -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">WHAT ELSE DISRUPTS YOUR ACID MANTLE</div>
+      <div class="avoid-list">
+        <div class="avoid-item"><span class="ax">⚠</span><span><strong>Bar soaps</strong> — pH 9–10 regardless of brand. Even "natural" or "Ayurvedic" bar soaps are alkaline. The saponification chemistry of soap manufacturing requires alkalinity.</span></div>
+        <div class="avoid-item"><span class="ax">⚠</span><span><strong>Baking soda on face</strong> — pH 9. A common "natural skincare" trend that is clinically harmful. Severely disrupts the acid mantle and microbiome.</span></div>
+        <div class="avoid-item"><span class="ax">⚠</span><span><strong>Over-wiping or over-exfoliating</strong> — mechanical disruption of the acid mantle layer. Even without chemical damage, physical abrasion removes the sebum and sweat layer that maintains acidity.</span></div>
+        <div class="avoid-item"><span class="ax">⚠</span><span><strong>Alcohol-based toners</strong> — strip sebum (pH-lowering lipids) and dehydrate the barrier simultaneously. Short-term tightening effect, long-term barrier damage.</span></div>
+        <div class="avoid-item"><span class="ax">⚠</span><span><strong>Plain water itself</strong> — pH 7, which is already 1.5 points above optimal skin pH. Excessive water washing (hot showers, multiple rinses) accumulates acid mantle disruption even without any cleanser.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOAP vs pH BALANCED CLEANSER -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">SOAP vs pH-BALANCED CLEANSER</div>
+      <div class="compare-table">
+        <div class="compare-head">
+          <div style="text-align:left;">Feature</div>
+          <div>Bar Soap</div>
+          <div>pH-Balanced Cleanser</div>
+        </div>
+        <div class="compare-row">
+          <div class="label-col">pH</div>
+          <div class="bad">9–10 (alkaline)</div>
+          <div class="good">4.5–5.5 (skin-matched)</div>
+        </div>
+        <div class="compare-row">
+          <div class="label-col">Acid mantle effect</div>
+          <div class="bad">Disrupts for 6 hrs</div>
+          <div class="good">Minimal disruption</div>
+        </div>
+        <div class="compare-row">
+          <div class="label-col">Microbiome effect</div>
+          <div class="bad">Kills beneficial bacteria</div>
+          <div class="good">Preserves microbiome</div>
+        </div>
+        <div class="compare-row">
+          <div class="label-col">Skin reactivity risk</div>
+          <div class="bad">High — especially for sensitive skin</div>
+          <div class="good">Low</div>
+        </div>
+        <div class="compare-row">
+          <div class="label-col">Cleans effectively</div>
+          <div>Yes</div>
+          <div class="good">Yes — equally effective</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE SOLUTION -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">HOW TO CHOOSE pH-SAFE PRODUCTS</div>
+      <div class="solution-step">
+        <div class="sol-num">1</div>
+        <div class="sol-body">
+          <h3>Switch to a Gel or Cream Cleanser</h3>
+          <p>Many gel cleansers are formulated at pH 4.5–5.5. Look for "pH balanced" on the label, or "gentle" / "non-stripping." Avoid anything described as "deep cleansing foam" — foaming usually indicates higher pH from sulphate surfactants.</p>
+          <div class="sol-badge">Look for pH 4.5–5.5 on label</div>
+        </div>
+      </div>
+      <div class="solution-step">
+        <div class="sol-num">2</div>
+        <div class="sol-body">
+          <h3>Micellar Water — Near-Neutral and Safe</h3>
+          <p>Micellar water is typically pH 6.0–7.0 — significantly gentler than soap. Ideal as a makeup remover or light-cleanse option. Requires no rinsing, so it does not add additional water-exposure disruption to the acid mantle.</p>
+          <div class="sol-badge">pH ~6–7 — safe for daily use</div>
+        </div>
+      </div>
+      <div class="solution-step">
+        <div class="sol-num">3</div>
+        <div class="sol-body">
+          <h3>Cream Cleansers — Gentlest Option</h3>
+          <p>Cream cleansers typically contain no or very low levels of surfactants. They are the gentlest format for acne-prone, rosacea, or eczema-affected skin. pH is usually 5.0–6.5. Best for dry or sensitive skin types.</p>
+          <div class="sol-badge">Best for sensitive and reactive skin</div>
+        </div>
+      </div>
+      <div class="solution-step">
+        <div class="sol-num">4</div>
+        <div class="sol-body">
+          <h3>Follow With a pH-Restoring Toner (Optional)</h3>
+          <p>If you prefer to use a toner, choose one that is alcohol-free and contains acids at low concentrations — such as lactic acid 5% or mandelic acid 2%. These gently re-acidify the skin surface after cleansing, actively accelerating acid mantle restoration. Avoid witch hazel-dominant or alcohol-dominant formulas.</p>
+          <div class="sol-badge">Alcohol-free — acids welcome, alcohol not</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING CARD -->
+  <section>
+    <div class="wrapper">
       <div class="card card-sage">
-        <p>pH-balanced cleansers are formulated at approximately 5.5 — matching your skin's natural pH. They clean effectively without disrupting the acid mantle.</p><p>Look for: gel or cream cleansers, sulphate-free formulas, or cleansers that specifically state 'pH balanced' or 'pH 5.5'.</p>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING CTA -->
-  <section>
-    <div class="wrapper">
-      <div class="quote-banner">
-        <blockquote>"Acne or sensitivity that won't resolve? It might be your cleanser."</blockquote>
-        <cite>DM <a href="https://www.instagram.com/drpallaviahireshelke/" target="_blank" style="color:var(--accent);">@drpallaviahireshelke</a> on Instagram.</cite>
+        <h2>Want a personalised pH-safe routine?</h2>
+        <p>Choosing the right cleanser for your specific skin condition — acne, eczema, rosacea, or general sensitivity — requires knowing your skin's current barrier state. Dr. Pallavi will assess your skin at consultation and recommend exactly what your acid mantle needs to stay intact.</p>
+        <p style="font-size:13px;color:var(--muted);margin-top:6px;">DM <strong>@drpallaviahireshelke</strong> and mention <strong>'GUARD'</strong> to book or ask a question.</p>
       </div>
     </div>
   </section>
@@ -385,34 +477,46 @@
         <div class="contact-header">
           <h2>Dr. Pallavi Ahire-Shelke</h2>
           <p class="creds">MBBS, MD, DNB, DDV · Gold Medalist Dermatologist</p>
-          <p class="tagline">Skin consultation — Baner, Pune</p>
+          <p class="tagline">Skin barrier and pH assessment — Baner, Pune</p>
         </div>
         <div class="contact-grid">
-          <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank"><div class="cc-icon">📍</div><div class="cc-label">Location</div><div class="cc-detail">Baner, Pune</div><div class="cc-action">Get Directions</div></a>
-          <a class="contact-cell" href="tel:+919028291234"><div class="cc-icon">📞</div><div class="cc-label">Phone</div><div class="cc-detail">+91 90282 91234</div><div class="cc-action">Book a consultation</div></a>
-          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank"><div class="cc-icon">📸</div><div class="cc-label">Instagram</div><div class="cc-detail">@drpallaviahireshelke</div><div class="cc-action">Daily skin &amp; hair tips</div></a>
-          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank"><div class="cc-icon">💬</div><div class="cc-label">WhatsApp</div><div class="cc-detail">Quick queries welcome</div><div class="cc-action">Message us</div></a>
+          <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">
+            <div class="cc-icon">📍</div><div class="cc-label">Location</div>
+            <div class="cc-detail">Baner, Pune</div><div class="cc-action">Get Directions</div>
+          </a>
+          <a class="contact-cell" href="tel:+919028291234">
+            <div class="cc-icon">📞</div><div class="cc-label">Phone</div>
+            <div class="cc-detail">+91 90282 91234</div><div class="cc-action">Book a consultation</div>
+          </a>
+          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">
+            <div class="cc-icon">📸</div><div class="cc-label">Instagram</div>
+            <div class="cc-detail">@drpallaviahireshelke</div><div class="cc-action">Daily skin education</div>
+          </a>
+          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">
+            <div class="cc-icon">💬</div><div class="cc-label">WhatsApp</div>
+            <div class="cc-detail">+91 90282 91234</div><div class="cc-action">Message us</div>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- RELATED GUIDES -->
-  <section class="related-section">
+  <section>
     <div class="wrapper">
-      <div class="section-label" style="color:var(--accent);">MORE GUIDES</div>
+      <div class="section-label">RELATED GUIDES</div>
       <div class="related-grid">
         <a class="related-card" href="guide-barrier.html">
           <span class="rc-icon">🛡️</span>
-          <h4>Skin Barrier Guide</h4>
-          <p>Comment BARRIER</p>
-          <span class="rc-link">Read guide →</span>
+          <h4>Barrier Repair Guide</h4>
+          <p>When your skin's defence wall needs rebuilding</p>
+          <span class="rc-link">Comment BARRIER →</span>
         </a>
         <a class="related-card" href="guide-sponge.html">
           <span class="rc-icon">🧽</span>
-          <h4>Oily-Dehydrated Guide</h4>
-          <p>Comment SPONGE</p>
-          <span class="rc-link">Read guide →</span>
+          <h4>Oily-but-Dehydrated</h4>
+          <p>The sponge theory and recovery protocol</p>
+          <span class="rc-link">Comment SPONGE →</span>
         </a>
       </div>
     </div>
@@ -435,7 +539,7 @@
   </footer>
 
   <div class="float-cta">
-    <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
+    <a class="cta-book" href="tel:+919028291234">📲 Book Consultation</a>
     <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
   </div>
 
@@ -445,18 +549,15 @@
       if (!btn) return;
       btn.addEventListener('click', function() {
         if (navigator.share) {
-          navigator.share({ title: 'Skin pH & Acid Mantle — Free Guide by Dr. Pallavi', url: window.location.href });
+          navigator.share({ title: 'Skin pH — The Security Guard · Dr. Pallavi', url: window.location.href });
         } else {
           navigator.clipboard.writeText(window.location.href).then(function() {
-            btn.textContent = '✓ Link Copied!';
+            btn.textContent = '✓ Link copied!';
             setTimeout(function() { btn.textContent = '↗ Share this guide'; }, 2200);
-          }).catch(function() {
-            btn.textContent = 'Copy: ' + window.location.href;
           });
         }
       });
     })();
   </script>
-
 </body>
 </html>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gut-Skin Connection — Psoriasis & Eczema Guide · Dr. Pallavi Ahire-Shelke</title>
-  <meta name="description" content="Free guide by Dr. Pallavi Ahire-Shelke: the gut-skin axis in psoriasis and eczema, leaky gut, the root cause approach, and why steroids alone don't solve it." />
+  <title>Psoriasis &amp; Eczema — The Gut Connection · Dr. Pallavi Ahire-Shelke, Baner Pune</title>
+  <meta name="description" content="Free gut-skin guide by Dr. Pallavi: why psoriasis and eczema keep coming back, the leaky gut mechanism, and the root-cause approach that actually heals. Gold Medalist Dermatologist, Baner, Pune." />
   <meta name="theme-color" content="#0A1410" />
   <link rel="canonical" href="https://drpallavi.skinethics.in/guide-gut.html" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://drpallavi.skinethics.in/guide-gut.html" />
-  <meta property="og:title" content="Gut-Skin Axis — Psoriasis & Eczema Guide by Dr. Pallavi" />
-  <meta property="og:description" content="Psoriasis and eczema are not just skin diseases — they're gut and immunity issues showing on skin. Free guide by Gold Medalist Dermatologist." />
+  <meta property="og:title" content="Psoriasis &amp; Eczema — The Gut Connection. Free Guide by Dr. Pallavi" />
+  <meta property="og:description" content="80% of immunity lives in your gut. Psoriasis and eczema are not skin diseases — they are gut-immune diseases visible on skin." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -19,15 +19,15 @@
 
     :root {
       --dark:      #0A1410;
-      --bg:        #FAF8F6;
+      --bg:        #F3FAF3;
       --white:     #FFFFFF;
       --accent:    #407840;
       --lt-accent: #90C090;
       --sage-bg:   #E8F4E8;
-      --warn-bg:   #EEF8EE;
+      --warn-bg:   #FFF8F0;
       --border:    #C0D8C0;
-      --muted:     #7A7080;
-      --highlight: #F8F4F0;
+      --muted:     #486048;
+      --highlight: #EEF8EE;
     }
 
     html { scroll-behavior: smooth; }
@@ -50,11 +50,22 @@
     }
     .back-nav a:hover { color: var(--accent); }
 
+    .received-banner {
+      background: var(--dark);
+      border-bottom: 2px solid var(--accent);
+      padding: 12px 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .received-banner .rb-icon { font-size: 20px; flex-shrink: 0; }
+    .received-banner .rb-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.4; }
+    .received-banner .rb-text strong { color: #fff; }
+    .received-banner .rb-text a { color: inherit; opacity: 0.9; }
+
     .site-header {
       background: var(--dark);
       background-image:
-        radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.55) 0%, transparent 55%),
-        radial-gradient(ellipse at 15% 85%, rgba(200,160,100,0.18) 0%, transparent 55%);
+        radial-gradient(ellipse at 80% 15%, rgba(64,120,64,0.65) 0%, transparent 55%),
+        radial-gradient(ellipse at 15% 85%, rgba(144,192,144,0.18) 0%, transparent 55%);
       padding: 40px 20px 36px;
       text-align: center;
     }
@@ -72,9 +83,9 @@
       color: var(--white); line-height: 1.25; margin-bottom: 10px;
     }
     .site-header h1 em { font-style: italic; color: var(--lt-accent); }
-    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 330px; margin: 0 auto 16px; opacity: 0.9; }
-    .site-header .byline  { color: rgba(255,255,255,0.45); font-size: 11px; margin-bottom: 8px; }
-    .site-header .philosophy { font-style: italic; color: rgba(255,255,255,0.35); font-size: 11px; }
+    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 340px; margin: 0 auto 16px; opacity: 0.9; }
+    .site-header .byline  { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+    .site-header .philosophy { font-style: italic; color: var(--muted); font-size: 11px; }
     .dots { margin: 16px 0 0; color: var(--lt-accent); letter-spacing: 8px; font-size: 10px; }
 
     .wrapper { max-width: 480px; margin: 0 auto; padding: 0 16px; }
@@ -93,100 +104,130 @@
       border-radius: 16px; padding: 22px 20px; margin-bottom: 16px;
     }
     .card-accent { border-left: 4px solid var(--accent); }
-    .card-warn   { background: var(--warn-bg); border-left: 4px solid var(--dark); }
     .card-sage   { background: var(--sage-bg); border-left: 4px solid var(--accent); }
     .card h2 { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--dark); margin-bottom: 12px; }
     .card p  { font-size: 14px; margin-bottom: 10px; }
     .card p:last-child { margin-bottom: 0; }
 
     .stat-strip {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px; margin-bottom: 16px;
     }
     .stat-item {
       background: var(--white); border: 1.5px solid var(--border);
       border-radius: 14px; padding: 16px 10px; text-align: center;
     }
     .stat-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px; color: var(--accent); line-height: 1.2; margin-bottom: 4px;
+      font-family: 'Playfair Display', serif; font-size: 20px;
+      color: var(--accent); line-height: 1; margin-bottom: 6px;
     }
-    .stat-label { font-size: 11px; color: var(--muted); line-height: 1.3; }
+    .stat-label { font-size: 11px; color: var(--muted); line-height: 1.4; }
 
-    .proc-step {
+    .dark-banner {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 10%, rgba(64,120,64,0.65) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 90%, rgba(144,192,144,0.12) 0%, transparent 55%);
+      border-radius: 18px; padding: 28px 22px; margin-bottom: 16px;
+    }
+    .dark-banner blockquote {
+      font-family: 'Playfair Display', serif; font-size: 18px;
+      color: var(--white); line-height: 1.5; margin-bottom: 12px;
+    }
+    .dark-banner p { font-size: 13px; color: var(--lt-accent); }
+
+    /* PATHWAY STEPS */
+    .pathway { position: relative; padding-left: 28px; }
+    .pathway::before {
+      content: ''; position: absolute; left: 11px; top: 8px; bottom: 8px;
+      width: 2px; background: var(--border);
+    }
+    .pathway-item {
+      position: relative; margin-bottom: 14px;
+    }
+    .pathway-item::before {
+      content: ''; position: absolute; left: -23px; top: 7px;
+      width: 14px; height: 14px;
+      background: var(--accent); border-radius: 50%; border: 2px solid var(--bg);
+    }
+    .pathway-item h4 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--accent); margin-bottom: 3px; }
+    .pathway-item p  { font-size: 13px; color: var(--muted); margin: 0; }
+
+    /* COMPARISON CARDS */
+    .condition-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+    @media (max-width: 400px) { .condition-compare { grid-template-columns: 1fr; } }
+    .cc-panel { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; }
+    .cc-panel .ccp-head {
+      padding: 12px 14px; font-family: 'Playfair Display', serif; font-size: 15px;
+      background: var(--dark); color: var(--white);
+    }
+    .cc-panel .ccp-row {
+      padding: 9px 14px; font-size: 12px; color: var(--dark);
+      border-bottom: 1px solid var(--border);
+    }
+    .cc-panel .ccp-row:last-child { border-bottom: none; }
+    .cc-panel .ccp-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+
+    /* INFLAME LIST */
+    .inflame-list { display: flex; flex-direction: column; gap: 10px; }
+    .inflame-item {
+      background: var(--warn-bg); border-left: 4px solid #C07A00;
+      border-radius: 10px; padding: 12px 14px;
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: 13px; color: var(--dark);
+    }
+    .inflame-item .wx { color: #C07A00; font-weight: 700; flex-shrink: 0; }
+
+    /* SOLUTION STEPS */
+    .solution-step {
       background: var(--white); border: 1.5px solid var(--border);
-      border-radius: 14px; padding: 16px 18px 14px; margin-bottom: 12px;
+      border-radius: 14px; padding: 16px 18px; margin-bottom: 12px;
       display: flex; gap: 14px; align-items: flex-start;
     }
-    .proc-num {
-      width: 32px; height: 32px;
-      background: var(--dark); color: var(--white);
+    .step-num {
+      width: 32px; height: 32px; min-width: 32px;
+      background: var(--accent); color: var(--white);
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-family: 'Playfair Display', serif; font-size: 14px;
       flex-shrink: 0; margin-top: 2px;
     }
-    .proc-body h3 { font-family: 'Playfair Display', serif; font-size: 15px; margin-bottom: 4px; }
-    .proc-body p  { font-size: 13px; color: var(--muted); margin: 0; }
+    .step-body h3 { font-family: 'Playfair Display', serif; font-size: 15px; margin-bottom: 4px; color: var(--dark); }
+    .step-body p  { font-size: 13px; color: var(--muted); margin: 0; }
 
-    .highlight-note {
+    /* MISTAKE CARDS */
+    .mistake-card {
+      background: var(--warn-bg); border-left: 4px solid #9A4040;
+      border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;
+    }
+    .mistake-card h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: #9A4040; margin-bottom: 6px; }
+    .mistake-card p  { font-size: 13px; color: var(--dark); margin: 0; }
+
+    /* AXIS PATHWAYS */
+    .axis-card {
       background: var(--highlight); border: 1.5px solid var(--border);
-      border-left: 4px solid var(--lt-accent);
-      border-radius: 10px; padding: 12px 14px; margin-top: 12px;
-      font-size: 13px; color: var(--dark); font-style: italic;
+      border-radius: 14px; padding: 18px 20px; margin-bottom: 12px;
     }
-
-    .timeline-card {
-      background: var(--dark);
-      background-image: radial-gradient(ellipse at 85% 10%, rgba(180,100,60,0.5) 0%, transparent 55%);
-      border-radius: 14px; padding: 22px 20px;
-    }
-    .timeline-card h3 { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--white); margin-bottom: 16px; }
-    .timeline-row {
-      display: flex; gap: 10px; align-items: flex-start;
-      margin-bottom: 12px; font-size: 13px;
-    }
-    .timeline-row:last-child { margin-bottom: 0; }
-    .timeline-dot { color: var(--lt-accent); font-weight: 700; flex-shrink: 0; margin-top: 2px; }
-    .timeline-text { color: var(--lt-accent); line-height: 1.5; }
-    .timeline-text strong { color: var(--white); }
-
-    .condition-grid { display: flex; flex-direction: column; gap: 12px; }
-    .condition-card {
-      background: var(--white); border: 1.5px solid var(--border);
-      border-left: 4px solid var(--accent);
-      border-radius: 12px; padding: 14px 16px;
-    }
-    .condition-card h3 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 4px; }
-    .condition-card p  { font-size: 12px; color: var(--muted); margin: 0; }
-
-    .quote-banner {
-      background: var(--sage-bg); border-left: 4px solid var(--accent);
-      border-radius: 12px; padding: 20px; margin-bottom: 16px; text-align: center;
-    }
-    .quote-banner blockquote {
-      font-family: 'Playfair Display', serif; font-style: italic;
-      font-size: 17px; color: var(--dark); line-height: 1.5; margin-bottom: 8px;
-    }
-    .quote-banner cite { font-size: 12px; color: var(--muted); }
+    .axis-card h3 { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--accent); margin-bottom: 8px; }
+    .axis-card p  { font-size: 13px; color: var(--dark); margin: 0; }
 
     .contact-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; overflow: hidden; }
     .contact-header {
       background: var(--dark);
-      background-image: radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.55) 0%, transparent 55%);
+      background-image: radial-gradient(ellipse at 85% 15%, rgba(64,120,64,0.65) 0%, transparent 55%);
       padding: 22px 20px; text-align: center;
     }
     .contact-header h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); margin-bottom: 4px; }
     .contact-header .creds  { font-size: 11px; color: var(--lt-accent); margin-bottom: 6px; }
-    .contact-header .tagline { font-size: 12px; color: rgba(255,255,255,0.5); font-style: italic; }
+    .contact-header .tagline { font-size: 12px; color: var(--muted); font-style: italic; }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; }
     @media (max-width: 400px) { .contact-grid { grid-template-columns: 1fr; } }
     .contact-cell {
       padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border);
       text-decoration: none; color: inherit; transition: background 0.15s;
-      display: block;
     }
-    .contact-cell:nth-child(even)       { border-right: none; }
-    .contact-cell:nth-last-child(-n+2)  { border-bottom: none; }
+    .contact-cell:nth-child(even)      { border-right: none; }
+    .contact-cell:nth-last-child(-n+2) { border-bottom: none; }
     .contact-cell:hover { background: var(--sage-bg); }
     .cc-icon   { font-size: 18px; margin-bottom: 4px; }
     .cc-label  { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
@@ -198,8 +239,8 @@
     footer {
       background: var(--dark);
       background-image:
-        radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.35) 0%, transparent 55%),
-        radial-gradient(ellipse at 10% 85%, rgba(200,160,100,0.08) 0%, transparent 55%);
+        radial-gradient(ellipse at 85% 15%, rgba(64,120,64,0.35) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 85%, rgba(144,192,144,0.08) 0%, transparent 55%);
       padding: 28px 20px 0;
     }
     .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 480px; margin: 0 auto; padding-bottom: 20px; }
@@ -207,22 +248,9 @@
     .footer-col h4 { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lt-accent); margin-bottom: 8px; }
     .footer-col p  { font-size: 12px; color: var(--lt-accent); line-height: 1.6; opacity: 0.8; }
     .footer-col p em { font-style: italic; opacity: 0.7; }
-    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(150,100,60,0.3); }
+    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(64,120,64,0.3); }
     .footer-bottom { max-width: 480px; margin: 0 auto; display: flex; justify-content: space-between; padding: 12px 0 16px; flex-wrap: wrap; gap: 4px; }
     .footer-bottom span { font-size: 10px; color: var(--muted); }
-
-    .received-banner {
-      background: var(--dark);
-      border-bottom: 2px solid var(--accent);
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .received-banner .rb-icon { font-size: 20px; flex-shrink: 0; }
-    .received-banner .rb-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.4; }
-    .received-banner .rb-text strong { color: #fff; }
-    .received-banner .rb-text a { color: inherit; opacity: 0.9; }
 
     .share-row { display: flex; justify-content: center; padding: 12px 16px 0; }
     .share-btn {
@@ -259,8 +287,8 @@
       text-decoration: none; letter-spacing: 0.02em;
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
-    .float-cta .cta-book { background: var(--dark); color: #fff; }
-    .float-cta .cta-wa { background: #25D366; color: #fff; }
+    .float-cta .cta-call { background: var(--dark); color: #fff; }
+    .float-cta .cta-wa   { background: #25D366; color: #fff; }
     .footer-bottom { padding-bottom: 80px !important; }
   </style>
 </head>
@@ -280,14 +308,13 @@
 
   <header class="site-header">
     <div class="pill">GUT-SKIN GUIDE</div>
-    <h1>Psoriasis & Eczema —<br><em>The Gut Connection</em></h1>
-    <p class="subline">Why these skin conditions keep returning — and the root-cause approach that actually works.</p>
+    <h1>Psoriasis &amp; Eczema —<br><em>The Gut Connection</em></h1>
+    <p class="subline">Why these skin conditions keep returning — and the root-cause approach that actually heals.</p>
     <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Baner, Pune</p>
     <p class="philosophy">Inner &amp; Outer Beauty · Wholesome Beauty</p>
     <div class="dots">· · ·</div>
   </header>
 
-  <!-- SHARE -->
   <div class="share-row">
     <button class="share-btn" id="share-btn">↗ Share this guide</button>
   </div>
@@ -298,116 +325,247 @@
       <div class="stat-strip">
         <div class="stat-item">
           <div class="stat-num">80%</div>
-          <div class="stat-label">of immunity<br>lives in the gut</div>
+          <div class="stat-label">of your immunity lives in the gut</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">Leaky Gut</div>
-          <div class="stat-label">allows toxins<br>into bloodstream</div>
+          <div class="stat-label">the mechanism driving skin flares</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">Root Cause</div>
-          <div class="stat-label">approach needed<br>not just cream</div>
+          <div class="stat-label">the approach that actually works</div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- THE BIGGER PICTURE -->
   <section>
     <div class="wrapper">
-      <div class="section-label">THE DEEPER TRUTH</div>
-      <div class="card card-warn">
-        <p>Psoriasis, eczema, and alopecia areata are widely treated as skin diseases. But the real origin point for most cases is deeper: <strong>the gut and the immune system</strong>.</p><p>80% of your immune system lives in your gut. When the gut is inflamed, the immune system goes into overdrive — and the overflow shows on your skin.</p>
-        
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrapper">
-      <div class="section-label">LEAKY GUT — THE MECHANISM</div>
+      <div class="section-label">THE BIGGER PICTURE</div>
       <div class="card card-accent">
-        <p>When the gut lining weakens (Leaky Gut), tiny food particles and toxins slip into the bloodstream. Your immune system identifies them as invaders and attacks.</p><p>This overactive immune response is what drives:</p><p>• <strong>Psoriasis:</strong> immune system pushes skin cells to the surface 10× too fast → scaling, plaques<br>• <strong>Eczema:</strong> gut inflammation leaks through as skin barrier breakdown → redness, itching, rashes</p>
-        
+        <h2>These are not skin diseases.</h2>
+        <p>"Psoriasis and eczema patients come to me having tried 5 different creams and 3 different dermatologists. They've managed symptoms. But the flares keep coming back. The reason is that we've been treating the expression of a problem, not the problem itself. These are systemic conditions that happen to show on skin."</p>
+        <p>Psoriasis, eczema, and alopecia areata are classified by modern immunology as immune-mediated inflammatory disorders. Skin is where they show. But the immune dysregulation driving them originates elsewhere — specifically, in the gut-immune system that controls 70–80% of your body's entire inflammatory response.</p>
+        <p>This guide explains why your skin keeps flaring, what is actually happening in your gut and immune system, and the root-cause approach that addresses the origin — not just the surface expression.</p>
       </div>
     </div>
   </section>
 
+  <!-- THE GUT-SKIN AXIS -->
   <section>
     <div class="wrapper">
-      <div class="section-label">WHAT TRIGGERS THE GUT INFLAMMATION</div>
-      <div class="condition-grid">
-        
-        <div class="condition-card">
-          <h3>Dairy and gluten sensitivity</h3>
-          <p>Common trigger foods that increase gut inflammation in predisposed individuals.</p>
+      <div class="section-label">THE GUT–SKIN AXIS — THREE PATHWAYS</div>
+      <div class="card">
+        <h2>The gut and skin are in constant conversation.</h2>
+        <p>This is not metaphor — it is physiology. The gut-skin axis is a well-characterised bidirectional communication network with three distinct pathways. Disruption in any one of them triggers or amplifies inflammatory skin disease.</p>
+      </div>
+
+      <div class="axis-card">
+        <h3>1. Immune Pathway</h3>
+        <p>70–80% of all immune cells in the body reside in gut-associated lymphoid tissue (GALT). When the gut is dysbiotic or the gut barrier is compromised, GALT generates a pro-inflammatory immune signal that travels systemically — reaching skin and activating the keratinocyte inflammatory cascade that drives psoriasis plaques and eczema flares.</p>
+      </div>
+
+      <div class="axis-card">
+        <h3>2. Metabolic Pathway</h3>
+        <p>Gut bacteria metabolise dietary compounds to produce short-chain fatty acids (SCFAs), lipopolysaccharides, and other metabolites that directly influence skin cell behaviour. A dysbiotic gut — high in pro-inflammatory bacteria, low in beneficial ones — produces an inflammatory metabolite profile that the skin responds to with increased cytokine production and barrier dysfunction.</p>
+      </div>
+
+      <div class="axis-card">
+        <h3>3. Neuroendocrine Pathway (Gut-Brain-Skin Axis)</h3>
+        <p>Stress signals from the brain alter gut permeability through cortisol and neuropeptide release. A stressed gut produces a leaky gut. A leaky gut produces a skin flare. This is the clinical reason why stress so reliably triggers psoriasis and eczema exacerbations — the pathway from emotional stress to skin inflammation is physiologically direct and well-documented.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DARK BANNER -->
+  <section>
+    <div class="wrapper">
+      <div class="dark-banner">
+        <blockquote>"Psoriasis is not a skin disease that sometimes affects joints. It is a systemic inflammatory disease that affects multiple organs including skin and joints. Treating only the skin is like trying to cool a radiating room by painting the walls white. The fire is in the furnace."</blockquote>
+        <p>— Dr. Pallavi Ahire-Shelke · Gold Medalist Dermatologist · Baner, Pune</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW LEAKY GUT DRIVES SKIN -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">HOW LEAKY GUT DRIVES SKIN CONDITIONS</div>
+      <div class="card">
+        <p>This is the step-by-step mechanism from gut lining damage to skin flare. Understanding this pathway is what changes how patients approach their treatment — from symptom management to root-cause repair.</p>
+      </div>
+
+      <div class="pathway">
+        <div class="pathway-item">
+          <h4>Gut lining is damaged</h4>
+          <p>Trigger: infection, chronic stress, food sensitivities, repeated antibiotics, NSAIDs, or processed food-heavy diet.</p>
         </div>
-        <div class="condition-card">
-          <h3>Refined sugar</h3>
-          <p>Feeds bad gut bacteria and promotes inflammatory cytokine release.</p>
+        <div class="pathway-item">
+          <h4>Tight junctions between gut cells loosen</h4>
+          <p>The intestinal epithelium normally functions as a selective barrier. Damaged tight junctions allow paracellular passage of molecules that should not enter circulation.</p>
         </div>
-        <div class="condition-card">
-          <h3>Chronic stress</h3>
-          <p>Stress hormone cortisol directly damages gut lining integrity.</p>
+        <div class="pathway-item">
+          <h4>Food particles, toxins, and bacteria enter bloodstream</h4>
+          <p>Bacterial lipopolysaccharides, undigested food antigens, and endotoxins cross the compromised barrier — triggering "leaky gut" or intestinal hyperpermeability.</p>
         </div>
-        <div class="condition-card">
-          <h3>Poor sleep</h3>
-          <p>Sleep deprivation impairs gut barrier repair and amplifies immune over-reactivity.</p>
+        <div class="pathway-item">
+          <h4>Immune system enters panic mode</h4>
+          <p>GALT and systemic immune cells identify these foreign molecules and mount an inflammatory response — including autoimmune reactivity when the antigens resemble the body's own tissue.</p>
+        </div>
+        <div class="pathway-item">
+          <h4>Pro-inflammatory cytokines rise</h4>
+          <p>IL-17, TNF-α, IL-23, and IL-22 — the cytokines driving psoriasis plaques and eczema — are produced in elevated quantities. Biologic medications target exactly these cytokines at the symptom end; root cause work addresses why they are elevated in the first place.</p>
+        </div>
+        <div class="pathway-item">
+          <h4>Skin shows the result</h4>
+          <p>Psoriasis plaques (accelerated keratinocyte turnover), eczema flares (barrier breakdown + inflammatory infiltration), alopecia patches (follicular immune attack). The skin is not the disease — it is the display board.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- THE TWO CONDITIONS COMPARED -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">PSORIASIS VS ECZEMA — COMPARED</div>
+      <div class="condition-compare">
+        <div class="cc-panel">
+          <div class="ccp-head">Psoriasis</div>
+          <div class="ccp-row"><div class="ccp-label">Mechanism</div>T-cell mediated hyperproliferation</div>
+          <div class="ccp-row"><div class="ccp-label">Appearance</div>Thick silvery plaques, well-defined edges</div>
+          <div class="ccp-row"><div class="ccp-label">Location</div>Elbows, knees, scalp, lower back</div>
+          <div class="ccp-row"><div class="ccp-label">Key cytokines</div>IL-17, IL-23, TNF-α</div>
+          <div class="ccp-row"><div class="ccp-label">Gut link</div>Microbiome dysbiosis + leaky gut</div>
+        </div>
+        <div class="cc-panel">
+          <div class="ccp-head">Eczema</div>
+          <div class="ccp-row"><div class="ccp-label">Mechanism</div>Barrier defect + Th2 immune skew</div>
+          <div class="ccp-row"><div class="ccp-label">Appearance</div>Dry, itchy, inflamed patches</div>
+          <div class="ccp-row"><div class="ccp-label">Location</div>Folds — elbows, knees, neck, face</div>
+          <div class="ccp-row"><div class="ccp-label">Key cytokines</div>IL-4, IL-13, IL-31 (itch)</div>
+          <div class="ccp-row"><div class="ccp-label">Gut link</div>Ceramide deficiency + gut inflammation</div>
+        </div>
+      </div>
+      <div class="card">
+        <p>Despite different immune mechanisms, both conditions share the same root cause architecture: a gut that is generating a disproportionate and misdirected inflammatory signal. The difference is in which downstream immune pathway becomes dominant — but the upstream source is the same furnace.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT INFLAMES THE GUT -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">WHAT INFLAMES THE GUT — COMMON TRIGGERS</div>
+      <div class="inflame-list">
+        <div class="inflame-item">
+          <span class="wx">⚠</span>
+          <span><strong>Refined sugar and processed foods</strong> — feed pro-inflammatory bacterial species (Proteobacteria) while starving beneficial ones (Lactobacillus, Bifidobacterium), shifting the microbiome balance toward a dysbiotic, inflammatory profile.</span>
+        </div>
+        <div class="inflame-item">
+          <span class="wx">⚠</span>
+          <span><strong>Dairy sensitivity</strong> — casein protein can trigger immune reactivity in predisposed individuals, generating the same antigen-antibody cycle that ultimately amplifies skin inflammation.</span>
+        </div>
+        <div class="inflame-item">
+          <span class="wx">⚠</span>
+          <span><strong>Gluten sensitivity (non-coeliac)</strong> — gliadin protein triggers zonulin release, which directly loosens intestinal tight junctions. Psoriasis has documented correlation with gluten sensitivity in peer-reviewed research.</span>
+        </div>
+        <div class="inflame-item">
+          <span class="wx">⚠</span>
+          <span><strong>Chronic stress</strong> — cortisol directly damages gut tight junctions, independently of diet. This is why mental health management is a clinical tool in inflammatory skin disease, not a lifestyle recommendation.</span>
+        </div>
+        <div class="inflame-item">
+          <span class="wx">⚠</span>
+          <span><strong>NSAIDs and antibiotics</strong> — both disrupt gut microbiome composition. NSAIDs also directly damage gut epithelium. Repeated courses correlate with worsening skin inflammation over time in susceptible individuals.</span>
+        </div>
+        <div class="inflame-item">
+          <span class="wx">⚠</span>
+          <span><strong>Poor and disrupted sleep</strong> — the gut microbiome has its own circadian rhythm. Consistently disrupted sleep patterns change microbiome composition toward a pro-inflammatory profile within 2–3 days of disruption.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOT CAUSE APPROACH -->
   <section>
     <div class="wrapper">
       <div class="section-label">THE ROOT CAUSE APPROACH</div>
-      
-      <div class="proc-step">
-        <div class="proc-num">1</div>
-        <div class="proc-body">
-          <h3>Identify and remove trigger foods</h3>
-          <p>An elimination diet (removing dairy, gluten, and sugar for 4-6 weeks) can dramatically reduce flares in gut-driven skin conditions.</p>
+      <div class="card">
+        <p>Root cause work and skin symptom management are not mutually exclusive — they happen simultaneously. Dr. Pallavi manages the skin while you work on the upstream causes. The goal is to progressively reduce the inflammatory signal from the gut so that skin maintenance becomes easier and eventual remission becomes possible.</p>
+      </div>
+
+      <div class="solution-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Elimination trial — dairy and gluten</h3>
+          <p>Remove dairy and gluten for 4–6 weeks. If there is significant improvement in skin condition, a sensitivity is confirmed. This is the lowest-cost, highest-information diagnostic step available and requires no blood test.</p>
         </div>
       </div>
-      <div class="proc-step">
-        <div class="proc-num">2</div>
-        <div class="proc-body">
-          <h3>Heal the gut lining</h3>
-          <p>Zinc carnosine, L-glutamine, and probiotics support gut barrier repair and reduce permeability.</p>
+
+      <div class="solution-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Gut lining repair</h3>
+          <p>L-glutamine (5g/day) provides the amino acid most used by intestinal epithelial cells for repair. Zinc carnosine supports tight junction integrity. Bone broth provides collagen precursors and glycine. These are evidence-supported, not experimental.</p>
         </div>
       </div>
-      <div class="proc-step">
-        <div class="proc-num">3</div>
-        <div class="proc-body">
-          <h3>Anti-inflammatory diet</h3>
-          <p>Omega-3 rich foods, fermented foods (curd, kimchi), and high-fibre vegetables support healthy gut microbiome.</p>
+
+      <div class="solution-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Probiotics — strain-specific</h3>
+          <p>Lactobacillus rhamnosus GG and L. acidophilus have the strongest evidence base for reducing gut dysbiosis in inflammatory skin disease. Fermented foods (curd, idli, dosa, kanji) provide natural probiotic support alongside supplementation.</p>
         </div>
       </div>
-      <div class="proc-step">
-        <div class="proc-num">4</div>
-        <div class="proc-body">
-          <h3>Medical management alongside</h3>
-          <p>Topical treatments manage symptoms while root cause work happens underneath. SkinEthics takes a combined approach.</p>
+
+      <div class="solution-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Anti-inflammatory dietary pattern</h3>
+          <p>Increase omega-3 rich foods (fish, flaxseed, walnuts). Reduce glycaemic load. Increase fibre from diverse plant sources — this feeds the beneficial microbiome. The Mediterranean dietary pattern has the strongest evidence base for reducing inflammatory skin disease activity.</p>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Stress management — clinical priority</h3>
+          <p>Not optional, not a lifestyle choice. Cortisol management is a therapeutic intervention. Journaling, breathwork, progressive muscle relaxation, moderate exercise — any consistent practice that measurably reduces cortisol. The gut-skin axis runs directly through stress physiology.</p>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h3>Concurrent skin management under Dr. Pallavi</h3>
+          <p>Root cause work takes 6–12 weeks to show measurable gut and skin improvement. During this period, Dr. Pallavi manages skin symptoms to prevent progressive damage, reduce infection risk, and maintain quality of life while the upstream work proceeds.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WHY STEROIDS ALONE FAIL -->
   <section>
     <div class="wrapper">
-      <div class="section-label">STEROIDS — THE INCOMPLETE ANSWER</div>
+      <div class="section-label">WHY STEROIDS ALONE FAIL — THE HONEST ANSWER</div>
+      <div class="mistake-card">
+        <h3>Steroids manage. They don't heal.</h3>
+        <p>Topical and oral steroids are powerful anti-inflammatory agents. They suppress the immune response at the skin — quickly and effectively. A psoriasis plaque can clear in 2 weeks on potent topical steroids. An eczema flare can resolve in days.</p>
+      </div>
+      <div class="card">
+        <p>But steroids do not address gut permeability. They do not restore microbiome balance. They do not change the cytokine signal being generated upstream. When steroids are reduced or stopped, the inflammatory signal from the gut resumes and the skin flares again — often rebounding harder than before long-term topical steroid use.</p>
+        <p>This is why so many patients are on steroids indefinitely. Not because steroids are the right long-term answer — but because no one has addressed the reason the inflammation exists in the first place. The conversation about gut health, diet, stress, and microbiome is not an alternative to dermatological care. It is the missing component that makes dermatological care finally work long-term.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA CARD -->
+  <section>
+    <div class="wrapper">
       <div class="card card-sage">
-        <p>Steroids and topical treatments put out the fire at the surface. But if gut inflammation continues, the fire reignites — often worse. True healing requires addressing the gut root cause, not just managing the skin symptoms.</p>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING CTA -->
-  <section>
-    <div class="wrapper">
-      <div class="quote-banner">
-        <blockquote>"Psoriasis or eczema that keeps returning? Let's address the root cause."</blockquote>
-        <cite>DM <a href="https://www.instagram.com/drpallaviahireshelke/" target="_blank" style="color:var(--accent);">@drpallaviahireshelke</a> on Instagram or comment "PE" on the reel.</cite>
+        <h2>Ready to address the root cause?</h2>
+        <p>DM <strong>@drpallaviahireshelke</strong> on Instagram or WhatsApp the clinic. Dr. Pallavi offers a gut-skin consultation that assesses your complete picture — skin condition, dietary triggers, lifestyle factors, and gut health markers.</p>
+        <p style="font-size:13px;color:var(--muted);margin-top:6px;">Skin and gut work together. The consultation that addresses both is the one that finally delivers lasting results.</p>
       </div>
     </div>
   </section>
@@ -420,13 +578,33 @@
         <div class="contact-header">
           <h2>Dr. Pallavi Ahire-Shelke</h2>
           <p class="creds">MBBS, MD, DNB, DDV · Gold Medalist Dermatologist</p>
-          <p class="tagline">Holistic skin consultation — Baner, Pune</p>
+          <p class="tagline">Gut-skin consultation · Baner, Pune</p>
         </div>
         <div class="contact-grid">
-          <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank"><div class="cc-icon">📍</div><div class="cc-label">Location</div><div class="cc-detail">Baner, Pune</div><div class="cc-action">Get Directions</div></a>
-          <a class="contact-cell" href="tel:+919028291234"><div class="cc-icon">📞</div><div class="cc-label">Phone</div><div class="cc-detail">+91 90282 91234</div><div class="cc-action">Book a consultation</div></a>
-          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank"><div class="cc-icon">📸</div><div class="cc-label">Instagram</div><div class="cc-detail">@drpallaviahireshelke</div><div class="cc-action">Daily skin &amp; hair tips</div></a>
-          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank"><div class="cc-icon">💬</div><div class="cc-label">WhatsApp</div><div class="cc-detail">Quick queries welcome</div><div class="cc-action">Message us</div></a>
+          <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">
+            <div class="cc-icon">📍</div>
+            <div class="cc-label">Clinic</div>
+            <div class="cc-detail">Baner, Pune</div>
+            <div class="cc-action">Get Directions</div>
+          </a>
+          <a class="contact-cell" href="tel:+919028291234">
+            <div class="cc-icon">📞</div>
+            <div class="cc-label">Phone</div>
+            <div class="cc-detail">+91 90282 91234</div>
+            <div class="cc-action">Book a consultation</div>
+          </a>
+          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">
+            <div class="cc-icon">📸</div>
+            <div class="cc-label">Instagram</div>
+            <div class="cc-detail">@drpallaviahireshelke</div>
+            <div class="cc-action">Daily skin education</div>
+          </a>
+          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">
+            <div class="cc-icon">💬</div>
+            <div class="cc-label">WhatsApp</div>
+            <div class="cc-detail">Quick queries welcome</div>
+            <div class="cc-action">Message us</div>
+          </a>
         </div>
       </div>
     </div>
@@ -435,19 +613,19 @@
   <!-- RELATED GUIDES -->
   <section class="related-section">
     <div class="wrapper">
-      <div class="section-label" style="color:var(--accent);">MORE GUIDES</div>
+      <div class="section-label">MORE GUIDES</div>
       <div class="related-grid">
         <a class="related-card" href="guide-inflamm.html">
           <span class="rc-icon">🔥</span>
           <h4>Inflammaging Guide</h4>
-          <p>Comment FIRE</p>
-          <span class="rc-link">Read guide →</span>
+          <p>Chronic inflammation &amp; skin ageing</p>
+          <span class="rc-link">Comment FIRE →</span>
         </a>
         <a class="related-card" href="guide-jawline.html">
           <span class="rc-icon">💫</span>
           <h4>Hormonal Acne Guide</h4>
-          <p>Comment CLEAR</p>
-          <span class="rc-link">Read guide →</span>
+          <p>Chin &amp; jawline acne explained</p>
+          <span class="rc-link">Comment CLEAR →</span>
         </a>
       </div>
     </div>
@@ -470,7 +648,7 @@
   </footer>
 
   <div class="float-cta">
-    <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
+    <a class="cta-call" href="tel:+919028291234">📲 Book Consultation</a>
     <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
   </div>
 
@@ -480,14 +658,12 @@
       if (!btn) return;
       btn.addEventListener('click', function() {
         if (navigator.share) {
-          navigator.share({ title: 'Gut-Skin Axis — Psoriasis & Eczema Guide by Dr. Pallavi', url: window.location.href });
+          navigator.share({ title: 'Psoriasis & Eczema — The Gut Connection. Free Guide by Dr. Pallavi', url: window.location.href });
         } else {
           navigator.clipboard.writeText(window.location.href).then(function() {
-            btn.textContent = '✓ Link Copied!';
+            btn.textContent = '✓ Link copied!';
             setTimeout(function() { btn.textContent = '↗ Share this guide'; }, 2200);
-          }).catch(function() {
-            btn.textContent = 'Copy: ' + window.location.href;
-          });
+          }).catch(function() { btn.textContent = 'Copy: ' + window.location.href; });
         }
       });
     })();

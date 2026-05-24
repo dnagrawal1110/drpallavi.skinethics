@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aloe Vera — Safe or Not? Free Guide · Dr. Pallavi Ahire-Shelke, Pune</title>
-  <meta name="description" content="Free guide by Dr. Pallavi Ahire-Shelke: why raw aloe vera can cause irritation, how to prepare it safely, and when to patch-test. Dermatologist-backed tips." />
+  <title>Aloe Vera — Safe or Not? · Dr. Pallavi Ahire-Shelke, Baner Pune</title>
+  <meta name="description" content="Free ingredient guide by Dr. Pallavi: is raw aloe vera safe for skin? The hidden latex layer, patch test protocol, and correct preparation method. Gold Medalist Dermatologist, Baner, Pune." />
   <meta name="theme-color" content="#0F1F0A" />
   <link rel="canonical" href="https://drpallavi.skinethics.in/guide-aloe.html" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://drpallavi.skinethics.in/guide-aloe.html" />
-  <meta property="og:title" content="Aloe Vera — Is It Safe for Your Skin? · Dr. Pallavi" />
-  <meta property="og:description" content="Free guide: the hidden risk in raw aloe vera and how to use it safely. By Gold Medalist Dermatologist Dr. Pallavi Ahire-Shelke, Baner, Pune." />
+  <meta property="og:title" content="Aloe Vera — Garden Se Safe Hai Ya Nahi? Free Guide by Dr. Pallavi" />
+  <meta property="og:description" content="Raw aloe vera has a hidden irritant layer. This guide explains the chemistry, who is at risk, and the correct 6-step preparation method." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -19,15 +19,15 @@
 
     :root {
       --dark:      #0F1F0A;
-      --bg:        #FAF8F6;
+      --bg:        #F4FAF4;
       --white:     #FFFFFF;
       --accent:    #3D8B3D;
       --lt-accent: #98D498;
       --sage-bg:   #EAF6EA;
-      --warn-bg:   #F0F8F0;
+      --warn-bg:   #FFF9F0;
       --border:    #C4E0C4;
-      --muted:     #7A7080;
-      --highlight: #F8F4F0;
+      --muted:     #507050;
+      --highlight: #F0FAF0;
     }
 
     html { scroll-behavior: smooth; }
@@ -53,8 +53,8 @@
     .site-header {
       background: var(--dark);
       background-image:
-        radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.55) 0%, transparent 55%),
-        radial-gradient(ellipse at 15% 85%, rgba(200,160,100,0.18) 0%, transparent 55%);
+        radial-gradient(ellipse at 80% 15%, rgba(61,139,61,0.60) 0%, transparent 55%),
+        radial-gradient(ellipse at 15% 85%, rgba(152,212,152,0.18) 0%, transparent 55%);
       padding: 40px 20px 36px;
       text-align: center;
     }
@@ -72,9 +72,9 @@
       color: var(--white); line-height: 1.25; margin-bottom: 10px;
     }
     .site-header h1 em { font-style: italic; color: var(--lt-accent); }
-    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 330px; margin: 0 auto 16px; opacity: 0.9; }
-    .site-header .byline  { color: rgba(255,255,255,0.45); font-size: 11px; margin-bottom: 8px; }
-    .site-header .philosophy { font-style: italic; color: rgba(255,255,255,0.35); font-size: 11px; }
+    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 340px; margin: 0 auto 16px; opacity: 0.9; }
+    .site-header .byline  { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+    .site-header .philosophy { font-style: italic; color: var(--muted); font-size: 11px; }
     .dots { margin: 16px 0 0; color: var(--lt-accent); letter-spacing: 8px; font-size: 10px; }
 
     .wrapper { max-width: 480px; margin: 0 auto; padding: 0 16px; }
@@ -93,100 +93,135 @@
       border-radius: 16px; padding: 22px 20px; margin-bottom: 16px;
     }
     .card-accent { border-left: 4px solid var(--accent); }
-    .card-warn   { background: var(--warn-bg); border-left: 4px solid var(--dark); }
     .card-sage   { background: var(--sage-bg); border-left: 4px solid var(--accent); }
     .card h2 { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--dark); margin-bottom: 12px; }
     .card p  { font-size: 14px; margin-bottom: 10px; }
     .card p:last-child { margin-bottom: 0; }
 
     .stat-strip {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px; margin-bottom: 16px;
     }
     .stat-item {
       background: var(--white); border: 1.5px solid var(--border);
       border-radius: 14px; padding: 16px 10px; text-align: center;
     }
     .stat-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px; color: var(--accent); line-height: 1.2; margin-bottom: 4px;
+      font-family: 'Playfair Display', serif; font-size: 20px;
+      color: var(--accent); line-height: 1; margin-bottom: 6px;
     }
-    .stat-label { font-size: 11px; color: var(--muted); line-height: 1.3; }
+    .stat-label { font-size: 11px; color: var(--muted); line-height: 1.4; }
 
-    .proc-step {
+    .dark-banner {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 10%, rgba(61,139,61,0.60) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 90%, rgba(152,212,152,0.12) 0%, transparent 55%);
+      border-radius: 18px; padding: 28px 22px; margin-bottom: 16px;
+    }
+    .dark-banner blockquote {
+      font-family: 'Playfair Display', serif; font-size: 18px;
+      color: var(--white); line-height: 1.5; margin-bottom: 12px;
+    }
+    .dark-banner p { font-size: 13px; color: var(--lt-accent); }
+
+    .layer-stack { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+    .layer-item {
+      border-radius: 12px; padding: 14px 16px;
+      display: flex; gap: 12px; align-items: flex-start; font-size: 13px;
+    }
+    .layer-outer { background: #D4EAD4; border: 1.5px solid var(--border); }
+    .layer-latex { background: #FFF3CC; border: 1.5px solid #E0CC80; }
+    .layer-gel   { background: var(--sage-bg); border: 1.5px solid var(--border); }
+    .layer-dot { width: 18px; height: 18px; min-width: 18px; border-radius: 50%; margin-top: 3px; }
+    .dot-green  { background: var(--accent); }
+    .dot-yellow { background: #C8A820; }
+    .dot-clear  { background: var(--lt-accent); border: 2px solid var(--accent); }
+    .layer-body h4 { font-family: 'Playfair Display', serif; font-size: 14px; margin-bottom: 3px; color: var(--dark); }
+    .layer-body p  { font-size: 12px; color: var(--muted); margin: 0; }
+
+    .risk-list { display: flex; flex-direction: column; gap: 10px; }
+    .risk-item {
+      background: var(--warn-bg); border-left: 4px solid #C07A00;
+      border-radius: 10px; padding: 12px 14px;
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: 13px; color: var(--dark);
+    }
+    .risk-item .wx { color: #C07A00; font-weight: 700; flex-shrink: 0; }
+
+    .mistake-card {
+      background: var(--warn-bg); border-left: 4px solid #B85040;
+      border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;
+      display: flex; gap: 10px; align-items: flex-start; font-size: 13px;
+    }
+    .mistake-card .mx { color: #B85040; font-weight: 700; flex-shrink: 0; font-size: 16px; }
+
+    .solution-step {
       background: var(--white); border: 1.5px solid var(--border);
-      border-radius: 14px; padding: 16px 18px 14px; margin-bottom: 12px;
+      border-radius: 14px; padding: 16px 18px; margin-bottom: 12px;
       display: flex; gap: 14px; align-items: flex-start;
     }
-    .proc-num {
-      width: 32px; height: 32px;
-      background: var(--dark); color: var(--white);
+    .step-num {
+      width: 32px; height: 32px; min-width: 32px;
+      background: var(--accent); color: var(--white);
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-family: 'Playfair Display', serif; font-size: 14px;
       flex-shrink: 0; margin-top: 2px;
     }
-    .proc-body h3 { font-family: 'Playfair Display', serif; font-size: 15px; margin-bottom: 4px; }
-    .proc-body p  { font-size: 13px; color: var(--muted); margin: 0; }
+    .step-body h3 { font-family: 'Playfair Display', serif; font-size: 15px; margin-bottom: 4px; color: var(--dark); }
+    .step-body p  { font-size: 13px; color: var(--muted); margin: 0; }
 
-    .highlight-note {
-      background: var(--highlight); border: 1.5px solid var(--border);
-      border-left: 4px solid var(--lt-accent);
-      border-radius: 10px; padding: 12px 14px; margin-top: 12px;
-      font-size: 13px; color: var(--dark); font-style: italic;
-    }
-
-    .timeline-card {
-      background: var(--dark);
-      background-image: radial-gradient(ellipse at 85% 10%, rgba(180,100,60,0.5) 0%, transparent 55%);
-      border-radius: 14px; padding: 22px 20px;
-    }
-    .timeline-card h3 { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--white); margin-bottom: 16px; }
-    .timeline-row {
-      display: flex; gap: 10px; align-items: flex-start;
-      margin-bottom: 12px; font-size: 13px;
-    }
-    .timeline-row:last-child { margin-bottom: 0; }
-    .timeline-dot { color: var(--lt-accent); font-weight: 700; flex-shrink: 0; margin-top: 2px; }
-    .timeline-text { color: var(--lt-accent); line-height: 1.5; }
-    .timeline-text strong { color: var(--white); }
-
-    .condition-grid { display: flex; flex-direction: column; gap: 12px; }
-    .condition-card {
+    .check-item {
       background: var(--white); border: 1.5px solid var(--border);
       border-left: 4px solid var(--accent);
-      border-radius: 12px; padding: 14px 16px;
+      border-radius: 12px; padding: 12px 14px; margin-bottom: 10px;
+      display: flex; gap: 10px; align-items: flex-start; font-size: 13px;
     }
-    .condition-card h3 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 4px; }
-    .condition-card p  { font-size: 12px; color: var(--muted); margin: 0; }
+    .check-item .chk { color: var(--accent); font-weight: 700; flex-shrink: 0; }
 
-    .quote-banner {
-      background: var(--sage-bg); border-left: 4px solid var(--accent);
-      border-radius: 12px; padding: 20px; margin-bottom: 16px; text-align: center;
+    .compare-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+    @media (max-width: 400px) { .compare-duo { grid-template-columns: 1fr; } }
+    .compare-panel {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 14px; overflow: hidden;
     }
-    .quote-banner blockquote {
-      font-family: 'Playfair Display', serif; font-style: italic;
-      font-size: 17px; color: var(--dark); line-height: 1.5; margin-bottom: 8px;
+    .compare-panel .cp-head {
+      padding: 12px 14px; font-family: 'Playfair Display', serif; font-size: 14px;
+      background: var(--dark); color: var(--white);
     }
-    .quote-banner cite { font-size: 12px; color: var(--muted); }
+    .compare-panel .cp-row {
+      padding: 9px 14px; font-size: 12px; color: var(--dark);
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-panel .cp-row:last-child { border-bottom: none; }
+    .compare-panel .cp-row em { color: var(--accent); font-style: normal; }
+
+    .conditions-list { display: flex; flex-direction: column; gap: 10px; }
+    .condition-item {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 14px 16px;
+      display: flex; gap: 10px; align-items: flex-start; font-size: 13px;
+    }
+    .condition-icon { font-size: 20px; flex-shrink: 0; }
 
     .contact-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; overflow: hidden; }
     .contact-header {
       background: var(--dark);
-      background-image: radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.55) 0%, transparent 55%);
+      background-image: radial-gradient(ellipse at 85% 15%, rgba(61,139,61,0.60) 0%, transparent 55%);
       padding: 22px 20px; text-align: center;
     }
     .contact-header h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); margin-bottom: 4px; }
     .contact-header .creds  { font-size: 11px; color: var(--lt-accent); margin-bottom: 6px; }
-    .contact-header .tagline { font-size: 12px; color: rgba(255,255,255,0.5); font-style: italic; }
+    .contact-header .tagline { font-size: 12px; color: var(--muted); font-style: italic; }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; }
     @media (max-width: 400px) { .contact-grid { grid-template-columns: 1fr; } }
     .contact-cell {
       padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border);
       text-decoration: none; color: inherit; transition: background 0.15s;
-      display: block;
     }
-    .contact-cell:nth-child(even)       { border-right: none; }
-    .contact-cell:nth-last-child(-n+2)  { border-bottom: none; }
+    .contact-cell:nth-child(even)      { border-right: none; }
+    .contact-cell:nth-last-child(-n+2) { border-bottom: none; }
     .contact-cell:hover { background: var(--sage-bg); }
     .cc-icon   { font-size: 18px; margin-bottom: 4px; }
     .cc-label  { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
@@ -198,8 +233,8 @@
     footer {
       background: var(--dark);
       background-image:
-        radial-gradient(ellipse at 85% 15%, rgba(180,100,60,0.35) 0%, transparent 55%),
-        radial-gradient(ellipse at 10% 85%, rgba(200,160,100,0.08) 0%, transparent 55%);
+        radial-gradient(ellipse at 85% 15%, rgba(61,139,61,0.35) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 85%, rgba(152,212,152,0.08) 0%, transparent 55%);
       padding: 28px 20px 0;
     }
     .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 480px; margin: 0 auto; padding-bottom: 20px; }
@@ -207,22 +242,9 @@
     .footer-col h4 { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lt-accent); margin-bottom: 8px; }
     .footer-col p  { font-size: 12px; color: var(--lt-accent); line-height: 1.6; opacity: 0.8; }
     .footer-col p em { font-style: italic; opacity: 0.7; }
-    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(150,100,60,0.3); }
+    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(61,139,61,0.3); }
     .footer-bottom { max-width: 480px; margin: 0 auto; display: flex; justify-content: space-between; padding: 12px 0 16px; flex-wrap: wrap; gap: 4px; }
     .footer-bottom span { font-size: 10px; color: var(--muted); }
-
-    .received-banner {
-      background: var(--dark);
-      border-bottom: 2px solid var(--accent);
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .received-banner .rb-icon { font-size: 20px; flex-shrink: 0; }
-    .received-banner .rb-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.4; }
-    .received-banner .rb-text strong { color: #fff; }
-    .received-banner .rb-text a { color: inherit; opacity: 0.9; }
 
     .share-row { display: flex; justify-content: center; padding: 12px 16px 0; }
     .share-btn {
@@ -259,8 +281,8 @@
       text-decoration: none; letter-spacing: 0.02em;
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
-    .float-cta .cta-book { background: var(--dark); color: #fff; }
-    .float-cta .cta-wa { background: #25D366; color: #fff; }
+    .float-cta .cta-call { background: var(--dark); color: #fff; }
+    .float-cta .cta-wa   { background: #25D366; color: #fff; }
     .footer-bottom { padding-bottom: 80px !important; }
   </style>
 </head>
@@ -271,13 +293,12 @@
   <header class="site-header">
     <div class="pill">INGREDIENT GUIDE</div>
     <h1>Aloe Vera —<br><em>Garden Se Safe Hai Ya Nahi?</em></h1>
-    <p class="subline">The real science behind raw aloe — what's safe, what's risky, and how to use it correctly.</p>
+    <p class="subline">The hidden risk in raw aloe vera — and the correct preparation method most people skip.</p>
     <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Baner, Pune</p>
     <p class="philosophy">Inner &amp; Outer Beauty · Wholesome Beauty</p>
     <div class="dots">· · ·</div>
   </header>
 
-  <!-- SHARE -->
   <div class="share-row">
     <button class="share-btn" id="share-btn">↗ Share this guide</button>
   </div>
@@ -288,91 +309,289 @@
       <div class="stat-strip">
         <div class="stat-item">
           <div class="stat-num">Aloin</div>
-          <div class="stat-label">the hidden irritant<br>in raw aloe</div>
+          <div class="stat-label">the hidden irritant in raw aloe</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">24 hrs</div>
-          <div class="stat-label">patch test<br>wait time</div>
+          <div class="stat-label">patch test window before face use</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">Clear Gel</div>
-          <div class="stat-label">the safe<br>part to use</div>
+          <div class="stat-label">the only part that is truly safe</div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WHAT'S REAL -->
   <section>
     <div class="wrapper">
-      <div class="section-label">THE TRUTH ABOUT ALOE VERA</div>
+      <div class="section-label">WHAT'S REAL — AND WHAT'S THE RISK</div>
       <div class="card card-accent">
-        <p>Aloe vera's benefits are real — it's genuinely soothing, anti-inflammatory, and helps calm irritated skin. But there's one important thing most people don't know before using it straight from the plant.</p>
-        
+        <h2>Aloe vera ke benefits real hain.</h2>
+        <p>Hundreds of peer-reviewed studies confirm it: aloe vera has genuine wound-healing, anti-inflammatory, and moisturising properties. The acemannan polysaccharide in the inner gel is one of the most well-studied skin-calming compounds in dermatology. So no — aloe vera is not a myth.</p>
+        <p>The problem is not aloe vera. The problem is that most people who pluck a leaf from their garden and apply it directly to their face skip one critical preparation step — and that skipped step is where the trouble starts. Raw aloe vera leaf, freshly cut, contains a bitter yellow latex layer just beneath the outer green skin. This layer is where the irritant lives. The inner clear gel is perfectly safe. But separating them requires a specific technique that social media tutorials almost never show.</p>
+        <p>This guide gives you the chemistry behind the problem, who is at highest risk, and the exact 6-step method that ensures you are using aloe vera the way dermatology actually recommends.</p>
       </div>
     </div>
   </section>
 
+  <!-- THE HIDDEN CHEMISTRY -->
   <section>
     <div class="wrapper">
-      <div class="section-label">THE HIDDEN RISK</div>
-      <div class="card card-warn">
-        <p>Inside a raw aloe leaf, just beneath the green skin, is a <strong>yellow layer called aloin (latex)</strong>. This is the part that can cause problems.</p><p>In some people, aloin can trigger <strong>contact dermatitis</strong> — redness, itching, or rashes. The problem isn't aloe vera itself. The problem is using it the wrong way.</p>
-        <div class="highlight-note">Aloin is bitter, yellowish, and found right under the leaf skin — not in the clear inner gel.</div>
+      <div class="section-label">THE HIDDEN CHEMISTRY — THREE LAYERS</div>
+      <div class="card">
+        <h2>The aloe leaf is not one thing.</h2>
+        <p>It has three distinct layers, and only one of them belongs on your face. Understanding this is the difference between a soothing treatment and an irritation episode that sets your skin back by days.</p>
+        <p>Most people treat an aloe vera leaf like they treat a cucumber — slice and apply. That works for cucumber. For aloe, the internal architecture is more complex, and one of its layers is pharmacologically active in ways that can harm rather than help.</p>
+      </div>
+
+      <div class="layer-stack">
+        <div class="layer-item layer-outer">
+          <div class="layer-dot dot-green"></div>
+          <div class="layer-body">
+            <h4>Outer Green Skin</h4>
+            <p>Protective rind — fibrous, contains chlorophyll and some saponins. Not useful for skin application. Discard entirely.</p>
+          </div>
+        </div>
+        <div class="layer-item layer-latex">
+          <div class="layer-dot dot-yellow"></div>
+          <div class="layer-body">
+            <h4>Yellow Latex Layer — Aloin / Barbaloin</h4>
+            <p>An anthraquinone glycoside — the same compound responsible for aloe's laxative effect in oral form. Topically, aloin can irritate skin cells, trigger contact dermatitis in sensitive individuals, and act as a photosensitiser, worsening pigmentation when skin is exposed to sunlight after application. This must be completely removed.</p>
+          </div>
+        </div>
+        <div class="layer-item layer-gel">
+          <div class="layer-dot dot-clear"></div>
+          <div class="layer-body">
+            <h4>Clear Inner Gel — Parenchyma Tissue</h4>
+            <p>This is what you want. Rich in acemannan, polysaccharides, vitamins C and E, and amino acids. Anti-inflammatory, wound-healing, and deeply moisturising. The skin loves it — when it is truly isolated and pure.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>Aloin is also a photosensitiser. This means: if you apply unprepared raw aloe and then step into sunlight — which many people do, believing they are protecting their skin — the aloin in the latex layer can amplify UV damage and create new pigmentation. This is a chemistry problem, not a rare reaction. It affects anyone who skips preparation, regardless of skin type.</p>
+        <p>It is important to understand that this is not a reason to avoid aloe vera. It is a reason to prepare it correctly — every single time.</p>
       </div>
     </div>
   </section>
 
+  <!-- DARK BANNER -->
   <section>
     <div class="wrapper">
-      <div class="section-label">THE RIGHT WAY TO USE IT</div>
-      
-      <div class="proc-step">
-        <div class="proc-num">1</div>
-        <div class="proc-body">
-          <h3>Cut the leaf</h3>
-          <p>Slice off a section of the leaf cleanly. You'll see a yellow liquid seep out — that's aloin.</p>
-        </div>
+      <div class="dark-banner">
+        <blockquote>"The yellow latex seeping from a freshly cut aloe leaf is a photosensitiser and known irritant. Using aloe vera correctly means using only the clear inner gel — and that requires a preparation step that most social media tutorials skip entirely."</blockquote>
+        <p>— Dr. Pallavi Ahire-Shelke · Gold Medalist Dermatologist · Baner, Pune</p>
       </div>
-      <div class="proc-step">
-        <div class="proc-num">2</div>
-        <div class="proc-body">
-          <h3>Wash it thoroughly</h3>
-          <p>Rinse the cut surface under running water until no yellow remains. This removes the latex layer.</p>
-        </div>
+    </div>
+  </section>
+
+  <!-- WHO IS AT HIGHEST RISK -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">WHO IS AT HIGHEST RISK</div>
+      <div class="card">
+        <p>While aloin can irritate any skin if the concentration is high enough, these groups face significantly elevated risk and should be especially careful about preparation — or avoid raw home-prepared aloe entirely in favour of commercial aloin-free gels:</p>
       </div>
-      <div class="proc-step">
-        <div class="proc-num">3</div>
-        <div class="proc-body">
-          <h3>Scoop only the clear gel</h3>
-          <p>Use only the transparent, odourless inner gel. Discard any yellow-tinged parts.</p>
+      <div class="risk-list">
+        <div class="risk-item">
+          <span class="wx">⚠</span>
+          <span><strong>Sensitive skin</strong> — a compromised skin barrier means the skin's defence against irritants is already reduced; aloin penetrates more easily and the inflammatory response is amplified.</span>
         </div>
-      </div>
-      <div class="proc-step">
-        <div class="proc-num">4</div>
-        <div class="proc-body">
-          <h3>Patch test first</h3>
-          <p>Apply a small amount to your inner arm. Wait 24 hours. Only if there's no reaction — use it on your face.</p>
+        <div class="risk-item">
+          <span class="wx">⚠</span>
+          <span><strong>Eczema / atopic dermatitis</strong> — pre-existing inflammation means any additional irritant will compound the flare significantly. The same preparation errors that cause mild redness in normal skin can cause multi-day flares here.</span>
+        </div>
+        <div class="risk-item">
+          <span class="wx">⚠</span>
+          <span><strong>Post-peel or post-laser skin</strong> — the skin barrier is temporarily removed after procedures. Aloin absorption is much higher and the inflammatory response will be far greater than on intact skin. Only use Dr. Pallavi-recommended formulations after clinic procedures.</span>
+        </div>
+        <div class="risk-item">
+          <span class="wx">⚠</span>
+          <span><strong>People who apply and then go into sunlight</strong> — aloin photosensitisation can accelerate UV damage and create new pigmentation patches. This is extremely common and almost entirely avoidable with correct use timing.</span>
+        </div>
+        <div class="risk-item">
+          <span class="wx">⚠</span>
+          <span><strong>People with known plant latex allergies</strong> — aloe is in the Xanthorrhoeaceae family; cross-reactivity with other plant latexes is documented in the medical literature.</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- COMMON MISTAKES -->
   <section>
     <div class="wrapper">
-      <div class="section-label">BOTTOM LINE</div>
+      <div class="section-label">COMMON MISTAKES — WHAT NOT TO DO</div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <span><strong>Cutting the leaf and applying directly:</strong> The latex hasn't drained. You are applying aloin directly to your face in significant concentration.</span>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <span><strong>Using a very young or small leaf:</strong> Young leaves have less developed inner gel and a proportionally higher latex layer relative to usable gel. Always use mature outer-ring leaves.</span>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <span><strong>Applying and then going into sunlight:</strong> Even trace aloin makes skin photosensitive. Applying raw aloe before outdoor activity is the opposite of protective — it increases UV vulnerability.</span>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <span><strong>Storing prepared gel at room temperature:</strong> Fresh aloe gel has no preservatives and is highly perishable. Bacteria grow rapidly at room temperature — refrigerate immediately and discard after 3–5 days maximum.</span>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <span><strong>Skipping the patch test:</strong> Even correctly prepared aloe can trigger sensitivity in some individuals. The inner forearm patch test is not optional — it is the safety gate before face application.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE CORRECT PREPARATION -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">THE CORRECT PREPARATION — 6 STEPS</div>
+      <div class="card">
+        <p>This is the dermatologically sound method that ensures you use only the safe inner gel, with no aloin contamination. Follow it every single time you prepare fresh aloe — without shortcuts.</p>
+      </div>
+
+      <div class="solution-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Choose a mature outer-ring leaf</h3>
+          <p>Older, thicker leaves from the outer ring of the plant have more developed inner gel and proportionally less latex. Avoid the small, young inner leaves — they have the highest aloin concentration relative to usable gel.</p>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Stand the cut end down in a glass for 10–15 minutes</h3>
+          <p>The freshly cut leaf stands upright. Gravity drains the yellow latex from the cut end — you will visibly see yellow liquid pooling at the base of the glass. This step alone removes the majority of aloin. Do not skip it.</p>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Rinse the cut surface under running water</h3>
+          <p>Hold the cut end under cold running water and rinse thoroughly until absolutely no yellow tinge remains on the cut surface. This removes residual aloin that didn't drain in step 2.</p>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Slice along the flat side and scoop only the clear gel</h3>
+          <p>Use a clean knife to slice carefully along one flat surface. Use a clean spoon to scoop out only the clear, odourless gel — avoiding the green skin and any residual yellow edges near the skin boundary. The gel should be water-clear and have a faint, neutral smell.</p>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Apply patch test to inner forearm</h3>
+          <p>Apply a small amount to the inner forearm — an area of skin that is sensitive but low-consequence if any reaction occurs. Leave it on for 24 hours without washing that area. Do not apply to face during this period.</p>
+        </div>
+      </div>
+
+      <div class="solution-step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h3>Assess after 24 hours</h3>
+          <p>If there is no redness, itching, burning, or raised skin after 24 hours — the prepared gel is safe to use on your face. If any reaction occurs, do not use. The aloe may still be contaminated or you may have a personal sensitivity that makes even pure aloe unsuitable for your skin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO USE CORRECTLY -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">HOW TO USE CORRECTLY ONCE PREPARED</div>
+      <div class="check-item">
+        <span class="chk">✓</span>
+        <span><strong>Apply a thin, even layer</strong> on clean, dry skin. Thick applications don't absorb better — they just sit on the surface and can occlud pores.</span>
+      </div>
+      <div class="check-item">
+        <span class="chk">✓</span>
+        <span><strong>Mix with moisturiser</strong> if your skin is very sensitive — this dilutes the gel and reduces any chance of residual reaction while still delivering the soothing and moisturising benefits.</span>
+      </div>
+      <div class="check-item">
+        <span class="chk">✓</span>
+        <span><strong>Use as a cooling mask for 15 minutes, then rinse</strong> — excellent for post-sun soothing, during the summer months, or after gentle exercise when the skin is warm.</span>
+      </div>
+      <div class="check-item">
+        <span class="chk">✓</span>
+        <span><strong>Store in the refrigerator immediately</strong> — fresh aloe gel is highly perishable with no preservatives. Refrigerate in a clean airtight container and use within 3–5 days. Discard immediately if any discolouration or unusual smell develops.</span>
+      </div>
+      <div class="check-item">
+        <span class="chk">✓</span>
+        <span><strong>Prefer evening application</strong> — avoids any risk of photosensitisation from trace compounds, and aligns with the skin's natural overnight repair cycle for maximum benefit.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALOE vs COMMERCIAL -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">FRESH ALOE VS COMMERCIAL ALOE GELS</div>
+      <div class="compare-duo">
+        <div class="compare-panel">
+          <div class="cp-head">Fresh Aloe (Prepared)</div>
+          <div class="cp-row">Maximum potency</div>
+          <div class="cp-row">No preservatives added</div>
+          <div class="cp-row">Requires correct prep each time</div>
+          <div class="cp-row">3–5 day shelf life only</div>
+          <div class="cp-row">Patch test required</div>
+        </div>
+        <div class="compare-panel">
+          <div class="cp-head">Commercial Aloe Gel</div>
+          <div class="cp-row"><em>Aloin already removed at source</em></div>
+          <div class="cp-row"><em>Consistent quality batch to batch</em></div>
+          <div class="cp-row"><em>Often combined with actives</em></div>
+          <div class="cp-row"><em>Long, stable shelf life</em></div>
+          <div class="cp-row">Check for added fragrance</div>
+        </div>
+      </div>
+      <div class="card">
+        <p>Neither option is universally better. A well-chosen commercial aloe gel is safer for most people because aloin removal is done at manufacturing stage with precision equipment. Fresh aloe, when prepared correctly, retains every bioactive compound in its original, unprocessed form — which some skin types respond to better.</p>
+        <p>What to look for in commercial aloe: aloe vera as the first or second ingredient, free of synthetic fragrance, denatured alcohol, and artificial colourants. The product should list "aloe barbadensis leaf juice" (processed) rather than "aloe barbadensis leaf" (unprepared) — the former indicates the aloin removal step has been completed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE ALOE GENUINELY HELPS -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">WHERE ALOE VERA GENUINELY WORKS WELL</div>
+      <div class="conditions-list">
+        <div class="condition-item">
+          <span class="condition-icon">🔥</span>
+          <span><strong>Minor burns and sunburn</strong> — the anti-inflammatory acemannan compound actively reduces the burning sensation and accelerates tissue repair. This is the best-documented topical use of aloe vera in the medical literature.</span>
+        </div>
+        <div class="condition-item">
+          <span class="condition-icon">🧴</span>
+          <span><strong>Post-procedure soothing</strong> — after Dr. Pallavi's supervised peels or laser procedures, correctly prepared aloe gel is often recommended as a cooling, anti-inflammatory step. Never use unprepared raw aloe after procedures — the skin barrier is compromised and aloin absorption would be significant.</span>
+        </div>
+        <div class="condition-item">
+          <span class="condition-icon">💧</span>
+          <span><strong>Dry and itchy skin</strong> — aloe's humectant properties draw moisture into the skin while the polysaccharides form a light protective film. Effective for seasonal dryness, dry indoor air, or mild dehydrated skin conditions.</span>
+        </div>
+        <div class="condition-item">
+          <span class="condition-icon">🌿</span>
+          <span><strong>Insect bites</strong> — the anti-histamine effect of aloe's compounds reduces the itching and swelling response from minor insect bites almost immediately. Apply cold gel from the refrigerator for a combined cooling and anti-inflammatory effect.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA CARD -->
+  <section>
+    <div class="wrapper">
       <div class="card card-sage">
-        <p>Aloe vera is a genuinely useful ingredient — when prepared correctly. The shortcut of rubbing a freshly cut leaf directly on the face skips the most important step.</p>
-        <div class="highlight-note">Moisturiser (with ceramides) + sunscreen is all children and sensitive skin needs. Same principle: simple is better.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING CTA -->
-  <section>
-    <div class="wrapper">
-      <div class="quote-banner">
-        <blockquote>"Have a skin concern? Get it checked properly."</blockquote>
-        <cite>Dr. Pallavi's clinic is in Baner, Pune. DM <a href="https://www.instagram.com/drpallaviahireshelke/" target="_blank" style="color:var(--accent);">@drpallaviahireshelke</a> on Instagram for appointment details.</cite>
+        <h2>Have questions about your skin ingredients?</h2>
+        <p>DM <strong>@drpallaviahireshelke</strong> on Instagram — Dr. Pallavi personally reviews ingredient questions and sends evidence-based guidance for your skin type.</p>
+        <p style="font-size:13px;color:var(--muted);margin-top:6px;">For a complete personalised skin consultation, call or WhatsApp the clinic. Baner, Pune.</p>
       </div>
     </div>
   </section>
@@ -385,13 +604,33 @@
         <div class="contact-header">
           <h2>Dr. Pallavi Ahire-Shelke</h2>
           <p class="creds">MBBS, MD, DNB, DDV · Gold Medalist Dermatologist</p>
-          <p class="tagline">Personalised skin consultation — Baner, Pune</p>
+          <p class="tagline">Evidence-based skin care · Baner, Pune</p>
         </div>
         <div class="contact-grid">
-          <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank"><div class="cc-icon">📍</div><div class="cc-label">Location</div><div class="cc-detail">Baner, Pune</div><div class="cc-action">Get Directions</div></a>
-          <a class="contact-cell" href="tel:+919028291234"><div class="cc-icon">📞</div><div class="cc-label">Phone</div><div class="cc-detail">+91 90282 91234</div><div class="cc-action">Book a consultation</div></a>
-          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank"><div class="cc-icon">📸</div><div class="cc-label">Instagram</div><div class="cc-detail">@drpallaviahireshelke</div><div class="cc-action">Daily skin &amp; hair tips</div></a>
-          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank"><div class="cc-icon">💬</div><div class="cc-label">WhatsApp</div><div class="cc-detail">Quick queries welcome</div><div class="cc-action">Message us</div></a>
+          <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">
+            <div class="cc-icon">📍</div>
+            <div class="cc-label">Clinic</div>
+            <div class="cc-detail">Baner, Pune</div>
+            <div class="cc-action">Get Directions</div>
+          </a>
+          <a class="contact-cell" href="tel:+919028291234">
+            <div class="cc-icon">📞</div>
+            <div class="cc-label">Phone</div>
+            <div class="cc-detail">+91 90282 91234</div>
+            <div class="cc-action">Book a consultation</div>
+          </a>
+          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">
+            <div class="cc-icon">📸</div>
+            <div class="cc-label">Instagram</div>
+            <div class="cc-detail">@drpallaviahireshelke</div>
+            <div class="cc-action">Daily skin education</div>
+          </a>
+          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">
+            <div class="cc-icon">💬</div>
+            <div class="cc-label">WhatsApp</div>
+            <div class="cc-detail">Quick queries welcome</div>
+            <div class="cc-action">Message us</div>
+          </a>
         </div>
       </div>
     </div>
@@ -400,26 +639,26 @@
   <!-- RELATED GUIDES -->
   <section class="related-section">
     <div class="wrapper">
-      <div class="section-label" style="color:var(--accent);">MORE GUIDES</div>
+      <div class="section-label">MORE GUIDES</div>
       <div class="related-grid">
-        <a class="related-card" href="guide-peel.html">
-          <span class="rc-icon">✨</span>
-          <h4>Chemical Peel Guide</h4>
-          <p>Comment PEEL</p>
-          <span class="rc-link">Read guide →</span>
+        <a class="related-card" href="guide-barrier.html">
+          <span class="rc-icon">🛡️</span>
+          <h4>Barrier Repair Guide</h4>
+          <p>Restore your skin's protective layer</p>
+          <span class="rc-link">Comment BARRIER →</span>
         </a>
         <a class="related-card" href="guide-skincare.html">
           <span class="rc-icon">🧴</span>
           <h4>Skincare Basics</h4>
-          <p>Daily essentials</p>
-          <span class="rc-link">Read guide →</span>
+          <p>The 3-product routine that actually works</p>
+          <span class="rc-link">Read the guide →</span>
         </a>
       </div>
     </div>
   </section>
 
   <div class="disclaimer">
-    This guide is for educational purposes only and does not constitute medical advice. Please consult Dr. Pallavi Ahire-Shelke or a qualified dermatologist before starting any treatment.
+    This guide is for educational purposes only and does not constitute medical advice. Please consult Dr. Pallavi Ahire-Shelke or a qualified dermatologist before starting any new treatment.
   </div>
 
   <footer>
@@ -435,7 +674,7 @@
   </footer>
 
   <div class="float-cta">
-    <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
+    <a class="cta-call" href="tel:+919028291234">📲 Book Consultation</a>
     <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
   </div>
 
@@ -445,14 +684,12 @@
       if (!btn) return;
       btn.addEventListener('click', function() {
         if (navigator.share) {
-          navigator.share({ title: 'Aloe Vera — Safe Guide by Dr. Pallavi', url: window.location.href });
+          navigator.share({ title: 'Aloe Vera — Garden Se Safe Hai Ya Nahi? Free Guide by Dr. Pallavi', url: window.location.href });
         } else {
           navigator.clipboard.writeText(window.location.href).then(function() {
-            btn.textContent = '✓ Link Copied!';
+            btn.textContent = '✓ Link copied!';
             setTimeout(function() { btn.textContent = '↗ Share this guide'; }, 2200);
-          }).catch(function() {
-            btn.textContent = 'Copy: ' + window.location.href;
-          });
+          }).catch(function() { btn.textContent = 'Copy: ' + window.location.href; });
         }
       });
     })();
