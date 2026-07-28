@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIFU Skin Tightening Handbook | Dr Pallavi Ahireshelke</title>
+  <meta name="description" content="Can skin tighten without surgery? HIFU explained — shirt press analogy, SMAS layer, collagen remodeling, ideal age window, vs facelift. Dr Pallavi Ahireshelke, Skin Ethics Pune." />
+  <meta property="og:title" content="HIFU Skin Tightening Handbook — Surgery-Free Lifting" />
+  <meta property="og:description" content="Bina surgery skin tight ho sakti hai. SMAS layer tak ultrasound energy → collagen remodeling → natural lift. Comment HIFU for Dr Pallavi's complete guide." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --dark:      #081A1A;
+      --accent:    #207070;
+      --lt-accent: #60B0B0;
+      --sage-bg:   #EEF6F6;
+      --border:    #B0D4D4;
+      --text:      #0A2020;
+      --muted:     #406060;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Lora', Georgia, serif; background: #E2F0F0; color: var(--text); font-size: 16px; line-height: 1.75; }
+    .page-wrap { max-width: 480px; margin: 0 auto; background: #fff; }
+
+    .guide-header { background: var(--dark); background-image: radial-gradient(ellipse at 75% 20%, rgba(32,112,112,0.65) 0%, transparent 58%); padding: 52px 24px 40px; text-align: center; }
+    .clinic-tag { display: inline-block; font-size: 10px; font-style: italic; letter-spacing: 1.8px; color: var(--lt-accent); opacity: 0.8; margin-bottom: 14px; text-transform: uppercase; }
+    .guide-header h1 { font-family: 'Playfair Display', serif; font-size: 27px; line-height: 1.25; color: #fff; margin-bottom: 12px; }
+    .guide-header .subtitle { font-size: 13.5px; color: rgba(255,255,255,0.72); font-style: italic; max-width: 340px; margin: 0 auto 20px; }
+    .trigger-pill { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-style: italic; letter-spacing: 1.2px; padding: 5px 16px; border-radius: 20px; }
+
+    section { padding: 30px 20px; border-bottom: 1px solid var(--border); }
+    h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--dark); margin-bottom: 14px; line-height: 1.3; }
+    p { margin-bottom: 14px; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+
+    .dark-banner { background: var(--dark); border-left: 4px solid var(--accent); border-radius: 8px; padding: 18px 20px; margin: 20px 0; color: rgba(255,255,255,0.9); font-style: italic; font-size: 14.5px; line-height: 1.65; }
+    .dark-banner strong { color: var(--lt-accent); font-style: normal; }
+
+    /* SHIRT PRESS VISUAL */
+    .shirt-visual { background: var(--sage-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 20px 0; text-align: center; }
+    .shirt-stages { display: flex; gap: 8px; justify-content: center; align-items: center; }
+    .shirt-stage { flex: 1; }
+    .shirt-stage .ss-emoji { font-size: 36px; margin-bottom: 8px; }
+    .shirt-stage .ss-label { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
+    .shirt-stage .ss-sub { font-size: 11px; color: var(--muted); font-style: italic; margin-top: 3px; }
+    .shirt-arrow { font-size: 22px; color: var(--accent); flex-shrink: 0; }
+
+    /* SKIN LAYERS */
+    .skin-layers { margin: 18px 0; }
+    .layer-item { display: flex; gap: 0; }
+    .layer-depth { width: 60px; flex-shrink: 0; font-size: 11px; color: var(--muted); font-style: italic; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; }
+    .layer-bar { flex: 1; padding: 10px 14px; margin-bottom: 3px; border-radius: 6px; }
+    .layer-bar.epidermis { background: #D4E8E8; }
+    .layer-bar.dermis { background: #A8D0D0; }
+    .layer-bar.smas { background: var(--accent); color: #fff; }
+    .layer-bar .lb-name { font-family: 'Playfair Display', serif; font-size: 13px; margin-bottom: 2px; }
+    .layer-bar .lb-desc { font-size: 12px; opacity: 0.8; }
+    .hifu-target { text-align: center; font-size: 12px; color: var(--accent); font-style: italic; margin-top: 8px; }
+
+    /* HOW IT WORKS */
+    .how-steps { margin: 18px 0; }
+    .hs-item { display: flex; gap: 12px; padding: 13px 0; border-bottom: 1px dashed var(--border); align-items: flex-start; }
+    .hs-item:last-child { border-bottom: none; }
+    .hs-num { flex-shrink: 0; width: 30px; height: 30px; background: var(--accent); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; }
+    .hs-body { flex: 1; }
+    .hs-title { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--dark); margin-bottom: 3px; }
+    .hs-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+    /* IDEAL CANDIDATES */
+    .age-window { background: var(--sage-bg); border: 2px solid var(--accent); border-radius: 10px; padding: 18px; margin: 18px 0; text-align: center; }
+    .aw-title { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 10px; }
+    .aw-range { font-family: 'Playfair Display', serif; font-size: 34px; color: var(--accent); font-weight: 700; }
+    .aw-label { font-size: 13px; color: var(--muted); margin-top: 4px; font-style: italic; }
+    .aw-note { font-size: 12px; color: var(--muted); margin-top: 10px; }
+
+    .candidate-list { margin: 16px 0; list-style: none; }
+    .candidate-list li { padding: 9px 0 9px 28px; position: relative; border-bottom: 1px dashed var(--border); font-size: 13.5px; }
+    .candidate-list li:last-child { border-bottom: none; }
+    .candidate-list li::before { content: "✅"; position: absolute; left: 0; top: 10px; font-size: 13px; }
+    .candidate-list li.no::before { content: "❌"; }
+
+    /* RESULTS TIMELINE */
+    .results-track { margin: 18px 0; }
+    .results-track .rt-item { display: grid; grid-template-columns: 64px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); align-items: start; }
+    .results-track .rt-item:last-child { border-bottom: none; }
+    .rt-badge { background: var(--accent); color: #fff; border-radius: 8px; padding: 8px 4px; text-align: center; }
+    .rt-badge .rb-label { font-size: 10px; opacity: 0.75; }
+    .rt-badge .rb-val { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; line-height: 1.2; }
+    .rt-body .rt-title { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--dark); margin-bottom: 3px; }
+    .rt-body .rt-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+    /* HIFU VS FACELIFT */
+    .compare-table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 13px; }
+    .compare-table th { background: var(--dark); color: var(--lt-accent); padding: 10px 12px; text-align: left; font-family: 'Playfair Display', serif; }
+    .compare-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:nth-child(even) td { background: var(--sage-bg); }
+    .compare-table .col-hifu { color: var(--accent); font-weight: 600; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 18px 0; }
+    .contact-cell { display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--sage-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; font-size: 12.5px; color: var(--dark); text-decoration: none; font-family: 'Lora', serif; text-align: center; }
+
+    .float-cta { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 99; width: calc(100% - 40px); max-width: 440px; }
+    .cta-book { flex: 1; background: var(--accent); color: #fff; text-align: center; padding: 13px 10px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; box-shadow: 0 4px 18px rgba(32,112,112,0.45); }
+    .cta-wa { background: #25D366; color: #fff; padding: 13px 16px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; white-space: nowrap; }
+
+    .share-wrap { text-align: center; padding: 28px 20px 80px; }
+    .share-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #fff; border: none; border-radius: 10px; padding: 13px 28px; font-family: 'Lora', serif; font-size: 14px; cursor: pointer; }
+    .guide-footer { background: var(--dark); color: rgba(255,255,255,0.55); text-align: center; padding: 20px; font-size: 11.5px; line-height: 1.7; }
+    .guide-footer a { color: var(--lt-accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <header class="guide-header">
+    <div class="clinic-tag">Skin Ethics Clinic · Pune</div>
+    <h1>HIFU Skin Tightening Handbook</h1>
+    <p class="subtitle">Bina surgery skin tight ho sakti hai — selected patients mein</p>
+    <span class="trigger-pill">Comment HIFU to receive this guide</span>
+  </header>
+
+  <!-- SHIRT PRESS ANALOGY -->
+  <section>
+    <h2>The Shirt Press Analogy</h2>
+    <p>HIFU ko samajhna simple hai. Imagine ek loose shirt ko press karte waqt heat milne se kapda thoda tight aur smooth ho jaata hai.</p>
+
+    <div class="shirt-visual">
+      <div class="shirt-stages">
+        <div class="shirt-stage">
+          <div class="ss-emoji">👕</div>
+          <div class="ss-label">Loose, sagging</div>
+          <div class="ss-sub">Early skin laxity</div>
+        </div>
+        <div class="shirt-arrow">🔥➡️</div>
+        <div class="shirt-stage">
+          <div class="ss-emoji">👔</div>
+          <div class="ss-label">Tighter, firmer</div>
+          <div class="ss-sub">After collagen remodeling</div>
+        </div>
+      </div>
+    </div>
+
+    <p>HIFU bhi kuch isi concept par kaam karta hai — <strong>skin ke upar se damage kiye bina ultrasound energy ko skin ki deeper support layer (SMAS) tak pahunchata hai</strong>, jahan controlled heat collagen remodeling trigger karta hai.</p>
+  </section>
+
+  <!-- SMAS LAYER -->
+  <section>
+    <h2>SMAS — The Layer That Matters</h2>
+    <p>HIFU ka secret yeh hai ki yeh sirf surface par nahi, deep mein kaam karta hai. Skin ke layers ko samjhein:</p>
+
+    <div class="skin-layers">
+      <div class="layer-item">
+        <div class="layer-depth">~0.5mm</div>
+        <div class="layer-bar epidermis">
+          <div class="lb-name">Epidermis</div>
+          <div class="lb-desc" style="color:#406060">Surface layer — HIFU passes through untouched</div>
+        </div>
+      </div>
+      <div class="layer-item">
+        <div class="layer-depth">1–4mm</div>
+        <div class="layer-bar dermis">
+          <div class="lb-name">Dermis</div>
+          <div class="lb-desc" style="color:#204848">Collagen here — secondary target</div>
+        </div>
+      </div>
+      <div class="layer-item">
+        <div class="layer-depth">4–4.5mm</div>
+        <div class="layer-bar smas">
+          <div class="lb-name">SMAS Layer ← HIFU targets here</div>
+          <div class="lb-desc">Superficial Musculoaponeurotic System — the facial support framework surgeons lift in facelifts</div>
+        </div>
+      </div>
+    </div>
+    <div class="hifu-target">⚡ HIFU reaches SMAS without cutting or injecting anything</div>
+
+    <div class="dark-banner">
+      <strong>Why SMAS matters:</strong> Surgeons use scalpel to reach SMAS in a facelift. HIFU uses focused ultrasound to reach the same layer without any incision — triggering the same collagen contraction mechanism, <strong>non-invasively.</strong>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <h2>HIFU Kaise Kaam Karta Hai — Step by Step</h2>
+
+    <div class="how-steps">
+      <div class="hs-item">
+        <div class="hs-num">1</div>
+        <div class="hs-body">
+          <div class="hs-title">Ultrasound Energy Focused at Depth</div>
+          <div class="hs-desc">High-Intensity Focused Ultrasound (HIFU) beams converge at a precise focal point — exactly like a magnifying glass focuses sunlight at one point. Surrounding tissue unaffected.</div>
+        </div>
+      </div>
+      <div class="hs-item">
+        <div class="hs-num">2</div>
+        <div class="hs-body">
+          <div class="hs-title">Controlled Heat at SMAS (65–70°C)</div>
+          <div class="hs-desc">Focal point pe temperature 65-70°C tak reaches — collagen denaturation aur contraction hoti hai. Yeh SMAS tissue mein controlled thermal coagulation zones create karta hai.</div>
+        </div>
+      </div>
+      <div class="hs-item">
+        <div class="hs-num">3</div>
+        <div class="hs-body">
+          <div class="hs-title">Immediate Contraction + Long-term Remodeling</div>
+          <div class="hs-desc">Collagen immediately slightly tightens (mild initial effect). Phir months mein naya collagen grow karta hai — yeh long-term lifting effect deta hai jo gradually improve hota rehta hai.</div>
+        </div>
+      </div>
+      <div class="hs-item">
+        <div class="hs-num">4</div>
+        <div class="hs-body">
+          <div class="hs-title">Natural, Gradual Result</div>
+          <div class="hs-desc">HIFU face ko stretch nahi karta — yeh body ke natural collagen-building process ko stimulate karta hai. Isliye result ekdum natural lagta hai — "done" nahi dikhta.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDEAL AGE WINDOW -->
+  <section>
+    <h2>HIFU — Ideal Age Window</h2>
+
+    <div class="age-window">
+      <div class="aw-title">Best Results Age Range</div>
+      <div class="aw-range">30 – 50</div>
+      <div class="aw-label">Years of age — early to moderate sagging</div>
+      <div class="aw-note">Yeh woh window hai jab skin mein enough collagen reserve hai jo HIFU stimulate kar sake. Very advanced sagging (60+) mein collagen reservoir limited hota hai — surgical lift better option.</div>
+    </div>
+
+    <p>Good HIFU candidates:</p>
+    <ul class="candidate-list">
+      <li>Mild to moderate skin laxity — jowls, neck, brow drooping</li>
+      <li>Age 30-55 — sufficient residual collagen</li>
+      <li>No significant excess skin (surgery needed tab)</li>
+      <li>Realistic expectations — subtle lift, not dramatic change</li>
+      <li class="no">Very advanced sagging — surgical facelift better result deta hai</li>
+      <li class="no">Active skin infections ya open wounds on treatment area</li>
+      <li class="no">Metal implants / pacemaker in treatment zone</li>
+    </ul>
+  </section>
+
+  <!-- RESULTS TIMELINE -->
+  <section>
+    <h2>Results — Kab Kya Dikhta Hai</h2>
+
+    <div class="results-track">
+      <div class="rt-item">
+        <div class="rt-badge"><div class="rb-label">Day</div><div class="rb-val">0–3</div></div>
+        <div class="rt-body">
+          <div class="rt-title">Immediately After</div>
+          <div class="rt-desc">Mild redness, tingling, slight swelling — typically subsides within hours. Most patients go back to work same day.</div>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-badge"><div class="rb-label">Month</div><div class="rb-val">1–2</div></div>
+        <div class="rt-body">
+          <div class="rt-title">Initial Tightening</div>
+          <div class="rt-desc">Mild improvement visible — collagen contraction starting. Skin feels slightly firmer. Photos compare karne par subtle difference dikhti hai.</div>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-badge"><div class="rb-label">Month</div><div class="rb-val">3–6</div></div>
+        <div class="rt-body">
+          <div class="rt-title">Peak Results</div>
+          <div class="rt-desc">Maximum collagen remodeling — jawline definition, brow lift, neck tightening visible. Natural-looking lift. Most patients happiest at 3-6 months.</div>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-badge" style="background:#406060;"><div class="rb-label">Month</div><div class="rb-val">12–18</div></div>
+        <div class="rt-body">
+          <div class="rt-title">Maintenance Session</div>
+          <div class="rt-desc">Results gradually fade as natural aging continues. Yearly maintenance HIFU session results maintain karta hai — surgical lift se zyada maintainable.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIFU VS FACELIFT -->
+  <section>
+    <h2>HIFU vs Facelift — Key Differences</h2>
+    <table class="compare-table">
+      <thead>
+        <tr><th>Factor</th><th class="col-hifu">HIFU</th><th>Facelift Surgery</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Invasiveness</td><td class="col-hifu">Non-surgical</td><td>Surgical — general anaesthesia</td></tr>
+        <tr><td>Downtime</td><td class="col-hifu">Minimal (hours)</td><td>2–4 weeks recovery</td></tr>
+        <tr><td>Results</td><td class="col-hifu">Subtle, natural lift</td><td>Dramatic, significant lift</td></tr>
+        <tr><td>Duration</td><td class="col-hifu">1–2 years</td><td>5–10 years</td></tr>
+        <tr><td>Best For</td><td class="col-hifu">Early/moderate sagging</td><td>Advanced sagging</td></tr>
+        <tr><td>Risk</td><td class="col-hifu">Very low</td><td>Surgical risks apply</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Skin Ethics Clinic — Consult Dr Pallavi</h2>
+    <p>HIFU candidacy assessment aur realistic expectation setting ke liye:</p>
+    <div class="contact-grid">
+      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Get Directions</a>
+      <a class="contact-cell" href="tel:+919028291234">📞 +91 90282 91234</a>
+      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📸 @drpallaviahireshelke</a>
+      <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+    </div>
+    <div class="dark-banner">
+      <strong>HIFU is not for everyone</strong> — lekin sahi candidate mein yeh <strong>surgery ke bina visible, natural lift</strong> de sakta hai. Consultation mein assess karein ki aap achhe candidate hain ya nahi.
+    </div>
+  </section>
+
+  <div class="share-wrap">
+    <button class="share-btn" onclick="shareGuide()">📤 Share This Guide</button>
+  </div>
+  <footer class="guide-footer">
+    <p><strong style="color:var(--lt-accent)">Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br>
+    <a href="tel:+919028291234">+91 90282 91234</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a></p>
+    <p style="margin-top:10px">Educational purposes only. Does not replace medical consultation.</p>
+  </footer>
+</div>
+
+<div class="float-cta">
+  <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
+  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+</div>
+<script>
+  function shareGuide() {
+    const url = window.location.href;
+    if (navigator.share) { navigator.share({ title: 'HIFU Skin Tightening Handbook', url }).catch(()=>{}); }
+    else { navigator.clipboard.writeText(url).then(()=>alert('Link copied!')).catch(()=>{}); }
+  }
+</script>
+</body>
+</html>

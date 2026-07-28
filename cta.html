@@ -160,6 +160,7 @@
       font-size: 10px; font-weight: 600; background: #ede9fe; color: #5b21b6;
     }
     .dress-pill.d8 { background: #fff3cd; color: #92600a; }
+    .dress-pill.d9 { background: #ede9fe; color: #5b21b6; }
 
     .trigger-code {
       display: inline-block; padding: 2px 8px; border-radius: 4px;
@@ -316,6 +317,21 @@ const SCRIPTS = [
   { n:36, dress:8, title:'Rating Snacks for Hair & Skin Health',           trigger:'',        cta:'not-needed',link:'',                  date:'10 May' },
   { n:37, dress:8, title:'Rating Breakfast Items — The Skin-Gut Link',     trigger:'',        cta:'not-needed',link:'',                  date:'' },
   { n:38, dress:8, title:'Rating Hair Oils — The Truth About Champi',      trigger:'',        cta:'not-needed',link:'',                  date:'' },
+
+  // JULY SCRIPTS (12–25) ───────────────────────────────────────────────────
+  { n:39, dress:9, title:'Pimple = Traffic Jam — Acne Science',           trigger:'ACNE',         cta:'automated', link:'guide-acne.html',         date:'' },
+  { n:40, dress:9, title:'Baal Ped Ke Patte Hain — Hair Cycle + Hairfall',trigger:'HAIRFALL',     cta:'automated', link:'guide-hairfall.html',      date:'' },
+  { n:41, dress:9, title:'Black Balloon Laser — Pigmentation Targeting',  trigger:'PIGLASER',     cta:'automated', link:'guide-piglaser.html',      date:'' },
+  { n:42, dress:9, title:'Pothole Road — Acne Scar Types & Treatment',    trigger:'SCARS',        cta:'automated', link:'guide-scars.html',         date:'' },
+  { n:43, dress:9, title:'Garden Transplant — Hair Transplant Science',   trigger:'TRANSPLANT',   cta:'automated', link:'guide-transplant.html',    date:'' },
+  { n:44, dress:9, title:'Building Crack Repair — Microneedling Guide',   trigger:'MICRONEEDLING',cta:'automated', link:'guide-micro.html',         date:'' },
+  { n:45, dress:9, title:'Loose Shirt Press — HIFU Skin Tightening',      trigger:'HIFU',         cta:'automated', link:'guide-hifu.html',          date:'' },
+  { n:46, dress:9, title:'Old Paint Wall — Chemical Peel Science',        trigger:'PEELSCIENCE',  cta:'automated', link:'guide-peelscience.html',   date:'' },
+  { n:47, dress:9, title:'Sebum-Humidity Trap — Monsoon Acne',            trigger:'MONSOONACNE',  cta:'automated', link:'guide-monsoonacne.html',   date:'' },
+  { n:48, dress:9, title:'Hydrogen Bond Science — Monsoon Frizz Fix',     trigger:'FRIZZFIX',     cta:'automated', link:'guide-frizzfix.html',      date:'' },
+  { n:49, dress:9, title:'UV-A Through Clouds — Monsoon Pigmentation',    trigger:'RAINGLOW',     cta:'automated', link:'guide-rainglow.html',      date:'' },
+  { n:50, dress:9, title:'Malassezia Biofilm — Monsoon Scalp & Hairfall', trigger:'MONSOONHAIR',  cta:'automated', link:'guide-monsoonhair.html',   date:'' },
+  { n:51, dress:9, title:'Corynebacterium — Body Odour & Underarm Dark',  trigger:'ODORFIX',      cta:'automated', link:'guide-odorfix.html',       date:'' },
 ];
 
 // ── RENDER ────────────────────────────────────────────────────────────────
@@ -327,8 +343,9 @@ const BADGE = {
 };
 
 function dressLabel(d) {
-  const cls = d === 8 ? 'dress-pill d8' : 'dress-pill';
-  return `<span class="${cls}">Dress ${d}</span>`;
+  const cls = d === 8 ? 'dress-pill d8' : d === 9 ? 'dress-pill d9' : 'dress-pill';
+  const label = d === 9 ? 'July Scripts' : `Dress ${d}`;
+  return `<span class="${cls}">${label}</span>`;
 }
 
 function triggerCell(t) {

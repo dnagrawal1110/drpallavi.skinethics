@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monsoon Pigmentation Guide | Dr Pallavi Ahireshelke</title>
+  <meta name="description" content="Why does skin get dark in monsoon? UV-A penetrates 80% through clouds, Malassezia + UV dual trigger, Azelaic Acid Peels + Laser Toning combination. Dr Pallavi, Skin Ethics Pune." />
+  <meta property="og:title" content="Monsoon Glow Guide — Rain Mein Bhi Pigmentation?" />
+  <meta property="og:description" content="Baarish mein bhi sunscreen kyun? UV-A 80% through clouds. Malassezia + UV dual trigger. Comment RAINGLOW for Dr Pallavi's monsoon pigmentation guide." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --dark:      #100814;
+      --accent:    #602880;
+      --lt-accent: #B070D8;
+      --plum-bg:   #F5EFF8;
+      --border:    #D0B0E0;
+      --text:      #1A0E20;
+      --muted:     #6A4080;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Lora', Georgia, serif; background: #EAE0F0; color: var(--text); font-size: 16px; line-height: 1.75; }
+    .page-wrap { max-width: 480px; margin: 0 auto; background: #fff; }
+
+    .guide-header { background: var(--dark); background-image: radial-gradient(ellipse at 70% 20%, rgba(96,40,128,0.7) 0%, transparent 60%); padding: 52px 24px 40px; text-align: center; }
+    .clinic-tag { display: inline-block; font-size: 10px; font-style: italic; letter-spacing: 1.8px; color: var(--lt-accent); opacity: 0.8; margin-bottom: 14px; text-transform: uppercase; }
+    .guide-header h1 { font-family: 'Playfair Display', serif; font-size: 27px; line-height: 1.25; color: #fff; margin-bottom: 12px; }
+    .guide-header .subtitle { font-size: 13.5px; color: rgba(255,255,255,0.72); font-style: italic; max-width: 340px; margin: 0 auto 20px; }
+    .trigger-pill { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-style: italic; letter-spacing: 1.2px; padding: 5px 16px; border-radius: 20px; }
+
+    section { padding: 30px 20px; border-bottom: 1px solid var(--border); }
+    h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--dark); margin-bottom: 14px; line-height: 1.3; }
+    p { margin-bottom: 14px; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+
+    .dark-banner { background: var(--dark); border-left: 4px solid var(--accent); border-radius: 8px; padding: 18px 20px; margin: 20px 0; color: rgba(255,255,255,0.9); font-style: italic; font-size: 14.5px; line-height: 1.65; }
+    .dark-banner strong { color: var(--lt-accent); font-style: normal; }
+
+    /* UV VISUAL */
+    .uv-visual { background: var(--plum-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .uv-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .uv-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 14px 10px; text-align: center; }
+    .uv-card .uc-label { font-size: 11px; color: var(--muted); letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 6px; }
+    .uv-card .uc-value { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--accent); }
+    .uv-card .uc-desc { font-size: 11.5px; color: var(--muted); margin-top: 5px; line-height: 1.5; }
+    .uv-note { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin-top: 10px; font-size: 12.5px; color: var(--text); text-align: center; }
+
+    /* DUAL TRIGGER */
+    .dual-trigger { margin: 18px 0; }
+    .dt-side { background: var(--plum-bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 10px; }
+    .dt-side h3 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 8px; }
+    .dt-side p { font-size: 13px; color: var(--muted); margin-bottom: 0; }
+    .dt-plus { text-align: center; font-size: 24px; color: var(--accent); font-family: 'Playfair Display', serif; margin: 4px 0; }
+    .dt-result { background: var(--dark); border-radius: 10px; padding: 16px; text-align: center; }
+    .dt-result .dr-title { font-family: 'Playfair Display', serif; font-size: 15px; color: #fff; margin-bottom: 6px; }
+    .dt-result .dr-desc { font-size: 13px; color: rgba(255,255,255,0.75); }
+
+    /* TREATMENT COMBO */
+    .treatment-combo { margin: 18px 0; }
+    .tc-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px dashed var(--border); align-items: flex-start; }
+    .tc-item:last-child { border-bottom: none; }
+    .tc-icon { flex-shrink: 0; font-size: 26px; }
+    .tc-body { flex: 1; }
+    .tc-title { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--dark); margin-bottom: 3px; }
+    .tc-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+    /* SPF GUIDE */
+    .spf-list { margin: 16px 0; list-style: none; }
+    .spf-list li { padding: 9px 0 9px 28px; position: relative; border-bottom: 1px dashed var(--border); font-size: 13.5px; }
+    .spf-list li:last-child { border-bottom: none; }
+    .spf-list li::before { content: "☀️"; position: absolute; left: 0; top: 10px; font-size: 13px; }
+
+    /* MYTH LIST */
+    .myth-list { margin: 16px 0; }
+    .myth-item { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 10px; }
+    .myth-item .mi-myth { background: #FAF0FC; padding: 10px 14px; font-size: 13px; color: #201020; }
+    .myth-item .mi-myth::before { content: "❌ MYTH: "; font-family: 'Playfair Display', serif; font-weight: 700; }
+    .myth-item .mi-fact { background: var(--plum-bg); padding: 10px 14px; font-size: 13px; color: var(--muted); }
+    .myth-item .mi-fact::before { content: "✅ FACT: "; color: var(--accent); font-family: 'Playfair Display', serif; font-weight: 700; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 18px 0; }
+    .contact-cell { display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--plum-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; font-size: 12.5px; color: var(--dark); text-decoration: none; font-family: 'Lora', serif; text-align: center; }
+
+    .float-cta { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 99; width: calc(100% - 40px); max-width: 440px; }
+    .cta-book { flex: 1; background: var(--accent); color: #fff; text-align: center; padding: 13px 10px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; box-shadow: 0 4px 18px rgba(96,40,128,0.45); }
+    .cta-wa { background: #25D366; color: #fff; padding: 13px 16px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; white-space: nowrap; }
+
+    .share-wrap { text-align: center; padding: 28px 20px 80px; }
+    .share-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #fff; border: none; border-radius: 10px; padding: 13px 28px; font-family: 'Lora', serif; font-size: 14px; cursor: pointer; }
+    .guide-footer { background: var(--dark); color: rgba(255,255,255,0.55); text-align: center; padding: 20px; font-size: 11.5px; line-height: 1.7; }
+    .guide-footer a { color: var(--lt-accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <header class="guide-header">
+    <div class="clinic-tag">Skin Ethics Clinic · Pune</div>
+    <h1>Monsoon Glow Guide</h1>
+    <p class="subtitle">Baarish mein bhi skin dark kyun hoti hai — aur kya karna chahiye</p>
+    <span class="trigger-pill">Comment RAINGLOW to receive this guide</span>
+  </header>
+
+  <!-- UV THROUGH CLOUDS -->
+  <section>
+    <h2>Clouds = Sun Protection? — Myth!</h2>
+    <p>Bahut log sochte hain ki baarish ke din sun damage nahi hoti. Reality very different hai:</p>
+
+    <div class="uv-visual">
+      <div class="uv-compare">
+        <div class="uv-card">
+          <div class="uc-label">UV-B (Burning)</div>
+          <div class="uc-value">~20%</div>
+          <div class="uc-desc">Clouds filter karte hain — sunburn risk low on cloudy days</div>
+        </div>
+        <div class="uv-card">
+          <div class="uc-label">UV-A (Ageing + Pigmentation)</div>
+          <div class="uc-value">80%</div>
+          <div class="uc-desc">Clouds ke through penetrate karta hai — tanning aur spots monsoon mein bhi hote hain</div>
+        </div>
+      </div>
+      <div class="uv-note">☁️ Cloud cover UV-B reduce karta hai — but UV-A (jo melanin trigger karta hai) nearly unchanged rehta hai</div>
+    </div>
+
+    <div class="dark-banner">
+      <strong>Monsoon mein sunscreen band karna</strong> = skin ko UV-A damage ke saamne expose karna. <strong>Daily SPF 30-50 — clouds hain ya nahi — non-negotiable hai.</strong>
+    </div>
+  </section>
+
+  <!-- MALASSEZIA + UV DUAL TRIGGER -->
+  <section>
+    <h2>The Monsoon Pigmentation Dual Trigger</h2>
+    <p>Monsoon mein pigmentation ek nahi — <strong>do triggers</strong> mil ke kaam karte hain:</p>
+
+    <div class="dual-trigger">
+      <div class="dt-side">
+        <h3>🌧️ Trigger 1: Malassezia Furfur</h3>
+        <p>A skin-surface yeast/fungus — monsoon mein humidity + sweat mein multiply karta hai. Sebum pe feed karta hai, inflammatory compounds release karta hai jo melanin production stimulate karte hain.</p>
+      </div>
+      <div class="dt-plus">+</div>
+      <div class="dt-side">
+        <h3>☀️ Trigger 2: UV-A Radiation</h3>
+        <p>Clouds ke bawajood 80% UV-A skin pe reach karta hai. Yeh melanocytes ko stimulate karta hai — pigment cells melanin produce karne lagte hain.</p>
+      </div>
+      <div class="dt-plus">⬇️</div>
+      <div class="dt-result">
+        <div class="dr-title">Combined Effect = Accelerated Pigmentation</div>
+        <div class="dr-desc">Malassezia inflammation + UV-A stimulation = melanin overproduction — monsoon mein tan, dark patches, aur uneven tone zyada fast hoti hai than expected</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENT COMBINATION -->
+  <section>
+    <h2>Solution — Combination Approach</h2>
+    <p>Dual trigger ke liye single treatment sufficient nahi hoti — combination needed:</p>
+
+    <div class="treatment-combo">
+      <div class="tc-item">
+        <div class="tc-icon">🧪</div>
+        <div class="tc-body">
+          <div class="tc-title">Azelaic Acid Peels</div>
+          <div class="tc-desc">Dual-action ingredient — anti-fungal (Malassezia ko address karta hai) + tyrosinase inhibitor (melanin production block karta hai). Indian skin pe safe, gentle. Monthly peel sessions monsoon mein highly effective.</div>
+        </div>
+      </div>
+      <div class="tc-item">
+        <div class="tc-icon">💡</div>
+        <div class="tc-body">
+          <div class="tc-title">Laser Toning (Q-Switched Nd:YAG)</div>
+          <div class="tc-desc">Existing melanin granules selectively break karta hai — energy melanin absorb karta hai, fragment ho jaata hai, skin naturally clear karta hai. UV-A se jo pigment already deposit hua hai usse address karta hai.</div>
+        </div>
+      </div>
+      <div class="tc-item">
+        <div class="tc-icon">🛡️</div>
+        <div class="tc-body">
+          <div class="tc-title">Anti-fungal Topicals + Sunscreen Base</div>
+          <div class="tc-desc">Malassezia ka growth control karne ke liye targeted topicals. SPF 50 broad-spectrum sunscreen — prevention layer jo treatment results ko maintain karta hai.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark-banner">
+      <strong>Azelaic Acid Peel + Laser Toning combination</strong> — yeh approach dual trigger dono address karta hai ek protocol mein. <strong>Sirf fairness creams ghisi paisi nahi — science-backed targeted treatment.</strong>
+    </div>
+  </section>
+
+  <!-- SPF GUIDE -->
+  <section>
+    <h2>Monsoon Mein Sunscreen — Sahi Tarika</h2>
+    <ul class="spf-list">
+      <li>SPF 30 minimum, SPF 50 recommended for Indian skin in monsoon</li>
+      <li>PA+++ (UV-A protection) mandatory — PA rating = UV-A coverage</li>
+      <li>Gel-based ya lightweight fluid formula — heavy creams breakouts trigger karte hain</li>
+      <li>Every 3-4 hours reapply — even indoors near windows</li>
+      <li>Makeup ke neeche physical barrier as sunscreen — SPF foundation replace nahi kar sakta</li>
+      <li>Post-rain mein face wipe + reapply — rainwater SPF wash karta hai</li>
+    </ul>
+  </section>
+
+  <!-- MYTHS -->
+  <section>
+    <h2>Monsoon Pigmentation Myths</h2>
+    <div class="myth-list">
+      <div class="myth-item">
+        <div class="mi-myth">Baarish mein sunscreen nahi chahiye — sun nahi hai</div>
+        <div class="mi-fact">UV-A 80% clouds ke through aata hai. Melanin production UV-A se trigger hota hai. Sunscreen skip karna = daily pigmentation exposure.</div>
+      </div>
+      <div class="myth-item">
+        <div class="mi-myth">Monsoon tan "automatically" clear ho jaata hai</div>
+        <div class="mi-fact">Malassezia + UV-A combined effect se jo pigmentation hota hai — woh persistent hota hai. Targeted treatment bina clear nahi hota.</div>
+      </div>
+      <div class="myth-item">
+        <div class="mi-myth">Vitamin C serum hi kaafi hai pigmentation ke liye</div>
+        <div class="mi-fact">Vitamin C antioxidant + brightening hai — helpful lekin not sufficient against Malassezia-driven pigmentation. Anti-fungal + depigmenting combination needed.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Skin Ethics Clinic — Pigmentation Assessment</h2>
+    <p>Monsoon pigmentation ke liye personalized Azelaic Peel + Laser Toning protocol:</p>
+    <div class="contact-grid">
+      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Get Directions</a>
+      <a class="contact-cell" href="tel:+919028291234">📞 +91 90282 91234</a>
+      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📸 @drpallaviahireshelke</a>
+      <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+    </div>
+  </section>
+
+  <div class="share-wrap">
+    <button class="share-btn" onclick="shareGuide()">📤 Share This Guide</button>
+  </div>
+  <footer class="guide-footer">
+    <p><strong style="color:var(--lt-accent)">Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br>
+    <a href="tel:+919028291234">+91 90282 91234</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a></p>
+    <p style="margin-top:10px">Educational purposes only. Does not replace medical consultation.</p>
+  </footer>
+</div>
+
+<div class="float-cta">
+  <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
+  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+</div>
+<script>
+  function shareGuide() {
+    const url = window.location.href;
+    if (navigator.share) { navigator.share({ title: 'Monsoon Glow Guide', url }).catch(()=>{}); }
+    else { navigator.clipboard.writeText(url).then(()=>alert('Link copied!')).catch(()=>{}); }
+  }
+</script>
+</body>
+</html>
