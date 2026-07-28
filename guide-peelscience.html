@@ -3,337 +3,205 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chemical Peel Handbook | Dr Pallavi Ahireshelke</title>
-  <meta name="description" content="How does a chemical peel actually work? Old paint wall analogy, peel types, who benefits, recovery tips, myths, first peel preparation. Dr Pallavi Ahireshelke, Skin Ethics Pune." />
-  <meta property="og:title" content="Chemical Peel Handbook — Science Behind the Glow" />
-  <meta property="og:description" content="Chemical peel matlab skin ko jalaana nahi. Old paint wall analogy se samjhein. Comment PEELSCIENCE for Dr Pallavi's complete chemical peel guide." />
+  <title>Chemical Peel Guide | Dr Pallavi Ahireshelke</title>
+  <meta name="description" content="How chemical peels actually work — the old paint wall analogy, peel depths explained, what each type treats, recovery timeline, myths, and how to prepare for your first peel." />
+  <meta property="og:title" content="The Chemical Peel Guide — Controlled Renewal, Not Chemical Burning" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --dark:      #0A1A0A;
-      --accent:    #407040;
-      --lt-accent: #80B080;
-      --sage-bg:   #EFF6EF;
-      --border:    #B8D8B8;
-      --text:      #102010;
-      --muted:     #507050;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Lora', Georgia, serif; background: #E5F0E5; color: var(--text); font-size: 16px; line-height: 1.75; }
-    .page-wrap { max-width: 480px; margin: 0 auto; background: #fff; }
+    :root{--ink:#0A1A0A;--accent:#3A6830;--lt:#78A868;--muted:#486038;--page-bg:#F5F8F3;--card:#FFFFFF;--border:#C4D8B4;--rule:#E0EED8;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Lora',Georgia,serif;background:var(--page-bg);color:var(--ink);font-size:16px;line-height:1.8;}
+    .page-wrap{max-width:480px;margin:0 auto;background:var(--card);}
+    .guide-header{background:var(--ink);background-image:radial-gradient(ellipse at 80% 0%,rgba(58,104,48,0.55) 0%,transparent 55%);padding:56px 28px 48px;}
+    .clinic-tag{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--lt);opacity:.7;margin-bottom:20px;}
+    .guide-header h1{font-family:'Playfair Display',serif;font-size:29px;line-height:1.22;color:#fff;margin-bottom:14px;font-weight:700;}
+    .deck{font-size:14px;color:rgba(255,255,255,.58);font-style:italic;line-height:1.75;margin-bottom:28px;}
+    .trigger-pill{display:inline-block;border:1px solid rgba(120,168,104,.45);color:var(--lt);font-family:'Inter',sans-serif;font-size:11px;letter-spacing:1.2px;padding:6px 18px;border-radius:20px;}
+    .section{padding:40px 28px;border-bottom:1px solid var(--rule);position:relative;overflow:hidden;}
+    .section-num{font-family:'Playfair Display',serif;font-size:80px;font-weight:700;color:var(--accent);opacity:.05;position:absolute;top:20px;right:18px;line-height:1;user-select:none;pointer-events:none;}
+    h2{font-family:'Playfair Display',serif;font-size:21px;color:var(--ink);line-height:1.28;margin-bottom:16px;font-weight:700;}
+    h3{font-family:'Playfair Display',serif;font-size:15px;color:var(--ink);margin-bottom:6px;font-weight:600;}
+    p{font-size:15px;color:#162010;line-height:1.85;margin-bottom:16px;}
+    p:last-child{margin-bottom:0;}
+    .pull-quote{border-left:3px solid var(--accent);padding:14px 20px;margin:24px 0;background:#EDF5E8;border-radius:0 8px 8px 0;}
+    .pull-quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:15.5px;color:var(--accent);margin:0;line-height:1.65;}
 
-    .guide-header { background: var(--dark); background-image: radial-gradient(ellipse at 75% 20%, rgba(64,112,64,0.65) 0%, transparent 58%); padding: 52px 24px 40px; text-align: center; }
-    .clinic-tag { display: inline-block; font-size: 10px; font-style: italic; letter-spacing: 1.8px; color: var(--lt-accent); opacity: 0.8; margin-bottom: 14px; text-transform: uppercase; }
-    .guide-header h1 { font-family: 'Playfair Display', serif; font-size: 27px; line-height: 1.25; color: #fff; margin-bottom: 12px; }
-    .guide-header .subtitle { font-size: 13.5px; color: rgba(255,255,255,0.72); font-style: italic; max-width: 340px; margin: 0 auto 20px; }
-    .trigger-pill { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-style: italic; letter-spacing: 1.2px; padding: 5px 16px; border-radius: 20px; }
-
-    section { padding: 30px 20px; border-bottom: 1px solid var(--border); }
-    h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--dark); margin-bottom: 14px; line-height: 1.3; }
-    p { margin-bottom: 14px; color: var(--text); }
-    p:last-child { margin-bottom: 0; }
-
-    .dark-banner { background: var(--dark); border-left: 4px solid var(--accent); border-radius: 8px; padding: 18px 20px; margin: 20px 0; color: rgba(255,255,255,0.9); font-style: italic; font-size: 14.5px; line-height: 1.65; }
-    .dark-banner strong { color: var(--lt-accent); font-style: normal; }
-
-    /* PAINT WALL VISUAL */
-    .wall-visual { background: var(--sage-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .wall-stages { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; }
-    .wall-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 14px 10px; text-align: center; }
-    .wall-card .wc-emoji { font-size: 32px; margin-bottom: 8px; }
-    .wall-card .wc-label { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
-    .wall-card .wc-sub { font-size: 11px; color: var(--muted); font-style: italic; margin-top: 3px; }
-    .wall-arrow { font-size: 20px; color: var(--accent); text-align: center; }
+    /* WALL VISUAL */
+    .wall-visual{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin:24px 0;}
+    .wall-card{border:1px solid var(--border);border-radius:12px;padding:18px 14px;text-align:center;}
+    .wc-icon{font-size:32px;margin-bottom:8px;}
+    .wc-label{font-family:'Inter',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+    .wc-title{font-family:'Playfair Display',serif;font-size:13px;color:var(--ink);}
+    .wall-arrow{font-size:22px;color:var(--border);text-align:center;}
 
     /* PEEL DEPTHS */
-    .peel-depths { margin: 18px 0; }
-    .pd-item { display: grid; grid-template-columns: 80px 1fr; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--border); align-items: start; }
-    .pd-item:last-child { border-bottom: none; }
-    .pd-badge { border-radius: 8px; padding: 10px 6px; text-align: center; color: #fff; }
-    .pd-badge.superficial { background: var(--accent); }
-    .pd-badge.medium { background: #305830; }
-    .pd-badge.deep { background: #203020; }
-    .pd-badge .pb-label { font-size: 10px; opacity: 0.8; }
-    .pd-badge .pb-depth { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; }
-    .pd-body { }
-    .pd-title { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--dark); margin-bottom: 3px; }
-    .pd-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
-    .pd-acids { font-size: 12px; color: var(--accent); font-style: italic; margin-top: 4px; }
+    .peel-depths{margin:24px 0;}
+    .pd-item{border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:12px;display:grid;grid-template-columns:90px 1fr;gap:14px;align-items:start;}
+    .pd-badge{border-radius:8px;padding:12px 8px;text-align:center;color:#fff;display:flex;flex-direction:column;justify-content:center;}
+    .pd-badge.superficial{background:var(--lt);}
+    .pd-badge.medium{background:var(--accent);}
+    .pd-badge.deep{background:var(--ink);}
+    .pdb-type{font-family:'Inter',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;opacity:.75;margin-bottom:4px;}
+    .pdb-name{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;}
+    .pd-body h3{margin-bottom:5px;}
+    .pd-body p{font-size:13px;margin-bottom:6px;color:var(--muted);}
+    .pd-acids{font-size:12px;color:var(--accent);font-style:italic;}
 
-    /* WHO BENEFITS */
-    .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
-    .benefit-card { background: var(--sage-bg); border: 1px solid var(--border); border-top: 3px solid var(--accent); border-radius: 8px; padding: 13px 12px; }
-    .benefit-card .bc-emoji { font-size: 22px; margin-bottom: 6px; }
-    .benefit-card .bc-name { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 4px; }
-    .benefit-card .bc-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+    /* CONCERNS GRID */
+    .concerns-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0;}
+    .concern-card{border:1px solid var(--border);border-radius:10px;padding:15px 13px;}
+    .cc-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);margin-bottom:8px;}
+    .cc-name{font-family:'Playfair Display',serif;font-size:13.5px;color:var(--ink);margin-bottom:4px;}
+    .cc-desc{font-size:12px;color:var(--muted);line-height:1.6;}
 
-    /* RECOVERY STEPS */
-    .recovery-steps { margin: 18px 0; }
-    .rs-item { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px dashed var(--border); align-items: flex-start; }
-    .rs-item:last-child { border-bottom: none; }
-    .rs-day { flex-shrink: 0; width: 48px; background: var(--accent); color: #fff; border-radius: 6px; padding: 6px 4px; text-align: center; font-size: 11px; font-family: 'Playfair Display', serif; }
-    .rs-body { flex: 1; }
-    .rs-title { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 2px; }
-    .rs-desc { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+    /* RECOVERY */
+    .recovery-track{margin:24px 0;position:relative;}
+    .recovery-track::before{content:'';position:absolute;left:22px;top:0;bottom:0;width:1.5px;background:var(--border);}
+    .rt-item{display:grid;grid-template-columns:46px 1fr;gap:14px;padding:14px 0;}
+    .rt-dot-wrap{display:flex;justify-content:center;}
+    .rt-dot{width:16px;height:16px;border-radius:50%;background:var(--accent);border:3px solid var(--card);box-shadow:0 0 0 1.5px var(--border);margin-top:3px;}
+    .rt-time{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+    .rt-title{font-family:'Playfair Display',serif;font-size:14px;color:var(--ink);margin-bottom:4px;}
+    .rt-desc{font-size:13.5px;color:var(--muted);line-height:1.65;}
 
-    /* MYTHS */
-    .myth-list { margin: 16px 0; }
-    .myth-item { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 10px; }
-    .myth-item .mi-myth { background: #F5FBF5; padding: 10px 14px; font-size: 13px; color: #203020; }
-    .myth-item .mi-myth::before { content: "❌ MYTH: "; font-family: 'Playfair Display', serif; font-weight: 700; }
-    .myth-item .mi-fact { background: var(--sage-bg); padding: 10px 14px; font-size: 13px; color: var(--muted); }
-    .myth-item .mi-fact::before { content: "✅ FACT: "; color: var(--accent); font-family: 'Playfair Display', serif; font-weight: 700; }
+    /* MYTH */
+    .myth-stack{margin:24px 0;}
+    .myth-block{margin-bottom:12px;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
+    .myth-side{padding:12px 16px;font-size:13.5px;line-height:1.65;}
+    .myth-side.is-myth{background:#FBF8F5;color:#201408;}
+    .myth-side.is-myth::before{content:"MYTH  ";font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.8px;font-weight:600;color:#906030;}
+    .myth-side.is-fact{background:#EDF5E8;color:var(--muted);border-top:1px solid var(--border);}
+    .myth-side.is-fact::before{content:"FACT  ";font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.8px;font-weight:600;color:var(--accent);}
 
     /* PREP LIST */
-    .prep-list { margin: 16px 0; list-style: none; }
-    .prep-list li { padding: 9px 0 9px 26px; position: relative; border-bottom: 1px dashed var(--border); font-size: 13.5px; }
-    .prep-list li:last-child { border-bottom: none; }
-    .prep-list li::before { content: "📋"; position: absolute; left: 0; top: 10px; font-size: 12px; }
+    .prep-list{list-style:none;margin:20px 0;}
+    .prep-list li{padding:12px 0 12px 22px;border-bottom:1px solid var(--rule);font-size:14px;position:relative;color:var(--ink);}
+    .prep-list li::before{content:'';position:absolute;left:0;top:21px;width:7px;height:7px;border-radius:50%;background:var(--accent);}
+    .prep-list li:last-child{border-bottom:none;}
 
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 18px 0; }
-    .contact-cell { display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--sage-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; font-size: 12.5px; color: var(--dark); text-decoration: none; font-family: 'Lora', serif; text-align: center; }
-
-    .float-cta { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 99; width: calc(100% - 40px); max-width: 440px; }
-    .cta-book { flex: 1; background: var(--accent); color: #fff; text-align: center; padding: 13px 10px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; box-shadow: 0 4px 18px rgba(64,112,64,0.45); }
-    .cta-wa { background: #25D366; color: #fff; padding: 13px 16px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; white-space: nowrap; }
-
-    .share-wrap { text-align: center; padding: 28px 20px 80px; }
-    .share-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #fff; border: none; border-radius: 10px; padding: 13px 28px; font-family: 'Lora', serif; font-size: 14px; cursor: pointer; }
-    .guide-footer { background: var(--dark); color: rgba(255,255,255,0.55); text-align: center; padding: 20px; font-size: 11.5px; line-height: 1.7; }
-    .guide-footer a { color: var(--lt-accent); text-decoration: none; }
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:20px 0;}
+    .contact-cell{display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--border);border-radius:10px;padding:13px 8px;font-family:'Inter',sans-serif;font-size:12.5px;color:var(--ink);text-decoration:none;background:var(--card);}
+    .share-section{padding:36px 28px 100px;text-align:center;}
+    .share-btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:none;border-radius:10px;padding:14px 32px;font-family:'Inter',sans-serif;font-size:13px;cursor:pointer;}
+    .guide-footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:24px 20px;font-family:'Inter',sans-serif;font-size:11.5px;line-height:1.8;}
+    .guide-footer a{color:var(--lt);text-decoration:none;}
+    .guide-footer strong{color:rgba(255,255,255,.75);}
+    .float-cta{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:flex;z-index:99;}
+    .cta-primary{flex:1;background:var(--accent);color:#fff;text-align:center;padding:17px 12px;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;text-decoration:none;}
+    .cta-wa{background:#1FAD58;color:#fff;padding:17px 22px;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;border-left:1px solid rgba(255,255,255,.15);}
   </style>
 </head>
 <body>
 <div class="page-wrap">
-
   <header class="guide-header">
     <div class="clinic-tag">Skin Ethics Clinic · Pune</div>
-    <h1>Chemical Peel Handbook</h1>
-    <p class="subtitle">Chemical se jalaana nahi — controlled renewal hai</p>
+    <h1>The Chemical Peel Guide</h1>
+    <p class="deck">It isn't burning. It isn't damage. A chemical peel is the most controlled method of removing what's broken to reveal what's intact beneath it.</p>
     <span class="trigger-pill">Comment PEELSCIENCE to receive this guide</span>
   </header>
 
-  <!-- PAINT WALL ANALOGY -->
-  <section>
-    <h2>The Old Paint Wall Analogy</h2>
-    <p>Bahut log sochte hain chemical peel matlab skin ko chemical se jala dena. Reality bilkul alag hai.</p>
-
+  <section class="section">
+    <div class="section-num">1</div>
+    <h2>Think of It Like Stripping Old Paint from a Wall</h2>
+    <p>Imagine a wall with five layers of old, cracked, discoloured paint. You could keep applying a fresh coat over the top — but the wall will never look smooth, because you're painting over the problem rather than fixing it.</p>
     <div class="wall-visual">
-      <div class="wall-stages">
-        <div class="wall-card">
-          <div class="wc-emoji">🧱</div>
-          <div class="wc-label">Purani damaged layers</div>
-          <div class="wc-sub">Baar-baar naya paint — kabhi smooth nahi hogi</div>
-        </div>
-        <div class="wall-arrow">🧪<br>→</div>
-        <div class="wall-card">
-          <div class="wc-emoji">✨</div>
-          <div class="wc-label">Fresh, smooth surface</div>
-          <div class="wc-sub">Damaged layer remove → fresh skin surface pe aati hai</div>
-        </div>
-      </div>
+      <div class="wall-card"><div class="wc-icon">🧱</div><div class="wc-label">Before</div><div class="wc-title">Damaged layers accumulated on top — new paint won't fix the texture</div></div>
+      <div class="wall-arrow">→</div>
+      <div class="wall-card"><div class="wc-icon">✨</div><div class="wc-label">After</div><div class="wc-title">Old layers removed — fresh, smooth surface exposed for real renewal</div></div>
     </div>
-
-    <p>Agar wall par purana kharab paint hai aur uske upar baar-baar naya paint karte rahoge — kabhi smooth nahi dikhegi. <strong>Pehle purani damaged layer gently remove karni padti hai.</strong> Chemical peel bhi skin ke saath exactly yahi karta hai — controlled way mein upper damaged skin remove karke fresh skin surface pe laata hai.</p>
-
-    <div class="dark-banner">
-      <strong>Controlled, not random.</strong> Chemical peel ek medical procedure hai — acid strength, contact time, aur neutralization precisely controlled hoti hai. <strong>Professional hands mein yeh safe, predictable, aur effective hai.</strong>
-    </div>
+    <p>A chemical peel does exactly this for skin. By applying a precisely controlled acid solution, it dissolves the bonds holding damaged, dead, or discoloured cells to the surface — allowing them to shed in an organised, predictable manner and revealing the healthier skin beneath.</p>
+    <div class="pull-quote"><p>"The goal isn't to remove skin indiscriminately. It's to remove exactly the right layers — at exactly the right depth — to trigger the renewal you want."</p></div>
   </section>
 
-  <!-- PEEL DEPTHS -->
-  <section>
-    <h2>Peel Ke Types — Depth Se Decide Hota Hai</h2>
-    <p>Sab peels ek jaisi nahi hoti — depth aur strength skin concern ke hisaab se choose ki jaati hai:</p>
-
+  <section class="section">
+    <div class="section-num">2</div>
+    <h2>Peel Depth — The Most Important Variable</h2>
+    <p>All chemical peels are not the same. Depth determines what the peel can treat, the downtime involved, and the risks. Matching the right depth to the right concern is the clinical skill.</p>
     <div class="peel-depths">
       <div class="pd-item">
-        <div class="pd-badge superficial">
-          <div class="pb-label">Type</div>
-          <div class="pb-depth">Superficial</div>
-        </div>
-        <div class="pd-body">
-          <div class="pd-title">Light Peel — Epidermis Only</div>
-          <div class="pd-desc">Mildest peel — sirf top dead cell layer remove karta hai. Zero downtime ya 1-2 days mild flaking. Regular glow maintenance ke liye ideal.</div>
-          <div class="pd-acids">Acids: Glycolic 20-35%, Lactic, Mandelic, Salicylic 20-30%</div>
-        </div>
+        <div class="pd-badge superficial"><div class="pdb-type">Type 01</div><div class="pdb-name">Superficial</div></div>
+        <div class="pd-body"><h3>Epidermis Only</h3><p>The most common peel. Removes the outermost dead cell layer. Zero to 2 days of mild flaking. Can be done monthly. Ideal for maintenance, glow, and early pigmentation.</p><div class="pd-acids">Glycolic 20–35%, Lactic, Mandelic, Salicylic 20–30%</div></div>
       </div>
       <div class="pd-item">
-        <div class="pd-badge medium">
-          <div class="pb-label">Type</div>
-          <div class="pb-depth">Medium</div>
-        </div>
-        <div class="pd-body">
-          <div class="pd-title">Medium Depth — Into Upper Dermis</div>
-          <div class="pd-desc">Pigmentation, moderate acne marks, fine lines address karta hai. 5-7 days peeling + redness. Meaningful results — doctor supervision essential.</div>
-          <div class="pd-acids">Acids: TCA 15-35%, Jessner's + TCA combination</div>
-        </div>
+        <div class="pd-badge medium"><div class="pdb-type">Type 02</div><div class="pdb-name">Medium</div></div>
+        <div class="pd-body"><h3>Into the Upper Dermis</h3><p>Addresses moderate pigmentation, acne marks, and fine lines. Expect 5–7 days of visible peeling and redness. Requires doctor supervision and pre-treatment protocol.</p><div class="pd-acids">TCA 15–35%, Jessner's solution, Jessner's + TCA</div></div>
       </div>
       <div class="pd-item">
-        <div class="pd-badge deep">
-          <div class="pb-label">Type</div>
-          <div class="pb-depth">Deep</div>
-        </div>
-        <div class="pd-body">
-          <div class="pd-title">Deep Peel — Mid Dermis</div>
-          <div class="pd-desc">Severe sun damage, deep wrinkles, significant scarring. Significant downtime 10-14 days. Rarely used on Indian skin (PIH risk). Phenol peels.</div>
-          <div class="pd-acids">Acids: Phenol — used selectively, fair skin only</div>
-        </div>
+        <div class="pd-badge deep"><div class="pdb-type">Type 03</div><div class="pdb-name">Deep</div></div>
+        <div class="pd-body"><h3>Mid-Dermis</h3><p>Reserved for severe sun damage or deep wrinkling. 10–14 days downtime, significant redness. Rarely used on Indian skin due to high PIH risk. Requires full medical setting.</p><div class="pd-acids">Phenol — used selectively, lighter skin types only</div></div>
       </div>
     </div>
   </section>
 
-  <!-- WHO BENEFITS -->
-  <section>
-    <h2>Chemical Peel Kisko Faida Karta Hai?</h2>
-
-    <div class="benefits-grid">
-      <div class="benefit-card">
-        <div class="bc-emoji">🟤</div>
-        <div class="bc-name">Pigmentation & Dark Spots</div>
-        <div class="bc-desc">Sun damage, melasma, PIH — acid layers pe through keratinocyte shedding pigment uniformly bahar aata hai.</div>
-      </div>
-      <div class="benefit-card">
-        <div class="bc-emoji">🔴</div>
-        <div class="bc-name">Acne & Post-Acne Marks</div>
-        <div class="bc-desc">Salicylic peels pores deep clean karte hain. Glycolic/lactic acne marks lighten karte hain. Active + marks dono address.</div>
-      </div>
-      <div class="benefit-card">
-        <div class="bc-emoji">😶</div>
-        <div class="bc-name">Dullness & Uneven Texture</div>
-        <div class="bc-desc">Dead cell buildup remove hone se immediate glow. Texture smooth hoti hai. Sebum control improved. Instant visible result.</div>
-      </div>
-      <div class="benefit-card">
-        <div class="bc-emoji">📏</div>
-        <div class="bc-name">Fine Lines & Ageing</div>
-        <div class="bc-desc">Medium depth peels collagen stimulate karte hain. Superficial lines soften hoti hain. Part of anti-ageing maintenance protocol.</div>
-      </div>
-      <div class="benefit-card">
-        <div class="bc-emoji">🌧️</div>
-        <div class="bc-name">Monsoon Acne (Mandelic)</div>
-        <div class="bc-desc">Mandelic acid peel — humidity-swollen pores ke liye. Antibacterial + exfoliating. Gentle enough for Indian skin in monsoon.</div>
-      </div>
-      <div class="benefit-card">
-        <div class="bc-emoji">💜</div>
-        <div class="bc-name">Underarm Pigmentation</div>
-        <div class="bc-desc">Mandelic-arbutin combination peels friction-induced hyperpigmentation address karte hain — sensitive underarm skin ke liye safe.</div>
-      </div>
+  <section class="section">
+    <div class="section-num">3</div>
+    <h2>What Chemical Peels Can Treat</h2>
+    <div class="concerns-grid">
+      <div class="concern-card"><div class="cc-dot"></div><div class="cc-name">Sun Damage & Dark Spots</div><div class="cc-desc">Acid exfoliation disperses melanin deposits and accelerates their clearance from the skin surface.</div></div>
+      <div class="concern-card"><div class="cc-dot"></div><div class="cc-name">Acne & Clogged Pores</div><div class="cc-desc">Salicylic acid is oil-soluble — it penetrates the pore lining to dissolve sebum and dead cell plugs from inside.</div></div>
+      <div class="concern-card"><div class="cc-dot"></div><div class="cc-name">Uneven Texture & Dullness</div><div class="cc-desc">Removing dead cell buildup immediately improves light reflection — the skin looks brighter after even a single session.</div></div>
+      <div class="concern-card"><div class="cc-dot"></div><div class="cc-name">Fine Lines</div><div class="cc-desc">Medium-depth peels stimulate new collagen formation in the dermis, softening fine surface lines over multiple sessions.</div></div>
+      <div class="concern-card"><div class="cc-dot"></div><div class="cc-name">Melasma & Pigmentation</div><div class="cc-desc">Mandelic and azelaic acid peels address melanin overproduction with lower PIH risk on Indian skin tones.</div></div>
+      <div class="concern-card"><div class="cc-dot"></div><div class="cc-name">Post-Acne Marks (PIH)</div><div class="cc-desc">Regular superficial peels accelerate PIH clearance significantly faster than topicals alone.</div></div>
     </div>
   </section>
 
-  <!-- RECOVERY -->
-  <section>
+  <section class="section">
+    <div class="section-num">4</div>
     <h2>Recovery — Day by Day</h2>
-    <p>Superficial peel ke baad typical recovery (medium/deep peel mein zyada time):</p>
-
-    <div class="recovery-steps">
-      <div class="rs-item">
-        <div class="rs-day">Day 0</div>
-        <div class="rs-body">
-          <div class="rs-title">Right After Peel</div>
-          <div class="rs-desc">Mild warmth, redness, tightness — normal. Gentle moisturiser + SPF. No makeup for 24 hours. No touching or washing aggressively.</div>
-        </div>
-      </div>
-      <div class="rs-item">
-        <div class="rs-day">Days 1–2</div>
-        <div class="rs-body">
-          <div class="rs-title">Skin Looks Normal or Mildly Dry</div>
-          <div class="rs-desc">Superficial peel: minimal downtime. Medium peel: redness + tight feeling. Moisturiser frequently apply karein. SPF non-negotiable.</div>
-        </div>
-      </div>
-      <div class="rs-item">
-        <div class="rs-day">Days 3–5</div>
-        <div class="rs-body">
-          <div class="rs-title">Peeling Begins</div>
-          <div class="rs-desc">Skin shedding start hoti hai — dry flakes ya sheets. Yeh normal aur expected hai — fresh skin aa rahi hai. Peels ko pick nahi karna! Let it shed naturally.</div>
-        </div>
-      </div>
-      <div class="rs-item">
-        <div class="rs-day">Days 6–7</div>
-        <div class="rs-body">
-          <div class="rs-title">Fresh Skin Revealed</div>
-          <div class="rs-desc">Peeling complete. Fresh, glowing skin visible. Slight pink tone possible — fades in days. Yeh woh glow hai jiske liye peel ki jaati hai.</div>
-        </div>
-      </div>
+    <p>Recovery from a superficial peel (the most common type) follows a predictable pattern:</p>
+    <div class="recovery-track">
+      <div class="rt-item"><div class="rt-dot-wrap"><div class="rt-dot"></div></div><div><div class="rt-time">Day 0 — Immediately After</div><div class="rt-title">Warmth & Mild Redness</div><div class="rt-desc">The treated area feels warm, looks slightly flushed. Completely normal. A recovery serum and SPF are applied before leaving the clinic.</div></div></div>
+      <div class="rt-item"><div class="rt-dot-wrap"><div class="rt-dot"></div></div><div><div class="rt-time">Days 1 – 2</div><div class="rt-title">Skin Looks Normal or Slightly Dry</div><div class="rt-desc">Superficial peels have minimal visible downtime. Medium peels may show more pronounced redness. Moisturise frequently, no actives.</div></div></div>
+      <div class="rt-item"><div class="rt-dot-wrap"><div class="rt-dot"></div></div><div><div class="rt-time">Days 3 – 5</div><div class="rt-title">Peeling Begins</div><div class="rt-desc">Dry flakes appear as the treated layer sheds. This is expected — it is the old surface making way for new skin. Do not pick or force the peeling; let it shed naturally.</div></div></div>
+      <div class="rt-item"><div class="rt-dot-wrap"><div class="rt-dot"></div></div><div><div class="rt-time">Days 6 – 7</div><div class="rt-title">Fresh Skin Revealed</div><div class="rt-desc">Peeling is complete. The new skin beneath is fresh, smoother, and brighter. A slight pink tone fades within days. This is the result.</div></div></div>
     </div>
   </section>
 
-  <!-- MYTHS -->
-  <section>
-    <h2>Chemical Peel Myths</h2>
-
-    <div class="myth-list">
-      <div class="myth-item">
-        <div class="mi-myth">Chemical peel se skin permanently patli ho jaati hai</div>
-        <div class="mi-fact">Peel damaged dead cells remove karta hai — healthy living cells untouched rehte hain. Long term mein collagen stimulation se skin actually thicker hoti hai.</div>
-      </div>
-      <div class="myth-item">
-        <div class="mi-myth">Darker skin par chemical peel nahi hota</div>
-        <div class="mi-fact">Indian skin pe mandelic, lactic, low-strength glycolic peels safely done jaate hain with proper pre-treatment. Expert selection important hai.</div>
-      </div>
-      <div class="myth-item">
-        <div class="mi-myth">Peel ke baad skin sensitive ho jaati hai hamesha ke liye</div>
-        <div class="mi-fact">Temporary sensitivity hoti hai healing period mein. Once healed — skin actually more resilient hoti hai. Sun protection good habit hai regardless.</div>
-      </div>
-      <div class="myth-item">
-        <div class="mi-myth">Ghar par peel kar sakte hain</div>
-        <div class="mi-fact">OTC very low strength products ≠ professional peel. Clinic-grade peels require proper assessment, neutralization, post-care — unsafe at home.</div>
-      </div>
+  <section class="section">
+    <div class="section-num">5</div>
+    <h2>Common Myths</h2>
+    <div class="myth-stack">
+      <div class="myth-block"><div class="myth-side is-myth">Chemical peels permanently thin the skin.</div><div class="myth-side is-fact">Peels remove only the damaged dead cell layer — the healthy living epidermis below is untouched. With medium and deep peels, the collagen stimulation that follows actually thickens the dermis over time.</div></div>
+      <div class="myth-block"><div class="myth-side is-myth">Indian skin cannot have chemical peels.</div><div class="myth-side is-fact">Indian skin requires careful acid selection and pre-treatment preparation — but superficial peels with mandelic, lactic, and low-strength glycolic acid are routinely and safely performed. Expert selection is essential.</div></div>
+      <div class="myth-block"><div class="myth-side is-myth">You can get the same result with a home peel.</div><div class="myth-side is-fact">OTC products contain acids at 2–5% concentration. Clinical peels use 20–35%+, with controlled application time, neutralisation, and post-care management. They are fundamentally different treatments.</div></div>
+      <div class="myth-block"><div class="myth-side is-myth">After a peel, you're sensitive to sun forever.</div><div class="myth-side is-fact">Sensitivity is temporary during the healing window. Once healed, the new skin is no more sun-sensitive than before. Daily SPF is a good habit regardless — not a permanent restriction.</div></div>
     </div>
   </section>
 
-  <!-- FIRST PEEL PREP -->
-  <section>
-    <h2>Apna Pehla Peel — Kaise Prepare Karein</h2>
+  <section class="section">
+    <div class="section-num">6</div>
+    <h2>How to Prepare for Your First Peel</h2>
     <ul class="prep-list">
-      <li>Peel se 2 weeks pehle retinol / AHAs band karein</li>
-      <li>Avoid active acne ya open wounds on face</li>
-      <li>No waxing / threading 1 week pehle</li>
-      <li>Sun exposure minimize karein — tan pe peel nahi hota</li>
-      <li>Peel ke din makeup-free aayein, face cleansed</li>
-      <li>Post-peel ke liye gentle cleanser + moisturiser + SPF 50 ready rakhein ghar par</li>
-      <li>Peeling ke dauran gym / swimming / steam avoid karein</li>
+      <li>Stop retinoids and AHA/BHA products 5–7 days before the appointment</li>
+      <li>Avoid waxing or threading the treatment area within 1 week</li>
+      <li>Minimise sun exposure for 2 weeks before — tanned skin has higher PIH risk</li>
+      <li>Arrive with a clean, makeup-free face</li>
+      <li>Have SPF 50, a gentle cleanser, and a plain moisturiser ready at home</li>
+      <li>Avoid gym, steam, and swimming during the peeling phase (days 3–6)</li>
+      <li>Do not schedule a peel if you have active cold sores, open wounds, or very sensitive skin</li>
     </ul>
-
-    <div class="dark-banner">
-      <strong>Peel ki quality + selection + skin assessment</strong> — yeh teeno milke result decide karte hain. Sasta ya parlour peel = unpredictable outcome. <strong>Dermatologist-supervised professional peel = safe + effective.</strong>
-    </div>
   </section>
 
-  <!-- CONTACT -->
-  <section>
-    <h2>Skin Ethics Clinic — Consult Dr Pallavi</h2>
-    <p>Skin type ke hisaab se sahi peel selection ke liye assessment karein:</p>
+  <section class="section">
+    <h2>Book a Peel Consultation</h2>
+    <p>Skin type assessment, acid selection, and the right pre-treatment protocol are what separate a safe, effective peel from an unpredictable one. Book an assessment before your first session.</p>
     <div class="contact-grid">
-      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Get Directions</a>
+      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Directions</a>
       <a class="contact-cell" href="tel:+919028291234">📞 +91 90282 91234</a>
-      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📸 @drpallaviahireshelke</a>
+      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📷 Instagram</a>
       <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
     </div>
   </section>
-
-  <div class="share-wrap">
-    <button class="share-btn" onclick="shareGuide()">📤 Share This Guide</button>
-  </div>
-  <footer class="guide-footer">
-    <p><strong style="color:var(--lt-accent)">Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br>
-    <a href="tel:+919028291234">+91 90282 91234</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a></p>
-    <p style="margin-top:10px">Educational purposes only. Does not replace medical consultation.</p>
-  </footer>
+  <div class="share-section"><button class="share-btn" onclick="shareGuide()">↗ Share This Guide</button></div>
+  <footer class="guide-footer"><strong>Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br><a href="tel:+919028291234">+91 90282 91234</a> · <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a><br><span style="margin-top:8px;display:block">For educational purposes only.</span></footer>
 </div>
-
 <div class="float-cta">
-  <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
-  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+  <a class="cta-primary" href="https://wa.me/919028291234" target="_blank">Book a Consultation</a>
+  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">WhatsApp</a>
 </div>
-<script>
-  function shareGuide() {
-    const url = window.location.href;
-    if (navigator.share) { navigator.share({ title: 'Chemical Peel Handbook', url }).catch(()=>{}); }
-    else { navigator.clipboard.writeText(url).then(()=>alert('Link copied!')).catch(()=>{}); }
-  }
-</script>
+<script>function shareGuide(){const u=window.location.href;if(navigator.share){navigator.share({title:'Chemical Peel Guide — Dr Pallavi',url:u}).catch(()=>{});}else{navigator.clipboard.writeText(u).then(()=>alert('Link copied!')).catch(()=>{});}}</script>
 </body>
 </html>

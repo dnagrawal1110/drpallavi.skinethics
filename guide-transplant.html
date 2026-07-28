@@ -3,304 +3,204 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hair Transplant Handbook | Dr Pallavi Ahireshelke</title>
-  <meta name="description" content="How does hair transplant work? Garden plant analogy, donor area, hairline design, FUE vs FUT, month-by-month timeline. Dr Pallavi Ahireshelke, Skin Ethics Clinic Pune." />
-  <meta property="og:title" content="Hair Transplant Handbook — Garden to Scalp Science" />
-  <meta property="og:description" content="Hum naye baal create nahi karte — sirf existing permanent roots ko relocate karte hain. Comment TRANSPLANT for Dr Pallavi's complete handbook." />
+  <title>Hair Transplant Guide | Dr Pallavi Ahireshelke</title>
+  <meta name="description" content="How hair transplants actually work — DHT resistance explained, FUE vs FUT, who is a good candidate, month-by-month recovery timeline, and the importance of hairline design." />
+  <meta property="og:title" content="The Hair Transplant Guide — From Donor to Growth" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --dark:      #080F1A;
-      --accent:    #204880;
-      --lt-accent: #6090C0;
-      --sage-bg:   #EEF2F8;
-      --border:    #B8C8E0;
-      --text:      #0A1828;
-      --muted:     #405870;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Lora', Georgia, serif; background: #E4EAF5; color: var(--text); font-size: 16px; line-height: 1.75; }
-    .page-wrap { max-width: 480px; margin: 0 auto; background: #fff; }
-
-    .guide-header { background: var(--dark); background-image: radial-gradient(ellipse at 75% 20%, rgba(32,72,128,0.65) 0%, transparent 58%); padding: 52px 24px 40px; text-align: center; }
-    .clinic-tag { display: inline-block; font-size: 10px; font-style: italic; letter-spacing: 1.8px; color: var(--lt-accent); opacity: 0.8; margin-bottom: 14px; text-transform: uppercase; }
-    .guide-header h1 { font-family: 'Playfair Display', serif; font-size: 27px; line-height: 1.25; color: #fff; margin-bottom: 12px; }
-    .guide-header .subtitle { font-size: 13.5px; color: rgba(255,255,255,0.72); font-style: italic; max-width: 340px; margin: 0 auto 20px; }
-    .trigger-pill { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-style: italic; letter-spacing: 1.2px; padding: 5px 16px; border-radius: 20px; }
-
-    section { padding: 30px 20px; border-bottom: 1px solid var(--border); }
-    h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--dark); margin-bottom: 14px; line-height: 1.3; }
-    p { margin-bottom: 14px; color: var(--text); }
-    p:last-child { margin-bottom: 0; }
-
-    .dark-banner { background: var(--dark); border-left: 4px solid var(--accent); border-radius: 8px; padding: 18px 20px; margin: 20px 0; color: rgba(255,255,255,0.9); font-style: italic; font-size: 14.5px; line-height: 1.65; }
-    .dark-banner strong { color: var(--lt-accent); font-style: normal; }
+    :root{--ink:#080F1A;--accent:#1E4880;--lt:#6090C8;--muted:#304870;--page-bg:#F5F7FA;--card:#FFFFFF;--border:#C8D8EC;--rule:#E4EDF8;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Lora',Georgia,serif;background:var(--page-bg);color:var(--ink);font-size:16px;line-height:1.8;}
+    .page-wrap{max-width:480px;margin:0 auto;background:var(--card);}
+    .guide-header{background:var(--ink);background-image:radial-gradient(ellipse at 80% 0%,rgba(30,72,128,0.55) 0%,transparent 55%);padding:56px 28px 48px;}
+    .clinic-tag{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--lt);opacity:.7;margin-bottom:20px;}
+    .guide-header h1{font-family:'Playfair Display',serif;font-size:29px;line-height:1.22;color:#fff;margin-bottom:14px;font-weight:700;}
+    .deck{font-size:14px;color:rgba(255,255,255,.58);font-style:italic;line-height:1.75;margin-bottom:28px;}
+    .trigger-pill{display:inline-block;border:1px solid rgba(96,144,200,.45);color:var(--lt);font-family:'Inter',sans-serif;font-size:11px;letter-spacing:1.2px;padding:6px 18px;border-radius:20px;}
+    .section{padding:40px 28px;border-bottom:1px solid var(--rule);position:relative;overflow:hidden;}
+    .section-num{font-family:'Playfair Display',serif;font-size:80px;font-weight:700;color:var(--accent);opacity:.05;position:absolute;top:20px;right:18px;line-height:1;user-select:none;pointer-events:none;}
+    h2{font-family:'Playfair Display',serif;font-size:21px;color:var(--ink);line-height:1.28;margin-bottom:16px;font-weight:700;}
+    h3{font-family:'Playfair Display',serif;font-size:15px;color:var(--ink);margin-bottom:6px;font-weight:600;}
+    p{font-size:15px;color:#101828;line-height:1.85;margin-bottom:16px;}
+    p:last-child{margin-bottom:0;}
+    .pull-quote{border-left:3px solid var(--accent);padding:14px 20px;margin:24px 0;background:#EEF3FA;border-radius:0 8px 8px 0;}
+    .pull-quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:15.5px;color:var(--accent);margin:0;line-height:1.65;}
 
     /* GARDEN VISUAL */
-    .garden-visual { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; margin: 20px 0; }
-    .garden-side { background: var(--sage-bg); border: 1px solid var(--border); border-radius: 10px; padding: 14px 10px; text-align: center; }
-    .garden-side .gs-emoji { font-size: 32px; margin-bottom: 6px; }
-    .garden-side .gs-label { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
-    .garden-side .gs-sub { font-size: 11px; color: var(--muted); font-style: italic; margin-top: 3px; }
-    .garden-arrow { font-size: 24px; color: var(--accent); }
+    .garden-visual{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin:24px 0;}
+    .garden-card{border:1px solid var(--border);border-radius:12px;padding:18px 14px;text-align:center;}
+    .gc-icon{font-size:34px;margin-bottom:8px;}
+    .gc-label{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+    .gc-title{font-family:'Playfair Display',serif;font-size:13px;color:var(--ink);}
+    .garden-arrow{font-size:24px;color:var(--border);text-align:center;font-family:'Playfair Display',serif;}
 
-    /* FUE VS FUT */
-    .technique-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
-    .tech-card { border-radius: 10px; overflow: hidden; }
-    .tech-card .tc-head { padding: 12px 14px; color: #fff; }
-    .tech-card.fue .tc-head { background: var(--accent); }
-    .tech-card.fut .tc-head { background: #405870; }
-    .tech-card .tc-name { font-family: 'Playfair Display', serif; font-size: 14px; margin-bottom: 2px; }
-    .tech-card .tc-full { font-size: 10px; opacity: 0.75; }
-    .tech-card .tc-body { background: var(--sage-bg); border: 1px solid var(--border); border-top: none; padding: 12px 14px; }
-    .tech-card .tc-pros { font-size: 12px; color: var(--muted); line-height: 1.65; }
+    /* TECHNIQUE COMPARE */
+    .technique-compare{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0;}
+    .tech-card{border:1px solid var(--border);border-radius:12px;padding:18px 14px;position:relative;overflow:hidden;}
+    .tech-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);}
+    .tech-tag{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+    .tech-name{font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);margin-bottom:10px;font-weight:700;}
+    .tech-row{font-size:12.5px;color:var(--muted);padding:5px 0;border-bottom:1px dashed var(--rule);line-height:1.5;}
+    .tech-row:last-child{border-bottom:none;}
+    .tech-row strong{color:var(--ink);font-style:normal;display:block;font-size:11px;font-family:'Inter',sans-serif;letter-spacing:.5px;text-transform:uppercase;margin-bottom:2px;}
 
-    /* CANDIDATE CHECKLIST */
-    .candidate-list { margin: 16px 0; list-style: none; }
-    .candidate-list li { padding: 9px 0 9px 28px; position: relative; border-bottom: 1px dashed var(--border); font-size: 13.5px; }
-    .candidate-list li:last-child { border-bottom: none; }
-    .candidate-list li::before { content: "✅"; position: absolute; left: 0; top: 10px; font-size: 13px; }
-    .candidate-list li.no::before { content: "❌"; }
+    /* CANDIDATE LIST */
+    .candidate-list{margin:24px 0;}
+    .candidate-item{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--rule);font-size:14px;align-items:flex-start;}
+    .candidate-item:last-child{border-bottom:none;}
+    .candidate-icon{flex-shrink:0;font-size:16px;margin-top:2px;}
+    .candidate-text{line-height:1.6;}
 
     /* MONTH TIMELINE */
-    .month-timeline { margin: 18px 0; }
-    .mt-item { display: grid; grid-template-columns: 60px 1fr; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--border); align-items: start; }
-    .mt-item:last-child { border-bottom: none; }
-    .mt-month { background: var(--accent); color: #fff; border-radius: 8px; padding: 8px 4px; text-align: center; }
-    .mt-month .mm-label { font-size: 10px; opacity: 0.75; }
-    .mt-month .mm-val { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; line-height: 1.2; }
-    .mt-body { }
-    .mt-title { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--dark); margin-bottom: 3px; }
-    .mt-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+    .month-timeline{margin:24px 0;position:relative;}
+    .month-timeline::before{content:'';position:absolute;left:22px;top:0;bottom:0;width:1.5px;background:var(--border);}
+    .mt-item{display:grid;grid-template-columns:46px 1fr;gap:14px;padding:14px 0;}
+    .mt-dot-wrap{display:flex;justify-content:center;}
+    .mt-dot{width:16px;height:16px;border-radius:50%;background:var(--accent);border:3px solid var(--card);box-shadow:0 0 0 1.5px var(--border);flex-shrink:0;margin-top:3px;}
+    .mt-time{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+    .mt-body h3{margin-bottom:4px;}
+    .mt-body p{font-size:13.5px;margin:0;color:var(--muted);line-height:1.65;}
 
     /* MYTHS */
-    .myth-list { margin: 16px 0; }
-    .myth-item { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 10px; }
-    .myth-item .mi-myth { background: #F0F2F8; padding: 10px 14px; font-size: 13px; color: #203050; }
-    .myth-item .mi-myth::before { content: "❌ MYTH: "; font-family: 'Playfair Display', serif; font-weight: 700; }
-    .myth-item .mi-fact { background: var(--sage-bg); padding: 10px 14px; font-size: 13px; color: var(--muted); }
-    .myth-item .mi-fact::before { content: "✅ FACT: "; color: var(--accent); font-family: 'Playfair Display', serif; font-weight: 700; }
+    .myth-stack{margin:24px 0;}
+    .myth-block{margin-bottom:12px;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
+    .myth-side{padding:12px 16px;font-size:13.5px;line-height:1.65;}
+    .myth-side.is-myth{background:#F5F8FD;color:#101828;}
+    .myth-side.is-myth::before{content:"MYTH  ";font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.8px;font-weight:600;color:#7080A0;}
+    .myth-side.is-fact{background:#EEF3FA;color:var(--muted);border-top:1px solid var(--border);}
+    .myth-side.is-fact::before{content:"FACT  ";font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.8px;font-weight:600;color:var(--accent);}
 
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 18px 0; }
-    .contact-cell { display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--sage-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; font-size: 12.5px; color: var(--dark); text-decoration: none; font-family: 'Lora', serif; text-align: center; }
-
-    .float-cta { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 99; width: calc(100% - 40px); max-width: 440px; }
-    .cta-book { flex: 1; background: var(--accent); color: #fff; text-align: center; padding: 13px 10px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; box-shadow: 0 4px 18px rgba(32,72,128,0.5); }
-    .cta-wa { background: #25D366; color: #fff; padding: 13px 16px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; white-space: nowrap; }
-
-    .share-wrap { text-align: center; padding: 28px 20px 80px; }
-    .share-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #fff; border: none; border-radius: 10px; padding: 13px 28px; font-family: 'Lora', serif; font-size: 14px; cursor: pointer; }
-    .guide-footer { background: var(--dark); color: rgba(255,255,255,0.55); text-align: center; padding: 20px; font-size: 11.5px; line-height: 1.7; }
-    .guide-footer a { color: var(--lt-accent); text-decoration: none; }
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:20px 0;}
+    .contact-cell{display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--border);border-radius:10px;padding:13px 8px;font-family:'Inter',sans-serif;font-size:12.5px;color:var(--ink);text-decoration:none;background:var(--card);}
+    .share-section{padding:36px 28px 100px;text-align:center;}
+    .share-btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:none;border-radius:10px;padding:14px 32px;font-family:'Inter',sans-serif;font-size:13px;cursor:pointer;}
+    .guide-footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:24px 20px;font-family:'Inter',sans-serif;font-size:11.5px;line-height:1.8;}
+    .guide-footer a{color:var(--lt);text-decoration:none;}
+    .guide-footer strong{color:rgba(255,255,255,.75);}
+    .float-cta{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:flex;z-index:99;}
+    .cta-primary{flex:1;background:var(--accent);color:#fff;text-align:center;padding:17px 12px;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;text-decoration:none;}
+    .cta-wa{background:#1FAD58;color:#fff;padding:17px 22px;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;border-left:1px solid rgba(255,255,255,.15);}
   </style>
 </head>
 <body>
 <div class="page-wrap">
-
   <header class="guide-header">
     <div class="clinic-tag">Skin Ethics Clinic · Pune</div>
-    <h1>Hair Transplant Handbook</h1>
-    <p class="subtitle">Naye baal create nahi hote — permanent roots relocate kiye jaate hain</p>
+    <h1>The Hair Transplant Guide</h1>
+    <p class="deck">Moving hair from where it survives to where it's needed — and why the donor site is the most important decision in the entire procedure.</p>
     <span class="trigger-pill">Comment TRANSPLANT to receive this guide</span>
   </header>
 
-  <!-- GARDEN ANALOGY -->
-  <section>
-    <h2>The Garden Transplant Analogy</h2>
-    <p>Yeh sabse common misconception hai: <em>"Hair transplant mein naye baal banaye jaate hain."</em> Bilkul nahi.</p>
-
+  <section class="section">
+    <div class="section-num">1</div>
+    <h2>Think of It Like Transplanting Plants in a Garden</h2>
+    <p>When a section of your garden soil is infertile — nothing you plant there grows — the solution isn't to keep trying different seeds in the same bad soil. You take healthy plants from a fertile patch and relocate them to where growth is needed.</p>
     <div class="garden-visual">
-      <div class="garden-side">
-        <div class="gs-emoji">🌿🌿🌿</div>
-        <div class="gs-label">Donor Area</div>
-        <div class="gs-sub">Permanent, DHT-resistant follicles — occipital scalp</div>
-      </div>
-      <div class="garden-arrow">➡️</div>
-      <div class="garden-side">
-        <div class="gs-emoji">🕳️🕳️🕳️</div>
-        <div class="gs-label">Recipient Area</div>
-        <div class="gs-sub">Thinning / bald zones — frontal scalp</div>
-      </div>
+      <div class="garden-card"><div class="gc-icon">🌱</div><div class="gc-label">Donor Zone</div><div class="gc-title">DHT-resistant follicles from the back and sides of the scalp</div></div>
+      <div class="garden-arrow">→</div>
+      <div class="garden-card"><div class="gc-icon">🌳</div><div class="gc-label">Recipient Zone</div><div class="gc-title">Thinning or bald areas where DHT has destroyed the original follicles</div></div>
     </div>
-
-    <p>Bilkul waisi hi jaise garden ke peeche se healthy plants nikalkar saamne ki khaali jagah mein lagaate hain — <strong>hum existing permanent hair roots ko relocate karte hain</strong>, naye create nahi karte.</p>
-
-    <div class="dark-banner">
-      <strong>Isliye donor area quality sabse important hai.</strong> Agar donor area mein kaafi healthy, DHT-resistant follicles nahi hain — transplant ka scope limited hota hai. Yeh sabse pehle assess kiya jaata hai consultation mein.
-    </div>
+    <p>Hair transplantation works on the same logic. Follicles from the back and sides of the scalp are genetically programmed to be resistant to DHT — the hormone that causes hair loss. When transplanted to a balding area, they retain this resistance and continue growing for life.</p>
+    <div class="pull-quote"><p>"A transplant doesn't create new hair. It relocates hair that is guaranteed to survive — from a zone where it can be spared to a zone where it's needed."</p></div>
   </section>
 
-  <!-- WHY DONOR HAIR IS PERMANENT -->
-  <section>
-    <h2>Donor Baal Permanent Kyun Hote Hain?</h2>
-    <p>Scalp ke peeche aur sides ke baal — occipital aur temporal zone — genetically DHT (dihydrotestosterone) ke against resistant hote hain. DHT woh hormone hai jo androgenetic alopecia mein follicles ko miniaturize karta hai.</p>
-    <p>Jab in resistant follicles ko thinning area mein transplant kiya jaata hai — <strong>woh apni genetic memory saath le jaate hain</strong>. Naye location mein bhi yeh DHT ke against resistant rehte hain. Isliye transplanted baal permanent hote hain.</p>
-    <p>Lekin — non-transplanted native baal thinning continue kar sakte hain. Isliye hair loss stabilize karna (medication se) transplant ke saath-saath zaroori hota hai.</p>
+  <section class="section">
+    <div class="section-num">2</div>
+    <h2>Why Some Hair Is DHT-Resistant</h2>
+    <p>Androgenetic alopecia (pattern hair loss) is driven by DHT — Dihydrotestosterone, a derivative of testosterone. DHT binds to receptors in genetically susceptible follicles, causes them to miniaturise, and eventually stops them from producing hair altogether.</p>
+    <p>The follicles at the back and sides of the scalp (the "safe donor zone") carry different androgen receptor genetics — they do not respond to DHT in the same way. This resistance is permanent and is preserved even after transplantation. The relocated follicles grow exactly as they did in the donor site.</p>
   </section>
 
-  <!-- FUE VS FUT -->
-  <section>
-    <h2>FUE vs FUT — Kya Fark Hai?</h2>
-
+  <section class="section">
+    <div class="section-num">3</div>
+    <h2>FUE vs FUT — Understanding the Techniques</h2>
     <div class="technique-compare">
-      <div class="tech-card fue">
-        <div class="tc-head">
-          <div class="tc-name">FUE</div>
-          <div class="tc-full">Follicular Unit Extraction</div>
-        </div>
-        <div class="tc-body">
-          <div class="tc-pros">
-            • Individual follicles extract kiye jaate hain<br>
-            • No linear scar — punktate micro-scars only<br>
-            • Short hair mein bhi donor area natural dikhta hai<br>
-            • Recovery faster — 7-10 days<br>
-            • Preferred technique today
-          </div>
-        </div>
+      <div class="tech-card">
+        <div class="tech-tag">Technique A</div>
+        <div class="tech-name">FUE</div>
+        <div class="tech-row"><strong>Method</strong>Individual follicles extracted one by one with a micro-punch tool (0.8–1mm diameter)</div>
+        <div class="tech-row"><strong>Scarring</strong>Tiny dot scars, invisible at normal hair length</div>
+        <div class="tech-row"><strong>Recovery</strong>5–7 days. Can return to work quickly</div>
+        <div class="tech-row"><strong>Best for</strong>Most patients; preferred when short hair is worn</div>
       </div>
-      <div class="tech-card fut">
-        <div class="tc-head">
-          <div class="tc-name">FUT</div>
-          <div class="tc-full">Follicular Unit Transplant</div>
-        </div>
-        <div class="tc-body">
-          <div class="tc-pros">
-            • Strip of scalp removed from donor<br>
-            • Linear scar at donor site<br>
-            • More grafts in one session<br>
-            • Recovery 10-14 days<br>
-            • Used when large graft count needed
-          </div>
-        </div>
+      <div class="tech-card">
+        <div class="tech-tag">Technique B</div>
+        <div class="tech-name">FUT</div>
+        <div class="tech-row"><strong>Method</strong>A strip of scalp is removed from the donor zone; follicles are dissected from it under microscope</div>
+        <div class="tech-row"><strong>Scarring</strong>Linear scar at back of head, hidden by hair</div>
+        <div class="tech-row"><strong>Recovery</strong>10–14 days. Suture removal required</div>
+        <div class="tech-row"><strong>Best for</strong>Large sessions needing maximum graft yield</div>
       </div>
+    </div>
+    <p>The choice between FUE and FUT depends on the extent of hair loss, donor density, the patient's lifestyle, and how they wear their hair. Neither technique is universally superior — the right choice is case-specific.</p>
+  </section>
+
+  <section class="section">
+    <div class="section-num">4</div>
+    <h2>Are You a Good Candidate?</h2>
+    <div class="candidate-list">
+      <div class="candidate-item"><div class="candidate-icon">✅</div><div class="candidate-text"><strong>Good candidate:</strong> Stable hair loss pattern (not actively progressing rapidly), adequate donor density at the back/sides, realistic expectations about coverage, age typically 25 and above</div></div>
+      <div class="candidate-item"><div class="candidate-icon">✅</div><div class="candidate-text"><strong>Good candidate:</strong> Hair loss due to pattern baldness (androgenetic alopecia), not scarring alopecia or active autoimmune conditions</div></div>
+      <div class="candidate-item"><div class="candidate-icon">✅</div><div class="candidate-text"><strong>Good candidate:</strong> Non-smoker or willing to stop 2 weeks before and after surgery (smoking impairs follicle survival)</div></div>
+      <div class="candidate-item"><div class="candidate-icon">❌</div><div class="candidate-text"><strong>Not ideal:</strong> Very young patients (under 25) with rapidly progressing loss — the final pattern isn't established yet, making hairline design unreliable</div></div>
+      <div class="candidate-item"><div class="candidate-icon">❌</div><div class="candidate-text"><strong>Not ideal:</strong> Insufficient donor density — if the donor zone is too thin, there aren't enough follicles to achieve meaningful coverage without depleting it</div></div>
+      <div class="candidate-item"><div class="candidate-icon">❌</div><div class="candidate-text"><strong>Not ideal:</strong> Active alopecia areata, trichotillomania, or scarring alopecias — transplants into inflamed or autoimmune-active scalp have poor survival</div></div>
     </div>
   </section>
 
-  <!-- GOOD CANDIDATE -->
-  <section>
-    <h2>Kaun Achha Candidate Hai?</h2>
+  <section class="section">
+    <div class="section-num">5</div>
+    <h2>Month-by-Month Recovery</h2>
+    <div class="month-timeline">
+      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Days 1 – 10</div><h3>Initial Healing</h3><p>Tiny scabs form at each graft site. Mild swelling around the forehead is common and resolves in 3–5 days. Grafts are delicate — no touching, rubbing, or direct water pressure on the transplanted area.</p></div></div>
+      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Weeks 2 – 6</div><h3>Shock Loss — Expected and Temporary</h3><p>The transplanted hairs shed. This alarms almost every patient — but it is completely normal. The follicle itself remains alive beneath the scalp. The shed hair will regrow from the same follicle.</p></div></div>
+      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Months 3 – 4</h3><p>New hair begins emerging from the transplanted follicles. Initially fine and unpigmented — it thickens and darkens progressively. Patience is critical here; impatience is the most common patient complaint at this stage.</p></div></div>
+      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Months 6 – 8</div><h3>Visible Coverage</h3><p>Significant growth now apparent. Most patients are satisfied at this point. Hair continues to thicken and the texture normalises to match surrounding hair.</p></div></div>
+      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Month 12 – 18</div><h3>Final Result</h3><p>Full maturation of all transplanted grafts. The final density, texture, and hairline are now visible. Any assessment of the result should be made at this point — not earlier.</p></div></div>
+    </div>
+  </section>
 
-    <ul class="candidate-list">
-      <li>Stable hair loss (2+ years se zyada nahi badha) — Norwood Grade 3–6</li>
-      <li>Sufficient donor area density — occipital zone mein thick baal</li>
-      <li>Realistic expectations — density improvement, complete restoration nahi</li>
-      <li>Age 25+ — younger patients mein loss pattern still evolving hoti hai</li>
-      <li>Good overall health — no active autoimmune conditions</li>
-      <li class="no">Active alopecia areata — transplant iss condition mein recommended nahi</li>
-      <li class="no">Diffuse unpatterned alopecia — donor area bhi thin hai</li>
-      <li class="no">Unrealistic expectation of "original density" — ethical doctor refuse karega</li>
+  <section class="section">
+    <div class="section-num">6</div>
+    <h2>Why Hairline Design Is as Important as the Surgery</h2>
+    <p>A technically perfect transplant with a poorly designed hairline produces an unnatural result that is obvious and permanent. The hairline must account for:</p>
+    <ul style="list-style:none;margin:16px 0;">
+      <li style="padding:10px 0 10px 20px;border-bottom:1px solid var(--rule);position:relative;font-size:14px;"><span style="position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:50%;background:var(--accent);display:block;"></span>The patient's age — a hairline that looks natural at 30 may look unnatural at 55</li>
+      <li style="padding:10px 0 10px 20px;border-bottom:1px solid var(--rule);position:relative;font-size:14px;"><span style="position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:50%;background:var(--accent);display:block;"></span>Facial proportions — the hairline must fit the forehead shape and facial geometry</li>
+      <li style="padding:10px 0 10px 20px;border-bottom:1px solid var(--rule);position:relative;font-size:14px;"><span style="position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:50%;background:var(--accent);display:block;"></span>Projected future loss — space must be left for follicles that may still be lost</li>
+      <li style="padding:10px 0 10px 20px;position:relative;font-size:14px;"><span style="position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:50%;background:var(--accent);display:block;"></span>Irregular micro-variation — natural hairlines are never perfectly straight, transplanted ones shouldn't be either</li>
     </ul>
   </section>
 
-  <!-- MONTH BY MONTH TIMELINE -->
-  <section>
-    <h2>Month-by-Month Recovery Timeline</h2>
-    <p>Transplant ke baad patience most important hai — results instant nahi hote. Yeh expected progression hai:</p>
-
-    <div class="month-timeline">
-      <div class="mt-item">
-        <div class="mt-month"><div class="mm-label">Days</div><div class="mm-val">1–10</div></div>
-        <div class="mt-body">
-          <div class="mt-title">Post-Op Recovery</div>
-          <div class="mt-desc">Scabs form hoti hain transplanted area mein. Mild swelling aur redness normal. Gentle washing day 3 se shuru. Rest important — no strenuous activity.</div>
-        </div>
-      </div>
-      <div class="mt-item">
-        <div class="mt-month"><div class="mm-label">Weeks</div><div class="mm-val">2–6</div></div>
-        <div class="mt-body">
-          <div class="mt-title">Shock Loss — Don't Panic</div>
-          <div class="mt-desc">Transplanted baal shed ho jaate hain — yeh bilkul normal hai. "Shock loss" kehte hain ise. Follicle alive hai, sirf hair shaft gg gaya — naya aayega.</div>
-        </div>
-      </div>
-      <div class="mt-item">
-        <div class="mt-month"><div class="mm-label">Month</div><div class="mm-val">3–4</div></div>
-        <div class="mt-body">
-          <div class="mt-title">New Growth Begins</div>
-          <div class="mt-desc">Thin, fine baal dikhne lagte hain. Texture initially different lag sakta hai — yeh gradually improves. Itching is common — sign of growth.</div>
-        </div>
-      </div>
-      <div class="mt-item">
-        <div class="mt-month"><div class="mm-label">Month</div><div class="mm-val">6–8</div></div>
-        <div class="mt-body">
-          <div class="mt-title">Significant Density Visible</div>
-          <div class="mt-desc">50-60% of final result visible by now. Baal thicker aur darker ho rahe hain. Most patients is stage par result se excited hote hain.</div>
-        </div>
-      </div>
-      <div class="mt-item">
-        <div class="mt-month" style="background:#6090C0;"><div class="mm-label">Month</div><div class="mm-val">12–18</div></div>
-        <div class="mt-body">
-          <div class="mt-title">Final Result</div>
-          <div class="mt-desc">Full maturation — baal naturally thick aur textured. Hairline fully settled. Ab styling possible. This is the result you compare against pre-op photos.</div>
-        </div>
-      </div>
+  <section class="section">
+    <div class="section-num">7</div>
+    <h2>Common Myths</h2>
+    <div class="myth-stack">
+      <div class="myth-block"><div class="myth-side is-myth">Transplanted hair falls out after a few years.</div><div class="myth-side is-fact">Transplanted follicles retain their DHT resistance permanently. They grow for life in the new location — the same way they grew in the donor site for decades.</div></div>
+      <div class="myth-block"><div class="myth-side is-myth">You can transplant unlimited hair to cover any bald area.</div><div class="myth-side is-fact">The donor zone is finite. Donor management — using only what can be spared without depleting the safe zone — is one of the most critical technical skills in hair transplantation.</div></div>
+      <div class="myth-block"><div class="myth-side is-myth">The result looks obvious and fake.</div><div class="myth-side is-fact">Modern FUE with skilled hairline design is undetectable even on close inspection. The "plug" look was a characteristic of outdated multi-graft techniques from the 1980s–90s.</div></div>
     </div>
   </section>
 
-  <!-- HAIRLINE DESIGN -->
-  <section>
-    <h2>Hairline Design — Utna Hi Important Hai</h2>
-    <p>Ek technically perfect transplant bhi galat hairline design se unnatural dikh sakta hai. Achhi hairline design:</p>
-
-    <div class="dark-banner">
-      <strong>Natural hairline kabhi perfectly straight nahi hoti.</strong> Subtle irregularities, micro-irregularities, aur temple points — yeh sab natural appearance create karte hain. <strong>Experienced surgeon ka artistic eye</strong> technically skilled hands se kam important nahi hota.
-    </div>
-
-    <p>Age-appropriate design bhi zaroori hai — 25 saal ke patient aur 45 saal ke patient ki hairline same nahi honi chahiye. Future hair loss progression ko bhi hairline planning mein factor karna padta hai.</p>
-  </section>
-
-  <!-- MYTHS -->
-  <section>
-    <h2>Hair Transplant Myths</h2>
-    <div class="myth-list">
-      <div class="myth-item">
-        <div class="mi-myth">Transplant ke baad baal permanently dense rahenge</div>
-        <div class="mi-fact">Transplanted baal permanent hain, lekin native non-transplanted baal continue thinning kar sakte hain. Medication (minoxidil/finasteride) transplant ke saath zaroori hoti hai.</div>
-      </div>
-      <div class="myth-item">
-        <div class="mi-myth">Transplant mein bahut dard hota hai</div>
-        <div class="mi-fact">Procedure local anaesthesia mein hota hai — patient awake hote hain lekin pain nahi hoti. Post-op mild discomfort 2-3 days medication se manage hota hai.</div>
-      </div>
-      <div class="myth-item">
-        <div class="mi-myth">Ek session mein poora result milega</div>
-        <div class="mi-fact">Advanced baldness mein 2 sessions ki zaroorat ho sakti hai. Grafts ki limit per session hoti hai — overharvesting donor area damage karta hai.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section>
-    <h2>Skin Ethics Clinic — Consult Dr Pallavi</h2>
-    <p>Hair transplant candidacy assessment, graft planning, aur realistic expectation setting ke liye:</p>
+  <section class="section">
+    <h2>Book a Hair Transplant Consultation</h2>
+    <p>Candidacy assessment, donor density mapping, and hairline design discussion — the consultation determines whether a transplant is right for you, and what result is realistically achievable.</p>
     <div class="contact-grid">
-      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Get Directions</a>
+      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Directions</a>
       <a class="contact-cell" href="tel:+919028291234">📞 +91 90282 91234</a>
-      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📸 @drpallaviahireshelke</a>
+      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📷 Instagram</a>
       <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
     </div>
   </section>
-
-  <div class="share-wrap">
-    <button class="share-btn" onclick="shareGuide()">📤 Share This Guide</button>
-  </div>
-  <footer class="guide-footer">
-    <p><strong style="color:var(--lt-accent)">Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br>
-    <a href="tel:+919028291234">+91 90282 91234</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a></p>
-    <p style="margin-top:10px">Educational purposes only. Does not replace medical consultation.</p>
-  </footer>
+  <div class="share-section"><button class="share-btn" onclick="shareGuide()">↗ Share This Guide</button></div>
+  <footer class="guide-footer"><strong>Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br><a href="tel:+919028291234">+91 90282 91234</a> · <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a><br><span style="margin-top:8px;display:block">For educational purposes only.</span></footer>
 </div>
-
 <div class="float-cta">
-  <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
-  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+  <a class="cta-primary" href="https://wa.me/919028291234" target="_blank">Book a Consultation</a>
+  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">WhatsApp</a>
 </div>
-<script>
-  function shareGuide() {
-    const url = window.location.href;
-    if (navigator.share) { navigator.share({ title: 'Hair Transplant Handbook', url }).catch(()=>{}); }
-    else { navigator.clipboard.writeText(url).then(()=>alert('Link copied!')).catch(()=>{}); }
-  }
-</script>
+<script>function shareGuide(){const u=window.location.href;if(navigator.share){navigator.share({title:'Hair Transplant Guide — Dr Pallavi',url:u}).catch(()=>{});}else{navigator.clipboard.writeText(u).then(()=>alert('Link copied!')).catch(()=>{});}}</script>
 </body>
 </html>

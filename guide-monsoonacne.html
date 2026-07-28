@@ -4,347 +4,181 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Monsoon Acne Guide | Dr Pallavi Ahireshelke</title>
-  <meta name="description" content="Why does skin break out in monsoon? The Sebum-Humidity Trap science, Mandelic Acid solution, biggest monsoon skincare mistakes. Dr Pallavi Ahireshelke, Skin Ethics Pune." />
-  <meta property="og:title" content="Monsoon Acne Guide — The Sebum-Humidity Trap" />
-  <meta property="og:description" content="80% humidity aur skin ko kya hota hai? Sebum Hydration Trap science + Mandelic Acid solution. Comment MONSOONACNE for Dr Pallavi's guide." />
-  <meta property="og:type" content="website" />
+  <meta name="description" content="Why acne worsens in humid monsoon weather, the sebum-humidity trap science, why harsh cleansers make it worse, and the right approach to control it." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --dark:      #08101A;
-      --accent:    #204878;
-      --lt-accent: #80A8D8;
-      --storm-bg:  #EFF3F8;
-      --border:    #B8CCE0;
-      --text:      #101828;
-      --muted:     #3A5068;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Lora', Georgia, serif; background: #E5ECF5; color: var(--text); font-size: 16px; line-height: 1.75; }
-    .page-wrap { max-width: 480px; margin: 0 auto; background: #fff; }
+    :root{--ink:#081428;--accent:#2057A0;--lt:#5A8FD4;--muted:#3A5F8A;--page-bg:#F3F6FB;--card:#FFFFFF;--border:#B8CEEA;--rule:#DDE8F5;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Lora',Georgia,serif;background:var(--page-bg);color:var(--ink);font-size:16px;line-height:1.8;}
+    .page-wrap{max-width:480px;margin:0 auto;background:var(--card);}
+    .guide-header{background:var(--ink);background-image:radial-gradient(ellipse at 80% 0%,rgba(32,87,160,0.55) 0%,transparent 55%);padding:56px 28px 48px;}
+    .clinic-tag{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--lt);opacity:.7;margin-bottom:20px;}
+    .guide-header h1{font-family:'Playfair Display',serif;font-size:29px;line-height:1.22;color:#fff;margin-bottom:14px;font-weight:700;}
+    .deck{font-size:14px;color:rgba(255,255,255,.58);font-style:italic;line-height:1.75;margin-bottom:28px;}
+    .trigger-pill{display:inline-block;border:1px solid rgba(90,143,212,.45);color:var(--lt);font-family:'Inter',sans-serif;font-size:11px;letter-spacing:1.2px;padding:6px 18px;border-radius:20px;}
+    .section{padding:40px 28px;border-bottom:1px solid var(--rule);position:relative;overflow:hidden;}
+    .section-num{font-family:'Playfair Display',serif;font-size:80px;font-weight:700;color:var(--accent);opacity:.05;position:absolute;top:20px;right:18px;line-height:1;user-select:none;pointer-events:none;}
+    h2{font-family:'Playfair Display',serif;font-size:21px;color:var(--ink);line-height:1.28;margin-bottom:16px;font-weight:700;}
+    h3{font-family:'Playfair Display',serif;font-size:15px;color:var(--ink);margin-bottom:6px;font-weight:600;}
+    p{font-size:15px;color:#0E1E30;line-height:1.85;margin-bottom:16px;}
+    p:last-child{margin-bottom:0;}
+    .pull-quote{border-left:3px solid var(--accent);padding:14px 20px;margin:24px 0;background:#EAF0FA;border-radius:0 8px 8px 0;}
+    .pull-quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:15.5px;color:var(--accent);margin:0;line-height:1.65;}
 
-    .guide-header { background: var(--dark); background-image: radial-gradient(ellipse at 70% 20%, rgba(32,72,120,0.7) 0%, transparent 60%); padding: 52px 24px 40px; text-align: center; }
-    .clinic-tag { display: inline-block; font-size: 10px; font-style: italic; letter-spacing: 1.8px; color: var(--lt-accent); opacity: 0.8; margin-bottom: 14px; text-transform: uppercase; }
-    .guide-header h1 { font-family: 'Playfair Display', serif; font-size: 27px; line-height: 1.25; color: #fff; margin-bottom: 12px; }
-    .guide-header .subtitle { font-size: 13.5px; color: rgba(255,255,255,0.72); font-style: italic; max-width: 340px; margin: 0 auto 20px; }
-    .trigger-pill { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-style: italic; letter-spacing: 1.2px; padding: 5px 16px; border-radius: 20px; }
+    .trap-visual{margin:24px 0;border:1px solid var(--border);border-radius:14px;overflow:hidden;}
+    .tv-header{background:var(--ink);padding:16px 20px;display:flex;align-items:center;gap:10px;}
+    .tv-title{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--lt);}
+    .tv-humidity{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-left:auto;}
+    .tv-body{padding:18px 20px;}
+    .tv-row{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--rule);}
+    .tv-row:last-child{border-bottom:none;}
+    .tv-icon{font-size:20px;width:30px;text-align:center;margin-top:2px;}
+    .tv-text{font-size:13.5px;color:var(--muted);line-height:1.6;}
+    .tv-text strong{color:var(--ink);}
 
-    section { padding: 30px 20px; border-bottom: 1px solid var(--border); }
-    h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--dark); margin-bottom: 14px; line-height: 1.3; }
-    p { margin-bottom: 14px; color: var(--text); }
-    p:last-child { margin-bottom: 0; }
+    .compare-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0;}
+    .cc{border-radius:12px;padding:18px 14px;}
+    .cc.wrong{background:#FDF5F0;border:1px solid #E8C0A0;}
+    .cc.right{background:#EAF0FA;border:1px solid var(--border);}
+    .cc-badge{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.8px;font-weight:600;margin-bottom:10px;}
+    .cc.wrong .cc-badge{color:#A04020;}
+    .cc.right .cc-badge{color:var(--accent);}
+    .cc h3{font-size:13.5px;margin-bottom:8px;}
+    .cc ul{list-style:none;padding:0;}
+    .cc ul li{font-size:12.5px;color:var(--muted);padding:5px 0;border-bottom:1px solid rgba(0,0,0,.06);}
+    .cc ul li:last-child{border-bottom:none;}
 
-    .dark-banner { background: var(--dark); border-left: 4px solid var(--accent); border-radius: 8px; padding: 18px 20px; margin: 20px 0; color: rgba(255,255,255,0.9); font-style: italic; font-size: 14.5px; line-height: 1.65; }
-    .dark-banner strong { color: var(--lt-accent); font-style: normal; }
+    .rebound-chain{margin:24px 0;}
+    .rc-step{display:flex;gap:14px;padding:14px 0;align-items:flex-start;}
+    .rc-num{min-width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;margin-top:2px;}
+    .rc-text{font-size:14px;color:var(--ink);line-height:1.7;}
+    .rc-arrow{text-align:center;color:var(--border);font-size:18px;padding:0 14px 0 11px;}
 
-    /* HUMIDITY TRAP VISUAL */
-    .humidity-visual { background: var(--storm-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .humidity-meter { text-align: center; margin-bottom: 14px; }
-    .hm-label { font-size: 11px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
-    .hm-bar { background: #C8D8EC; border-radius: 6px; height: 14px; position: relative; overflow: hidden; }
-    .hm-fill { height: 100%; background: linear-gradient(90deg, #6090C0, var(--accent)); border-radius: 6px; width: 80%; }
-    .hm-value { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--accent); margin-top: 6px; }
-    .trap-chain { display: flex; flex-direction: column; gap: 6px; }
-    .tc-step { display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
-    .tc-emoji { font-size: 20px; flex-shrink: 0; }
-    .tc-text { font-size: 13px; color: var(--text); }
-    .tc-arrow { text-align: center; color: var(--accent); font-size: 14px; padding-left: 30px; }
+    .mandelic-card{background:var(--ink);border-radius:14px;padding:24px 22px;margin:24px 0;color:#fff;}
+    .mc-tag{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--lt);margin-bottom:12px;}
+    .mc-title{font-family:'Playfair Display',serif;font-size:19px;margin-bottom:10px;}
+    .mc-body{font-size:13.5px;color:rgba(255,255,255,.72);line-height:1.8;margin-bottom:16px;}
+    .mc-props{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+    .mc-prop{background:rgba(255,255,255,.07);border-radius:8px;padding:10px 12px;}
+    .mc-prop-label{font-family:'Inter',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--lt);margin-bottom:4px;}
+    .mc-prop-val{font-size:13px;color:#fff;}
 
-    /* WRONG VS RIGHT */
-    .approach-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
-    .approach-card { border-radius: 8px; padding: 14px 12px; }
-    .approach-card.wrong { background: #FEF0EF; border: 1px solid #F0B0A8; }
-    .approach-card.right { background: #EFF3F8; border: 1px solid var(--border); }
-    .ac-tag { font-size: 11px; font-family: 'Playfair Display', serif; font-weight: 700; margin-bottom: 8px; }
-    .approach-card.wrong .ac-tag { color: #A03020; }
-    .approach-card.right .ac-tag { color: var(--accent); }
-    .ac-item { font-size: 12.5px; color: var(--text); padding: 3px 0; line-height: 1.5; }
+    .routine-stack{margin:24px 0;}
+    .rs-item{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--rule);}
+    .rs-item:last-child{border-bottom:none;}
+    .rs-step{width:34px;height:28px;border-radius:6px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:10px;font-weight:600;margin-top:3px;}
+    .rs-content h3{font-size:14.5px;margin-bottom:4px;}
+    .rs-content p{font-size:13.5px;color:var(--muted);line-height:1.65;margin:0;}
 
-    /* SCIENCE STEPS */
-    .science-steps { margin: 18px 0; counter-reset: step; }
-    .ss-item { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px dashed var(--border); align-items: flex-start; counter-increment: step; }
-    .ss-item:last-child { border-bottom: none; }
-    .ss-num { flex-shrink: 0; width: 30px; height: 30px; background: var(--accent); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; }
-    .ss-body { flex: 1; }
-    .ss-title { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 2px; }
-    .ss-desc { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
-
-    /* MANDELIC ACID */
-    .mandelic-card { background: var(--storm-bg); border: 1px solid var(--border); border-top: 3px solid var(--accent); border-radius: 10px; padding: 18px; margin: 18px 0; }
-    .mandelic-card h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); margin-bottom: 12px; }
-    .mc-benefit { display: flex; align-items: flex-start; gap: 8px; padding: 6px 0; border-bottom: 1px dashed var(--border); font-size: 13px; }
-    .mc-benefit:last-child { border-bottom: none; }
-    .mc-benefit .mb-icon { flex-shrink: 0; color: var(--accent); font-size: 14px; }
-
-    /* SKINCARE ROUTINE */
-    .routine-list { margin: 16px 0; }
-    .rl-item { display: grid; grid-template-columns: 90px 1fr; gap: 10px; padding: 11px 0; border-bottom: 1px solid var(--border); align-items: center; }
-    .rl-item:last-child { border-bottom: none; }
-    .rl-time { background: var(--accent); color: #fff; border-radius: 6px; padding: 6px 8px; text-align: center; font-size: 11px; font-family: 'Playfair Display', serif; }
-    .rl-body { font-size: 13px; color: var(--text); line-height: 1.6; }
-    .rl-body strong { display: block; color: var(--dark); font-style: normal; font-size: 12.5px; font-family: 'Playfair Display', serif; }
-
-    /* MYTHS */
-    .myth-list { margin: 16px 0; }
-    .myth-item { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 10px; }
-    .myth-item .mi-myth { background: #FEF5F5; padding: 10px 14px; font-size: 13px; color: #201010; }
-    .myth-item .mi-myth::before { content: "❌ MYTH: "; font-family: 'Playfair Display', serif; font-weight: 700; }
-    .myth-item .mi-fact { background: var(--storm-bg); padding: 10px 14px; font-size: 13px; color: var(--muted); }
-    .myth-item .mi-fact::before { content: "✅ FACT: "; color: var(--accent); font-family: 'Playfair Display', serif; font-weight: 700; }
-
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 18px 0; }
-    .contact-cell { display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--storm-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; font-size: 12.5px; color: var(--dark); text-decoration: none; font-family: 'Lora', serif; text-align: center; }
-
-    .float-cta { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 99; width: calc(100% - 40px); max-width: 440px; }
-    .cta-book { flex: 1; background: var(--accent); color: #fff; text-align: center; padding: 13px 10px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; box-shadow: 0 4px 18px rgba(32,72,120,0.45); }
-    .cta-wa { background: #25D366; color: #fff; padding: 13px 16px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; white-space: nowrap; }
-
-    .share-wrap { text-align: center; padding: 28px 20px 80px; }
-    .share-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #fff; border: none; border-radius: 10px; padding: 13px 28px; font-family: 'Lora', serif; font-size: 14px; cursor: pointer; }
-    .guide-footer { background: var(--dark); color: rgba(255,255,255,0.55); text-align: center; padding: 20px; font-size: 11.5px; line-height: 1.7; }
-    .guide-footer a { color: var(--lt-accent); text-decoration: none; }
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:20px 0;}
+    .contact-cell{display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--border);border-radius:10px;padding:13px 8px;font-family:'Inter',sans-serif;font-size:12.5px;color:var(--ink);text-decoration:none;background:var(--card);}
+    .share-section{padding:36px 28px 100px;text-align:center;}
+    .share-btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:none;border-radius:10px;padding:14px 32px;font-family:'Inter',sans-serif;font-size:13px;cursor:pointer;}
+    .guide-footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:24px 20px;font-family:'Inter',sans-serif;font-size:11.5px;line-height:1.8;}
+    .guide-footer a{color:var(--lt);text-decoration:none;}
+    .guide-footer strong{color:rgba(255,255,255,.75);}
+    .float-cta{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:flex;z-index:99;}
+    .cta-primary{flex:1;background:var(--accent);color:#fff;text-align:center;padding:17px 12px;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;text-decoration:none;}
+    .cta-wa{background:#1FAD58;color:#fff;padding:17px 22px;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;border-left:1px solid rgba(255,255,255,.15);}
   </style>
 </head>
 <body>
 <div class="page-wrap">
-
   <header class="guide-header">
     <div class="clinic-tag">Skin Ethics Clinic · Pune</div>
-    <h1>Monsoon Acne Guide</h1>
-    <p class="subtitle">The Sebum-Humidity Trap — aur uska scientific solution</p>
+    <h1>Why Monsoon Breaks Out Your Skin</h1>
+    <p class="deck">It isn't poor hygiene. It isn't eating mango. The science behind why the rainy season makes skin more acne-prone — and the one ingredient that works with the season instead of fighting it.</p>
     <span class="trigger-pill">Comment MONSOONACNE to receive this guide</span>
   </header>
 
-  <!-- HUMIDITY TRAP -->
-  <section>
+  <section class="section">
+    <div class="section-num">1</div>
     <h2>The Sebum-Humidity Trap</h2>
-
-    <div class="humidity-visual">
-      <div class="humidity-meter">
-        <div class="hm-label">Monsoon Humidity Level</div>
-        <div class="hm-bar"><div class="hm-fill"></div></div>
-        <div class="hm-value">80%+</div>
-      </div>
-      <div class="trap-chain">
-        <div class="tc-step">
-          <div class="tc-emoji">💧</div>
-          <div class="tc-text"><strong>80% humidity</strong> — air mein itna moisture hai ki skin sweat evaporate nahi kar sakti</div>
-        </div>
-        <div class="tc-arrow">↓</div>
-        <div class="tc-step">
-          <div class="tc-emoji">🫧</div>
-          <div class="tc-text"><strong>Pores swell</strong> — excess moisture se skin cells phool jaate hain, pores tight ho jaate hain</div>
-        </div>
-        <div class="tc-arrow">↓</div>
-        <div class="tc-step">
-          <div class="tc-emoji">🔒</div>
-          <div class="tc-text"><strong>Sebum trapped</strong> — swollen pores sebum bahar nahi nikalne dete — buildup shuru</div>
-        </div>
-        <div class="tc-arrow">↓</div>
-        <div class="tc-step">
-          <div class="tc-emoji">🦠</div>
-          <div class="tc-text"><strong>Bacteria multiply</strong> — warm + humid = bacteria ki perfect breeding ground</div>
-        </div>
-        <div class="tc-arrow">↓</div>
-        <div class="tc-step">
-          <div class="tc-emoji">🔴</div>
-          <div class="tc-text"><strong>Acne breakout</strong> — inflammation, papules, pustules — monsoon acne</div>
-        </div>
+    <p>Your skin produces sebum — an oily substance designed to protect the skin barrier. In dry weather, excess sebum flows freely to the surface and evaporates. In monsoon humidity, that process breaks down completely.</p>
+    <div class="trap-visual">
+      <div class="tv-header"><span style="font-size:20px">🌧️</span><div class="tv-title">Monsoon Skin Conditions</div><div class="tv-humidity">80%+ RH</div></div>
+      <div class="tv-body">
+        <div class="tv-row"><div class="tv-icon">💧</div><div class="tv-text"><strong>Humidity above 80%</strong> saturates the air. Sweat cannot evaporate — it sits on the surface, mixing with sebum to form an occlusive layer over pores.</div></div>
+        <div class="tv-row"><div class="tv-icon">🔲</div><div class="tv-text"><strong>Pores swell</strong> as the skin absorbs moisture. The pore opening narrows even as sebum production continues or increases in the heat.</div></div>
+        <div class="tv-row"><div class="tv-icon">🦠</div><div class="tv-text"><strong>C. acnes bacteria</strong> thrive in warm, anaerobic environments — exactly what a sweat-and-sebum-sealed pore provides. Bacterial counts spike.</div></div>
+        <div class="tv-row"><div class="tv-icon">🔥</div><div class="tv-text"><strong>Inflammation follows</strong> as the immune system responds to bacterial overgrowth — producing the red, painful papule or pustule visible on the surface.</div></div>
       </div>
     </div>
+    <div class="pull-quote"><p>"The acne wasn't caused by monsoon itself — it was caused by your skin's response to humidity. Understanding that changes what you should do about it."</p></div>
+  </section>
 
-    <div class="dark-banner">
-      <strong>Yeh dehydrated skin nahi hai.</strong> Yeh Sebum-Humidity Trap hai — excess moisture se pores choke ho rahe hain. Jo log zyada moisturiser lagate hain "dry skin soch ke" — <strong>woh actually breakout aur bhi worsen karte hain.</strong>
+  <section class="section">
+    <div class="section-num">2</div>
+    <h2>The Wrong Approach vs The Right One</h2>
+    <p>Most people respond to monsoon breakouts by doing exactly what makes them worse:</p>
+    <div class="compare-cards">
+      <div class="cc wrong"><div class="cc-badge">❌ WRONG</div><h3>The Instinct</h3><ul><li>Wash face 4–5× daily</li><li>Harsh foaming cleanser</li><li>Drying astringent toner</li><li>Skip moisturiser</li><li>Pop or squeeze breakouts</li></ul></div>
+      <div class="cc right"><div class="cc-badge">✅ RIGHT</div><h3>What Works</h3><ul><li>Cleanse twice daily only</li><li>Gentle, low-pH cleanser</li><li>Niacinamide or BHA toner</li><li>Lightweight gel moisturiser</li><li>Let the treatment work</li></ul></div>
     </div>
   </section>
 
-  <!-- WRONG VS RIGHT APPROACH -->
-  <section>
-    <h2>Wrong Approach vs Right Approach</h2>
-
-    <div class="approach-compare">
-      <div class="approach-card wrong">
-        <div class="ac-tag">❌ Wrong Approach</div>
-        <div class="ac-item">Harsh facewash roz 3-4 baar</div>
-        <div class="ac-item">Skin zyada dry = zyada sebum rebound</div>
-        <div class="ac-item">Heavy moisturiser "skin dry lag rahi hai"</div>
-        <div class="ac-item">Alcohol-based toner se strip karna</div>
-        <div class="ac-item">Sunscreen band in monsoon</div>
-      </div>
-      <div class="approach-card right">
-        <div class="ac-tag">✅ Right Approach</div>
-        <div class="ac-item">Gentle pH-balanced cleanser — 2x only</div>
-        <div class="ac-item">Lightweight gel moisturiser only</div>
-        <div class="ac-item">Mandelic Acid — the monsoon acid</div>
-        <div class="ac-item">SPF 30+ even in clouds</div>
-        <div class="ac-item">Blotting paper for shine, not strips</div>
-      </div>
+  <section class="section">
+    <div class="section-num">3</div>
+    <h2>Why Harsh Cleansers Create a Rebound Cycle</h2>
+    <p>Using a strong foaming cleanser 3–4 times a day feels logical — remove the oil, prevent clogging. But here's the chain reaction that actually happens:</p>
+    <div class="rebound-chain">
+      <div class="rc-step"><div class="rc-num">1</div><div class="rc-text">Harsh cleanser strips the skin barrier — removing ceramides and natural moisturising factors along with excess sebum.</div></div>
+      <div class="rc-arrow">↓</div>
+      <div class="rc-step"><div class="rc-num">2</div><div class="rc-text">Barrier compromised. Skin registers "dryness" and signals the sebaceous glands to produce <em>more</em> sebum to compensate.</div></div>
+      <div class="rc-arrow">↓</div>
+      <div class="rc-step"><div class="rc-num">3</div><div class="rc-text">Rebound oiliness: skin becomes oilier than before. Combined with monsoon humidity, clogging worsens.</div></div>
+      <div class="rc-arrow">↓</div>
+      <div class="rc-step"><div class="rc-num">4</div><div class="rc-text">More breakouts trigger more harsh cleansing. The cycle deepens with each iteration.</div></div>
     </div>
   </section>
 
-  <!-- WHY HARSH FACEWASH FAILS -->
-  <section>
-    <h2>Harsh Facewash Kyun Kaam Nahi Karta?</h2>
-    <div class="science-steps">
-      <div class="ss-item">
-        <div class="ss-num">1</div>
-        <div class="ss-body">
-          <div class="ss-title">Skin Barrier Strip Hoti Hai</div>
-          <div class="ss-desc">Harsh cleanser natural lipids remove karta hai — skin ki protective barrier damage hoti hai.</div>
-        </div>
-      </div>
-      <div class="ss-item">
-        <div class="ss-num">2</div>
-        <div class="ss-body">
-          <div class="ss-title">Sebum Rebound Effect</div>
-          <div class="ss-desc">Skin "dry" feel hone par sebaceous glands zyada sebum produce karte hain to compensate — result: more oil, more breakouts.</div>
-        </div>
-      </div>
-      <div class="ss-item">
-        <div class="ss-num">3</div>
-        <div class="ss-body">
-          <div class="ss-title">pH Imbalance</div>
-          <div class="ss-desc">Healthy skin ka pH 4.5-5.5 hai. Harsh soaps/cleansers yeh balance bigadte hain — acne bacteria zyada thrive karta hai alkaline skin pe.</div>
-        </div>
-      </div>
-      <div class="ss-item">
-        <div class="ss-num">4</div>
-        <div class="ss-body">
-          <div class="ss-title">Inflammation Increases</div>
-          <div class="ss-desc">Already inflamed skin pe harsh products — redness aur sensitivity aur badh jaati hai. Breakout heal nahi hote.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MANDELIC ACID -->
-  <section>
-    <h2>Mandelic Acid — The Monsoon Skin Solution</h2>
-    <p>Monsoon mein sabse effective active ingredient — Indian skin ke liye ideal:</p>
-
+  <section class="section">
+    <div class="section-num">4</div>
+    <h2>The Right Ingredient: Mandelic Acid</h2>
     <div class="mandelic-card">
-      <h3>Why Mandelic Acid Works in Monsoon</h3>
-      <div class="mc-benefit">
-        <div class="mb-icon">🔬</div>
-        <div>Large molecular size — gentler penetration, less irritation than glycolic. Indian skin pe safer.</div>
-      </div>
-      <div class="mc-benefit">
-        <div class="mb-icon">🦠</div>
-        <div>Antibacterial properties — Propionibacterium acnes ko directly target karta hai.</div>
-      </div>
-      <div class="mc-benefit">
-        <div class="mb-icon">🫧</div>
-        <div>Pore-clearing exfoliation — trapped sebum aur dead cells ko gently dissolve karta hai.</div>
-      </div>
-      <div class="mc-benefit">
-        <div class="mb-icon">💧</div>
-        <div>Sebum regulation — oil production normalize karta hai bina skin dry kiye.</div>
-      </div>
-      <div class="mc-benefit">
-        <div class="mb-icon">🟤</div>
-        <div>PIH prevention — acne marks ke saath pigmentation bhi address karta hai — monsoon mein common.</div>
+      <div class="mc-tag">Clinical Solution</div>
+      <div class="mc-title">Why Mandelic Acid is the Right Choice for Indian Monsoon Skin</div>
+      <div class="mc-body">Unlike glycolic acid (which can trigger PIH on Indian skin) or benzoyl peroxide (too harsh in humid conditions), Mandelic Acid has a larger molecular size. It penetrates slowly, making it gentler and better tolerated on darker skin tones — even in summer-humidity conditions.</div>
+      <div class="mc-props">
+        <div class="mc-prop"><div class="mc-prop-label">Action</div><div class="mc-prop-val">Exfoliates dead cells from inside the pore lining</div></div>
+        <div class="mc-prop"><div class="mc-prop-label">Antibacterial</div><div class="mc-prop-val">Directly targets C. acnes overgrowth</div></div>
+        <div class="mc-prop"><div class="mc-prop-label">Pigmentation</div><div class="mc-prop-val">Reduces PIH marks from healed spots</div></div>
+        <div class="mc-prop"><div class="mc-prop-label">Tolerance</div><div class="mc-prop-val">Lower irritation on Fitzpatrick III–V skin</div></div>
       </div>
     </div>
+    <p>In-clinic Mandelic Acid peels combined with LED light therapy can reduce active breakouts significantly within 2–3 sessions while also addressing the PIH left behind.</p>
+  </section>
 
-    <div class="dark-banner">
-      <strong>Mandelic Acid clinic-grade peel</strong> as a monthly treatment in monsoon = deep pore clearing + sebum reset + pigmentation management — <strong>ek treatment mein teeno benefits.</strong>
+  <section class="section">
+    <div class="section-num">5</div>
+    <h2>The Monsoon Skincare Routine</h2>
+    <div class="routine-stack">
+      <div class="rs-item"><div class="rs-step">AM</div><div class="rs-content"><h3>Gentle Cleanser</h3><p>Low-pH foaming or gel cleanser — no soap, no harsh sulfates. 60 seconds, lukewarm water. Nothing more.</p></div></div>
+      <div class="rs-item"><div class="rs-step">TON</div><div class="rs-content"><h3>BHA or Niacinamide (optional)</h3><p>Salicylic acid 0.5–1% as toner keeps pores clear. Niacinamide 5–10% regulates sebum production. Choose one — not both.</p></div></div>
+      <div class="rs-item"><div class="rs-step">MOI</div><div class="rs-content"><h3>Gel Moisturiser</h3><p>Even oily skin needs hydration. Skip it and skin overcompensates with sebum. Use lightweight, oil-free, hyaluronic acid gel.</p></div></div>
+      <div class="rs-item"><div class="rs-step">SPF</div><div class="rs-content"><h3>SPF 50 — Every Day</h3><p>UV-A penetrates clouds at 80% intensity. Every healed breakout leaves PIH that UV makes permanent. SPF is non-negotiable year-round.</p></div></div>
+      <div class="rs-item"><div class="rs-step">PM</div><div class="rs-content"><h3>Cleanser + Prescription Treatment</h3><p>Evening is when prescribed actives (retinoids, azelaic acid, topical antibiotics) work best. Follow guidance — no OTC layering.</p></div></div>
     </div>
   </section>
 
-  <!-- MONSOON SKINCARE ROUTINE -->
-  <section>
-    <h2>Monsoon Skincare Routine</h2>
-    <div class="routine-list">
-      <div class="rl-item">
-        <div class="rl-time">Morning</div>
-        <div class="rl-body">
-          <strong>Gentle foam cleanser (pH 5-5.5)</strong>
-          Micellar water ya gel cleanser. Avoid bar soap, sulfate-heavy cleansers.
-        </div>
-      </div>
-      <div class="rl-item">
-        <div class="rl-time">Toner</div>
-        <div class="rl-body">
-          <strong>Alcohol-free niacinamide toner</strong>
-          Pore tightening + sebum control. Avoid alcohol, witch hazel.
-        </div>
-      </div>
-      <div class="rl-item">
-        <div class="rl-time">Moisturiser</div>
-        <div class="rl-body">
-          <strong>Lightweight gel moisturiser only</strong>
-          Water-based, non-comedogenic. Skip heavy creams.
-        </div>
-      </div>
-      <div class="rl-item">
-        <div class="rl-time">SPF</div>
-        <div class="rl-body">
-          <strong>SPF 30-50 gel sunscreen</strong>
-          UV-A penetrates clouds. Sunscreen non-negotiable in monsoon.
-        </div>
-      </div>
-      <div class="rl-item">
-        <div class="rl-time">Night</div>
-        <div class="rl-body">
-          <strong>Salicylic cleanser + Mandelic/Niacinamide serum</strong>
-          2-3x/week actives. Rest of nights — gentle cleanser + moisturiser only.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MYTHS -->
-  <section>
-    <h2>Monsoon Acne Myths</h2>
-    <div class="myth-list">
-      <div class="myth-item">
-        <div class="mi-myth">Monsoon mein oily skin ko moisturiser nahi chahiye</div>
-        <div class="mi-fact">Har skin type ko hydration chahiye. Dehydrated oily skin more sebum produce karti hai. Lightweight gel moisturiser essential hai.</div>
-      </div>
-      <div class="myth-item">
-        <div class="mi-myth">Baarish ke paani se face wash karna acne theek karta hai</div>
-        <div class="mi-fact">Rainwater air pollutants absorb karta hai. Face wipe with rain water = chemical exposure. Stick to clean water.</div>
-      </div>
-      <div class="myth-item">
-        <div class="mi-myth">Monsoon mein sunscreen ki zaroorat nahi — clouds hain</div>
-        <div class="mi-fact">UV-A (tanning + ageing rays) 80% clouds ke through penetrate karte hain. SPF skipping = sun damage + pigmentation worse hoti hai.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section>
-    <h2>Skin Ethics Clinic — Monsoon Skin Assessment</h2>
-    <p>Skin type ke hisaab se personalized monsoon skin protocol ke liye consult karein:</p>
+  <section class="section">
+    <h2>Book a Monsoon Skin Assessment</h2>
+    <p>Hormonal, fungal, and bacterial acne can look identical but require completely different treatments. An assessment identifies exactly what's driving your monsoon breakouts so the treatment works.</p>
     <div class="contact-grid">
-      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Get Directions</a>
+      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Directions</a>
       <a class="contact-cell" href="tel:+919028291234">📞 +91 90282 91234</a>
-      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📸 @drpallaviahireshelke</a>
+      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📷 Instagram</a>
       <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
     </div>
   </section>
-
-  <div class="share-wrap">
-    <button class="share-btn" onclick="shareGuide()">📤 Share This Guide</button>
-  </div>
-  <footer class="guide-footer">
-    <p><strong style="color:var(--lt-accent)">Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br>
-    <a href="tel:+919028291234">+91 90282 91234</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a></p>
-    <p style="margin-top:10px">Educational purposes only. Does not replace medical consultation.</p>
-  </footer>
+  <div class="share-section"><button class="share-btn" onclick="shareGuide()">↗ Share This Guide</button></div>
+  <footer class="guide-footer"><strong>Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br><a href="tel:+919028291234">+91 90282 91234</a> · <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a><br><span style="margin-top:8px;display:block">For educational purposes only.</span></footer>
 </div>
-
 <div class="float-cta">
-  <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
-  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+  <a class="cta-primary" href="https://wa.me/919028291234" target="_blank">Book a Consultation</a>
+  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">WhatsApp</a>
 </div>
-<script>
-  function shareGuide() {
-    const url = window.location.href;
-    if (navigator.share) { navigator.share({ title: 'Monsoon Acne Guide', url }).catch(()=>{}); }
-    else { navigator.clipboard.writeText(url).then(()=>alert('Link copied!')).catch(()=>{}); }
-  }
-</script>
+<script>function shareGuide(){const u=window.location.href;if(navigator.share){navigator.share({title:'Monsoon Acne Guide — Dr Pallavi',url:u}).catch(()=>{});}else{navigator.clipboard.writeText(u).then(()=>alert('Link copied!')).catch(()=>{});}}</script>
 </body>
 </html>
