@@ -3,112 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hair Fall Handbook | Dr Pallavi Ahireshelke</title>
-  <meta name="description" content="Why does hair fall happen? The hair growth cycle, causes, lifestyle factors, myths, and when to see a dermatologist. Expert guide by Dr Pallavi Ahireshelke, Skin Ethics Clinic Pune." />
-  <meta property="og:title" content="Hair Fall Handbook — Why Hair Falls & What To Do" />
-  <meta property="og:description" content="Har girta hua baal problem nahi hota. Tree leaf analogy se samjhein hair cycle, causes, aur solutions. Dr Pallavi ka complete Hair Fall Handbook." />
+  <title>Why Does Hair Fall Out? | Dr Pallavi Ahireshelke</title>
+  <meta name="description" content="A complete guide to understanding hair fall — the growth cycle, what disrupts it, how to distinguish normal shedding from real hair loss, and when to see a dermatologist." />
+  <meta property="og:title" content="The Hair Fall Guide — What's Actually Happening to Your Hair" />
+  <meta property="og:description" content="Your hair follows a precise biological cycle. When that cycle breaks down, hair loss begins. Dr Pallavi explains the science." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --dark:      #081A08;
-      --accent:    #406040;
-      --lt-accent: #80B070;
-      --sage-bg:   #EFF5EE;
-      --border:    #C0D8B8;
-      --text:      #102010;
+      --ink:       #0E180E;
+      --accent:    #3D6B3D;
+      --gold:      #8B7040;
+      --lt:        #7BAB7B;
+      --page-bg:   #F7F9F5;
+      --card:      #FFFFFF;
+      --border:    #D8E8D0;
       --muted:     #507050;
+      --rule:      #E4EEE0;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Lora', Georgia, serif; background: #E8F0E6; color: var(--text); font-size: 16px; line-height: 1.75; }
-    .page-wrap { max-width: 480px; margin: 0 auto; background: #fff; }
+    body { font-family: 'Lora', Georgia, serif; background: var(--page-bg); color: var(--ink); font-size: 16px; line-height: 1.8; }
+    .page-wrap { max-width: 480px; margin: 0 auto; background: var(--card); }
 
-    .guide-header { background: var(--dark); background-image: radial-gradient(ellipse at 75% 20%, rgba(64,96,64,0.7) 0%, transparent 58%); padding: 52px 24px 40px; text-align: center; }
-    .clinic-tag { display: inline-block; font-size: 10px; font-style: italic; letter-spacing: 1.8px; color: var(--lt-accent); opacity: 0.8; margin-bottom: 14px; text-transform: uppercase; }
-    .guide-header h1 { font-family: 'Playfair Display', serif; font-size: 27px; line-height: 1.25; color: #fff; margin-bottom: 12px; }
-    .guide-header .subtitle { font-size: 13.5px; color: rgba(255,255,255,0.72); font-style: italic; max-width: 340px; margin: 0 auto 20px; }
-    .trigger-pill { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-style: italic; letter-spacing: 1.2px; padding: 5px 16px; border-radius: 20px; }
+    /* HEADER */
+    .guide-header {
+      background: var(--ink);
+      background-image: radial-gradient(ellipse at 80% 0%, rgba(61,107,61,0.55) 0%, transparent 55%), radial-gradient(ellipse at 10% 100%, rgba(139,112,64,0.18) 0%, transparent 50%);
+      padding: 56px 28px 48px;
+    }
+    .clinic-tag { font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--lt); opacity: 0.7; margin-bottom: 20px; }
+    .guide-header h1 { font-family: 'Playfair Display', serif; font-size: 29px; line-height: 1.22; color: #fff; margin-bottom: 14px; font-weight: 700; }
+    .deck { font-size: 14px; color: rgba(255,255,255,0.58); font-style: italic; line-height: 1.75; margin-bottom: 28px; }
+    .trigger-pill { display: inline-block; border: 1px solid rgba(123,171,123,0.45); color: var(--lt); font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 1.2px; padding: 6px 18px; border-radius: 20px; }
 
-    section { padding: 30px 20px; border-bottom: 1px solid var(--border); }
-    h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--dark); margin-bottom: 14px; line-height: 1.3; }
-    p { margin-bottom: 14px; color: var(--text); }
+    /* SECTIONS */
+    .section { padding: 40px 28px; border-bottom: 1px solid var(--rule); position: relative; overflow: hidden; }
+    .section-num { font-family: 'Playfair Display', serif; font-size: 80px; font-weight: 700; color: var(--accent); opacity: 0.05; position: absolute; top: 20px; right: 18px; line-height: 1; user-select: none; pointer-events: none; }
+    h2 { font-family: 'Playfair Display', serif; font-size: 21px; color: var(--ink); line-height: 1.28; margin-bottom: 16px; font-weight: 700; }
+    h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--ink); margin-bottom: 6px; font-weight: 600; }
+    p { font-size: 15px; color: #263826; line-height: 1.85; margin-bottom: 16px; }
     p:last-child { margin-bottom: 0; }
 
-    .dark-banner { background: var(--dark); border-left: 4px solid var(--accent); border-radius: 8px; padding: 18px 20px; margin: 20px 0; color: rgba(255,255,255,0.9); font-style: italic; font-size: 14.5px; line-height: 1.65; }
-    .dark-banner strong { color: var(--lt-accent); font-style: normal; }
-
-    /* TREE VISUAL */
-    .tree-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
-    .tree-card { border-radius: 10px; padding: 16px 14px; text-align: center; }
-    .tree-card.healthy { background: linear-gradient(135deg, #0A2A0A 0%, #204820 100%); color: #fff; }
-    .tree-card.thinning { background: linear-gradient(135deg, #2A1A08 0%, #503A18 100%); color: rgba(255,255,255,0.9); }
-    .tree-card .tc-emoji { font-size: 36px; margin-bottom: 8px; }
-    .tree-card .tc-label { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.7; margin-bottom: 6px; }
-    .tree-card .tc-math { font-family: 'Playfair Display', serif; font-size: 14px; margin-bottom: 6px; }
-    .tree-card .tc-result { font-size: 12px; opacity: 0.8; font-style: italic; }
+    .pull-quote { border-left: 3px solid var(--accent); padding: 14px 20px; margin: 24px 0; background: #F0F6EE; border-radius: 0 8px 8px 0; }
+    .pull-quote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 15.5px; color: var(--accent); margin: 0; line-height: 1.65; }
 
     /* HAIR CYCLE */
-    .cycle-phases { margin: 20px 0; }
-    .phase-item { display: grid; grid-template-columns: 56px 1fr; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: start; }
-    .phase-item:last-child { border-bottom: none; }
-    .phase-badge { background: var(--accent); color: #fff; border-radius: 8px; padding: 8px 4px; text-align: center; }
-    .phase-badge .pb-name { font-size: 10px; opacity: 0.75; text-transform: uppercase; letter-spacing: 0.5px; }
-    .phase-badge .pb-icon { font-size: 20px; margin: 2px 0; }
-    .phase-badge .pb-pct { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; }
-    .phase-body { }
-    .phase-title { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 4px; }
-    .phase-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
-    .phase-duration { margin-top: 5px; font-size: 12px; color: var(--accent); font-style: italic; }
+    .cycle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 24px 0; }
+    .phase-card { border: 1px solid var(--border); border-radius: 12px; padding: 18px 15px; position: relative; overflow: hidden; background: var(--card); }
+    .phase-bar { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+    .p1 .phase-bar { background: var(--accent); }
+    .p2 .phase-bar { background: var(--gold); }
+    .p3 .phase-bar { background: #9A6A30; }
+    .p4 .phase-bar { background: var(--muted); }
+    .phase-label { font-family: 'Inter', sans-serif; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .phase-name { font-family: 'Playfair Display', serif; font-size: 14.5px; color: var(--ink); margin-bottom: 6px; }
+    .phase-name em { font-size: 12px; color: var(--muted); display: block; font-style: normal; margin-top: 1px; }
+    .phase-pct { font-family: 'Inter', sans-serif; font-size: 26px; font-weight: 600; margin-bottom: 6px; }
+    .p1 .phase-pct { color: var(--accent); }
+    .p2 .phase-pct { color: var(--gold); }
+    .p3 .phase-pct { color: #9A6A30; }
+    .p4 .phase-pct { color: var(--muted); }
+    .phase-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
+    .phase-dur { display: inline-block; margin-top: 8px; font-family: 'Inter', sans-serif; font-size: 10.5px; background: var(--page-bg); color: var(--muted); border-radius: 20px; padding: 3px 10px; }
 
-    /* NORMAL VS CONCERN */
-    .normal-box { background: var(--sage-bg); border: 2px solid var(--accent); border-radius: 10px; padding: 18px; margin: 18px 0; text-align: center; }
-    .normal-box .nb-title { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 10px; }
-    .nb-range { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--accent); font-weight: 700; }
-    .nb-unit { font-size: 13px; color: var(--muted); margin-top: 4px; font-style: italic; }
-    .nb-note { font-size: 12px; color: var(--muted); margin-top: 10px; font-style: italic; }
+    /* NORMAL RANGE */
+    .range-block { display: flex; align-items: center; justify-content: center; gap: 0; background: #EFF6EC; border: 1px solid var(--border); border-radius: 14px; padding: 28px 20px; margin: 24px 0; text-align: center; }
+    .range-num { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; color: var(--accent); line-height: 1; }
+    .range-label { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--muted); margin-top: 5px; text-transform: uppercase; letter-spacing: 1px; }
+    .range-sep { font-size: 30px; color: var(--border); padding: 0 22px; font-family: 'Playfair Display', serif; }
 
-    /* CAUSES GRID */
-    .causes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
-    .cause-card { background: var(--sage-bg); border: 1px solid var(--border); border-top: 3px solid var(--accent); border-radius: 8px; padding: 14px 12px; }
-    .cause-card .cc-emoji { font-size: 22px; margin-bottom: 6px; }
-    .cause-card .cc-name { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--dark); margin-bottom: 5px; }
-    .cause-card .cc-desc { font-size: 12px; color: var(--muted); line-height: 1.55; }
+    /* CAUSES */
+    .cause-list { margin: 24px 0; }
+    .cause-item { display: grid; grid-template-columns: 40px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+    .cause-item:last-child { border-bottom: none; }
+    .cause-num { width: 40px; height: 40px; border: 1.5px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 15px; color: var(--accent); flex-shrink: 0; }
+    .cause-body h3 { margin-bottom: 5px; }
+    .cause-body p { font-size: 13.5px; margin: 0; color: var(--muted); }
 
-    /* LIFESTYLE FACTORS */
-    .lifestyle-list { margin: 16px 0; }
-    .lf-item { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px dashed var(--border); align-items: flex-start; }
-    .lf-item:last-child { border-bottom: none; }
-    .lf-icon { font-size: 20px; flex-shrink: 0; width: 28px; text-align: center; }
-    .lf-body { flex: 1; }
-    .lf-title { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--dark); margin-bottom: 2px; }
-    .lf-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+    /* SIGNALS */
+    .signal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 24px 0; }
+    .signal-card { border-radius: 10px; padding: 16px 14px; }
+    .signal-card.ok { background: #EFF6EC; border: 1px solid #C4DCB8; }
+    .signal-card.alarm { background: #FBF3F3; border: 1px solid #DEC0C0; }
+    .signal-tag { font-family: 'Inter', sans-serif; font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; display: block; }
+    .signal-card.ok .signal-tag { color: var(--accent); }
+    .signal-card.alarm .signal-tag { color: #9A2020; }
+    .sig-item { font-size: 13px; color: var(--ink); padding: 6px 0; border-bottom: 1px dashed var(--rule); line-height: 1.5; }
+    .sig-item:last-child { border-bottom: none; }
 
     /* MYTHS */
-    .myth-list { margin: 16px 0; }
-    .myth-item { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 10px; }
-    .myth-item .mi-myth { background: #FBF0F0; padding: 10px 14px; font-size: 13px; color: #800020; }
-    .myth-item .mi-myth::before { content: "❌ MYTH: "; font-family: 'Playfair Display', serif; font-weight: 700; }
-    .myth-item .mi-fact { background: var(--sage-bg); padding: 10px 14px; font-size: 13px; color: var(--muted); }
-    .myth-item .mi-fact::before { content: "✅ FACT: "; color: var(--accent); font-family: 'Playfair Display', serif; font-weight: 700; }
+    .myth-stack { margin: 24px 0; }
+    .myth-block { margin-bottom: 12px; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+    .myth-side { padding: 12px 16px; font-size: 13.5px; line-height: 1.65; }
+    .myth-side.is-myth { background: #FBF5F5; color: #5A1818; }
+    .myth-side.is-myth::before { content: "MYTH  "; font-family: 'Inter', sans-serif; font-size: 9.5px; letter-spacing: 1.8px; font-weight: 600; color: #A03030; }
+    .myth-side.is-fact { background: #F0F6EE; color: var(--muted); border-top: 1px solid var(--border); }
+    .myth-side.is-fact::before { content: "FACT  "; font-family: 'Inter', sans-serif; font-size: 9.5px; letter-spacing: 1.8px; font-weight: 600; color: var(--accent); }
 
-    /* WHEN TO SEE DERM */
-    .derm-list { margin: 16px 0; list-style: none; }
-    .derm-list li { padding: 9px 0 9px 26px; position: relative; border-bottom: 1px dashed var(--border); font-size: 13.5px; }
-    .derm-list li:last-child { border-bottom: none; }
-    .derm-list li::before { content: "🔴"; position: absolute; left: 0; font-size: 12px; top: 12px; }
+    /* VISIT LIST */
+    .visit-list { list-style: none; margin: 20px 0; }
+    .visit-list li { padding: 12px 0 12px 22px; border-bottom: 1px solid var(--rule); font-size: 14.5px; position: relative; color: var(--ink); }
+    .visit-list li::before { content: ''; position: absolute; left: 0; top: 21px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    .visit-list li:last-child { border-bottom: none; }
 
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 18px 0; }
-    .contact-cell { display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--sage-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; font-size: 12.5px; color: var(--dark); text-decoration: none; font-family: 'Lora', serif; text-align: center; }
+    /* CONTACT */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 20px 0; }
+    .contact-cell { display: flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--border); border-radius: 10px; padding: 13px 8px; font-family: 'Inter', sans-serif; font-size: 12.5px; color: var(--ink); text-decoration: none; background: var(--card); }
 
-    .float-cta { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 99; width: calc(100% - 40px); max-width: 440px; }
-    .cta-book { flex: 1; background: var(--accent); color: #fff; text-align: center; padding: 13px 10px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; box-shadow: 0 4px 18px rgba(64,96,64,0.5); }
-    .cta-wa { background: #25D366; color: #fff; padding: 13px 16px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; white-space: nowrap; }
+    .share-section { padding: 36px 28px 100px; text-align: center; }
+    .share-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: #fff; border: none; border-radius: 10px; padding: 14px 32px; font-family: 'Inter', sans-serif; font-size: 13px; cursor: pointer; letter-spacing: 0.4px; }
 
-    .share-wrap { text-align: center; padding: 28px 20px 80px; }
-    .share-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #fff; border: none; border-radius: 10px; padding: 13px 28px; font-family: 'Lora', serif; font-size: 14px; cursor: pointer; }
-    .guide-footer { background: var(--dark); color: rgba(255,255,255,0.55); text-align: center; padding: 20px; font-size: 11.5px; line-height: 1.7; }
-    .guide-footer a { color: var(--lt-accent); text-decoration: none; }
+    .guide-footer { background: var(--ink); color: rgba(255,255,255,0.45); text-align: center; padding: 24px 20px; font-family: 'Inter', sans-serif; font-size: 11.5px; line-height: 1.8; }
+    .guide-footer a { color: var(--lt); text-decoration: none; }
+    .guide-footer strong { color: rgba(255,255,255,0.75); }
+
+    .float-cta { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; display: flex; z-index: 99; }
+    .cta-primary { flex: 1; background: var(--accent); color: #fff; text-align: center; padding: 17px 12px; font-family: 'Inter', sans-serif; font-size: 13.5px; font-weight: 600; text-decoration: none; letter-spacing: 0.2px; }
+    .cta-wa { background: #1FAD58; color: #fff; padding: 17px 22px; font-family: 'Inter', sans-serif; font-size: 13.5px; font-weight: 600; text-decoration: none; white-space: nowrap; border-left: 1px solid rgba(255,255,255,0.15); }
   </style>
 </head>
 <body>
@@ -116,266 +128,237 @@
 
   <header class="guide-header">
     <div class="clinic-tag">Skin Ethics Clinic · Pune</div>
-    <h1>Hair Fall Handbook</h1>
-    <p class="subtitle">Har girta hua baal problem nahi hota — yahan se samjhein</p>
+    <h1>Why Does Hair Fall Out?</h1>
+    <p class="deck">Your hair follows a precise biological clock. When that clock is disrupted, the shedding begins — and it's almost never about your shampoo.</p>
     <span class="trigger-pill">Comment HAIRFALL to receive this guide</span>
   </header>
 
-  <!-- TREE ANALOGY -->
-  <section>
-    <h2>Ek Tree Ki Tarah Sochein</h2>
-    <p>Har girta hua baal problem nahi hota. Roz 30 se 100 baal girna normal hair cycle ka hissa ho sakta hai. Isko samajhne ke liye ek tree imagine kijiye:</p>
-
-    <div class="tree-compare">
-      <div class="tree-card healthy">
-        <div class="tc-emoji">🌳</div>
-        <div class="tc-label">Healthy Tree</div>
-        <div class="tc-math">100 leaves fall<br>100 new come</div>
-        <div class="tc-result">Tree hamesha full aur healthy dikhega</div>
-      </div>
-      <div class="tree-card thinning">
-        <div class="tc-emoji">🍂</div>
-        <div class="tc-label">Thinning Tree</div>
-        <div class="tc-math">100 leaves fall<br>only 20 return</div>
-        <div class="tc-result">Dheere-dheere tree patla dikhne lagega</div>
-      </div>
+  <section class="section">
+    <div class="section-num">1</div>
+    <h2>Think of Each Strand as a Leaf on a Tree</h2>
+    <p>A tree doesn't lose all its leaves at once — and neither does your scalp. In autumn, old leaves fall to make way for new growth. That's biology, not damage.</p>
+    <p>Your hair works exactly the same way. Every strand has a lifespan. It grows, it rests, it falls. A new hair replaces it. The system is designed to shed.</p>
+    <div class="pull-quote">
+      <p>"The problem isn't that hair falls. The problem is when the cycle breaks down and new hair stops replacing what was lost."</p>
     </div>
-
-    <p>Hair bhi bilkul isi tarah kaam karte hain. <strong>Hair fall tab concern banta hai jab naye hairs ugne se zyada hairs girne lagte hain</strong> — aur yeh imbalance kisi specific reason se hota hai.</p>
-
-    <div class="dark-banner">
-      <strong>Pillow par 50-80 baal?</strong> Panic mat karein — yeh likely normal shedding hai. <strong>Concern tab hoga jab</strong> density visible reduce ho, hairline recede kare, ya patches form hon.
-    </div>
+    <p>Understanding the cycle is the difference between panicking over your drain every morning — and knowing when to actually seek help.</p>
   </section>
 
-  <!-- NORMAL RANGE -->
-  <section>
-    <h2>Normal Hair Fall — Kitna Hona Chahiye?</h2>
+  <section class="section">
+    <div class="section-num">2</div>
+    <h2>The 4 Phases of the Hair Growth Cycle</h2>
+    <p>At any given moment, each strand on your head is in a different phase — all running on separate timers simultaneously.</p>
 
-    <div class="normal-box">
-      <div class="nb-title">Medically Accepted Normal Range</div>
-      <div class="nb-range">50 – 100</div>
-      <div class="nb-unit">baal per din</div>
-      <div class="nb-note">Wash days par 150-200 bhi normal ho sakta hai — kyunki kuch shed hairs washing tak rukke hote hain.</div>
-    </div>
-
-    <p>Lekin sirf count karna accurate nahi hai. Zyada important yeh hai: kya aapki overall density kam ho rahi hai? Kya ponytail patli ho rahi hai? Kya scalp parts mein zyada dikhne laga hai? Yeh visual cues zyada reliable hain.</p>
-  </section>
-
-  <!-- HAIR GROWTH CYCLE -->
-  <section>
-    <h2>Hair Growth Cycle — Teen Phases</h2>
-    <p>Har single hair apne life mein teen phases se guzarta hai — simultaneously, alag alag hairs alag phases mein hote hain:</p>
-
-    <div class="cycle-phases">
-      <div class="phase-item">
-        <div class="phase-badge">
-          <div class="pb-name">Phase 1</div>
-          <div class="pb-icon">🌱</div>
-          <div class="pb-pct">85%</div>
-        </div>
-        <div class="phase-body">
-          <div class="phase-title">Anagen — Growth Phase</div>
-          <div class="phase-desc">Hair actively grow kar raha hai. Follicle fully alive aur nourished hai. Ek mahine mein approximately 1 cm growth hoti hai. Yeh phase jitna lamba hoga, hair utna lamba grow kar sakta hai.</div>
-          <div class="phase-duration">Duration: 2 – 7 years (genetics pe depend)</div>
-        </div>
+    <div class="cycle-grid">
+      <div class="phase-card p1">
+        <div class="phase-bar"></div>
+        <div class="phase-label">Phase 01</div>
+        <div class="phase-name">Anagen <em>Active Growth</em></div>
+        <div class="phase-pct">85%</div>
+        <div class="phase-desc">The follicle is actively producing hair. Root cells divide rapidly, pushing the strand longer. The only phase where real growth occurs.</div>
+        <span class="phase-dur">2 – 7 years</span>
       </div>
-      <div class="phase-item">
-        <div class="phase-badge" style="background:#7A9070;">
-          <div class="pb-name">Phase 2</div>
-          <div class="pb-icon">⏸️</div>
-          <div class="pb-pct">1–2%</div>
-        </div>
-        <div class="phase-body">
-          <div class="phase-title">Catagen — Transition Phase</div>
-          <div class="phase-desc">Hair growth ruk jaati hai. Follicle shrink hoti hai aur hair shaft se disconnect hone lagti hai. Yeh ek short transitional period hai.</div>
-          <div class="phase-duration">Duration: 2 – 3 weeks</div>
-        </div>
+      <div class="phase-card p2">
+        <div class="phase-bar"></div>
+        <div class="phase-label">Phase 02</div>
+        <div class="phase-name">Catagen <em>Transition</em></div>
+        <div class="phase-pct">2%</div>
+        <div class="phase-desc">The follicle shrinks, detaches from its blood supply, and prepares to shed. Growth stops completely here.</div>
+        <span class="phase-dur">2 – 3 weeks</span>
       </div>
-      <div class="phase-item">
-        <div class="phase-badge" style="background:#A08060;">
-          <div class="pb-name">Phase 3</div>
-          <div class="pb-icon">😴</div>
-          <div class="pb-pct">10–15%</div>
-        </div>
-        <div class="phase-body">
-          <div class="phase-title">Telogen — Rest Phase</div>
-          <div class="phase-desc">Hair resting state mein hai — follicle dormant. Naya hair neeche se grow hone lagta hai. Yeh phase ke end mein purana hair naturally shed hota hai.</div>
-          <div class="phase-duration">Duration: 3 – 4 months</div>
-        </div>
+      <div class="phase-card p3">
+        <div class="phase-bar"></div>
+        <div class="phase-label">Phase 03</div>
+        <div class="phase-name">Telogen <em>Resting</em></div>
+        <div class="phase-pct">13%</div>
+        <div class="phase-desc">The follicle rests. The old hair holds loosely at the scalp while a new strand quietly begins forming beneath it.</div>
+        <span class="phase-dur">3 – 4 months</span>
       </div>
-      <div class="phase-item">
-        <div class="phase-badge" style="background:#606870;">
-          <div class="pb-name">Phase 4</div>
-          <div class="pb-icon">🍂</div>
-          <div class="pb-pct">Shedding</div>
-        </div>
-        <div class="phase-body">
-          <div class="phase-title">Exogen — Shedding Phase</div>
-          <div class="phase-desc">Telogen hair actively scalp se detach hota hai — yahi woh baal hain jo comb mein dikhte hain. Naya anagen hair isi follicle se ugna shuru karta hai.</div>
-          <div class="phase-duration">Normal: 50–100 baal per day shed hote hain is phase mein</div>
-        </div>
+      <div class="phase-card p4">
+        <div class="phase-bar"></div>
+        <div class="phase-label">Phase 04</div>
+        <div class="phase-name">Exogen <em>Shedding</em></div>
+        <div class="phase-pct">—</div>
+        <div class="phase-desc">The old strand sheds as the new hair pushes through. The hair you see on your brush. A sign the cycle is working correctly.</div>
+        <span class="phase-dur">Days to weeks</span>
       </div>
     </div>
   </section>
 
-  <!-- CAUSES -->
-  <section>
-    <h2>Hair Fall Ke Common Causes</h2>
-    <p>Har patient mein cause alag hota hai — isliye treatment bhi alag hogi. Yeh sabse common reasons hain:</p>
+  <section class="section">
+    <div class="section-num">3</div>
+    <h2>What Is Actually Normal?</h2>
+    <p>Before counting every hair on your pillow, here's the number every dermatologist will cite first:</p>
 
-    <div class="causes-grid">
-      <div class="cause-card">
-        <div class="cc-emoji">🧬</div>
-        <div class="cc-name">Genetic / Androgenetic</div>
-        <div class="cc-desc">Male-pattern ya female-pattern hair loss. DHT hormone follicles ko miniaturize karta hai. Alag treatment approach chahiye.</div>
+    <div class="range-block">
+      <div>
+        <div class="range-num">50</div>
+        <div class="range-label">strands / day</div>
       </div>
-      <div class="cause-card">
-        <div class="cc-emoji">😰</div>
-        <div class="cc-name">Physical / Mental Stress</div>
-        <div class="cc-desc">Telogen effluvium — stress ke 2-3 mahine baad sudden shedding. Illness, surgery, ya major life events ke baad common.</div>
-      </div>
-      <div class="cause-card">
-        <div class="cc-emoji">🩸</div>
-        <div class="cc-name">Nutritional Deficiency</div>
-        <div class="cc-desc">Iron (ferritin), Vitamin D, B12, Zinc, Protein — inki deficiency directly hair growth cycle disrupt karti hai.</div>
-      </div>
-      <div class="cause-card">
-        <div class="cc-emoji">⚖️</div>
-        <div class="cc-name">Hormonal Changes</div>
-        <div class="cc-desc">PCOS, thyroid (hypo/hyper), post-pregnancy, menopause — yeh sab hair cycle ko significantly affect karte hain.</div>
-      </div>
-      <div class="cause-card">
-        <div class="cc-emoji">🤒</div>
-        <div class="cc-name">Post-Illness Shedding</div>
-        <div class="cc-desc">COVID-19, dengue, typhoid ke baad 2-3 mahine mein sudden hair fall — yeh temporary telogen effluvium hota hai, regrows naturally.</div>
-      </div>
-      <div class="cause-card">
-        <div class="cc-emoji">🔬</div>
-        <div class="cc-name">Scalp Conditions</div>
-        <div class="cc-desc">Dandruff (seborrheic dermatitis), psoriasis, alopecia areata — scalp inflammation follicles ko damage karti hai.</div>
+      <div class="range-sep">—</div>
+      <div>
+        <div class="range-num">100</div>
+        <div class="range-label">strands / day</div>
       </div>
     </div>
+
+    <p>With roughly 100,000 hairs on your scalp, losing 50–100 per day is less than 0.1%. This is entirely normal Exogen shedding — the old making way for the new.</p>
+    <p>What matters more than the number is the <em>trend</em>. A sudden increase, a visibly thinning crown, or a wider part line — those are the signals worth acting on.</p>
   </section>
 
-  <!-- LIFESTYLE FACTORS -->
-  <section>
-    <h2>Lifestyle Factors Jo Matter Karte Hain</h2>
+  <section class="section">
+    <div class="section-num">4</div>
+    <h2>What Breaks the Cycle</h2>
+    <p>When too many follicles enter the resting phase at once, or the growth phase shortens significantly, visible thinning follows. These are the six most common triggers:</p>
 
-    <div class="lifestyle-list">
-      <div class="lf-item">
-        <div class="lf-icon">😴</div>
-        <div class="lf-body">
-          <div class="lf-title">Sleep Quality</div>
-          <div class="lf-desc">Growth hormone sleep mein release hota hai — follicle repair raat ko hoti hai. Chronic sleep deprivation hair quality aur growth rate dono ko impact karta hai.</div>
+    <div class="cause-list">
+      <div class="cause-item">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <h3>Nutritional Deficiency</h3>
+          <p>Iron, ferritin, Vitamin D, B12, and zinc are the most common culprits in Indian patients. The hair follicle is one of the body's most metabolically active structures — it needs consistent fuel. Crash diets and restrictive eating are classic triggers.</p>
         </div>
       </div>
-      <div class="lf-item">
-        <div class="lf-icon">🥗</div>
-        <div class="lf-body">
-          <div class="lf-title">Protein Intake</div>
-          <div class="lf-desc">Hair keratin — protein se bana hota hai. Low-protein diet (especially crash diets) mein 2-3 mahine baad significant shedding hoti hai.</div>
+      <div class="cause-item">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <h3>Hormonal Imbalance</h3>
+          <p>DHT (Dihydrotestosterone) is the primary driver of androgenetic alopecia — the most common type of hair loss in both men and women. Thyroid disorders and PCOS are also frequent underlying causes that are frequently diagnosed late.</p>
         </div>
       </div>
-      <div class="lf-item">
-        <div class="lf-icon">🔥</div>
-        <div class="lf-body">
-          <div class="lf-title">Heat Styling</div>
-          <div class="lf-desc">Daily blow-dry, straightening, curling — heat hair shaft weaken karta hai aur breakage badhti hai. Yeh hair fall nahi hai — breakage hai. Lekin result wahi dikhta hai.</div>
+      <div class="cause-item">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <h3>Telogen Effluvium</h3>
+          <p>A sudden body shock — illness, surgery, childbirth, severe stress, rapid weight loss — pushes large numbers of follicles into the resting phase at once. The shedding appears 2–4 months later, which is why patients often cannot trace it back to the original cause.</p>
         </div>
       </div>
-      <div class="lf-item">
-        <div class="lf-icon">💊</div>
-        <div class="lf-body">
-          <div class="lf-title">Medications</div>
-          <div class="lf-desc">Blood thinners, antidepressants, certain BP medications, high-dose Vitamin A — yeh sab hair shedding ka side effect de sakte hain.</div>
+      <div class="cause-item">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <h3>Scalp Inflammation</h3>
+          <p>Chronic dandruff, seborrheic dermatitis, psoriasis, or a blocked scalp environment creates persistent inflammation around the follicle. That inflammation shortens the Anagen phase — producing progressively finer, weaker strands until they stop growing altogether.</p>
         </div>
       </div>
-      <div class="lf-item">
-        <div class="lf-icon">🧴</div>
-        <div class="lf-body">
-          <div class="lf-title">Tight Hairstyles</div>
-          <div class="lf-desc">Tight ponytails, braids, buns — traction alopecia create karte hain jahan hairline aur temples se permanent follicle damage ho sakti hai.</div>
+      <div class="cause-item">
+        <div class="cause-num">05</div>
+        <div class="cause-body">
+          <h3>Mechanical Damage</h3>
+          <p>Tight hairstyles (traction alopecia), chemical treatments, excessive heat, and aggressive brushing cause physical trauma to both the shaft and the follicle. Sustained traction can permanently scar the follicle over time.</p>
+        </div>
+      </div>
+      <div class="cause-item">
+        <div class="cause-num">06</div>
+        <div class="cause-body">
+          <h3>Medications & Autoimmune Conditions</h3>
+          <p>Blood thinners, certain antidepressants, and chemotherapy are known to disrupt the cycle. Alopecia Areata — where the immune system attacks follicles — produces patchy loss and requires specialist management.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MYTHS -->
-  <section>
-    <h2>Hair Fall Myths — Jo Avoid Karein</h2>
+  <section class="section">
+    <div class="section-num">5</div>
+    <h2>Normal Shedding vs. Real Hair Loss</h2>
+    <p>The distinction matters. One requires lifestyle changes; the other requires a dermatologist.</p>
 
-    <div class="myth-list">
-      <div class="myth-item">
-        <div class="mi-myth">Zyada champi (oiling) se hair fall rukta hai</div>
-        <div class="mi-fact">Oil scalp hair fall cause nahi karta, na rokta hai. Follicle issues andar se hote hain — oil sirf surface pe hota hai.</div>
+    <div class="signal-grid">
+      <div class="signal-card ok">
+        <span class="signal-tag">Usually Normal</span>
+        <div class="sig-item">50–100 strands per day</div>
+        <div class="sig-item">Hair on pillow or brush</div>
+        <div class="sig-item">Seasonal increase (Oct–Nov)</div>
+        <div class="sig-item">Post-partum shedding at 3–6 months</div>
+        <div class="sig-item">Even distribution across scalp</div>
       </div>
-      <div class="myth-item">
-        <div class="mi-myth">Baal zyada wash karne se fall hote hain</div>
-        <div class="mi-fact">Washing sirf shed hone wale baalo ko nikaalta hai jo vaise bhi girne the. Daily washing hair fall ka cause nahi hai.</div>
-      </div>
-      <div class="myth-item">
-        <div class="mi-myth">Biotin supplement se hair fall rukta hai</div>
-        <div class="mi-fact">Sirf agar genuine biotin deficiency ho (rare hai) tabhi kaam karta hai. Most hair fall ka biotin se koi connection nahi.</div>
-      </div>
-      <div class="myth-item">
-        <div class="mi-myth">Yeh temporary hai, khud theek ho jaayega</div>
-        <div class="mi-fact">Kuch types (telogen effluvium) temporary hote hain, kuch (androgenetic) progressive hote hain. Without diagnosis — aap guess kar rahe hain.</div>
+      <div class="signal-card alarm">
+        <span class="signal-tag">See a Doctor</span>
+        <div class="sig-item">Visible scalp through hair</div>
+        <div class="sig-item">Receding hairline</div>
+        <div class="sig-item">Widening part line</div>
+        <div class="sig-item">Patchy bald spots</div>
+        <div class="sig-item">Shedding for 3+ months</div>
       </div>
     </div>
   </section>
 
-  <!-- WHEN TO SEE DERM -->
-  <section>
-    <h2>Kab Dermatologist Ke Paas Jaayein?</h2>
-    <ul class="derm-list">
-      <li>3 mahine se zyada heavy shedding chal rahi hai</li>
-      <li>Scalp par patches — circular bald spots (alopecia areata possible)</li>
-      <li>Hairline recede ho rahi hai ya temples patla ho rahe hain</li>
-      <li>Ponytail diameter noticeably reduce ho gayi hai</li>
-      <li>Scalp par itching, scaling, ya redness ke saath hair fall</li>
-      <li>Post-pregnancy 6 mahine ke baad bhi fall nahi ruka</li>
-      <li>Family history hai — early treatment better outcomes deta hai</li>
+  <section class="section">
+    <div class="section-num">6</div>
+    <h2>Myths Worth Unlearning</h2>
+
+    <div class="myth-stack">
+      <div class="myth-block">
+        <div class="myth-side is-myth">Daily oiling promotes hair growth.</div>
+        <div class="myth-side is-fact">Hair growth occurs deep inside the follicle — oil cannot penetrate to that depth. Heavy oiling can block follicle openings and worsen scalp conditions. Scalp massage (not the oil itself) is what improves blood circulation.</div>
+      </div>
+      <div class="myth-block">
+        <div class="myth-side is-myth">Changing your shampoo will stop hair fall.</div>
+        <div class="myth-side is-fact">Shampoo cleans the scalp surface. Hair loss is driven by internal factors — hormones, nutrition, the growth cycle. No shampoo can reverse a disrupted biological cycle.</div>
+      </div>
+      <div class="myth-block">
+        <div class="myth-side is-myth">Cutting hair makes it grow back thicker.</div>
+        <div class="myth-side is-fact">Hair thickness is determined entirely by the follicle — not the blade. Cutting removes the tapered tip of the strand, making the cut end look blunter. The root is completely unaffected.</div>
+      </div>
+      <div class="myth-block">
+        <div class="myth-side is-myth">Biotin supplements cure hair loss.</div>
+        <div class="myth-side is-fact">Biotin helps only in cases of genuine biotin deficiency — which is rare. Most people who supplement already have adequate levels. The root cause of hair loss is almost never biotin.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">7</div>
+    <h2>When to See a Dermatologist</h2>
+    <p>A proper hair loss evaluation looks beyond what's falling — it examines the follicle, the scalp environment, and your bloodwork together. Book a consultation if you notice:</p>
+
+    <ul class="visit-list">
+      <li>Hair loss persisting beyond 3 months without a clear trigger</li>
+      <li>Visible thinning at the crown, temples, or along the part line</li>
+      <li>Sudden patchy loss (could indicate Alopecia Areata)</li>
+      <li>Scalp itching, burning, or flaking alongside hair fall</li>
+      <li>Family history of baldness with early signs of recession</li>
+      <li>Significant hair fall following illness, surgery, or extreme stress</li>
     </ul>
 
-    <div class="dark-banner">
-      <strong>Sabse important:</strong> Hair fall ka cause identify kiye bina treatment start karna — guessing hai. Blood tests (ferritin, thyroid, Vitamin D, CBC) + scalp examination = <strong>accurate diagnosis → sahi treatment.</strong>
+    <div class="pull-quote">
+      <p>"Early intervention consistently yields better results. Waiting six months to 'see if it settles' usually means treating a more advanced stage."</p>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section>
-    <h2>Skin Ethics Clinic — Consult Dr Pallavi</h2>
-    <p>Hair fall diagnosis ke liye proper scalp examination aur blood work zaroori hai. Appointment ke liye:</p>
+  <section class="section">
+    <h2>Book a Scalp & Hair Consultation</h2>
+    <p>Trichoscopy and targeted bloodwork can pinpoint exactly which phase of your cycle is breaking down — and what will actually work for your type of hair loss.</p>
     <div class="contact-grid">
-      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Get Directions</a>
+      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Directions</a>
       <a class="contact-cell" href="tel:+919028291234">📞 +91 90282 91234</a>
-      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📸 @drpallaviahireshelke</a>
+      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📷 Instagram</a>
       <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
     </div>
   </section>
 
-  <div class="share-wrap">
-    <button class="share-btn" onclick="shareGuide()">📤 Share This Guide</button>
+  <div class="share-section">
+    <button class="share-btn" onclick="shareGuide()">↗ Share This Guide</button>
   </div>
 
   <footer class="guide-footer">
-    <p><strong style="color:var(--lt-accent)">Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br>
-    <a href="tel:+919028291234">+91 90282 91234</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a></p>
-    <p style="margin-top:10px">Educational purposes only. Does not replace medical consultation.</p>
+    <strong>Dr Pallavi Ahireshelke</strong><br>
+    Skin Ethics Clinic, Pune<br>
+    <a href="tel:+919028291234">+91 90282 91234</a> &nbsp;·&nbsp;
+    <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a><br>
+    <span style="margin-top:8px;display:block">For educational purposes only. Does not replace a medical consultation.</span>
   </footer>
 </div>
 
 <div class="float-cta">
-  <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
-  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+  <a class="cta-primary" href="https://wa.me/919028291234" target="_blank">Book a Consultation</a>
+  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">WhatsApp</a>
 </div>
 
 <script>
   function shareGuide() {
     const url = window.location.href;
-    if (navigator.share) { navigator.share({ title: 'Hair Fall Handbook', url }).catch(()=>{}); }
-    else { navigator.clipboard.writeText(url).then(()=>alert('Link copied!')).catch(()=>{}); }
+    if (navigator.share) { navigator.share({ title: 'Why Does Hair Fall Out? — Dr Pallavi', url }).catch(() => {}); }
+    else { navigator.clipboard.writeText(url).then(() => alert('Link copied!')).catch(() => {}); }
   }
 </script>
 </body>

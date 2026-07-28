@@ -3,103 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Microneedling Guide | Dr Pallavi Ahireshelke</title>
-  <meta name="description" content="Is microneedling science or trend? Building crack analogy, collagen formation, recovery timeline, ideal candidates, misconceptions. Dr Pallavi Ahireshelke, Skin Ethics Clinic Pune." />
-  <meta property="og:title" content="Microneedling Guide — Science, Not Just a Trend" />
-  <meta property="og:description" content="Tiny controlled injuries → body's repair signal → new collagen. Building crack analogy se samjhein microneedling science. Comment MICRONEEDLING for Dr Pallavi's guide." />
+  <title>The Microneedling Guide | Dr Pallavi Ahireshelke</title>
+  <meta name="description" content="How microneedling works, what happens to your skin in the 72 hours after a session, which concerns it addresses, and what separates a good result from a bad one. Dr Pallavi Ahireshelke, Skin Ethics Pune." />
+  <meta property="og:title" content="The Microneedling Guide — What Actually Happens to Your Skin" />
+  <meta property="og:description" content="Controlled injury. Collagen cascade. Skin repair. Dr Pallavi explains exactly what microneedling does — and what it doesn't." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --dark:      #1A0F08;
-      --accent:    #A05820;
-      --lt-accent: #D09060;
-      --sage-bg:   #FAF4EE;
-      --border:    #E8D0B0;
-      --text:      #281808;
-      --muted:     #805030;
+      --ink:      #160E06;
+      --accent:   #9A5820;
+      --lt:       #C89060;
+      --muted:    #7A5030;
+      --page-bg:  #FAF7F3;
+      --card:     #FFFFFF;
+      --border:   #E8D8C0;
+      --rule:     #F2EAE0;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Lora', Georgia, serif; background: #F5EDE5; color: var(--text); font-size: 16px; line-height: 1.75; }
-    .page-wrap { max-width: 480px; margin: 0 auto; background: #fff; }
+    body { font-family: 'Lora', Georgia, serif; background: var(--page-bg); color: var(--ink); font-size: 16px; line-height: 1.8; }
+    .page-wrap { max-width: 480px; margin: 0 auto; background: var(--card); }
 
-    .guide-header { background: var(--dark); background-image: radial-gradient(ellipse at 75% 20%, rgba(160,88,32,0.65) 0%, transparent 58%); padding: 52px 24px 40px; text-align: center; }
-    .clinic-tag { display: inline-block; font-size: 10px; font-style: italic; letter-spacing: 1.8px; color: var(--lt-accent); opacity: 0.8; margin-bottom: 14px; text-transform: uppercase; }
-    .guide-header h1 { font-family: 'Playfair Display', serif; font-size: 27px; line-height: 1.25; color: #fff; margin-bottom: 12px; }
-    .guide-header .subtitle { font-size: 13.5px; color: rgba(255,255,255,0.72); font-style: italic; max-width: 340px; margin: 0 auto 20px; }
-    .trigger-pill { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-style: italic; letter-spacing: 1.2px; padding: 5px 16px; border-radius: 20px; }
+    /* HEADER */
+    .guide-header {
+      background: var(--ink);
+      background-image: radial-gradient(ellipse at 80% 0%, rgba(154,88,32,0.5) 0%, transparent 55%), radial-gradient(ellipse at 5% 90%, rgba(154,88,32,0.15) 0%, transparent 50%);
+      padding: 56px 28px 48px;
+    }
+    .clinic-tag { font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--lt); opacity: 0.7; margin-bottom: 20px; }
+    .guide-header h1 { font-family: 'Playfair Display', serif; font-size: 29px; line-height: 1.22; color: #fff; margin-bottom: 14px; font-weight: 700; }
+    .deck { font-size: 14px; color: rgba(255,255,255,0.58); font-style: italic; line-height: 1.75; margin-bottom: 28px; }
+    .trigger-pill { display: inline-block; border: 1px solid rgba(200,144,96,0.45); color: var(--lt); font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 1.2px; padding: 6px 18px; border-radius: 20px; }
 
-    section { padding: 30px 20px; border-bottom: 1px solid var(--border); }
-    h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--dark); margin-bottom: 14px; line-height: 1.3; }
-    p { margin-bottom: 14px; color: var(--text); }
+    /* SECTIONS */
+    .section { padding: 40px 28px; border-bottom: 1px solid var(--rule); position: relative; overflow: hidden; }
+    .section-num { font-family: 'Playfair Display', serif; font-size: 80px; font-weight: 700; color: var(--accent); opacity: 0.05; position: absolute; top: 20px; right: 18px; line-height: 1; user-select: none; pointer-events: none; }
+    h2 { font-family: 'Playfair Display', serif; font-size: 21px; color: var(--ink); line-height: 1.28; margin-bottom: 16px; font-weight: 700; }
+    h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--ink); margin-bottom: 6px; font-weight: 600; }
+    p { font-size: 15px; color: #2C1C0C; line-height: 1.85; margin-bottom: 16px; }
     p:last-child { margin-bottom: 0; }
 
-    .dark-banner { background: var(--dark); border-left: 4px solid var(--accent); border-radius: 8px; padding: 18px 20px; margin: 20px 0; color: rgba(255,255,255,0.9); font-style: italic; font-size: 14.5px; line-height: 1.65; }
-    .dark-banner strong { color: var(--lt-accent); font-style: normal; }
+    .pull-quote { border-left: 3px solid var(--accent); padding: 14px 20px; margin: 24px 0; background: #FAF3EB; border-radius: 0 8px 8px 0; }
+    .pull-quote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 15.5px; color: var(--accent); margin: 0; line-height: 1.65; }
 
-    /* BUILDING CRACK VISUAL */
-    .building-visual { background: var(--sage-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .building-wall { background: #C8B89A; border-radius: 8px; padding: 16px; position: relative; min-height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
-    .crack-line { position: absolute; top: 10px; left: 50%; width: 3px; height: 60px; background: linear-gradient(to bottom, transparent, #555, transparent); transform: rotate(8deg); border-radius: 2px; }
-    .building-wall .bw-emoji { font-size: 32px; }
-    .repair-arrow { text-align: center; font-size: 20px; margin: 6px 0; color: var(--accent); }
-    .repair-result { background: #D4E8C8; border-radius: 8px; padding: 12px; text-align: center; }
-    .repair-result .rr-text { font-size: 13px; color: #204010; font-style: italic; }
+    /* BUILDING ANALOGY */
+    .building-visual { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; margin: 24px 0; }
+    .building-card { border: 1px solid var(--border); border-radius: 12px; padding: 18px 14px; text-align: center; background: var(--card); }
+    .building-card .bc-icon { font-size: 36px; margin-bottom: 10px; }
+    .building-card .bc-label { font-family: 'Inter', sans-serif; font-size: 9.5px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .building-card .bc-title { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--ink); }
+    .building-arrow { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--border); text-align: center; }
 
-    /* HOW IT WORKS */
-    .mechanism-steps { margin: 18px 0; }
-    .ms-item { display: flex; gap: 12px; padding: 13px 0; border-bottom: 1px dashed var(--border); align-items: flex-start; }
-    .ms-item:last-child { border-bottom: none; }
-    .ms-num { flex-shrink: 0; width: 30px; height: 30px; background: var(--accent); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; }
-    .ms-body { flex: 1; }
-    .ms-title { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--dark); margin-bottom: 3px; }
-    .ms-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+    /* MECHANISM STEPS */
+    .mechanism { margin: 24px 0; }
+    .mech-step { display: grid; grid-template-columns: 48px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+    .mech-step:last-child { border-bottom: none; }
+    .mech-icon-wrap { width: 48px; height: 48px; border-radius: 12px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .mech-icon { font-size: 22px; }
+    .mech-body h3 { margin-bottom: 5px; }
+    .mech-body p { font-size: 13.5px; margin: 0; color: var(--muted); }
 
-    /* SKIN CONCERNS */
-    .concerns-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
-    .concern-card { background: var(--sage-bg); border: 1px solid var(--border); border-top: 3px solid var(--accent); border-radius: 8px; padding: 13px 12px; }
-    .concern-card .cc-emoji { font-size: 22px; margin-bottom: 6px; }
-    .concern-card .cc-name { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 4px; }
-    .cc-badge-good { display: inline-block; background: #E8F4E8; color: #207040; font-size: 10px; padding: 1px 7px; border-radius: 8px; margin-bottom: 4px; }
-    .concern-card .cc-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
-
-    /* RECOVERY TIMELINE */
-    .recovery-track { margin: 18px 0; }
-    .rt-item { display: grid; grid-template-columns: 60px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); align-items: start; }
-    .rt-item:last-child { border-bottom: none; }
-    .rt-time { background: var(--accent); color: #fff; border-radius: 8px; padding: 8px 4px; text-align: center; }
-    .rt-time .tt-label { font-size: 10px; opacity: 0.75; }
-    .rt-time .tt-val { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; line-height: 1.2; }
+    /* HOUR-BY-HOUR RECOVERY */
+    .recovery-track { margin: 24px 0; position: relative; }
+    .recovery-track::before { content: ''; position: absolute; left: 22px; top: 0; bottom: 0; width: 1.5px; background: var(--border); }
+    .rt-item { display: grid; grid-template-columns: 46px 1fr; gap: 16px; padding: 14px 0; position: relative; }
+    .rt-marker { width: 46px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .rt-dot { width: 16px; height: 16px; border-radius: 50%; background: var(--accent); border: 3px solid var(--card); box-shadow: 0 0 0 1.5px var(--border); flex-shrink: 0; margin-top: 2px; }
+    .rt-dot.muted { background: var(--muted); }
+    .rt-dot.bright { background: #5A8040; }
     .rt-body { }
-    .rt-title { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--dark); margin-bottom: 3px; }
-    .rt-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+    .rt-time { font-family: 'Inter', sans-serif; font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+    .rt-time.muted-t { color: var(--muted); }
+    .rt-time.bright-t { color: #5A8040; }
+    .rt-body h3 { margin-bottom: 4px; }
+    .rt-body p { font-size: 13.5px; margin: 0; color: var(--muted); line-height: 1.65; }
 
-    /* MACHINE QUALITY NOTE */
-    .quality-note { background: var(--sage-bg); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin: 18px 0; }
-    .quality-note .qn-title { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); margin-bottom: 10px; }
-    .qn-list { list-style: none; }
-    .qn-list li { padding: 7px 0 7px 22px; position: relative; font-size: 13px; color: var(--text); border-bottom: 1px dashed var(--border); }
-    .qn-list li:last-child { border-bottom: none; }
-    .qn-list li::before { content: "⚠️"; position: absolute; left: 0; top: 8px; font-size: 12px; }
+    /* WHAT IT TREATS */
+    .treats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 24px 0; }
+    .treat-card { border: 1px solid var(--border); border-radius: 10px; padding: 16px 14px; background: var(--card); }
+    .treat-card .tc-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-bottom: 10px; }
+    .treat-card .tc-name { font-family: 'Playfair Display', serif; font-size: 13.5px; color: var(--ink); margin-bottom: 5px; }
+    .treat-card .tc-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
+    .treat-card .tc-badge { display: inline-block; margin-top: 8px; font-family: 'Inter', sans-serif; font-size: 10px; background: #FAF3EB; color: var(--accent); border-radius: 20px; padding: 2px 10px; border: 1px solid var(--border); }
 
-    /* AFTERCARE */
-    .aftercare-list { margin: 16px 0; list-style: none; }
-    .aftercare-list li { padding: 9px 0 9px 26px; position: relative; border-bottom: 1px dashed var(--border); font-size: 13.5px; }
-    .aftercare-list li:last-child { border-bottom: none; }
-    .aftercare-list li::before { content: "✅"; position: absolute; left: 0; top: 10px; font-size: 13px; }
+    /* MACHINE QUALITY */
+    .quality-block { background: var(--ink); border-radius: 12px; padding: 22px 20px; margin: 24px 0; }
+    .quality-label { font-family: 'Inter', sans-serif; font-size: 9.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--lt); margin-bottom: 12px; display: block; }
+    .quality-row { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08); align-items: flex-start; }
+    .quality-row:last-child { border-bottom: none; }
+    .quality-row .qr-label { font-family: 'Inter', sans-serif; font-size: 11px; color: rgba(255,255,255,0.4); width: 80px; flex-shrink: 0; padding-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .quality-row .qr-text { font-size: 13.5px; color: rgba(255,255,255,0.78); line-height: 1.6; }
+    .quality-row .qr-text strong { color: #fff; }
 
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 18px 0; }
-    .contact-cell { display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--sage-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; font-size: 12.5px; color: var(--dark); text-decoration: none; font-family: 'Lora', serif; text-align: center; }
+    /* DO / DON'T */
+    .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 24px 0; }
+    .dd-col { border-radius: 10px; padding: 16px 14px; }
+    .dd-col.dos { background: #F2F7EE; border: 1px solid #C8DCC0; }
+    .dd-col.donts { background: #FBF3F3; border: 1px solid #DEC0C0; }
+    .dd-tag { font-family: 'Inter', sans-serif; font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; display: block; }
+    .dd-col.dos .dd-tag { color: #3A6830; }
+    .dd-col.donts .dd-tag { color: #8A2020; }
+    .dd-item { font-size: 13px; padding: 6px 0; border-bottom: 1px dashed rgba(0,0,0,0.08); color: var(--ink); line-height: 1.5; }
+    .dd-item:last-child { border-bottom: none; }
 
-    .float-cta { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 99; width: calc(100% - 40px); max-width: 440px; }
-    .cta-book { flex: 1; background: var(--accent); color: #fff; text-align: center; padding: 13px 10px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; box-shadow: 0 4px 18px rgba(160,88,32,0.45); }
-    .cta-wa { background: #25D366; color: #fff; padding: 13px 16px; border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; text-decoration: none; white-space: nowrap; }
+    /* FAQ */
+    .faq-list { margin: 24px 0; }
+    .faq-item { border-bottom: 1px solid var(--rule); padding: 16px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-family: 'Playfair Display', serif; font-size: 14.5px; color: var(--ink); margin-bottom: 8px; font-weight: 600; }
+    .faq-a { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
 
-    .share-wrap { text-align: center; padding: 28px 20px 80px; }
-    .share-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #fff; border: none; border-radius: 10px; padding: 13px 28px; font-family: 'Lora', serif; font-size: 14px; cursor: pointer; }
-    .guide-footer { background: var(--dark); color: rgba(255,255,255,0.55); text-align: center; padding: 20px; font-size: 11.5px; line-height: 1.7; }
-    .guide-footer a { color: var(--lt-accent); text-decoration: none; }
+    /* CONTACT */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 20px 0; }
+    .contact-cell { display: flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--border); border-radius: 10px; padding: 13px 8px; font-family: 'Inter', sans-serif; font-size: 12.5px; color: var(--ink); text-decoration: none; background: var(--card); }
+
+    .share-section { padding: 36px 28px 100px; text-align: center; }
+    .share-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: #fff; border: none; border-radius: 10px; padding: 14px 32px; font-family: 'Inter', sans-serif; font-size: 13px; cursor: pointer; }
+
+    .guide-footer { background: var(--ink); color: rgba(255,255,255,0.45); text-align: center; padding: 24px 20px; font-family: 'Inter', sans-serif; font-size: 11.5px; line-height: 1.8; }
+    .guide-footer a { color: var(--lt); text-decoration: none; }
+    .guide-footer strong { color: rgba(255,255,255,0.75); }
+
+    .float-cta { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; display: flex; z-index: 99; }
+    .cta-primary { flex: 1; background: var(--accent); color: #fff; text-align: center; padding: 17px 12px; font-family: 'Inter', sans-serif; font-size: 13.5px; font-weight: 600; text-decoration: none; }
+    .cta-wa { background: #1FAD58; color: #fff; padding: 17px 22px; font-family: 'Inter', sans-serif; font-size: 13.5px; font-weight: 600; text-decoration: none; white-space: nowrap; border-left: 1px solid rgba(255,255,255,0.15); }
   </style>
 </head>
 <body>
@@ -107,223 +135,300 @@
 
   <header class="guide-header">
     <div class="clinic-tag">Skin Ethics Clinic · Pune</div>
-    <h1>Microneedling Guide</h1>
-    <p class="subtitle">Anti-ageing ka trend? Definitely Science — simplified</p>
+    <h1>The Microneedling Guide</h1>
+    <p class="deck">Controlled injury. Collagen cascade. Skin repair. Here's exactly what happens during — and in the weeks after — a microneedling session.</p>
     <span class="trigger-pill">Comment MICRONEEDLING to receive this guide</span>
   </header>
 
-  <!-- BUILDING CRACK ANALOGY -->
-  <section>
-    <h2>The Building Crack Analogy</h2>
-    <p>Hamari body repair karna bahut achhi tarah jaanti hai. Imagine ek building mein chhoti si crack aa gayi — builder turant workers bhejta hai aur fresh cement se repair ho jaati hai.</p>
+  <section class="section">
+    <div class="section-num">1</div>
+    <h2>Think of It Like Repairing a Cracked Wall</h2>
+    <p>When a building wall develops cracks, you don't just paint over them — the paint follows the crack and the problem remains. The right approach is to deliberately open the crack, allow the filler to bond at depth, and let the structure rebuild from inside out.</p>
 
     <div class="building-visual">
-      <div class="building-wall">
-        <div class="crack-line"></div>
-        <div class="bw-emoji">🏢</div>
+      <div class="building-card">
+        <div class="bc-icon">🏚️</div>
+        <div class="bc-label">Before</div>
+        <div class="bc-title">Cracks in the surface — collagen gaps beneath</div>
       </div>
-      <div class="repair-arrow">⬇️ Controlled micro-signal dete hain</div>
-      <div class="repair-result">
-        <div class="rr-text">🏗️ Body repair workers bhejti hai → Fresh collagen + elastin → Smoother, firmer skin</div>
+      <div class="building-arrow">→</div>
+      <div class="building-card">
+        <div class="bc-icon">🏛️</div>
+        <div class="bc-label">After</div>
+        <div class="bc-title">New collagen fills the structure from within</div>
       </div>
     </div>
 
-    <p>Microneedling bhi isi principle par kaam karti hai. <strong>Tiny sterile needles specific depth par controlled micro-channels banati hain</strong> — body ise repair signal samajh kar naya collagen aur elastin banana shuru karti hai.</p>
+    <p>Microneedling works on exactly this principle. Fine needles create thousands of microscopic channels in the skin's surface — each one triggering a localised wound-healing response. The body sends in repair signals, fibroblasts rush to the area, and collagen is deposited. New structure, built by your own skin.</p>
 
-    <div class="dark-banner">
-      <strong>Key difference:</strong> Yeh <em>uncontrolled</em> injury nahi hai — yeh <em>scientifically planned controlled healing process</em> hai. Random machine, random depth → nahi chalega. <strong>Qualified dermatologist + best quality machines = real results.</strong>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section>
-    <h2>Microneedling Kaise Kaam Karti Hai</h2>
-
-    <div class="mechanism-steps">
-      <div class="ms-item">
-        <div class="ms-num">1</div>
-        <div class="ms-body">
-          <div class="ms-title">Topical Anaesthetic Applied</div>
-          <div class="ms-desc">Procedure se 30-45 minute pehle numbing cream lagayi jaati hai — procedure comfortable rehta hai. Mild pressure sensation hoti hai, dard minimal.</div>
-        </div>
-      </div>
-      <div class="ms-item">
-        <div class="ms-num">2</div>
-        <div class="ms-body">
-          <div class="ms-title">Micro-Channels Created</div>
-          <div class="ms-desc">Medical-grade needles 0.5mm se 2.5mm depth tak (concern ke hisaab se) controlled micro-punctures create karte hain. Yeh punctures scar tissue nahi banate — heal karte hain.</div>
-        </div>
-      </div>
-      <div class="ms-item">
-        <div class="ms-num">3</div>
-        <div class="ms-body">
-          <div class="ms-title">Growth Factors Released</div>
-          <div class="ms-desc">Micro-injury signal pe platelet degranulation hota hai — PDGF, TGF-β, VEGF jaisi growth factors release hoti hain. Yeh fibroblasts ko activate karte hain.</div>
-        </div>
-      </div>
-      <div class="ms-item">
-        <div class="ms-num">4</div>
-        <div class="ms-body">
-          <div class="ms-title">New Collagen + Elastin Synthesis</div>
-          <div class="ms-desc">Activated fibroblasts Type I aur Type III collagen produce karte hain. Elastin fibers bhi remodel hoti hain — skin ki elasticity improve hoti hai.</div>
-        </div>
-      </div>
-      <div class="ms-item">
-        <div class="ms-num">5</div>
-        <div class="ms-body">
-          <div class="ms-title">Serum Absorption Enhanced</div>
-          <div class="ms-desc">Open micro-channels mein topically applied serums (Vitamin C, Hyaluronic acid, Growth factor serums) 80% deeper penetrate karte hain — dramatic efficacy boost.</div>
-        </div>
-      </div>
+    <div class="pull-quote">
+      <p>"We're not damaging the skin. We're creating precise, controlled micro-injuries that activate a repair cascade the skin already knows how to run."</p>
     </div>
   </section>
 
-  <!-- SKIN CONCERNS -->
-  <section>
-    <h2>Microneedling Kiske Liye Best Hai?</h2>
+  <section class="section">
+    <div class="section-num">2</div>
+    <h2>The 5-Step Mechanism</h2>
+    <p>Here's what's happening beneath the surface from the moment the device touches your skin:</p>
 
-    <div class="concerns-grid">
-      <div class="concern-card">
-        <div class="cc-emoji">🕳️</div>
-        <div class="cc-name">Acne Scars</div>
-        <div class="cc-badge-good">Excellent Results</div>
-        <div class="cc-desc">Atrophic scars (rolling, boxcar) mein collagen filling. 3-6 sessions mein significant improvement.</div>
+    <div class="mechanism">
+      <div class="mech-step">
+        <div class="mech-icon-wrap"><div class="mech-icon">📍</div></div>
+        <div class="mech-body">
+          <h3>Step 1 — Micro-Channel Creation</h3>
+          <p>Needles (0.5mm–2.5mm depending on the concern being treated) penetrate the epidermis and enter the upper dermis. Each puncture is a fraction of a millimetre wide — invisible to the naked eye, but enough to trigger a response.</p>
+        </div>
       </div>
-      <div class="concern-card">
-        <div class="cc-emoji">📏</div>
-        <div class="cc-name">Fine Lines & Wrinkles</div>
-        <div class="cc-badge-good">Very Effective</div>
-        <div class="cc-desc">Collagen induction perioral aur periorbital lines address karta hai. Gradual, natural result.</div>
+      <div class="mech-step">
+        <div class="mech-icon-wrap"><div class="mech-icon">🔴</div></div>
+        <div class="mech-body">
+          <h3>Step 2 — Inflammatory Signal Released</h3>
+          <p>The micro-injury triggers the release of growth factors — PDGF, TGF-β, VEGF. These act as SOS signals, summoning the repair crew. This is the temporary redness and warmth you feel immediately after the procedure.</p>
+        </div>
       </div>
-      <div class="concern-card">
-        <div class="cc-emoji">🔲</div>
-        <div class="cc-name">Enlarged Pores</div>
-        <div class="cc-badge-good">Good Response</div>
-        <div class="cc-desc">Collagen around pore opening tighten karta hai — pores visually smaller dikhte hain.</div>
+      <div class="mech-step">
+        <div class="mech-icon-wrap"><div class="mech-icon">🧬</div></div>
+        <div class="mech-body">
+          <h3>Step 3 — Fibroblast Activation</h3>
+          <p>Fibroblasts — the skin's collagen-producing cells — migrate to each micro-channel and begin synthesising new collagen and elastin. This process peaks around 5–7 days post-treatment and continues for months.</p>
+        </div>
       </div>
-      <div class="concern-card">
-        <div class="cc-emoji">🌔</div>
-        <div class="cc-name">Skin Texture</div>
-        <div class="cc-badge-good">Excellent</div>
-        <div class="cc-desc">Rough, uneven texture smooth hoti hai. Sebum control improved. Overall skin quality better.</div>
+      <div class="mech-step">
+        <div class="mech-icon-wrap"><div class="mech-icon">💉</div></div>
+        <div class="mech-body">
+          <h3>Step 4 — Transdermal Delivery Window</h3>
+          <p>The open micro-channels temporarily increase skin permeability by up to 10,000x. Any serum applied during or immediately after the procedure penetrates far deeper than topical application alone — this is why what's applied at this moment matters enormously.</p>
+        </div>
       </div>
-      <div class="concern-card">
-        <div class="cc-emoji">💧</div>
-        <div class="cc-name">Stretch Marks</div>
-        <div class="cc-badge-good">Moderate Response</div>
-        <div class="cc-desc">Older white stretch marks mein limited but visible improvement. Fresh red marks better respond karte hain.</div>
-      </div>
-      <div class="concern-card">
-        <div class="cc-emoji">💇‍♀️</div>
-        <div class="cc-name">Hair Loss (Scalp)</div>
-        <div class="cc-badge-good">With PRP Boost</div>
-        <div class="cc-desc">Scalp microneedling + PRP combination — follicle stimulation aur blood supply improvement.</div>
+      <div class="mech-step">
+        <div class="mech-icon-wrap"><div class="mech-icon">✨</div></div>
+        <div class="mech-body">
+          <h3>Step 5 — Collagen Remodelling</h3>
+          <p>Over the following 4–8 weeks, the newly deposited collagen matures and organises into a structured network. Texture improves, scars soften, and skin appears firmer. The full effect of a single session takes approximately 6–8 weeks to manifest.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- RECOVERY TIMELINE -->
-  <section>
-    <h2>Recovery Timeline</h2>
+  <section class="section">
+    <div class="section-num">3</div>
+    <h2>What to Expect — Hour by Hour</h2>
+    <p>Recovery from microneedling is predictable. Knowing the stages helps you plan around the procedure and avoid the mistakes that slow healing.</p>
 
     <div class="recovery-track">
       <div class="rt-item">
-        <div class="rt-time"><div class="tt-label">Day</div><div class="tt-val">0–1</div></div>
+        <div class="rt-marker"><div class="rt-dot"></div></div>
         <div class="rt-body">
-          <div class="rt-title">Immediately After</div>
-          <div class="rt-desc">Redness aur mild swelling — sunburn jaisa feel. Skin sensitive hoti hai. Gentle moisturiser aur SPF only. No active ingredients.</div>
+          <div class="rt-time">During the procedure</div>
+          <h3>Topical Anaesthetic Applied First</h3>
+          <p>Numbing cream is applied 30–45 minutes before the procedure. Most patients describe the sensation as a warm, scratchy feeling — not pain. The face is divided into zones and treated systematically.</p>
         </div>
       </div>
       <div class="rt-item">
-        <div class="rt-time"><div class="tt-label">Days</div><div class="tt-val">2–3</div></div>
+        <div class="rt-marker"><div class="rt-dot"></div></div>
         <div class="rt-body">
-          <div class="rt-title">Mild Peeling Possible</div>
-          <div class="rt-desc">Slight dryness aur flaking normal hai. Skin barrier repair ho rahi hai. Hydrating serum aur moisturiser. No makeup ideally.</div>
+          <div class="rt-time">0 – 4 hours after</div>
+          <h3>Redness & Warmth — Expected</h3>
+          <p>The skin looks like a mild to moderate sunburn. This is the inflammatory phase in action. A recovery serum (hyaluronic acid, growth factors, or PRP if added) is applied immediately to maximise the transdermal delivery window.</p>
         </div>
       </div>
       <div class="rt-item">
-        <div class="rt-time"><div class="tt-label">Days</div><div class="tt-val">4–7</div></div>
+        <div class="rt-marker"><div class="rt-dot muted"></div></div>
         <div class="rt-body">
-          <div class="rt-title">Skin Normalizes</div>
-          <div class="rt-desc">Redness fades. Skin feels slightly smoother. Normal routine resume possible — gentle actives reintroduce kar sakte hain.</div>
+          <div class="rt-time muted-t">Day 1 – 2</div>
+          <h3>Skin Feels Tight, Slightly Dry</h3>
+          <p>Redness begins fading. The skin may feel tight or sensitive to touch. Gentle cleanser and a plain moisturiser only — no actives (no retinol, AHAs, vitamin C). Strict sun avoidance during this window.</p>
         </div>
       </div>
       <div class="rt-item">
-        <div class="rt-time" style="background:#C08040;"><div class="tt-label">Weeks</div><div class="tt-val">3–4</div></div>
+        <div class="rt-marker"><div class="rt-dot muted"></div></div>
         <div class="rt-body">
-          <div class="rt-title">Results Visible</div>
-          <div class="rt-desc">Collagen synthesis peak pe — skin glow, texture improvement, pore reduction visible. Yeh woh "glow" hai jo patients report karte hain session ke baad.</div>
+          <div class="rt-time muted-t">Day 3 – 5</div>
+          <h3>Mild Flaking or Peeling</h3>
+          <p>Some patients experience light peeling as the micro-channels close and surface skin renews. This is not a sign of damage — it's the old epidermis shedding as the new layer forms beneath. Do not pick or exfoliate.</p>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-marker"><div class="rt-dot bright"></div></div>
+        <div class="rt-body">
+          <div class="rt-time bright-t">Day 7 onwards</div>
+          <h3>Skin Looks Refreshed</h3>
+          <p>The surface is clear. Most patients notice improved texture and a healthy glow at this point — this is the early collagen response. The deeper structural changes (scar improvement, firmness) continue building over the next 6–8 weeks.</p>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-marker"><div class="rt-dot bright"></div></div>
+        <div class="rt-body">
+          <div class="rt-time bright-t">Week 6 – 8</div>
+          <h3>Full Session Result Visible</h3>
+          <p>The collagen laid down in the weeks following the session has now matured. This is the right time to assess the result and schedule the next session if needed.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MACHINE QUALITY -->
-  <section>
-    <h2>Clinic aur Machine Quality Matter Karte Hain</h2>
-    <p>Microneedling trend ban gaya hai — beauty parlours se lekar mal clinics tak sab offer kar rahe hain. Lekin yeh medical procedure hai, not a beauty treatment:</p>
+  <section class="section">
+    <div class="section-num">4</div>
+    <h2>What Microneedling Treats</h2>
+    <p>The collagen-stimulation mechanism makes microneedling effective across a broad range of skin concerns — but the needle depth and serum used are adjusted for each:</p>
 
-    <div class="quality-note">
-      <div class="qn-title">⚠️ Non-Medical Settings Se Kya Risk Hai</div>
-      <ul class="qn-list">
-        <li>Non-sterile needles → infection, permanent scarring risk</li>
-        <li>Wrong depth setting → surface scratch ya overly deep injury</li>
-        <li>Unqualified operator → no assessment of skin suitability</li>
-        <li>Low-quality machines → inconsistent needle depth, uneven results</li>
-        <li>Active acne par microneedling → bacteria spread, severe flare</li>
-      </ul>
+    <div class="treats-grid">
+      <div class="treat-card">
+        <div class="tc-dot"></div>
+        <div class="tc-name">Acne Scars</div>
+        <div class="tc-desc">Boxcar and rolling scars respond best. Collagen fills the depressed areas over multiple sessions.</div>
+        <span class="tc-badge">4 – 6 sessions</span>
+      </div>
+      <div class="treat-card">
+        <div class="tc-dot"></div>
+        <div class="tc-name">Fine Lines & Wrinkles</div>
+        <div class="tc-desc">New collagen tightens and plumps fine lines. Particularly effective around eyes and mouth.</div>
+        <span class="tc-badge">3 – 4 sessions</span>
+      </div>
+      <div class="treat-card">
+        <div class="tc-dot"></div>
+        <div class="tc-name">Enlarged Pores</div>
+        <div class="tc-desc">Collagen deposition around pore walls gradually tightens their appearance.</div>
+        <span class="tc-badge">3 – 4 sessions</span>
+      </div>
+      <div class="treat-card">
+        <div class="tc-dot"></div>
+        <div class="tc-name">Skin Texture</div>
+        <div class="tc-desc">Uneven, rough, or dull skin becomes visibly smoother as collagen remodels the surface.</div>
+        <span class="tc-badge">2 – 3 sessions</span>
+      </div>
+      <div class="treat-card">
+        <div class="tc-dot"></div>
+        <div class="tc-name">Stretch Marks</div>
+        <div class="tc-desc">Effective for early stretch marks. Mature stretch marks require deeper settings and more sessions.</div>
+        <span class="tc-badge">6 – 8 sessions</span>
+      </div>
+      <div class="treat-card">
+        <div class="tc-dot"></div>
+        <div class="tc-name">Hair Loss (Scalp)</div>
+        <div class="tc-desc">Scalp microneedling with minoxidil or PRP improves follicle blood supply and absorption significantly.</div>
+        <span class="tc-badge">Monthly sessions</span>
+      </div>
     </div>
   </section>
 
-  <!-- AFTERCARE -->
-  <section>
-    <h2>Microneedling Aftercare — Important Rules</h2>
-    <ul class="aftercare-list">
-      <li>24-48 hours: no makeup, no active ingredients (acids, retinol, Vit C)</li>
-      <li>Gentle cleanser only — no scrubbing, no exfoliation</li>
-      <li>SPF 50+ mandatory — treated skin highly photosensitive</li>
-      <li>Swimming, steam, heavy gym: avoid 48-72 hours</li>
-      <li>Hyaluronic acid serum + moisturiser — skin heal hone mein help karta hai</li>
-      <li>Don't pick scabs or dry skin — let it shed naturally</li>
-      <li>Next session: minimum 3-4 weeks gap — collagen ko time chahiye</li>
-    </ul>
+  <section class="section">
+    <div class="section-num">5</div>
+    <h2>Why Machine Quality Matters More Than You Think</h2>
 
-    <div class="dark-banner">
-      <strong>Sessions ka spacing zaroori hai.</strong> Zyada frequent sessions collagen ko properly mature hone nahi dete. <strong>3-4 week gap mein 3-6 sessions</strong> — yeh standard protocol hai jisme best results milte hain.
+    <div class="quality-block">
+      <span class="quality-label">The Variable No One Talks About</span>
+      <div class="quality-row">
+        <div class="qr-label">Needle type</div>
+        <div class="qr-text"><strong>Solid needles</strong> create clean micro-channels. Hollow or stamping-type devices cause tearing rather than puncturing — more trauma, slower healing, inconsistent results.</div>
+      </div>
+      <div class="quality-row">
+        <div class="qr-label">Motor speed</div>
+        <div class="qr-text">Consistent oscillation speed ensures uniform needle depth across the entire treatment area. Variable speed = variable injury = patchy results.</div>
+      </div>
+      <div class="quality-row">
+        <div class="qr-label">Needle depth</div>
+        <div class="qr-text">Depth must be calibrated per zone — thinner skin around the eyes and lips requires shallower settings than the cheeks. A fixed-depth roller cannot achieve this.</div>
+      </div>
+      <div class="quality-row">
+        <div class="qr-label">Sterility</div>
+        <div class="qr-text"><strong>Single-use needle cartridges only.</strong> Reused cartridges carry infection risk and blunted needles cause tearing. Always confirm this before a procedure.</div>
+      </div>
+    </div>
+
+    <div class="pull-quote">
+      <p>"A home dermaroller and a clinic microneedling device are not the same thing. The difference in needle precision, speed control, and depth is why clinical results are so much more predictable."</p>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section>
-    <h2>Skin Ethics Clinic — Consult Dr Pallavi</h2>
-    <p>Microneedling candidacy, depth protocol, aur session planning ke liye:</p>
+  <section class="section">
+    <div class="section-num">6</div>
+    <h2>Aftercare — What to Do and What to Avoid</h2>
+
+    <div class="do-dont">
+      <div class="dd-col dos">
+        <span class="dd-tag">Do</span>
+        <div class="dd-item">Gentle cleanser twice daily</div>
+        <div class="dd-item">Plain hyaluronic acid serum</div>
+        <div class="dd-item">Rich, fragrance-free moisturiser</div>
+        <div class="dd-item">SPF 50 every morning</div>
+        <div class="dd-item">Sleep on a clean pillowcase</div>
+        <div class="dd-item">Stay well hydrated</div>
+      </div>
+      <div class="dd-col donts">
+        <span class="dd-tag">Avoid for 5–7 Days</span>
+        <div class="dd-item">Retinol / tretinoin</div>
+        <div class="dd-item">AHAs, BHAs, vitamin C</div>
+        <div class="dd-item">Makeup for 24–48 hrs</div>
+        <div class="dd-item">Swimming / gym / steam</div>
+        <div class="dd-item">Direct sun exposure</div>
+        <div class="dd-item">Picking or exfoliating</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">7</div>
+    <h2>Common Questions</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">How many sessions do I need?</div>
+        <div class="faq-a">For most concerns, a course of 3–6 sessions spaced 4 weeks apart produces the best results. Maintenance sessions every 3–6 months keep collagen levels elevated long-term.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is microneedling safe for Indian skin?</div>
+        <div class="faq-a">Yes — microneedling is one of the safer modalities for darker skin types because it does not use heat or light energy, significantly reducing the risk of post-inflammatory hyperpigmentation (PIH). Depth calibration and post-care sun protection are still essential.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What's the difference between microneedling and microneedling with PRP?</div>
+        <div class="faq-a">PRP (Platelet-Rich Plasma) is drawn from your own blood, concentrated, and applied to the skin immediately after needling — when the channels are open. The growth factors in PRP amplify the collagen response. Results are faster and more pronounced, particularly for hair loss and acne scars.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How soon can I wear makeup?</div>
+        <div class="faq-a">Wait 24–48 hours minimum. The micro-channels are open for roughly 24 hours — applying makeup before they close introduces bacteria and pigment directly into the dermis, which can cause infection or granulomas.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I do this at home with a dermaroller?</div>
+        <div class="faq-a">Home dermarollers (0.2–0.3mm) can improve serum absorption with consistent use, but they do not produce the collagen response of a clinical procedure. Anything deeper than 0.5mm at home carries infection and scarring risk without professional calibration.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Book a Microneedling Consultation</h2>
+    <p>The right needle depth, the right serum, the right aftercare protocol — each detail shapes the result. A clinical assessment ensures your treatment is calibrated to your specific skin concern.</p>
     <div class="contact-grid">
-      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Get Directions</a>
+      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Directions</a>
       <a class="contact-cell" href="tel:+919028291234">📞 +91 90282 91234</a>
-      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📸 @drpallaviahireshelke</a>
+      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📷 Instagram</a>
       <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
     </div>
   </section>
 
-  <div class="share-wrap">
-    <button class="share-btn" onclick="shareGuide()">📤 Share This Guide</button>
+  <div class="share-section">
+    <button class="share-btn" onclick="shareGuide()">↗ Share This Guide</button>
   </div>
+
   <footer class="guide-footer">
-    <p><strong style="color:var(--lt-accent)">Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br>
-    <a href="tel:+919028291234">+91 90282 91234</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a></p>
-    <p style="margin-top:10px">Educational purposes only. Does not replace medical consultation.</p>
+    <strong>Dr Pallavi Ahireshelke</strong><br>
+    Skin Ethics Clinic, Pune<br>
+    <a href="tel:+919028291234">+91 90282 91234</a> &nbsp;·&nbsp;
+    <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a><br>
+    <span style="margin-top:8px;display:block">For educational purposes only. Does not replace a medical consultation.</span>
   </footer>
 </div>
 
 <div class="float-cta">
-  <a class="cta-book" href="https://wa.me/919028291234" target="_blank">📲 Book Consultation</a>
-  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+  <a class="cta-primary" href="https://wa.me/919028291234" target="_blank">Book a Consultation</a>
+  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">WhatsApp</a>
 </div>
+
 <script>
   function shareGuide() {
     const url = window.location.href;
-    if (navigator.share) { navigator.share({ title: 'Microneedling Guide', url }).catch(()=>{}); }
-    else { navigator.clipboard.writeText(url).then(()=>alert('Link copied!')).catch(()=>{}); }
+    if (navigator.share) { navigator.share({ title: 'The Microneedling Guide — Dr Pallavi', url }).catch(() => {}); }
+    else { navigator.clipboard.writeText(url).then(() => alert('Link copied!')).catch(() => {}); }
   }
 </script>
 </body>
