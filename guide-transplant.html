@@ -3,204 +3,872 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hair Transplant Guide | Dr Pallavi Ahireshelke</title>
-  <meta name="description" content="How hair transplants actually work — DHT resistance explained, FUE vs FUT, who is a good candidate, month-by-month recovery timeline, and the importance of hairline design." />
-  <meta property="og:title" content="The Hair Transplant Guide — From Donor to Growth" />
-  <meta property="og:type" content="website" />
+  <title>Hair Transplant Handbook · Dr. Pallavi Ahire-Shelke</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <style>
-    :root{--ink:#080F1A;--accent:#1E4880;--lt:#6090C8;--muted:#304870;--page-bg:#F5F7FA;--card:#FFFFFF;--border:#C8D8EC;--rule:#E4EDF8;}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:'Lora',Georgia,serif;background:var(--page-bg);color:var(--ink);font-size:16px;line-height:1.8;}
-    .page-wrap{max-width:480px;margin:0 auto;background:var(--card);}
-    .guide-header{background:var(--ink);background-image:radial-gradient(ellipse at 80% 0%,rgba(30,72,128,0.55) 0%,transparent 55%);padding:56px 28px 48px;}
-    .clinic-tag{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--lt);opacity:.7;margin-bottom:20px;}
-    .guide-header h1{font-family:'Playfair Display',serif;font-size:29px;line-height:1.22;color:#fff;margin-bottom:14px;font-weight:700;}
-    .deck{font-size:14px;color:rgba(255,255,255,.58);font-style:italic;line-height:1.75;margin-bottom:28px;}
-    .trigger-pill{display:inline-block;border:1px solid rgba(96,144,200,.45);color:var(--lt);font-family:'Inter',sans-serif;font-size:11px;letter-spacing:1.2px;padding:6px 18px;border-radius:20px;}
-    .section{padding:40px 28px;border-bottom:1px solid var(--rule);position:relative;overflow:hidden;}
-    .section-num{font-family:'Playfair Display',serif;font-size:80px;font-weight:700;color:var(--accent);opacity:.05;position:absolute;top:20px;right:18px;line-height:1;user-select:none;pointer-events:none;}
-    h2{font-family:'Playfair Display',serif;font-size:21px;color:var(--ink);line-height:1.28;margin-bottom:16px;font-weight:700;}
-    h3{font-family:'Playfair Display',serif;font-size:15px;color:var(--ink);margin-bottom:6px;font-weight:600;}
-    p{font-size:15px;color:#101828;line-height:1.85;margin-bottom:16px;}
-    p:last-child{margin-bottom:0;}
-    .pull-quote{border-left:3px solid var(--accent);padding:14px 20px;margin:24px 0;background:#EEF3FA;border-radius:0 8px 8px 0;}
-    .pull-quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:15.5px;color:var(--accent);margin:0;line-height:1.65;}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* GARDEN VISUAL */
-    .garden-visual{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin:24px 0;}
-    .garden-card{border:1px solid var(--border);border-radius:12px;padding:18px 14px;text-align:center;}
-    .gc-icon{font-size:34px;margin-bottom:8px;}
-    .gc-label{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
-    .gc-title{font-family:'Playfair Display',serif;font-size:13px;color:var(--ink);}
-    .garden-arrow{font-size:24px;color:var(--border);text-align:center;font-family:'Playfair Display',serif;}
+    :root {
+      --dark:     #2A1C14;
+      --bg:       #FAF7F4;
+      --white:    #FFFFFF;
+      --accent:   #8C5A3C;
+      --lt-accent:#D8B49A;
+      --sage-bg:  #F5EDE6;
+      --warn-bg:  #F2EFE9;
+      --border:   #E8D9CC;
+      --muted:    #8F7462;
+      --highlight:#F4E6DA;
+      --gold:     #5F7F4E;
+      --gold-bg:  #EEF3EA;
+      --low:      #B0564A;
+    }
 
-    /* TECHNIQUE COMPARE */
-    .technique-compare{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0;}
-    .tech-card{border:1px solid var(--border);border-radius:12px;padding:18px 14px;position:relative;overflow:hidden;}
-    .tech-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);}
-    .tech-tag{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
-    .tech-name{font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);margin-bottom:10px;font-weight:700;}
-    .tech-row{font-size:12.5px;color:var(--muted);padding:5px 0;border-bottom:1px dashed var(--rule);line-height:1.5;}
-    .tech-row:last-child{border-bottom:none;}
-    .tech-row strong{color:var(--ink);font-style:normal;display:block;font-size:11px;font-family:'Inter',sans-serif;letter-spacing:.5px;text-transform:uppercase;margin-bottom:2px;}
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Lora', serif;
+      background: var(--bg);
+      color: var(--dark);
+      font-size: 15px;
+      line-height: 1.75;
+    }
 
-    /* CANDIDATE LIST */
-    .candidate-list{margin:24px 0;}
-    .candidate-item{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--rule);font-size:14px;align-items:flex-start;}
-    .candidate-item:last-child{border-bottom:none;}
-    .candidate-icon{flex-shrink:0;font-size:16px;margin-top:2px;}
-    .candidate-text{line-height:1.6;}
+    .back-nav {
+      background: var(--bg);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      font-style: italic;
+    }
+    .back-nav a:hover { color: var(--accent); }
 
-    /* MONTH TIMELINE */
-    .month-timeline{margin:24px 0;position:relative;}
-    .month-timeline::before{content:'';position:absolute;left:22px;top:0;bottom:0;width:1.5px;background:var(--border);}
-    .mt-item{display:grid;grid-template-columns:46px 1fr;gap:14px;padding:14px 0;}
-    .mt-dot-wrap{display:flex;justify-content:center;}
-    .mt-dot{width:16px;height:16px;border-radius:50%;background:var(--accent);border:3px solid var(--card);box-shadow:0 0 0 1.5px var(--border);flex-shrink:0;margin-top:3px;}
-    .mt-time{font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
-    .mt-body h3{margin-bottom:4px;}
-    .mt-body p{font-size:13.5px;margin:0;color:var(--muted);line-height:1.65;}
+    /* HEADER */
+    .site-header {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 15%, rgba(140,90,60,0.55) 0%, transparent 55%),
+        radial-gradient(ellipse at 15% 85%, rgba(216,180,154,0.18) 0%, transparent 55%);
+      padding: 40px 20px 36px;
+      text-align: center;
+    }
+    .pill {
+      display: inline-block;
+      border: 1.5px solid var(--lt-accent);
+      background: var(--white);
+      color: var(--accent);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+    .site-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 7vw, 36px);
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    .site-header h1 em { font-style: italic; color: var(--lt-accent); }
+    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 330px; margin: 0 auto 16px; opacity: 0.9; }
+    .site-header .byline { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+    .site-header .philosophy { font-style: italic; color: var(--muted); font-size: 11px; }
+    .dots { margin: 16px 0 0; color: var(--lt-accent); letter-spacing: 8px; font-size: 10px; }
 
-    /* MYTHS */
-    .myth-stack{margin:24px 0;}
-    .myth-block{margin-bottom:12px;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
-    .myth-side{padding:12px 16px;font-size:13.5px;line-height:1.65;}
-    .myth-side.is-myth{background:#F5F8FD;color:#101828;}
-    .myth-side.is-myth::before{content:"MYTH  ";font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.8px;font-weight:600;color:#7080A0;}
-    .myth-side.is-fact{background:#EEF3FA;color:var(--muted);border-top:1px solid var(--border);}
-    .myth-side.is-fact::before{content:"FACT  ";font-family:'Inter',sans-serif;font-size:9.5px;letter-spacing:1.8px;font-weight:600;color:var(--accent);}
+    .wrapper { max-width: 480px; margin: 0 auto; padding: 0 16px; }
+    section { padding: 28px 0; }
 
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:20px 0;}
-    .contact-cell{display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--border);border-radius:10px;padding:13px 8px;font-family:'Inter',sans-serif;font-size:12.5px;color:var(--ink);text-decoration:none;background:var(--card);}
-    .share-section{padding:36px 28px 100px;text-align:center;}
-    .share-btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:none;border-radius:10px;padding:14px 32px;font-family:'Inter',sans-serif;font-size:13px;cursor:pointer;}
-    .guide-footer{background:var(--ink);color:rgba(255,255,255,.45);text-align:center;padding:24px 20px;font-family:'Inter',sans-serif;font-size:11.5px;line-height:1.8;}
-    .guide-footer a{color:var(--lt);text-decoration:none;}
-    .guide-footer strong{color:rgba(255,255,255,.75);}
-    .float-cta{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:flex;z-index:99;}
-    .cta-primary{flex:1;background:var(--accent);color:#fff;text-align:center;padding:17px 12px;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;text-decoration:none;}
-    .cta-wa{background:#1FAD58;color:#fff;padding:17px 22px;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;border-left:1px solid rgba(255,255,255,.15);}
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .section-intro { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+
+    /* CARDS */
+    .card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 20px;
+      margin-bottom: 16px;
+    }
+    .card-accent { border-left: 4px solid var(--accent); }
+    .card-warn { background: var(--warn-bg); border-left: 4px solid var(--dark); }
+    .card h2 { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--dark); margin-bottom: 12px; }
+    .card p  { font-size: 14px; margin-bottom: 10px; }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* QUOTE BANNER */
+    .quote-banner {
+      background: var(--sage-bg);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 20px 20px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .quote-banner blockquote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 17px;
+      color: var(--dark);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .quote-banner cite { font-size: 12px; color: var(--muted); }
+
+    /* INGREDIENT CARDS */
+    .concern-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 18px;
+      transition: border-color 0.2s;
+      scroll-margin-top: 16px;
+    }
+    .concern-card:hover { border-color: var(--accent); }
+    .concern-header {
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .concern-emoji {
+      font-size: 24px;
+      width: 44px;
+      height: 44px;
+      background: var(--sage-bg);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .concern-tag {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 3px;
+    }
+    .concern-title-block h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      color: var(--dark);
+      line-height: 1.25;
+    }
+    .concern-body { padding: 16px 20px; }
+
+    .for-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .for-pill {
+      background: var(--highlight);
+      border: 1px solid var(--lt-accent);
+      color: var(--accent);
+      font-size: 11px;
+      padding: 3px 11px;
+      border-radius: 999px;
+    }
+
+    .why-block {
+      background: var(--sage-bg);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+    .why-label, .look-label, .usage-label {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .why-label { color: var(--accent); }
+    .why-block p { font-size: 13px; color: var(--dark); margin: 0; }
+
+    .look-block {
+      border: 1.5px dashed var(--lt-accent);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+    }
+    .look-label { color: var(--accent); }
+    .look-block p { font-size: 13px; color: var(--dark); margin: 0; }
+
+    .usage-block {
+      background: var(--warn-bg);
+      border-left: 3px solid var(--gold);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .usage-label { color: var(--gold); margin-bottom: 6px; }
+    .usage-step {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      margin-bottom: 6px;
+      font-size: 13px;
+      color: var(--dark);
+    }
+    .usage-step:last-child { margin-bottom: 0; }
+    .step-dot {
+      width: 18px;
+      height: 18px;
+      background: var(--gold);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .usage-note {
+      background: var(--gold-bg);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: var(--gold);
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* DARK BANNER */
+    .dark-banner {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 10%, rgba(140,90,60,0.55) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 90%, rgba(216,180,154,0.12) 0%, transparent 55%);
+      border-radius: 18px;
+      padding: 28px 22px;
+      margin-bottom: 16px;
+    }
+    .dark-banner blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: 19px;
+      color: var(--white);
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+    .dark-banner p { font-size: 13px; color: var(--lt-accent); }
+
+    /* STAT CARDS */
+    .stat-grid { display: flex; flex-direction: column; gap: 14px; }
+    .stat-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-num {
+      position: absolute; top: 8px; right: 14px;
+      font-family: 'Playfair Display', serif;
+      font-size: 52px; color: var(--border); line-height: 1; pointer-events: none;
+    }
+    .stat-card h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); margin-bottom: 6px; padding-right: 40px; }
+    .stat-card p  { font-size: 13px; color: var(--muted); }
+
+    /* SIGNS LIST */
+    .signs-list { display: flex; flex-direction: column; gap: 8px; }
+    .sign-item {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 13px;
+    }
+    .sign-dot { color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* ROUTINE BLOCK */
+    .routine-block {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 14px;
+    }
+    .routine-block-header {
+      background: var(--sage-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px;
+    }
+    .routine-block-header .rh-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+    .routine-block-header h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); }
+    .routine-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .routine-item:last-child { border-bottom: none; }
+    .ri-dot {
+      width: 22px; height: 22px;
+      background: var(--dark); color: var(--white);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-family: 'Playfair Display', serif;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .ri-title { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); }
+    .ri-note  { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    /* PAIRING TABLE */
+    .ing-table { display: flex; flex-direction: column; gap: 10px; }
+    .ing-row {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex; gap: 12px; align-items: flex-start;
+    }
+    .ing-row .ir-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 13px; color: var(--dark);
+      min-width: 130px; flex-shrink: 0;
+    }
+    .ing-row .ir-desc { font-size: 12px; color: var(--muted); flex: 1; }
+    .ing-badge {
+      display: inline-block;
+      background: var(--highlight);
+      color: var(--accent);
+      font-size: 10px; padding: 2px 8px;
+      border-radius: 999px; border: 1px solid var(--lt-accent);
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .ing-badge.avoid { background: #FBF0EE; color: #C0504A; border-color: #E0B0AA; }
+    .ing-badge.limit { background: #FBF5E4; color: #B07830; border-color: #DDB870; }
+    @media (max-width: 420px) {
+      .ing-row { flex-wrap: wrap; }
+      .ing-row .ir-name { min-width: 0; flex: 1 1 auto; }
+      .ing-row .ir-desc { flex-basis: 100%; order: 3; }
+    }
+
+    /* DOS DONTS */
+    .dos-donts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 500px) { .dos-donts { grid-template-columns: 1fr; } }
+    .do-col, .dont-col { border-radius: 14px; overflow: hidden; }
+    .do-col .col-head {
+      background: var(--sage-bg); border-bottom: 2px solid var(--accent);
+      padding: 10px 14px;
+      font-family: 'Playfair Display', serif; font-size: 14px; color: var(--accent);
+    }
+    .dont-col .col-head {
+      background: var(--warn-bg); border-bottom: 2px solid var(--dark);
+      padding: 10px 14px;
+      font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark);
+    }
+    .do-item, .dont-item {
+      padding: 10px 14px; font-size: 13px;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+      display: flex; gap: 8px; align-items: flex-start;
+    }
+    .do-item:last-child, .dont-item:last-child { border-bottom: none; }
+    .do-item .chk  { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .dont-item .x  { color: var(--dark); font-weight: 700; flex-shrink: 0; }
+
+    /* CHECKLIST */
+    .checklist { display: flex; flex-direction: column; gap: 8px; }
+    .check-item {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      display: flex; gap: 10px; align-items: center;
+      font-size: 13px; color: var(--dark);
+    }
+    .check-item .check-box {
+      width: 18px; height: 18px;
+      border: 2px solid var(--border);
+      border-radius: 4px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; color: var(--accent);
+    }
+
+    /* PHILOSOPHY */
+    .philosophy-card {
+      background: var(--sage-bg);
+      border-radius: 16px; padding: 28px 22px; text-align: center;
+    }
+    .philosophy-card .small-label {
+      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 12px;
+    }
+    .philosophy-card h2 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--dark); margin-bottom: 14px; }
+    .philosophy-card p  { font-size: 14px; color: var(--dark); margin-bottom: 14px; }
+    .philosophy-card em { font-style: italic; color: var(--accent); }
+
+    /* ALT BEAUTY */
+    .alt-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 16px; }
+    .alt-card-header { background: var(--sage-bg); padding: 14px 18px; border-bottom: 1px solid var(--border); }
+    .alt-card-header .label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+    .alt-card-header h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); }
+    .alt-product-row {
+      display: flex; gap: 12px; align-items: center; padding: 14px 18px;
+      text-decoration: none; color: inherit; transition: background 0.15s;
+      border-bottom: 1px solid var(--border);
+    }
+    .alt-product-row:last-child { border-bottom: none; }
+    .alt-product-row:hover { background: var(--sage-bg); }
+    .alt-emoji { font-size: 26px; width: 42px; height: 42px; background: var(--sage-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .alt-info h4 { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 2px; }
+    .alt-info p  { font-size: 12px; color: var(--muted); }
+    .alt-info .link { font-size: 11px; color: var(--accent); font-style: italic; }
+
+    /* CONTACT */
+    .contact-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; overflow: hidden; }
+    .contact-header {
+      background: var(--dark);
+      background-image: radial-gradient(ellipse at 85% 15%, rgba(140,90,60,0.55) 0%, transparent 55%);
+      padding: 22px 20px; text-align: center;
+    }
+    .contact-header h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); margin-bottom: 4px; }
+    .contact-header .creds  { font-size: 11px; color: var(--lt-accent); margin-bottom: 6px; }
+    .contact-header .tagline { font-size: 12px; color: var(--muted); font-style: italic; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 400px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-cell {
+      padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border);
+      text-decoration: none; color: inherit; transition: background 0.15s;
+    }
+    .contact-cell:nth-child(even)       { border-right: none; }
+    .contact-cell:nth-last-child(-n+2)  { border-bottom: none; }
+    .contact-cell:hover { background: var(--sage-bg); }
+    .cc-icon   { font-size: 18px; margin-bottom: 4px; }
+    .cc-label  { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
+    .cc-detail { font-size: 11px; color: var(--muted); }
+    .cc-action { font-size: 11px; color: var(--accent); font-style: italic; margin-top: 2px; }
+
+    .disclaimer { text-align: center; font-size: 11px; color: var(--muted); padding: 20px 16px; max-width: 440px; margin: 0 auto; }
+
+    footer {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 15%, rgba(140,90,60,0.35) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 85%, rgba(216,180,154,0.08) 0%, transparent 55%);
+      padding: 28px 20px 0;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 480px; margin: 0 auto; padding-bottom: 20px; }
+    @media (max-width: 400px) { .footer-grid { grid-template-columns: 1fr; } }
+    .footer-col h4 { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lt-accent); margin-bottom: 8px; }
+    .footer-col p  { font-size: 12px; color: var(--lt-accent); line-height: 1.6; opacity: 0.8; }
+    .footer-col p em { font-style: italic; opacity: 0.7; }
+    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(140,90,60,0.3); }
+    .footer-bottom { max-width: 480px; margin: 0 auto; display: flex; justify-content: space-between; padding: 12px 0 16px; flex-wrap: wrap; gap: 4px; }
+    .footer-bottom span { font-size: 10px; color: var(--muted); }
+
+    /* MISTAKE CARDS */
+    .mistake-card {
+      background: var(--warn-bg);
+      border-left: 4px solid var(--dark);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .mistake-card .mx { color: var(--dark); font-weight: 700; flex-shrink: 0; font-size: 14px; margin-top: 1px; min-width: 12px; }
+    .mistake-card .mb h4 { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 3px; }
+    .mistake-card .mb p  { font-size: 12px; color: var(--muted); margin: 0; }
+
+    /* RATING CARDS */
+    .rate-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+    }
+    .rate-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
+    .rate-top h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); line-height: 1.3; }
+    .rate-score { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--accent); line-height: 1; white-space: nowrap; }
+    .rate-score span { font-size: 11px; color: var(--muted); }
+    .rate-bar { height: 6px; background: var(--sage-bg); border-radius: 999px; overflow: hidden; margin-bottom: 12px; }
+    .rate-bar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+    .rate-card.low .rate-bar i { background: var(--low); }
+    .rate-card.low .rate-score { color: var(--low); }
+    .rate-card p { font-size: 13px; color: var(--dark); margin-bottom: 8px; }
+    .rate-card p:last-child { margin-bottom: 0; }
+    .rate-card .rate-note { font-size: 12px; color: var(--muted); font-style: italic; }
+
+    /* CROSS-LINK */
+    .xlink {
+      display: flex; gap: 12px; align-items: center;
+      background: var(--white); border: 1.5px solid var(--border); border-radius: 14px;
+      padding: 14px 16px; margin-top: 14px;
+      text-decoration: none; color: inherit; transition: border-color 0.15s;
+    }
+    .xlink:hover { border-color: var(--accent); }
+    .xl-emoji { font-size: 22px; width: 42px; height: 42px; background: var(--sage-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .xlink h4 { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 2px; }
+    .xlink p  { font-size: 12px; color: var(--muted); }
+    .xl-go { font-size: 11px; color: var(--accent); font-style: italic; }
+
+    /* TIMELINE */
+    .timeline { position: relative; padding-left: 26px; }
+    .timeline::before { content: ''; position: absolute; left: 8px; top: 6px; bottom: 6px; width: 2px; background: var(--border); }
+    .tl-item { position: relative; background: var(--white); border: 1.5px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+    .tl-item::before { content: ''; position: absolute; left: -24px; top: 16px; width: 12px; height: 12px; border-radius: 50%; background: var(--white); border: 2px solid var(--accent); }
+    .tl-item.shed::before { border-color: var(--low); }
+    .tl-item.grow::before { background: var(--gold); border-color: var(--gold); }
+    .tl-when { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+    .tl-item.shed .tl-when { color: var(--low); }
+    .tl-item.grow .tl-when { color: var(--gold); }
+    .tl-item h3 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 3px; }
+    .tl-item p { font-size: 12px; color: var(--muted); margin: 0; }
   </style>
 </head>
 <body>
-<div class="page-wrap">
-  <header class="guide-header">
-    <div class="clinic-tag">Skin Ethics Clinic · Pune</div>
-    <h1>The Hair Transplant Guide</h1>
-    <p class="deck">Moving hair from where it survives to where it's needed — and why the donor site is the most important decision in the entire procedure.</p>
-    <span class="trigger-pill">Comment TRANSPLANT to receive this guide</span>
+
+  <nav class="back-nav"><a href="index.html">← All Guides</a></nav>
+
+  <header class="site-header">
+    <div class="pill">YOUR HAIR TRANSPLANT HANDBOOK</div>
+    <h1>Hair Transplant?<br><em>No New Hair Is Made.</em></h1>
+    <p class="subline">How a transplant really works, who it suits, how grafts are planned, and what to expect month by month.</p>
+    <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Skin Ethics Clinic, Baner, Pune</p>
+    <p class="philosophy">Inner &amp; Outer Beauty · Wholesome Beauty</p>
+    <div class="dots">· · ·</div>
   </header>
 
-  <section class="section">
-    <div class="section-num">1</div>
-    <h2>Think of It Like Transplanting Plants in a Garden</h2>
-    <p>When a section of your garden soil is infertile — nothing you plant there grows — the solution isn't to keep trying different seeds in the same bad soil. You take healthy plants from a fertile patch and relocate them to where growth is needed.</p>
-    <div class="garden-visual">
-      <div class="garden-card"><div class="gc-icon">🌱</div><div class="gc-label">Donor Zone</div><div class="gc-title">DHT-resistant follicles from the back and sides of the scalp</div></div>
-      <div class="garden-arrow">→</div>
-      <div class="garden-card"><div class="gc-icon">🌳</div><div class="gc-label">Recipient Zone</div><div class="gc-title">Thinning or bald areas where DHT has destroyed the original follicles</div></div>
-    </div>
-    <p>Hair transplantation works on the same logic. Follicles from the back and sides of the scalp are genetically programmed to be resistant to DHT — the hormone that causes hair loss. When transplanted to a balding area, they retain this resistance and continue growing for life.</p>
-    <div class="pull-quote"><p>"A transplant doesn't create new hair. It relocates hair that is guaranteed to survive — from a zone where it can be spared to a zone where it's needed."</p></div>
-  </section>
-
-  <section class="section">
-    <div class="section-num">2</div>
-    <h2>Why Some Hair Is DHT-Resistant</h2>
-    <p>Androgenetic alopecia (pattern hair loss) is driven by DHT — Dihydrotestosterone, a derivative of testosterone. DHT binds to receptors in genetically susceptible follicles, causes them to miniaturise, and eventually stops them from producing hair altogether.</p>
-    <p>The follicles at the back and sides of the scalp (the "safe donor zone") carry different androgen receptor genetics — they do not respond to DHT in the same way. This resistance is permanent and is preserved even after transplantation. The relocated follicles grow exactly as they did in the donor site.</p>
-  </section>
-
-  <section class="section">
-    <div class="section-num">3</div>
-    <h2>FUE vs FUT — Understanding the Techniques</h2>
-    <div class="technique-compare">
-      <div class="tech-card">
-        <div class="tech-tag">Technique A</div>
-        <div class="tech-name">FUE</div>
-        <div class="tech-row"><strong>Method</strong>Individual follicles extracted one by one with a micro-punch tool (0.8–1mm diameter)</div>
-        <div class="tech-row"><strong>Scarring</strong>Tiny dot scars, invisible at normal hair length</div>
-        <div class="tech-row"><strong>Recovery</strong>5–7 days. Can return to work quickly</div>
-        <div class="tech-row"><strong>Best for</strong>Most patients; preferred when short hair is worn</div>
+  <!-- WELCOME -->
+  <section>
+    <div class="wrapper">
+      <div class="card card-accent">
+        <h2>You commented "TRANSPLANT" — here's your handbook 🌿</h2>
+        <p>In the video, I explained that a hair transplant doesn't create new hair. It moves hair you already have.</p>
+        <p>This handbook goes a step further: who is a good candidate, how grafts are planned, what recovery looks like, the myths to ignore, and what results to expect month by month.</p>
       </div>
-      <div class="tech-card">
-        <div class="tech-tag">Technique B</div>
-        <div class="tech-name">FUT</div>
-        <div class="tech-row"><strong>Method</strong>A strip of scalp is removed from the donor zone; follicles are dissected from it under microscope</div>
-        <div class="tech-row"><strong>Scarring</strong>Linear scar at back of head, hidden by hair</div>
-        <div class="tech-row"><strong>Recovery</strong>10–14 days. Suture removal required</div>
-        <div class="tech-row"><strong>Best for</strong>Large sessions needing maximum graft yield</div>
+
+      <div class="quote-banner">
+        <blockquote>"We don't create new hair. We carefully relocate permanent roots you already have."</blockquote>
+        <cite>— Dr. Pallavi Ahire-Shelke</cite>
       </div>
     </div>
-    <p>The choice between FUE and FUT depends on the extent of hair loss, donor density, the patient's lifestyle, and how they wear their hair. Neither technique is universally superior — the right choice is case-specific.</p>
   </section>
 
-  <section class="section">
-    <div class="section-num">4</div>
-    <h2>Are You a Good Candidate?</h2>
-    <div class="candidate-list">
-      <div class="candidate-item"><div class="candidate-icon">✅</div><div class="candidate-text"><strong>Good candidate:</strong> Stable hair loss pattern (not actively progressing rapidly), adequate donor density at the back/sides, realistic expectations about coverage, age typically 25 and above</div></div>
-      <div class="candidate-item"><div class="candidate-icon">✅</div><div class="candidate-text"><strong>Good candidate:</strong> Hair loss due to pattern baldness (androgenetic alopecia), not scarring alopecia or active autoimmune conditions</div></div>
-      <div class="candidate-item"><div class="candidate-icon">✅</div><div class="candidate-text"><strong>Good candidate:</strong> Non-smoker or willing to stop 2 weeks before and after surgery (smoking impairs follicle survival)</div></div>
-      <div class="candidate-item"><div class="candidate-icon">❌</div><div class="candidate-text"><strong>Not ideal:</strong> Very young patients (under 25) with rapidly progressing loss — the final pattern isn't established yet, making hairline design unreliable</div></div>
-      <div class="candidate-item"><div class="candidate-icon">❌</div><div class="candidate-text"><strong>Not ideal:</strong> Insufficient donor density — if the donor zone is too thin, there aren't enough follicles to achieve meaningful coverage without depleting it</div></div>
-      <div class="candidate-item"><div class="candidate-icon">❌</div><div class="candidate-text"><strong>Not ideal:</strong> Active alopecia areata, trichotillomania, or scarring alopecias — transplants into inflamed or autoimmune-active scalp have poor survival</div></div>
+  <!-- GARDEN -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">THINK OF IT LIKE A GARDEN</div>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-num">1</div>
+          <h3>The back of the garden is healthy</h3>
+          <p>The back and sides of your scalp hold hair that usually resists pattern hair loss. This is the donor area.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <h3>The front has some empty patches</h3>
+          <p>The hairline, front and crown are where thinning shows. This is the recipient area.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3</div>
+          <h3>Healthy plants are moved, not created</h3>
+          <p>Follicles are carefully taken from the donor area and placed where hair has thinned. They keep the strength of the area they came from.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-num">5</div>
-    <h2>Month-by-Month Recovery</h2>
-    <div class="month-timeline">
-      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Days 1 – 10</div><h3>Initial Healing</h3><p>Tiny scabs form at each graft site. Mild swelling around the forehead is common and resolves in 3–5 days. Grafts are delicate — no touching, rubbing, or direct water pressure on the transplanted area.</p></div></div>
-      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Weeks 2 – 6</div><h3>Shock Loss — Expected and Temporary</h3><p>The transplanted hairs shed. This alarms almost every patient — but it is completely normal. The follicle itself remains alive beneath the scalp. The shed hair will regrow from the same follicle.</p></div></div>
-      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Months 3 – 4</h3><p>New hair begins emerging from the transplanted follicles. Initially fine and unpigmented — it thickens and darkens progressively. Patience is critical here; impatience is the most common patient complaint at this stage.</p></div></div>
-      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Months 6 – 8</div><h3>Visible Coverage</h3><p>Significant growth now apparent. Most patients are satisfied at this point. Hair continues to thicken and the texture normalises to match surrounding hair.</p></div></div>
-      <div class="mt-item"><div class="mt-dot-wrap"><div class="mt-dot"></div></div><div class="mt-body"><div class="mt-time">Month 12 – 18</div><h3>Final Result</h3><p>Full maturation of all transplanted grafts. The final density, texture, and hairline are now visible. Any assessment of the result should be made at this point — not earlier.</p></div></div>
+  <!-- TWO THINGS -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">THE TWO THINGS THAT DECIDE YOUR RESULT</div>
+
+      <div class="concern-card">
+        <div class="concern-header">
+          <div class="concern-emoji">🌳</div>
+          <div class="concern-title-block">
+            <div class="concern-tag">Most Important</div>
+            <h2>The Quality of Your Donor Area</h2>
+          </div>
+        </div>
+        <div class="concern-body">
+          <div class="why-block">
+            <div class="why-label">Why It Matters</div>
+            <p>Every transplanted hair comes from your donor area, and that supply is limited. Its density, the thickness of each hair and how stable it is decide how much coverage is possible.</p>
+          </div>
+          <div class="look-block">
+            <div class="look-label">What Your Doctor Checks</div>
+            <p>How many hairs grow per area at the back and sides, how thick they are, and whether that area is also thinning.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="concern-card">
+        <div class="concern-header">
+          <div class="concern-emoji">✏️</div>
+          <div class="concern-title-block">
+            <div class="concern-tag">Second</div>
+            <h2>Hairline Design</h2>
+          </div>
+        </div>
+        <div class="concern-body">
+          <div class="why-block">
+            <div class="why-label">Why It Matters</div>
+            <p>A well-designed hairline uses fewer grafts to give a natural, fuller look. It follows your face shape and age, with soft, slightly irregular edges rather than a straight line.</p>
+          </div>
+          <div class="look-block">
+            <div class="look-label">Good To Know</div>
+            <p>A hairline that looks right at 25 should still look right at 45. Good design plans for the future, not just for today.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-num">6</div>
-    <h2>Why Hairline Design Is as Important as the Surgery</h2>
-    <p>A technically perfect transplant with a poorly designed hairline produces an unnatural result that is obvious and permanent. The hairline must account for:</p>
-    <ul style="list-style:none;margin:16px 0;">
-      <li style="padding:10px 0 10px 20px;border-bottom:1px solid var(--rule);position:relative;font-size:14px;"><span style="position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:50%;background:var(--accent);display:block;"></span>The patient's age — a hairline that looks natural at 30 may look unnatural at 55</li>
-      <li style="padding:10px 0 10px 20px;border-bottom:1px solid var(--rule);position:relative;font-size:14px;"><span style="position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:50%;background:var(--accent);display:block;"></span>Facial proportions — the hairline must fit the forehead shape and facial geometry</li>
-      <li style="padding:10px 0 10px 20px;border-bottom:1px solid var(--rule);position:relative;font-size:14px;"><span style="position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:50%;background:var(--accent);display:block;"></span>Projected future loss — space must be left for follicles that may still be lost</li>
-      <li style="padding:10px 0 10px 20px;position:relative;font-size:14px;"><span style="position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:50%;background:var(--accent);display:block;"></span>Irregular micro-variation — natural hairlines are never perfectly straight, transplanted ones shouldn't be either</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <div class="section-num">7</div>
-    <h2>Common Myths</h2>
-    <div class="myth-stack">
-      <div class="myth-block"><div class="myth-side is-myth">Transplanted hair falls out after a few years.</div><div class="myth-side is-fact">Transplanted follicles retain their DHT resistance permanently. They grow for life in the new location — the same way they grew in the donor site for decades.</div></div>
-      <div class="myth-block"><div class="myth-side is-myth">You can transplant unlimited hair to cover any bald area.</div><div class="myth-side is-fact">The donor zone is finite. Donor management — using only what can be spared without depleting the safe zone — is one of the most critical technical skills in hair transplantation.</div></div>
-      <div class="myth-block"><div class="myth-side is-myth">The result looks obvious and fake.</div><div class="myth-side is-fact">Modern FUE with skilled hairline design is undetectable even on close inspection. The "plug" look was a characteristic of outdated multi-graft techniques from the 1980s–90s.</div></div>
+  <!-- CANDIDATE -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">ARE YOU A GOOD CANDIDATE?</div>
+      <div class="dos-donts">
+        <div class="do-col">
+          <div class="col-head">✔ Usually a good fit</div>
+          <div class="do-item"><span class="chk">✔</span><span>Pattern hair loss that has become fairly stable</span></div>
+          <div class="do-item"><span class="chk">✔</span><span>A healthy, dense donor area</span></div>
+          <div class="do-item"><span class="chk">✔</span><span>Good general health</span></div>
+          <div class="do-item"><span class="chk">✔</span><span>Realistic expectations about density</span></div>
+          <div class="do-item"><span class="chk">✔</span><span>Willing to continue medical treatment for existing hair</span></div>
+        </div>
+        <div class="dont-col">
+          <div class="col-head">✕ Usually not right now</div>
+          <div class="dont-item"><span class="x">✕</span><span>Active, sudden shedding (telogen effluvium)</span></div>
+          <div class="dont-item"><span class="x">✕</span><span>Patchy hair loss (alopecia areata)</span></div>
+          <div class="dont-item"><span class="x">✕</span><span>A thin or weak donor area</span></div>
+          <div class="dont-item"><span class="x">✕</span><span>Hair loss from an untreated cause like thyroid or anaemia</span></div>
+          <div class="dont-item"><span class="x">✕</span><span>Very early or fast-moving hair loss</span></div>
+        </div>
+      </div>
+      <a class="xlink" href="guide-hairfall.html">
+        <div class="xl-emoji">🌱</div>
+        <div>
+          <h4>Not sure why your hair is falling?</h4>
+          <p>Find the cause first. Read my guide on the hair cycle and why hair falls.</p>
+          <span class="xl-go">Read the Hair Fall Guide →</span>
+        </div>
+      </a>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Book a Hair Transplant Consultation</h2>
-    <p>Candidacy assessment, donor density mapping, and hairline design discussion — the consultation determines whether a transplant is right for you, and what result is realistically achievable.</p>
-    <div class="contact-grid">
-      <a class="contact-cell" href="https://share.google/g3rcUyGUGB28ytw8v" target="_blank">📍 Directions</a>
-      <a class="contact-cell" href="tel:+919028291234">📞 +91 90282 91234</a>
-      <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank">📷 Instagram</a>
-      <a class="contact-cell" href="https://wa.me/919028291234" target="_blank">💬 WhatsApp</a>
+  <!-- GRAFT PLANNING -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">HOW GRAFTS ARE PLANNED</div>
+      <div class="card card-accent">
+        <p style="font-size:14px;"><strong>A graft is a natural group of 1 to 4 hairs</strong> that grow together from the scalp. Grafts are moved as these groups so the result looks natural.</p>
+      </div>
+      <p class="section-intro">The number of grafts you need is decided in consultation, based on:</p>
+      <div class="ing-table">
+        <div class="ing-row"><span class="ir-name">Area to cover</span><span class="ir-desc">Hairline only, front, crown, or a combination</span></div>
+        <div class="ing-row"><span class="ir-name">Donor supply</span><span class="ir-desc">How many grafts can be taken safely without thinning the back</span></div>
+        <div class="ing-row"><span class="ir-name">Hair type</span><span class="ir-desc">Thick, wavy or curly hair gives more visual coverage per graft</span></div>
+        <div class="ing-row"><span class="ir-name">Future hair loss</span><span class="ir-desc">Donor hair is kept in reserve in case thinning continues later</span></div>
+        <div class="ing-row"><span class="ir-name">Priority areas</span><span class="ir-desc">The hairline and front usually come first because they frame the face</span></div>
+      </div>
     </div>
   </section>
-  <div class="share-section"><button class="share-btn" onclick="shareGuide()">↗ Share This Guide</button></div>
-  <footer class="guide-footer"><strong>Dr Pallavi Ahireshelke</strong><br>Skin Ethics Clinic, Pune<br><a href="tel:+919028291234">+91 90282 91234</a> · <a href="https://www.instagram.com/drpallaviahireshelke/">@drpallaviahireshelke</a><br><span style="margin-top:8px;display:block">For educational purposes only.</span></footer>
-</div>
-<div class="float-cta">
-  <a class="cta-primary" href="https://wa.me/919028291234" target="_blank">Book a Consultation</a>
-  <a class="cta-wa" href="https://wa.me/919028291234" target="_blank">WhatsApp</a>
-</div>
-<script>function shareGuide(){const u=window.location.href;if(navigator.share){navigator.share({title:'Hair Transplant Guide — Dr Pallavi',url:u}).catch(()=>{});}else{navigator.clipboard.writeText(u).then(()=>alert('Link copied!')).catch(()=>{});}}</script>
+
+  <!-- TIMELINE -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">RECOVERY &amp; RESULTS — MONTH BY MONTH</div>
+      <p class="section-intro">Everyone heals at their own pace. This is a typical pattern, and your doctor will guide you at each stage.</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-when">Days 1–3</div>
+          <h3>Rest and gentle care</h3>
+          <p>Some swelling, redness and tenderness are common. Follow your doctor's instructions for sleeping position, medicines and the first wash.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when">Days 7–14</div>
+          <h3>Small scabs settle</h3>
+          <p>Tiny crusts around the grafts fall off with gentle washing. Most people return to desk work within days.</p>
+        </div>
+        <div class="tl-item shed">
+          <div class="tl-when">Weeks 2–8</div>
+          <h3>The transplanted hairs shed</h3>
+          <p>This is normal and expected. The hair shaft falls, but the root stays safely under the skin and rests before growing again.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when">Months 2–3</div>
+          <h3>The quiet phase</h3>
+          <p>The area may look like it did before surgery. This is the hardest part to wait through, and it's part of the process.</p>
+        </div>
+        <div class="tl-item grow">
+          <div class="tl-when">Months 3–5</div>
+          <h3>New hairs start growing</h3>
+          <p>Fine, thin hairs begin to appear. They are often soft at first and thicken over time.</p>
+        </div>
+        <div class="tl-item grow">
+          <div class="tl-when">Months 6–9</div>
+          <h3>Visible change</h3>
+          <p>Hairs get longer and thicker, and most people see a clear difference by now.</p>
+        </div>
+        <div class="tl-item grow">
+          <div class="tl-when">Months 12–18</div>
+          <h3>Final result</h3>
+          <p>The result is usually judged at about a year. The crown can take longer to fill in fully.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUTH BANNER -->
+  <section>
+    <div class="wrapper">
+      <div class="dark-banner">
+        <blockquote>"Shedding after a transplant doesn't mean it failed. The roots are resting, not lost."</blockquote>
+        <p>Transplanted hair follows a natural growth cycle. Patience through the first few months is part of getting a good result.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MYTHS -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">COMMON MYTHS</div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <div class="mb"><h4>"A transplant creates new hair"</h4><p>It moves existing permanent follicles from one area to another. The total number of hairs on your head stays the same.</p></div>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <div class="mb"><h4>"Anyone can get one"</h4><p>It depends on the cause of your hair loss and the strength of your donor area. A proper diagnosis comes first.</p></div>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <div class="mb"><h4>"Results show in a few weeks"</h4><p>Transplanted hairs usually shed first. Real growth starts after a few months and the final result takes about a year.</p></div>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <div class="mb"><h4>"After a transplant, I don't need any treatment"</h4><p>Transplanted hair is long-lasting, but your other hair can keep thinning. Medical treatment protects it.</p></div>
+      </div>
+      <div class="mistake-card">
+        <span class="mx">✕</span>
+        <div class="mb"><h4>"More grafts always means a better result"</h4><p>Good planning and hairline design matter as much as numbers, and over-harvesting can thin the donor area.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AFTERCARE -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">AFTERCARE — THE FIRST FEW WEEKS</div>
+      <p class="section-intro">General guidance only. Always follow the exact instructions your doctor gives you.</p>
+      <div class="dos-donts">
+        <div class="do-col">
+          <div class="col-head">✔ Do</div>
+          <div class="do-item"><span class="chk">✔</span><span>Wash your scalp exactly as shown by the clinic</span></div>
+          <div class="do-item"><span class="chk">✔</span><span>Sleep with your head slightly raised for the first few nights</span></div>
+          <div class="do-item"><span class="chk">✔</span><span>Take your medicines as prescribed</span></div>
+          <div class="do-item"><span class="chk">✔</span><span>Protect your scalp from direct sun</span></div>
+          <div class="do-item"><span class="chk">✔</span><span>Keep your follow-up appointments</span></div>
+        </div>
+        <div class="dont-col">
+          <div class="col-head">✕ Don't</div>
+          <div class="dont-item"><span class="x">✕</span><span>Scratch or pick at the scabs</span></div>
+          <div class="dont-item"><span class="x">✕</span><span>Wear tight caps or helmets until your doctor allows</span></div>
+          <div class="dont-item"><span class="x">✕</span><span>Do heavy workouts or swim in the early days</span></div>
+          <div class="dont-item"><span class="x">✕</span><span>Smoke, as it slows healing</span></div>
+          <div class="dont-item"><span class="x">✕</span><span>Panic when the transplanted hairs shed</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKLIST -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">BEFORE YOU DECIDE — SAVE THIS ⭐</div>
+      <div class="checklist">
+        <div class="check-item"><div class="check-box">✓</div><span>I know the cause of my hair loss</span></div>
+        <div class="check-item"><div class="check-box">✓</div><span>My donor area has been checked by a doctor</span></div>
+        <div class="check-item"><div class="check-box">✓</div><span>I understand a transplant moves hair, it doesn't create it</span></div>
+        <div class="check-item"><div class="check-box">✓</div><span>I've discussed hairline design and graft planning</span></div>
+        <div class="check-item"><div class="check-box">✓</div><span>I know shedding in the first weeks is normal</span></div>
+        <div class="check-item"><div class="check-box">✓</div><span>I'm ready to wait about a year for the final result</span></div>
+        <div class="check-item"><div class="check-box">✓</div><span>I'll continue treatment to protect my existing hair</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section>
+    <div class="wrapper">
+      <div class="philosophy-card">
+        <div class="small-label">THE PHILOSOPHY BEHIND THIS GUIDE</div>
+        <h2>Inner &amp; Outer Beauty.</h2>
+        <p>A good hair transplant starts long before surgery, with the right diagnosis, an honest look at your donor area and a plan that suits your face and your future. Understand the science, and the decision becomes simple.</p>
+        <em>Because real glow starts from within.</em>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="wrapper">
+      <div class="section-label">BOOK A CONSULTATION</div>
+      <div class="contact-card">
+        <div class="contact-header">
+          <h2>Dr. Pallavi Ahire-Shelke</h2>
+          <p class="creds">MBBS, MD, DNB, DDV · Gold Medalist Dermatologist</p>
+          <p class="tagline">Find out if a hair transplant is right for you</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cell"><div class="cc-icon">📍</div><div class="cc-label">Clinic</div><div class="cc-detail">Skin Ethics Clinic, Baner, Pune</div></div>
+          <a class="contact-cell" href="tel:+919028291234"><div class="cc-icon">📞</div><div class="cc-label">Phone</div><div class="cc-detail">+91 90282 91234</div><div class="cc-action">Book a consultation</div></a>
+          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank"><div class="cc-icon">📸</div><div class="cc-label">Instagram</div><div class="cc-detail">@drpallaviahireshelke</div><div class="cc-action">Daily skin education</div></a>
+          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank"><div class="cc-icon">💬</div><div class="cc-label">WhatsApp</div><div class="cc-detail">Quick queries welcome</div><div class="cc-action">Message us</div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    This guide is for educational purposes only and does not constitute medical advice. Timelines and results vary from person to person. Suitability for a hair transplant can only be decided after an in-person evaluation by a qualified doctor.
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Contact</h4><p>Skin Ethics Clinic<br>Baner, Pune<br>+91 90282 91234</p></div>
+      <div class="footer-col"><h4>Follow Us</h4><p>@drpallaviahireshelke<br>Instagram<br><em>Wholesome Beauty · Inner &amp; Outer</em></p></div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <span>Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV</span>
+      <span>Skin Ethics Clinic, Baner, Pune</span>
+    </div>
+  </footer>
+
 </body>
 </html>
