@@ -332,6 +332,34 @@ const SCRIPTS = [
   { n:49, dress:9, title:'UV-A Through Clouds — Monsoon Pigmentation',    trigger:'RAINGLOW',     cta:'automated', link:'guide-rainglow.html',      date:'' },
   { n:50, dress:9, title:'Malassezia Biofilm — Monsoon Scalp & Hairfall', trigger:'MONSOONHAIR',  cta:'automated', link:'guide-monsoonhair.html',   date:'' },
   { n:51, dress:9, title:'Corynebacterium — Body Odour & Underarm Dark',  trigger:'ODORFIX',      cta:'automated', link:'guide-odorfix.html',       date:'' },
+
+  // DRESS 10 — NOVEMBER SCRIPTS ──────────────────────────────────────────
+  { n:52, dress:10, title:'HydraFacial — Deep Cleaning or More?', trigger:'GLOW', cta:'automated', link:'guide-event-glow.html', date:'' },
+  { n:53, dress:10, title:'Fillers — Good Filler Goes Unnoticed', trigger:'FILLER', cta:'automated', link:'guide-filler.html', date:'' },
+  { n:54, dress:10, title:'PRP for Hair Loss — The Yellow Layer', trigger:'PRP', cta:'automated', link:'guide-prp-check.html', date:'' },
+  { n:55, dress:10, title:'HIFU — Jawline Laxity Without Surgery', trigger:'LIFT', cta:'automated', link:'guide-lift.html', date:'' },
+  { n:56, dress:10, title:'CO2 Fractional Laser — Acne Scars', trigger:'SCAR', cta:'automated', link:'guide-scar-types.html', date:'' },
+  { n:57, dress:10, title:'MNRF — Microneedling + Radiofrequency', trigger:'MNRF', cta:'automated', link:'guide-mnrf.html', date:'' },
+  { n:58, dress:10, title:'Laser Toning (ND YAG) — Not a Fairness Treatment', trigger:'TONE', cta:'automated', link:'guide-laser-aftercare.html', date:'' },
+  { n:59, dress:10, title:'Thread Lift — How a Thread Lifts', trigger:'THREAD', cta:'automated', link:'guide-thread-recovery.html', date:'' },
+  { n:60, dress:10, title:'Skin Boosters (Profhilo) — Hydration From Within', trigger:'BOOST', cta:'automated', link:'guide-boost.html', date:'' },
+  { n:61, dress:10, title:'Carbon Peel — Hollywood Facial', trigger:'CARBON', cta:'automated', link:'guide-glow-compare.html', date:'' },
+  { n:62, dress:10, title:'Scalp Micropigmentation — Tattoo, Not Hair', trigger:'SMP', cta:'automated', link:'guide-smp.html', date:'' },
+  { n:63, dress:10, title:'Cryolipolysis — Fat Freezing', trigger:'FREEZE', cta:'automated', link:'guide-freeze.html', date:'' },
+  { n:64, dress:10, title:'Mole, Wart & Skin Tag Removal', trigger:'MOLE', cta:'automated', link:'guide-mole.html', date:'' },
+  { n:65, dress:10, title:'Tattoo Removal — Honest Answer', trigger:'INK', cta:'automated', link:'guide-tattoo-removal.html', date:'' },
+  { n:66, dress:10, title:'Vitiligo — Excimer + Punch Grafting', trigger:'VITILIGO', cta:'automated', link:'guide-vitiligo.html', date:'' },
+  { n:67, dress:10, title:'Neck Darkness — It\'s Not Dirt', trigger:'NECK', cta:'automated', link:'guide-neck.html', date:'' },
+  { n:68, dress:10, title:'Ringworm Cream — Why Daad Comes Back', trigger:'DAAD', cta:'automated', link:'guide-daad.html', date:'' },
+  { n:69, dress:10, title:'The Magic Cream From the Chemist', trigger:'CREAM', cta:'automated', link:'guide-steroid-cream.html', date:'' },
+  { n:70, dress:10, title:'White Patches on Your Child\'s Face', trigger:'PATCH', cta:'automated', link:'guide-kids-skin.html', date:'' },
+  { n:71, dress:10, title:'Biotin for Hair Fall', trigger:'HAIR', cta:'automated', link:'guide-hair-tests.html', date:'' },
+  { n:72, dress:10, title:'Hot Water Baths in Winter', trigger:'WINTER', cta:'automated', link:'guide-winter.html', date:'' },
+  { n:73, dress:10, title:'Plucking One Grey Hair', trigger:'GREY', cta:'automated', link:'guide-early-grey.html', date:'' },
+  { n:74, dress:10, title:'Black Mehendi Before the Wedding', trigger:'MEHENDI', cta:'automated', link:'guide-mehendi.html', date:'' },
+  { n:75, dress:10, title:'Indoors? Still Need Sunscreen', trigger:'SPF', cta:'automated', link:'guide-spf.html', date:'' },
+  { n:76, dress:10, title:'Underarm & Groin Itching', trigger:'ITCH', cta:'automated', link:'guide-itch.html', date:'' },
+  { n:77, dress:10, title:'Psoriasis & Diet', trigger:'PSORIASIS', cta:'automated', link:'guide-psoriasis-diet.html', date:'' },
 ];
 
 // ── RENDER ────────────────────────────────────────────────────────────────
@@ -343,7 +371,7 @@ const BADGE = {
 };
 
 function dressLabel(d) {
-  const cls = d === 8 ? 'dress-pill d8' : d === 9 ? 'dress-pill d9' : 'dress-pill';
+  const cls = d === 8 ? 'dress-pill d8' : d === 9 || d === 10 ? 'dress-pill d9' : 'dress-pill';
   const label = d === 9 ? 'July Scripts' : `Dress ${d}`;
   return `<span class="${cls}">${label}</span>`;
 }
@@ -368,7 +396,7 @@ function buildRows() {
 
   SCRIPTS.forEach(s => {
     if (s.dress !== lastDress) {
-      const label = s.dress === 8 ? 'Dress 8 — Rating Series' : `Dress ${s.dress}`;
+      const label = s.dress === 8 ? 'Dress 8 — Rating Series' : s.dress === 10 ? 'Dress 10 — November Scripts' : `Dress ${s.dress}`;
       html += `<tr class="dress-divider"><td colspan="7">${label}</td></tr>`;
       lastDress = s.dress;
     }

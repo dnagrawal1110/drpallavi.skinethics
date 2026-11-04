@@ -1,0 +1,66 @@
+GUIDE = dict(
+    slug="filler", trigger="FILLER", emoji="💉",
+    title="Filler: Myths vs Facts",
+    pill="FILLER: MYTHS VS FACTS",
+    h1="Fillers?", h1_em="Good Ones Go Unnoticed.",
+    subline="How long fillers last, whether they can be dissolved, who shouldn't get them, and the warning signs to know.",
+    intro=[
+        "In the video, I explained that fillers restore the volume we lose with age. The goal isn't a new face, it's a fresher version of yours.",
+        "The most common fear is: 'What if I don't like the result?' This guide answers that, and the other questions I hear every day in clinic.",
+    ],
+    quote="The goal isn't a new face. The goal is to look like you, just fresher.",
+    tagline="Find out if fillers are right for you",
+    disclaimer="Fillers are a medical procedure and must only be done by a qualified, trained doctor. Suitability can only be decided after an in-person consultation.",
+    sections=[
+        ("WHY THE FACE LOSES VOLUME", ("steps", [
+            ("Fat pads shift", "The fat that keeps the cheeks full slowly moves down and thins."),
+            ("Bone resorbs a little", "The bones that support the face slowly lose some volume with age."),
+            ("Collagen drops", "Less collagen means less support, so hollows and folds show more."),
+        ]), ("intro", "That's why cheeks look flatter, under-eyes look hollow and the lines beside the nose deepen.")),
+        ("BOTOX VS FILLER", ("table", [
+            ("Botox", "Relaxes the muscles that cause lines when you make expressions, like frown lines and crow's feet"),
+            ("Filler", "Restores lost volume, like flat cheeks, under-eye hollows and deep folds"),
+        ])),
+        ("MYTHS VS FACTS", ("mythfact", [
+            ("Fillers always look fake.", "Overdone fillers look fake. Well-placed fillers in the right amount look natural, and no one can tell."),
+            ("Fillers are permanent.", "Hyaluronic acid fillers are temporary. The body slowly breaks them down, usually over months to about a year or more, depending on the area and the product."),
+            ("If I don't like it, I'm stuck with it.", "Hyaluronic acid fillers can be dissolved with an enzyme called hyaluronidase, given by a doctor."),
+            ("Fillers are just for wrinkles.", "Fillers mainly restore volume. Lines that come from muscle movement are usually treated with Botox."),
+            ("Fillers are foreign chemicals.", "Most fillers are made of hyaluronic acid, a substance your skin already makes to hold water."),
+            ("Anyone can inject fillers, even a salon.", "The face has many blood vessels. Where, how deep and how much to inject needs a deep understanding of anatomy. Only a trained doctor should do it."),
+        ])),
+        ("HOW LONG DOES IT LAST?", ("table", [
+            ("Lips", "Usually shorter, because the lips move constantly"),
+            ("Cheeks", "Usually longer, as the area moves less"),
+            ("Under-eyes", "Can last a long time with the right product and technique"),
+            ("Your body", "Metabolism, lifestyle and the product used all make a difference"),
+        ]), ("intro", "Your doctor will tell you what to expect for your area and product.")),
+        ("WHO SHOULDN'T GET FILLERS", ("signs", [
+            "Pregnant or breastfeeding women",
+            "Anyone with an active skin infection, cold sore or pimples at the area",
+            "Anyone with a known allergy to filler ingredients",
+            "People with certain bleeding disorders or on blood thinners, unless their doctor clears it",
+            "People with some autoimmune conditions, which should be discussed with the doctor first",
+            "Anyone expecting a completely different face",
+        ])),
+        ("AFTER YOUR FILLER", ("dosdonts", (
+            "Do",
+            ["Expect mild swelling or bruising for a few days", "Use a cold compress if your doctor advises it", "Keep your follow-up appointment", "Give it about 2 weeks to settle"],
+            "Don't",
+            ["Press or massage the area unless told to", "Do heavy workouts for the first 24–48 hours", "Use a sauna or steam for a couple of days", "Judge the result on day one"],
+        ))),
+        ("", ("urgent", dict(h="Call your clinic straight away if you notice:", items=[
+            "Severe or increasing pain at the injection area",
+            "Skin turning white, grey, blue or blotchy",
+            "Any change in your vision",
+            "Swelling that keeps getting worse",
+        ], note="These are rare but need urgent care. A trained doctor knows how to act quickly, which is one more reason to choose a medical setup."))),
+        ("BEFORE YOU BOOK — SAVE THIS ⭐", ("checklist", [
+            "My injector is a qualified, trained doctor",
+            "I know if my concern needs volume (filler) or muscle relaxing (Botox)",
+            "I've asked which product is used and whether it can be dissolved",
+            "I've shared my medicines, allergies and health conditions",
+            "I want a natural result, not a new face",
+        ])),
+    ],
+)
