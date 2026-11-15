@@ -266,7 +266,7 @@
 const SCRIPTS = [
   // DRESS 1 ────────────────────────────────────────────────────────────────
   { n:1,  dress:1, title:'Mumbai Ke Paani Ka Baalon Pe Asar',              trigger:'WATER',   cta:'automated', link:'guide-water.html',  date:'13 May' },
-  { n:2,  dress:1, title:'Chemical Peel, Does It Hurt? [PROCEDURE]',       trigger:'PEEL',    cta:'automated', link:'guide-peel.html',   date:'28 May' },
+  { n:2,  dress:1, title:'Chemical Peel, Does It Hurt? [PROCEDURE]',       trigger:'PEEL',    cta:'automated', link:'guide-peel.html',   date:'28 May' }, // PEEL now sends guide-peel-types.html (links back here)
   { n:3,  dress:1, title:'3 Myths Jo Hair Fall Band Nahi Hone De Rahe',    trigger:'REAL',    cta:'automated', link:'guide-real.html',   date:'' },
   { n:4,  dress:1, title:'Indian Hair Is Best — But We Destroy It',        trigger:'INDIAN',  cta:'automated', link:'guide-indian.html', date:'' },
   { n:5,  dress:1, title:'Besan Ubtan — Derma Ka Honest Opinion',          trigger:'UBTAN',   cta:'automated', link:'guide-ubtan.html',  date:'' },
@@ -278,7 +278,7 @@ const SCRIPTS = [
   { n:9,  dress:2, title:'PRP for Hair, Kya Hota Hai Actually',            trigger:'PRP',     cta:'automated', link:'guide-prp.html',    date:'29 May' },
 
   // DRESS 3 ────────────────────────────────────────────────────────────────
-  { n:10, dress:3, title:'Laser Hair Removal',                              trigger:'LASER',   cta:'automated', link:'guide-laser.html',  date:'19 May' },
+  { n:10, dress:3, title:'Laser Hair Removal',                              trigger:'LASER',   cta:'automated', link:'guide-laser.html',  date:'19 May' }, // LASER now sends guide-pre-laser.html (links back here)
   { n:11, dress:3, title:'Hydration vs Moisturisation, Same Nahi Hain…',   trigger:'ROUTINE', cta:'automated', link:'guide-m.html',      date:'31 May' },
   { n:12, dress:3, title:'Aloe Vera Garden Se — Safe Hai Ya Nahi?',        trigger:'ALOE',    cta:'automated', link:'guide-aloe.html',    date:'' },
   { n:13, dress:3, title:'Niacinamide Kya Karta Hai — Zero Jargon',        trigger:'',        cta:'not-needed',link:'',                  date:'' },
@@ -360,6 +360,25 @@ const SCRIPTS = [
   { n:75, dress:10, title:'Indoors? Still Need Sunscreen', trigger:'SPF', cta:'automated', link:'guide-spf.html', date:'' },
   { n:76, dress:10, title:'Underarm & Groin Itching', trigger:'ITCH', cta:'automated', link:'guide-itch.html', date:'' },
   { n:77, dress:10, title:'Psoriasis & Diet', trigger:'PSORIASIS', cta:'automated', link:'guide-psoriasis-diet.html', date:'' },
+
+  // DRESS 11 — NOVEMBER CAROUSELS ────────────────────────────────────────
+  { n:78, dress:11, title:'Carousel 01: Diwali Glow Countdown', trigger:'DIWALI', cta:'automated', link:'guide-diwali-calendar.html', date:'26 Oct' },
+  { n:79, dress:11, title:'Carousel 02: Diwali Glow In 2 Days Story', trigger:'SAFEGLOW', cta:'automated', link:'guide-safe-glow.html', date:'28 Oct' },
+  { n:80, dress:11, title:'Carousel 03: Diwali Safai Hands', trigger:'HANDS', cta:'automated', link:'guide-safai-hands.html', date:'30 Oct' },
+  { n:81, dress:11, title:'Carousel 04: Not All Peels Are The Same', trigger:'PEEL', cta:'automated', link:'guide-peel-types.html', date:'1 Nov' },
+  { n:82, dress:11, title:'Carousel 05: The Triangle Of Youth', trigger:'YOUTH', cta:'automated', link:'guide-youth-check.html', date:'3 Nov' },
+  { n:83, dress:11, title:'Carousel 06: Under Eye Hollows', trigger:'EYES', cta:'automated', link:'guide-under-eye.html', date:'5 Nov' },
+  { n:84, dress:11, title:'Carousel 07: Diwali Burn First Aid', trigger:'BURN', cta:'automated', link:'guide-burn-first-aid.html', date:'7 Nov' },
+  { n:85, dress:11, title:'Carousel 08: Day After Diwali Smog Skin', trigger:'SMOG', cta:'automated', link:'guide-smog-skin.html', date:'9 Nov' },
+  { n:86, dress:11, title:'Carousel 09: Your Face Ages In 5 Layers', trigger:'LAYERS', cta:'automated', link:'guide-face-layers.html', date:'11 Nov' },
+  { n:87, dress:11, title:'Carousel 10: Your Selfie Is Lying To You', trigger:'MIRROR', cta:'automated', link:'guide-mirror-check.html', date:'13 Nov' },
+  { n:88, dress:11, title:'Carousel 11: Why Laser Needs 6 To 8 Sessions', trigger:'LASER', cta:'automated', link:'guide-pre-laser.html', date:'15 Nov' },
+  { n:89, dress:11, title:'Carousel 12: What 1 ml Of Lip Filler Looks Like', trigger:'LIPS', cta:'automated', link:'guide-lip-filler.html', date:'17 Nov' },
+  { n:90, dress:11, title:'Carousel 13: 5 Treatments Men Are Quietly Getting', trigger:'MEN', cta:'automated', link:'guide-mens-skin.html', date:'19 Nov' },
+  { n:91, dress:11, title:'Carousel 14: Lost Weight, Look Older', trigger:'VOLUME', cta:'automated', link:'guide-weight-loss-face.html', date:'21 Nov' },
+  { n:92, dress:11, title:'Carousel 15: Your Neck Is Telling Your Age', trigger:'NECKLINE', cta:'automated', link:'guide-neckline.html', date:'23 Nov' },
+  { n:93, dress:11, title:'Carousel 16: Post Pregnancy Body', trigger:'MOM', cta:'automated', link:'guide-new-mom.html', date:'25 Nov' },
+  { n:94, dress:11, title:'Carousel 17: Why Some Faces Look Done', trigger:'NATURAL', cta:'automated', link:'guide-natural-checklist.html', date:'27 Nov' },
 ];
 
 // ── RENDER ────────────────────────────────────────────────────────────────
@@ -371,8 +390,8 @@ const BADGE = {
 };
 
 function dressLabel(d) {
-  const cls = d === 8 ? 'dress-pill d8' : d === 9 || d === 10 ? 'dress-pill d9' : 'dress-pill';
-  const label = d === 9 ? 'July Scripts' : `Dress ${d}`;
+  const cls = d === 8 ? 'dress-pill d8' : d === 9 || d === 10 || d === 11 ? 'dress-pill d9' : 'dress-pill';
+  const label = d === 9 ? 'July Scripts' : d === 11 ? 'Carousel' : `Dress ${d}`;
   return `<span class="${cls}">${label}</span>`;
 }
 
@@ -396,7 +415,7 @@ function buildRows() {
 
   SCRIPTS.forEach(s => {
     if (s.dress !== lastDress) {
-      const label = s.dress === 8 ? 'Dress 8 — Rating Series' : s.dress === 10 ? 'Dress 10 — November Scripts' : `Dress ${s.dress}`;
+      const label = s.dress === 8 ? 'Dress 8 — Rating Series' : s.dress === 10 ? 'Dress 10 — November Scripts' : s.dress === 11 ? 'November Carousels' : `Dress ${s.dress}`;
       html += `<tr class="dress-divider"><td colspan="7">${label}</td></tr>`;
       lastDress = s.dress;
     }

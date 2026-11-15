@@ -1,0 +1,45 @@
+GUIDE = dict(
+    slug="diwali-calendar", trigger="DIWALI", emoji="🪔",
+    title="15-Day Diwali Skin Care Calendar",
+    pill="YOUR 15-DAY DIWALI SKIN CALENDAR",
+    h1="Festival-Ready Skin,", h1_em="Planned Day by Day",
+    subline="A simple 15-day plan before Diwali: what to finish early, what to keep steady, and what never to try in the last week.",
+    intro=[
+        "In the carousel, I explained that the last days before a festival are the wrong time for anything strong or new.",
+        "Here is the full calendar. Start wherever you are today. Even a few days of steady, gentle care helps more than one big treatment at the end.",
+    ],
+    quote="Before a festival, consistency beats a last-minute fix.",
+    tagline="Plan your festive skin care with a dermatologist",
+    disclaimer="This is a general plan for healthy skin. If you have a skin condition or are on treatment, follow your dermatologist's advice first.",
+    sections=[
+        ("THE 15-DAY CALENDAR", ("timeline", [
+            ("Days 15–11", "Finish anything strong", "If you and your dermatologist have planned a peel or other procedure, this is the latest window, so the skin has time to heal and settle."),
+            ("Days 10–8", "Settle into a simple routine", "Gentle cleanser, moisturiser, sunscreen every morning. Keep using what your skin already tolerates."),
+            ("Days 7–5", "No new products", "Nothing new on the face from here on, not even a new face pack or serum. A reaction now has no time to calm."),
+            ("Days 4–3", "Protect the barrier", "Moisturise well, drink enough water and keep sunscreen on through all the shopping and cleaning."),
+            ("Days 2–1", "Rest and hydrate", "No bleach, scrub, wax or facial on the face. Sleep is the best glow treatment you have.", "grow"),
+            ("Diwali", "Gentle and protected", "Cleanse gently at night to remove makeup and smoke. Wear cotton near diyas and fireworks.", "grow"),
+        ])),
+        ("NEVER IN THE LAST WEEK", ("signs", [
+            "Bleach or a de-tan pack on the face",
+            "A strong peel or acid you have not used before",
+            "Scrubs, especially on sensitive or acne-prone skin",
+            "A first-time facial or a new parlour treatment",
+            "Waxing or threading the day before an event, if your skin gets red after it",
+            "Any injectable or procedure that was not planned weeks earlier",
+        ])),
+        ("YOUR DAILY BASICS", ("table", [
+            ("Morning", "Gentle cleanse, moisturiser, sunscreen"),
+            ("Through the day", "Reapply sunscreen if you are outdoors for long"),
+            ("Night", "Cleanse off makeup, sunscreen and smoke, then moisturise"),
+            ("Every day", "Sleep, water and meals at regular times"),
+        ])),
+        ("", ("banner", ("The glow you see on Diwali is built in the weeks before it.", "Skin that is calm, hydrated and protected looks better than skin recovering from a last-minute treatment."))),
+        ("SAVE THIS ⭐", ("checklist", [
+            "I've finished anything strong at least 10 days before",
+            "I'm not trying anything new in the last week",
+            "I'm wearing sunscreen every day",
+            "I'll cleanse gently on Diwali night",
+        ])),
+    ],
+)

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face Shape Self-Check · Dr. Pallavi Ahire-Shelke</title>
+  <meta name="description" content="How the shape of the face changes with age, a simple mirror check, and why not everyone needs treatment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dark:     #2A1C14;
+      --bg:       #FAF7F4;
+      --white:    #FFFFFF;
+      --accent:   #8C5A3C;
+      --lt-accent:#D8B49A;
+      --sage-bg:  #F5EDE6;
+      --warn-bg:  #F2EFE9;
+      --border:   #E8D9CC;
+      --muted:    #8F7462;
+      --highlight:#F4E6DA;
+      --gold:     #5F7F4E;
+      --gold-bg:  #EEF3EA;
+      --low:      #B0564A;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Lora', serif;
+      background: var(--bg);
+      color: var(--dark);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .back-nav {
+      background: var(--bg);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .back-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      font-style: italic;
+    }
+    .back-nav a:hover { color: var(--accent); }
+
+    /* HEADER */
+    .site-header {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 15%, rgba(140,90,60,0.55) 0%, transparent 55%),
+        radial-gradient(ellipse at 15% 85%, rgba(216,180,154,0.18) 0%, transparent 55%);
+      padding: 40px 20px 36px;
+      text-align: center;
+    }
+    .pill {
+      display: inline-block;
+      border: 1.5px solid var(--lt-accent);
+      background: var(--white);
+      color: var(--accent);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+    .site-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 7vw, 36px);
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    .site-header h1 em { font-style: italic; color: var(--lt-accent); }
+    .site-header .subline { color: var(--lt-accent); font-size: 13px; max-width: 330px; margin: 0 auto 16px; opacity: 0.9; }
+    .site-header .byline { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+    .site-header .philosophy { font-style: italic; color: var(--muted); font-size: 11px; }
+    .dots { margin: 16px 0 0; color: var(--lt-accent); letter-spacing: 8px; font-size: 10px; }
+
+    .wrapper { max-width: 480px; margin: 0 auto; padding: 0 16px; }
+    section { padding: 28px 0; }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .section-intro { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+
+    /* CARDS */
+    .card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 20px;
+      margin-bottom: 16px;
+    }
+    .card-accent { border-left: 4px solid var(--accent); }
+    .card-warn { background: var(--warn-bg); border-left: 4px solid var(--dark); }
+    .card h2 { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--dark); margin-bottom: 12px; }
+    .card p  { font-size: 14px; margin-bottom: 10px; }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* QUOTE BANNER */
+    .quote-banner {
+      background: var(--sage-bg);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 20px 20px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .quote-banner blockquote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 17px;
+      color: var(--dark);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .quote-banner cite { font-size: 12px; color: var(--muted); }
+
+    /* INGREDIENT CARDS */
+    .concern-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 18px;
+      transition: border-color 0.2s;
+      scroll-margin-top: 16px;
+    }
+    .concern-card:hover { border-color: var(--accent); }
+    .concern-header {
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .concern-emoji {
+      font-size: 24px;
+      width: 44px;
+      height: 44px;
+      background: var(--sage-bg);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .concern-tag {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 3px;
+    }
+    .concern-title-block h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      color: var(--dark);
+      line-height: 1.25;
+    }
+    .concern-body { padding: 16px 20px; }
+
+    .for-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .for-pill {
+      background: var(--highlight);
+      border: 1px solid var(--lt-accent);
+      color: var(--accent);
+      font-size: 11px;
+      padding: 3px 11px;
+      border-radius: 999px;
+    }
+
+    .why-block {
+      background: var(--sage-bg);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+    .why-label, .look-label, .usage-label {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .why-label { color: var(--accent); }
+    .why-block p { font-size: 13px; color: var(--dark); margin: 0; }
+
+    .look-block {
+      border: 1.5px dashed var(--lt-accent);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+    }
+    .look-label { color: var(--accent); }
+    .look-block p { font-size: 13px; color: var(--dark); margin: 0; }
+
+    .usage-block {
+      background: var(--warn-bg);
+      border-left: 3px solid var(--gold);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .usage-label { color: var(--gold); margin-bottom: 6px; }
+    .usage-step {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      margin-bottom: 6px;
+      font-size: 13px;
+      color: var(--dark);
+    }
+    .usage-step:last-child { margin-bottom: 0; }
+    .step-dot {
+      width: 18px;
+      height: 18px;
+      background: var(--gold);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .usage-note {
+      background: var(--gold-bg);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: var(--gold);
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* DARK BANNER */
+    .dark-banner {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 10%, rgba(140,90,60,0.55) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 90%, rgba(216,180,154,0.12) 0%, transparent 55%);
+      border-radius: 18px;
+      padding: 28px 22px;
+      margin-bottom: 16px;
+    }
+    .dark-banner blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: 19px;
+      color: var(--white);
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+    .dark-banner p { font-size: 13px; color: var(--lt-accent); }
+
+    /* STAT CARDS */
+    .stat-grid { display: flex; flex-direction: column; gap: 14px; }
+    .stat-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-num {
+      position: absolute; top: 8px; right: 14px;
+      font-family: 'Playfair Display', serif;
+      font-size: 52px; color: var(--border); line-height: 1; pointer-events: none;
+    }
+    .stat-card h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); margin-bottom: 6px; padding-right: 40px; }
+    .stat-card p  { font-size: 13px; color: var(--muted); }
+
+    /* SIGNS LIST */
+    .signs-list { display: flex; flex-direction: column; gap: 8px; }
+    .sign-item {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 13px;
+    }
+    .sign-dot { color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* ROUTINE BLOCK */
+    .routine-block {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 14px;
+    }
+    .routine-block-header {
+      background: var(--sage-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px;
+    }
+    .routine-block-header .rh-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+    .routine-block-header h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); }
+    .routine-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .routine-item:last-child { border-bottom: none; }
+    .ri-dot {
+      width: 22px; height: 22px;
+      background: var(--dark); color: var(--white);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-family: 'Playfair Display', serif;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .ri-title { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); }
+    .ri-note  { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    /* PAIRING TABLE */
+    .ing-table { display: flex; flex-direction: column; gap: 10px; }
+    .ing-row {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex; gap: 12px; align-items: flex-start;
+    }
+    .ing-row .ir-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 13px; color: var(--dark);
+      min-width: 130px; flex-shrink: 0;
+    }
+    .ing-row .ir-desc { font-size: 12px; color: var(--muted); flex: 1; }
+    .ing-badge {
+      display: inline-block;
+      background: var(--highlight);
+      color: var(--accent);
+      font-size: 10px; padding: 2px 8px;
+      border-radius: 999px; border: 1px solid var(--lt-accent);
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .ing-badge.avoid { background: #FBF0EE; color: #C0504A; border-color: #E0B0AA; }
+    .ing-badge.limit { background: #FBF5E4; color: #B07830; border-color: #DDB870; }
+    @media (max-width: 420px) {
+      .ing-row { flex-wrap: wrap; }
+      .ing-row .ir-name { min-width: 0; flex: 1 1 auto; }
+      .ing-row .ir-desc { flex-basis: 100%; order: 3; }
+    }
+
+    /* DOS DONTS */
+    .dos-donts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 500px) { .dos-donts { grid-template-columns: 1fr; } }
+    .do-col, .dont-col { border-radius: 14px; overflow: hidden; }
+    .do-col .col-head {
+      background: var(--sage-bg); border-bottom: 2px solid var(--accent);
+      padding: 10px 14px;
+      font-family: 'Playfair Display', serif; font-size: 14px; color: var(--accent);
+    }
+    .dont-col .col-head {
+      background: var(--warn-bg); border-bottom: 2px solid var(--dark);
+      padding: 10px 14px;
+      font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark);
+    }
+    .do-item, .dont-item {
+      padding: 10px 14px; font-size: 13px;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+      display: flex; gap: 8px; align-items: flex-start;
+    }
+    .do-item:last-child, .dont-item:last-child { border-bottom: none; }
+    .do-item .chk  { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .dont-item .x  { color: var(--dark); font-weight: 700; flex-shrink: 0; }
+
+    /* CHECKLIST */
+    .checklist { display: flex; flex-direction: column; gap: 8px; }
+    .check-item {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      display: flex; gap: 10px; align-items: center;
+      font-size: 13px; color: var(--dark);
+    }
+    .check-item .check-box {
+      width: 18px; height: 18px;
+      border: 2px solid var(--border);
+      border-radius: 4px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; color: var(--accent);
+    }
+
+    /* PHILOSOPHY */
+    .philosophy-card {
+      background: var(--sage-bg);
+      border-radius: 16px; padding: 28px 22px; text-align: center;
+    }
+    .philosophy-card .small-label {
+      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 12px;
+    }
+    .philosophy-card h2 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--dark); margin-bottom: 14px; }
+    .philosophy-card p  { font-size: 14px; color: var(--dark); margin-bottom: 14px; }
+    .philosophy-card em { font-style: italic; color: var(--accent); }
+
+    /* ALT BEAUTY */
+    .alt-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 16px; }
+    .alt-card-header { background: var(--sage-bg); padding: 14px 18px; border-bottom: 1px solid var(--border); }
+    .alt-card-header .label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+    .alt-card-header h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); }
+    .alt-product-row {
+      display: flex; gap: 12px; align-items: center; padding: 14px 18px;
+      text-decoration: none; color: inherit; transition: background 0.15s;
+      border-bottom: 1px solid var(--border);
+    }
+    .alt-product-row:last-child { border-bottom: none; }
+    .alt-product-row:hover { background: var(--sage-bg); }
+    .alt-emoji { font-size: 26px; width: 42px; height: 42px; background: var(--sage-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .alt-info h4 { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 2px; }
+    .alt-info p  { font-size: 12px; color: var(--muted); }
+    .alt-info .link { font-size: 11px; color: var(--accent); font-style: italic; }
+
+    /* CONTACT */
+    .contact-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; overflow: hidden; }
+    .contact-header {
+      background: var(--dark);
+      background-image: radial-gradient(ellipse at 85% 15%, rgba(140,90,60,0.55) 0%, transparent 55%);
+      padding: 22px 20px; text-align: center;
+    }
+    .contact-header h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); margin-bottom: 4px; }
+    .contact-header .creds  { font-size: 11px; color: var(--lt-accent); margin-bottom: 6px; }
+    .contact-header .tagline { font-size: 12px; color: var(--muted); font-style: italic; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 400px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-cell {
+      padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border);
+      text-decoration: none; color: inherit; transition: background 0.15s;
+    }
+    .contact-cell:nth-child(even)       { border-right: none; }
+    .contact-cell:nth-last-child(-n+2)  { border-bottom: none; }
+    .contact-cell:hover { background: var(--sage-bg); }
+    .cc-icon   { font-size: 18px; margin-bottom: 4px; }
+    .cc-label  { font-family: 'Playfair Display', serif; font-size: 12px; color: var(--dark); }
+    .cc-detail { font-size: 11px; color: var(--muted); }
+    .cc-action { font-size: 11px; color: var(--accent); font-style: italic; margin-top: 2px; }
+
+    .disclaimer { text-align: center; font-size: 11px; color: var(--muted); padding: 20px 16px; max-width: 440px; margin: 0 auto; }
+
+    footer {
+      background: var(--dark);
+      background-image:
+        radial-gradient(ellipse at 85% 15%, rgba(140,90,60,0.35) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 85%, rgba(216,180,154,0.08) 0%, transparent 55%);
+      padding: 28px 20px 0;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 480px; margin: 0 auto; padding-bottom: 20px; }
+    @media (max-width: 400px) { .footer-grid { grid-template-columns: 1fr; } }
+    .footer-col h4 { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lt-accent); margin-bottom: 8px; }
+    .footer-col p  { font-size: 12px; color: var(--lt-accent); line-height: 1.6; opacity: 0.8; }
+    .footer-col p em { font-style: italic; opacity: 0.7; }
+    .footer-divider { max-width: 480px; margin: 0 auto; border: none; border-top: 1px solid rgba(140,90,60,0.3); }
+    .footer-bottom { max-width: 480px; margin: 0 auto; display: flex; justify-content: space-between; padding: 12px 0 16px; flex-wrap: wrap; gap: 4px; }
+    .footer-bottom span { font-size: 10px; color: var(--muted); }
+
+    /* MISTAKE CARDS */
+    .mistake-card {
+      background: var(--warn-bg);
+      border-left: 4px solid var(--dark);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .mistake-card .mx { color: var(--dark); font-weight: 700; flex-shrink: 0; font-size: 14px; margin-top: 1px; min-width: 12px; }
+    .mistake-card .mb h4 { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 3px; }
+    .mistake-card .mb p  { font-size: 12px; color: var(--muted); margin: 0; }
+
+    /* RATING CARDS */
+    .rate-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+    }
+    .rate-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
+    .rate-top h3 { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--dark); line-height: 1.3; }
+    .rate-score { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--accent); line-height: 1; white-space: nowrap; }
+    .rate-score span { font-size: 11px; color: var(--muted); }
+    .rate-bar { height: 6px; background: var(--sage-bg); border-radius: 999px; overflow: hidden; margin-bottom: 12px; }
+    .rate-bar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+    .rate-card.low .rate-bar i { background: var(--low); }
+    .rate-card.low .rate-score { color: var(--low); }
+    .rate-card p { font-size: 13px; color: var(--dark); margin-bottom: 8px; }
+    .rate-card p:last-child { margin-bottom: 0; }
+    .rate-card .rate-note { font-size: 12px; color: var(--muted); font-style: italic; }
+
+    /* CROSS-LINK */
+    .xlink {
+      display: flex; gap: 12px; align-items: center;
+      background: var(--white); border: 1.5px solid var(--border); border-radius: 14px;
+      padding: 14px 16px; margin-top: 14px;
+      text-decoration: none; color: inherit; transition: border-color 0.15s;
+    }
+    .xlink:hover { border-color: var(--accent); }
+    .xl-emoji { font-size: 22px; width: 42px; height: 42px; background: var(--sage-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .xlink h4 { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--dark); margin-bottom: 2px; }
+    .xlink p  { font-size: 12px; color: var(--muted); }
+    .xl-go { font-size: 11px; color: var(--accent); font-style: italic; }
+
+    /* TIMELINE */
+    .timeline { position: relative; padding-left: 26px; }
+    .timeline::before { content: ''; position: absolute; left: 8px; top: 6px; bottom: 6px; width: 2px; background: var(--border); }
+    .tl-item { position: relative; background: var(--white); border: 1.5px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+    .tl-item::before { content: ''; position: absolute; left: -24px; top: 16px; width: 12px; height: 12px; border-radius: 50%; background: var(--white); border: 2px solid var(--accent); }
+    .tl-item.shed::before { border-color: var(--low); }
+    .tl-item.grow::before { background: var(--gold); border-color: var(--gold); }
+    .tl-when { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+    .tl-item.shed .tl-when { color: var(--low); }
+    .tl-item.grow .tl-when { color: var(--gold); }
+    .tl-item h3 { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--dark); margin-bottom: 3px; }
+    .tl-item p { font-size: 12px; color: var(--muted); margin: 0; }
+
+    /* MYTH vs FACT */
+    .mf-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 12px; }
+    .mf-myth { background: var(--warn-bg); padding: 12px 16px; display: flex; gap: 10px; font-size: 13px; }
+    .mf-myth b { font-family: 'Playfair Display', serif; color: var(--low); flex-shrink: 0; font-size: 11px; letter-spacing: 0.1em; margin-top: 2px; }
+    .mf-fact { padding: 12px 16px; display: flex; gap: 10px; font-size: 13px; }
+    .mf-fact b { font-family: 'Playfair Display', serif; color: var(--gold); flex-shrink: 0; font-size: 11px; letter-spacing: 0.1em; margin-top: 2px; }
+    .urgent { background: #FBF0EE; border: 1.5px solid #E0B0AA; border-left: 4px solid var(--low); border-radius: 14px; padding: 18px 18px; margin-bottom: 16px; }
+    .urgent h2 { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--low); margin-bottom: 10px; }
+    .urgent .sign-item { border-color: #E0B0AA; }
+    .urgent p { font-size: 13px; margin-top: 10px; }
+
+  </style>
+</head>
+<body>
+
+  <nav class="back-nav"><a href="index.html">← All Guides</a></nav>
+
+  <header class="site-header">
+    <div class="pill">YOUR FACE SHAPE SELF-CHECK</div>
+    <h1>The Triangle<br><em>of Youth</em></h1>
+    <p class="subline">How the shape of the face changes with age, a simple mirror check, and why not everyone needs treatment.</p>
+    <p class="byline">Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV · Gold Medalist Dermatologist · Skin Ethics Clinic, Baner, Pune</p>
+    <p class="philosophy">Inner &amp; Outer Beauty · Wholesome Beauty</p>
+    <div class="dots">· · ·</div>
+  </header>
+
+  <section>
+    <div class="wrapper">
+      <div class="card card-accent">
+        <h2>You commented "YOUTH" — here's your guide 🔺</h2>
+        <p>In the carousel, I explained that wrinkles are not the only reason a face looks older. The shape of the face changes too.</p><p>This self-check helps you notice which changes you see. It is a starting point for a conversation, not a diagnosis.</p>
+      </div>
+      <div class="quote-banner">
+        <blockquote>"The aim is to look rested and like yourself, not to look different."</blockquote>
+        <cite>— Dr. Pallavi Ahire-Shelke</cite>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+<div class="section-label">WHAT THE TRIANGLE MEANS</div><p class="section-intro">In a younger face, fullness sits high at the cheeks and the face narrows towards the chin, like a triangle standing on its point. With age, cheek support can reduce and the lower face can loosen, so the triangle slowly turns upside down.</p><div class="stat-grid"><div class="stat-card"><div class="stat-num">1</div><h3>Cheek support reduces</h3><p>Fat pads thin and move down, so the mid-face looks flatter.</p></div><div class="stat-card"><div class="stat-num">2</div><h3>The lower face loosens</h3><p>The jawline softens and folds beside the mouth deepen.</p></div><div class="stat-card"><div class="stat-num">3</div><h3>Skin quality changes</h3><p>Less collagen and more sun damage make skin thinner and duller.</p></div></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrapper">
+<div class="section-label">THE MIRROR CHECK</div><div class="signs-list"><div class="sign-item"><span class="sign-dot">●</span><span>Stand facing a mirror in daylight, at a normal distance</span></div><div class="sign-item"><span class="sign-dot">●</span><span>Look at your cheeks: flatter than in photos from 5 to 10 years ago?</span></div><div class="sign-item"><span class="sign-dot">●</span><span>Look at your jawline: is the edge as sharp as before?</span></div><div class="sign-item"><span class="sign-dot">●</span><span>Look at the lines from nose to mouth: deeper when you are not smiling?</span></div><div class="sign-item"><span class="sign-dot">●</span><span>Look at your skin: thinner, duller or more uneven?</span></div></div><p class="section-intro">Compare with an older photo taken in similar light. Note what you see, not what a filter or selfie shows.</p>
+    </div>
+  </section>
+  <section>
+    <div class="wrapper">
+<div class="section-label">THREE COMMON PATTERNS</div><div class="concern-card"><div class="concern-header"><div class="concern-emoji">🍑</div><div class="concern-title-block"><div class="concern-tag">MID-FACE</div><h2>Cheek support</h2></div></div><div class="concern-body"><div class="why-block"><div class="why-label">You may notice</div><p>Flatter cheeks, hollows under the eyes, a tired look.</p></div><div class="look-block"><div class="look-label">Good to know</div><p>Creams cannot replace lost volume.</p></div></div></div><div class="concern-card"><div class="concern-header"><div class="concern-emoji">📐</div><div class="concern-title-block"><div class="concern-tag">LOWER FACE</div><h2>Jawline and folds</h2></div></div><div class="concern-body"><div class="why-block"><div class="why-label">You may notice</div><p>A softer jawline and deeper folds around the mouth.</p></div><div class="look-block"><div class="look-label">Good to know</div><p>Often linked to changes in support higher up the face.</p></div></div></div><div class="concern-card"><div class="concern-header"><div class="concern-emoji">🌿</div><div class="concern-title-block"><div class="concern-tag">SKIN</div><h2>Skin quality</h2></div></div><div class="concern-body"><div class="why-block"><div class="why-label">You may notice</div><p>Fine lines, dullness, pigmentation.</p></div><div class="look-block"><div class="look-label">Good to know</div><p>Sunscreen and good skincare protect skin quality at every age.</p></div></div></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrapper">
+<div class="dark-banner"><blockquote>"Many people need no treatment at all."</blockquote><p>If you choose to discuss it, the right step depends on which change is happening, and that needs an in-person assessment.</p></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrapper">
+<div class="section-label">SAVE THIS ⭐</div><div class="checklist"><div class="check-item"><div class="check-box">✓</div><span>I've checked in daylight, not in a selfie</span></div><div class="check-item"><div class="check-box">✓</div><span>I wear sunscreen every day</span></div><div class="check-item"><div class="check-box">✓</div><span>I know creams protect skin quality but cannot replace volume</span></div><div class="check-item"><div class="check-box">✓</div><span>I'll discuss any concern with a qualified dermatologist</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <div class="section-label">BOOK A CONSULTATION</div>
+      <div class="contact-card">
+        <div class="contact-header">
+          <h2>Dr. Pallavi Ahire-Shelke</h2>
+          <p class="creds">MBBS, MD, DNB, DDV · Gold Medalist Dermatologist</p>
+          <p class="tagline">Talk to a dermatologist about facial ageing</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cell"><div class="cc-icon">📍</div><div class="cc-label">Clinic</div><div class="cc-detail">Skin Ethics Clinic, Baner, Pune</div></div>
+          <a class="contact-cell" href="tel:+919028291234"><div class="cc-icon">📞</div><div class="cc-label">Phone</div><div class="cc-detail">+91 90282 91234</div><div class="cc-action">Book a consultation</div></a>
+          <a class="contact-cell" href="https://www.instagram.com/drpallaviahireshelke/" target="_blank"><div class="cc-icon">📸</div><div class="cc-label">Instagram</div><div class="cc-detail">@drpallaviahireshelke</div><div class="cc-action">Daily skin education</div></a>
+          <a class="contact-cell" href="https://wa.me/919028291234" target="_blank"><div class="cc-icon">💬</div><div class="cc-label">WhatsApp</div><div class="cc-detail">Quick queries welcome</div><div class="cc-action">Message us</div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    This guide is for educational purposes only and does not constitute medical advice. This self-check cannot tell you whether you need treatment. Many people need none. Only an in-person assessment can decide.
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Contact</h4><p>Skin Ethics Clinic<br>Baner, Pune<br>+91 90282 91234</p></div>
+      <div class="footer-col"><h4>Follow Us</h4><p>@drpallaviahireshelke<br>Instagram<br><em>Wholesome Beauty · Inner &amp; Outer</em></p></div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <span>Dr. Pallavi Ahire-Shelke · MBBS, MD, DNB, DDV</span>
+      <span>Skin Ethics Clinic, Baner, Pune</span>
+    </div>
+  </footer>
+
+</body>
+</html>
